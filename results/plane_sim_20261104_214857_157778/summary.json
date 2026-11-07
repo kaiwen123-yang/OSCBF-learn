@@ -1,0 +1,70 @@
+{
+  "status": "completed",
+  "error": null,
+  "data_source": "ideal_velocity_simulation_model_FK",
+  "task_frame": "flange_link",
+  "completed_time_s": 20.0,
+  "shared_phase_final_s": 12.476292507993126,
+  "common_active_samples": 1566,
+  "warmup_seconds": {
+    "cbf": 0.503953933000048,
+    "oscbf": 0.42792197200014925
+  },
+  "versions": {
+    "oscbf": "0.0.1",
+    "jax": "0.4.30",
+    "jaxlib": "0.4.30",
+    "qpax": "0.1.4",
+    "numpy": "1.26.4"
+  },
+  "model_sha256": "d1ffe634ec32ddd20c58f2b8616de02452967f932ac5ae0b367cab14e0aedcc5",
+  "timing_scope": "FK + nominal + QP + diagnostics + JAX synchronization; excludes logging and any device IO",
+  "cbf": {
+    "samples": 2000,
+    "all_qp_converged": true,
+    "minimum_h_m": -5.030268654358794e-07,
+    "max_qp_violation": 0.0,
+    "max_abs_command_rad_s": 0.05819727553143133,
+    "minimum_sigma": 0.07168720586581497,
+    "min_joint_margin_rad": 0.4629213106458984,
+    "compute_ms_median_p95_max": [
+      0.166671,
+      0.20221374999999997,
+      0.392037
+    ],
+    "active_tangent_rmse_mm": 28.4304253054538,
+    "active_orientation_rmse_deg": 5.425168754464828,
+    "final_q_rad": [
+      -0.31613158759947524,
+      0.4629066343478732,
+      -1.5941911517629126,
+      0.4380028854144171,
+      0.7947099983790495,
+      -0.19988708953289894
+    ]
+  },
+  "oscbf": {
+    "samples": 2000,
+    "all_qp_converged": true,
+    "minimum_h_m": 5.3065178865635554e-08,
+    "max_qp_violation": 0.0,
+    "max_abs_command_rad_s": 0.05486129833511063,
+    "minimum_sigma": 0.07152908654303314,
+    "min_joint_margin_rad": 0.5149547771302665,
+    "compute_ms_median_p95_max": [
+      0.16617749999999998,
+      0.20177995,
+      0.635094
+    ],
+    "active_tangent_rmse_mm": 0.00027589892013048657,
+    "active_orientation_rmse_deg": 1.5918170795471908e-05,
+    "final_q_rad": [
+      -0.22231205903070275,
+      0.5149424841797451,
+      -1.585054375607739,
+      0.287013591555761,
+      0.821082741497201,
+      -0.12132509321206768
+    ]
+  }
+}

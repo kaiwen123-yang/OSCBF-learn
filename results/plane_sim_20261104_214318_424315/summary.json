@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "error": "RuntimeError('cbf: QP did not converge at t=0.000s')",
+  "data_source": "ideal_velocity_simulation_model_FK",
+  "task_frame": "flange_link",
+  "completed_time_s": 0.0,
+  "shared_phase_final_s": 0.0,
+  "common_active_samples": 0,
+  "warmup_seconds": {
+    "cbf": 0.4638240799995401,
+    "oscbf": 0.4364318550005919
+  },
+  "versions": {
+    "oscbf": "0.0.1",
+    "jax": "0.4.30",
+    "jaxlib": "0.4.30",
+    "qpax": "0.1.4",
+    "numpy": "1.26.4"
+  },
+  "model_sha256": "d1ffe634ec32ddd20c58f2b8616de02452967f932ac5ae0b367cab14e0aedcc5",
+  "timing_scope": "FK + nominal + QP + diagnostics + JAX synchronization; excludes logging and any device IO"
+}

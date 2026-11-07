@@ -1,0 +1,102 @@
+{
+  "time": "2026-11-04T20:38:48.600143+08:00",
+  "urdf": "models/piper_h_with_gripper.urdf",
+  "arm_joints": [
+    {
+      "name": "joint1",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "link1",
+      "axis": "0 0 1",
+      "limits": {
+        "effort": 100.0,
+        "lower": -2.6179938,
+        "upper": 2.6179938,
+        "velocity": 5.0
+      }
+    },
+    {
+      "name": "joint2",
+      "type": "revolute",
+      "parent": "link1",
+      "child": "link2",
+      "axis": "0 0 1",
+      "limits": {
+        "effort": 100.0,
+        "lower": 0.0,
+        "upper": 3.1415926,
+        "velocity": 5.0
+      }
+    },
+    {
+      "name": "joint3",
+      "type": "revolute",
+      "parent": "link2",
+      "child": "link3",
+      "axis": "0 0 1",
+      "limits": {
+        "effort": 100.0,
+        "lower": -2.9670597,
+        "upper": 0.0,
+        "velocity": 5.0
+      }
+    },
+    {
+      "name": "joint4",
+      "type": "revolute",
+      "parent": "link3",
+      "child": "link4",
+      "axis": "0 0 1",
+      "limits": {
+        "effort": 100.0,
+        "lower": -2.3561944,
+        "upper": 2.3561944,
+        "velocity": 5.0
+      }
+    },
+    {
+      "name": "joint5",
+      "type": "revolute",
+      "parent": "link4",
+      "child": "link5",
+      "axis": "0 0 1",
+      "limits": {
+        "effort": 100.0,
+        "lower": -1.5620696,
+        "upper": 1.5620696,
+        "velocity": 5.0
+      }
+    },
+    {
+      "name": "joint6",
+      "type": "revolute",
+      "parent": "link5",
+      "child": "link6",
+      "axis": "0 0 1",
+      "limits": {
+        "effort": 100.0,
+        "lower": -2.9670597,
+        "upper": 2.9670597,
+        "velocity": 5.0
+      }
+    }
+  ],
+  "joint_names": [
+    "world_to_base_link",
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6",
+    "flange_joint",
+    "gripper_base_joint",
+    "gripper",
+    "gripper_joint1",
+    "gripper_joint2"
+  ],
+  "mesh_count": 22,
+  "missing_meshes": [],
+  "tcp_calibrated": false,
+  "note": "Official geometry; not yet validated against the physical gripper/TCP."
+}
