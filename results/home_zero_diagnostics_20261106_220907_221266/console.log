@@ -1,0 +1,3 @@
+ERROR: PackageNotFoundError: No package metadata was found for numpy
+JSON: /home/kaiwen/research/OSCBF-research/logs/home_zero_simple_20261106_220907_223027.json 
+CSV: /home/kaiwen/research/OSCBF-research/logs/home_zero_simple_20261106_220907_223027.csv

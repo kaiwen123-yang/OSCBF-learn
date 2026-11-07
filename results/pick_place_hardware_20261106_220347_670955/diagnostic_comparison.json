@@ -1,0 +1,669 @@
+{
+  "runs": [
+    {
+      "directory": "/home/kaiwen/research/OSCBF-research/results/pick_place_hardware_20261106_220347_670955",
+      "error": null,
+      "raw_frames": 175198,
+      "state_snapshots": 1187,
+      "control_samples": 4566,
+      "raw_capture_duration_s": 59.50513553619385,
+      "can_error_frames": 118,
+      "can_error_phases": {
+        "zero_velocity": 118
+      },
+      "error_decode_source": "/usr/include/linux/can/error.h",
+      "recorder_error": null,
+      "driver_feedback_pauses": [],
+      "initial_mode": null,
+      "final_mode": 5,
+      "driver_codes": {
+        "1": {
+          "0x40": 1190
+        },
+        "2": {
+          "0x40": 1190
+        },
+        "3": {
+          "0x40": 1190
+        },
+        "4": {
+          "0x40": 1189
+        },
+        "5": {
+          "0x40": 1190
+        },
+        "6": {
+          "0x40": 1191
+        }
+      },
+      "driver_max_gap_ms": {
+        "1": 50.72212219238281,
+        "2": 50.698280334472656,
+        "3": 50.71425437927246,
+        "4": 51.48601531982422,
+        "5": 50.717830657958984,
+        "6": 50.69899559020996
+      },
+      "motor_current_range_a": {
+        "1": [
+          -0.392,
+          0.544
+        ],
+        "2": [
+          -2.239,
+          1.215
+        ],
+        "3": [
+          -1.499,
+          0.04
+        ],
+        "4": [
+          -0.298,
+          0.812
+        ],
+        "5": [
+          -1.147,
+          0.676
+        ],
+        "6": [
+          -0.271,
+          0.35000000000000003
+        ]
+      },
+      "final_q_deg": [
+        -0.022,
+        -0.056,
+        0.055,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "can_error_bursts": [
+        {
+          "start_elapsed_s": 15.24264931678772,
+          "duration_s": 0.2597212791442871,
+          "frames": 17,
+          "after_stage": "pregrasp",
+          "protocol_bit1_reports": 10,
+          "max_reported_tx_error_counter": 143,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 2.0100750000437984,
+          "last_command_end_to_first_zero_start_ms": 0.04674799993154011
+        },
+        {
+          "start_elapsed_s": 18.571357488632202,
+          "duration_s": 0.25516653060913086,
+          "frames": 17,
+          "after_stage": "align",
+          "protocol_bit1_reports": 14,
+          "max_reported_tx_error_counter": 143,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 1.904505999846151,
+          "last_command_end_to_first_zero_start_ms": 0.03146900007777731
+        },
+        {
+          "start_elapsed_s": 26.436376333236694,
+          "duration_s": 0.2350785732269287,
+          "frames": 15,
+          "after_stage": "lift",
+          "protocol_bit1_reports": 10,
+          "max_reported_tx_error_counter": 128,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 1.9232780000493221,
+          "last_command_end_to_first_zero_start_ms": 0.04433700019035314
+        },
+        {
+          "start_elapsed_s": 31.50583577156067,
+          "duration_s": 0.23814606666564941,
+          "frames": 16,
+          "after_stage": "transfer",
+          "protocol_bit1_reports": 11,
+          "max_reported_tx_error_counter": 128,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 1.8414849998862337,
+          "last_command_end_to_first_zero_start_ms": 0.05385400004342955
+        },
+        {
+          "start_elapsed_s": 35.80256938934326,
+          "duration_s": 0.25541067123413086,
+          "frames": 19,
+          "after_stage": "lower",
+          "protocol_bit1_reports": 15,
+          "max_reported_tx_error_counter": 151,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 1.798218000203633,
+          "last_command_end_to_first_zero_start_ms": 0.043694999931176426
+        },
+        {
+          "start_elapsed_s": 42.301953077316284,
+          "duration_s": 0.25681233406066895,
+          "frames": 18,
+          "after_stage": "retreat",
+          "protocol_bit1_reports": 11,
+          "max_reported_tx_error_counter": 143,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 1.7818630001329439,
+          "last_command_end_to_first_zero_start_ms": 0.041848999899229966
+        },
+        {
+          "start_elapsed_s": 56.00251388549805,
+          "duration_s": 0.2345881462097168,
+          "frames": 16,
+          "after_stage": "return_initial",
+          "protocol_bit1_reports": 11,
+          "max_reported_tx_error_counter": 136,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 2.1227160000307776,
+          "last_command_end_to_first_zero_start_ms": 0.054592999958913424
+        }
+      ],
+      "max_tracking_error_deg": 0.4728083350626054,
+      "max_command_rad_s": 0.155,
+      "control_cycle_ms_median_p95_max": [
+        9.999854500051697,
+        10.190427600014118,
+        32.068394999896555
+      ],
+      "stage_metrics": {
+        "open": {
+          "duration_s": 1.5078631010001118,
+          "control_samples": 0,
+          "max_tracking_error_deg": null
+        },
+        "pregrasp": {
+          "duration_s": 13.528028419999828,
+          "control_samples": 1283,
+          "max_tracking_error_deg": 0.334494387920901
+        },
+        "align": {
+          "duration_s": 3.330049895000002,
+          "control_samples": 263,
+          "max_tracking_error_deg": 0.3328945966681885
+        },
+        "approach": {
+          "duration_s": 1.9166060879999804,
+          "control_samples": 122,
+          "max_tracking_error_deg": 0.22444614219222128
+        },
+        "grasp": {
+          "duration_s": 1.5100814219999847,
+          "control_samples": 0,
+          "max_tracking_error_deg": null
+        },
+        "lift": {
+          "duration_s": 4.437403207999978,
+          "control_samples": 374,
+          "max_tracking_error_deg": 0.4561331517117574
+        },
+        "transfer": {
+          "duration_s": 5.076958495000099,
+          "control_samples": 436,
+          "max_tracking_error_deg": 0.23789772928853212
+        },
+        "lower": {
+          "duration_s": 4.290787122000211,
+          "control_samples": 359,
+          "max_tracking_error_deg": 0.2768831871877849
+        },
+        "release": {
+          "duration_s": 1.5101804429998538,
+          "control_samples": 0,
+          "max_tracking_error_deg": null
+        },
+        "retreat": {
+          "duration_s": 4.988715616000036,
+          "control_samples": 429,
+          "max_tracking_error_deg": 0.4728083350626054
+        },
+        "return_initial": {
+          "duration_s": 13.698881855000081,
+          "control_samples": 1300,
+          "max_tracking_error_deg": 0.3454158952835597
+        }
+      },
+      "task_duration_s": 55.79724730900011,
+      "gripper_final": {
+        "open": {
+          "width_m": 0.0395,
+          "force_n": 0.105,
+          "command_width_m": 0.04,
+          "command_force_n": 1.0
+        },
+        "grasp": {
+          "width_m": 0.0249,
+          "force_n": -1.043,
+          "command_width_m": 0.015,
+          "command_force_n": 1.0
+        },
+        "release": {
+          "width_m": 0.0394,
+          "force_n": 0.148,
+          "command_width_m": 0.04,
+          "command_force_n": 1.0
+        }
+      },
+      "sdk_tx_coverage": "SDK local loopback was off; full raw TX was not captured in this first run. commands.csv has six-axis velocity send records."
+    },
+    {
+      "directory": "/home/kaiwen/research/OSCBF-research/results/pick_place_hardware_20261106_220924_313468",
+      "error": null,
+      "raw_frames": 179261,
+      "state_snapshots": 1210,
+      "control_samples": 4679,
+      "raw_capture_duration_s": 60.83483028411865,
+      "can_error_frames": 106,
+      "can_error_phases": {
+        "zero_velocity": 106
+      },
+      "error_decode_source": "/usr/include/linux/can/error.h",
+      "recorder_error": null,
+      "driver_feedback_pauses": [],
+      "initial_mode": null,
+      "final_mode": 5,
+      "driver_codes": {
+        "1": {
+          "0x40": 1216
+        },
+        "2": {
+          "0x40": 1216
+        },
+        "3": {
+          "0x40": 1216
+        },
+        "4": {
+          "0x40": 1216
+        },
+        "5": {
+          "0x40": 1217
+        },
+        "6": {
+          "0x40": 1216
+        }
+      },
+      "driver_max_gap_ms": {
+        "1": 54.49223518371582,
+        "2": 50.801992416381836,
+        "3": 50.745248794555664,
+        "4": 50.800323486328125,
+        "5": 50.73118209838867,
+        "6": 53.77483367919922
+      },
+      "motor_current_range_a": {
+        "1": [
+          -0.305,
+          0.538
+        ],
+        "2": [
+          -2.217,
+          1.197
+        ],
+        "3": [
+          -1.429,
+          0.034
+        ],
+        "4": [
+          -0.337,
+          0.786
+        ],
+        "5": [
+          -1.158,
+          0.642
+        ],
+        "6": [
+          -0.289,
+          0.315
+        ]
+      },
+      "final_q_deg": [
+        0.027,
+        -0.061,
+        0.029,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "can_error_bursts": [
+        {
+          "start_elapsed_s": 18.75980806350708,
+          "duration_s": 0.2452077865600586,
+          "frames": 18,
+          "after_stage": "align",
+          "protocol_bit1_reports": 13,
+          "max_reported_tx_error_counter": 136,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 2.138418000185993,
+          "last_command_end_to_first_zero_start_ms": 0.060699999949065386
+        },
+        {
+          "start_elapsed_s": 20.625986337661743,
+          "duration_s": 0.29563260078430176,
+          "frames": 19,
+          "after_stage": "approach",
+          "protocol_bit1_reports": 16,
+          "max_reported_tx_error_counter": 151,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 1.9957700001214107,
+          "last_command_end_to_first_zero_start_ms": 0.10880199988605455
+        },
+        {
+          "start_elapsed_s": 27.388921976089478,
+          "duration_s": 0.24165105819702148,
+          "frames": 16,
+          "after_stage": "lift",
+          "protocol_bit1_reports": 9,
+          "max_reported_tx_error_counter": 136,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 1.937091999934637,
+          "last_command_end_to_first_zero_start_ms": 0.07200699997156335
+        },
+        {
+          "start_elapsed_s": 32.505372762680054,
+          "duration_s": 0.25299072265625,
+          "frames": 17,
+          "after_stage": "transfer",
+          "protocol_bit1_reports": 12,
+          "max_reported_tx_error_counter": 136,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 2.381262999961109,
+          "last_command_end_to_first_zero_start_ms": 0.05456599978970189
+        },
+        {
+          "start_elapsed_s": 36.790884256362915,
+          "duration_s": 0.2703275680541992,
+          "frames": 19,
+          "after_stage": "lower",
+          "protocol_bit1_reports": 15,
+          "max_reported_tx_error_counter": 151,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 3.111730999989959,
+          "last_command_end_to_first_zero_start_ms": 0.1234799999565439
+        },
+        {
+          "start_elapsed_s": 57.32145071029663,
+          "duration_s": 0.2605712413787842,
+          "frames": 17,
+          "after_stage": "return_initial",
+          "protocol_bit1_reports": 12,
+          "max_reported_tx_error_counter": 151,
+          "has_bus_off": false,
+          "last_control_to_first_error_ms": 2.0365569998830324,
+          "last_command_end_to_first_zero_start_ms": 0.07483199988200795
+        }
+      ],
+      "max_tracking_error_deg": 0.4923896772272146,
+      "max_command_rad_s": 0.157,
+      "control_cycle_ms_median_p95_max": [
+        9.999909000043772,
+        10.470883500033779,
+        23.430620999988605
+      ],
+      "stage_metrics": {
+        "open": {
+          "duration_s": 1.5145247049999853,
+          "control_samples": 0,
+          "max_tracking_error_deg": null
+        },
+        "pregrasp": {
+          "duration_s": 13.63338902999999,
+          "control_samples": 1292,
+          "max_tracking_error_deg": 0.3748180212137209
+        },
+        "align": {
+          "duration_s": 3.2979252220000035,
+          "control_samples": 260,
+          "max_tracking_error_deg": 0.31662647693077495
+        },
+        "approach": {
+          "duration_s": 1.8694088360000478,
+          "control_samples": 117,
+          "max_tracking_error_deg": 0.2350010735546419
+        },
+        "grasp": {
+          "duration_s": 1.506704543000069,
+          "control_samples": 0,
+          "max_tracking_error_deg": null
+        },
+        "lift": {
+          "duration_s": 5.256489388999853,
+          "control_samples": 455,
+          "max_tracking_error_deg": 0.4923896772272146
+        },
+        "transfer": {
+          "duration_s": 5.116756742999996,
+          "control_samples": 441,
+          "max_tracking_error_deg": 0.2786002130587905
+        },
+        "lower": {
+          "duration_s": 4.290988248000076,
+          "control_samples": 358,
+          "max_tracking_error_deg": 0.2584580012621711
+        },
+        "release": {
+          "duration_s": 1.5501633060000586,
+          "control_samples": 0,
+          "max_tracking_error_deg": null
+        },
+        "retreat": {
+          "duration_s": 5.2889156910000565,
+          "control_samples": 458,
+          "max_tracking_error_deg": 0.4383828992985409
+        },
+        "return_initial": {
+          "duration_s": 13.689073220000182,
+          "control_samples": 1298,
+          "max_tracking_error_deg": 0.3486685532100156
+        }
+      },
+      "task_duration_s": 57.0162599570001,
+      "gripper_final": {
+        "open": {
+          "width_m": 0.0394,
+          "force_n": 0.122,
+          "command_width_m": 0.04,
+          "command_force_n": 1.0
+        },
+        "grasp": {
+          "width_m": 0.024999999999999998,
+          "force_n": -1.042,
+          "command_width_m": 0.015,
+          "command_force_n": 1.0
+        },
+        "release": {
+          "width_m": 0.0393,
+          "force_n": 0.19,
+          "command_width_m": 0.04,
+          "command_force_n": 1.0
+        }
+      },
+      "sdk_send_calls": 32029,
+      "sdk_send_errors": [],
+      "sdk_send_id_counts": {
+        "0x181": 5322,
+        "0x182": 5322,
+        "0x183": 5322,
+        "0x184": 5322,
+        "0x185": 5322,
+        "0x186": 5322,
+        "0x159": 89,
+        "0x151": 8
+      }
+    },
+    {
+      "directory": "/home/kaiwen/research/OSCBF-research/results/home_zero_diagnostics_20261106_221059_292266",
+      "error": null,
+      "raw_frames": 33219,
+      "state_snapshots": 274,
+      "control_samples": 0,
+      "raw_capture_duration_s": 13.724661827087402,
+      "can_error_frames": 0,
+      "can_error_phases": {},
+      "error_decode_source": "/usr/include/linux/can/error.h",
+      "recorder_error": null,
+      "driver_feedback_pauses": null,
+      "initial_mode": 5,
+      "final_mode": 1,
+      "driver_codes": {
+        "1": {
+          "0x40": 274
+        },
+        "2": {
+          "0x40": 274
+        },
+        "3": {
+          "0x40": 274
+        },
+        "4": {
+          "0x40": 275
+        },
+        "5": {
+          "0x40": 275
+        },
+        "6": {
+          "0x40": 274
+        }
+      },
+      "driver_max_gap_ms": {
+        "1": 50.522565841674805,
+        "2": 50.50921440124512,
+        "3": 50.501108169555664,
+        "4": 50.49300193786621,
+        "5": 50.52542686462402,
+        "6": 50.51469802856445
+      },
+      "motor_current_range_a": {
+        "1": [
+          -0.109,
+          0.019
+        ],
+        "2": [
+          0.682,
+          0.9450000000000001
+        ],
+        "3": [
+          -1.372,
+          -1.057
+        ],
+        "4": [
+          -0.129,
+          -0.036000000000000004
+        ],
+        "5": [
+          -0.97,
+          -0.725
+        ],
+        "6": [
+          -0.049,
+          0.117
+        ]
+      },
+      "final_q_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "can_error_bursts": [],
+      "sdk_send_calls": 1587,
+      "sdk_send_errors": [],
+      "sdk_send_id_counts": {
+        "0x151": 101,
+        "0x155": 495,
+        "0x156": 495,
+        "0x157": 495,
+        "0x471": 1
+      }
+    },
+    {
+      "directory": "/home/kaiwen/research/OSCBF-research/results/home_zero_diagnostics_20261106_221142_770204",
+      "error": null,
+      "raw_frames": 33211,
+      "state_snapshots": 274,
+      "control_samples": 0,
+      "raw_capture_duration_s": 13.719621181488037,
+      "can_error_frames": 0,
+      "can_error_phases": {},
+      "error_decode_source": "/usr/include/linux/can/error.h",
+      "recorder_error": null,
+      "driver_feedback_pauses": null,
+      "initial_mode": 1,
+      "final_mode": 1,
+      "driver_codes": {
+        "1": {
+          "0x40": 274
+        },
+        "2": {
+          "0x40": 274
+        },
+        "3": {
+          "0x40": 275
+        },
+        "4": {
+          "0x40": 275
+        },
+        "5": {
+          "0x40": 274
+        },
+        "6": {
+          "0x40": 274
+        }
+      },
+      "driver_max_gap_ms": {
+        "1": 50.4145622253418,
+        "2": 50.55546760559082,
+        "3": 50.522804260253906,
+        "4": 50.536394119262695,
+        "5": 50.5528450012207,
+        "6": 50.531625747680664
+      },
+      "motor_current_range_a": {
+        "1": [
+          -0.01,
+          0.023
+        ],
+        "2": [
+          0.777,
+          0.8150000000000001
+        ],
+        "3": [
+          -1.325,
+          -1.033
+        ],
+        "4": [
+          -0.124,
+          -0.034
+        ],
+        "5": [
+          -0.995,
+          -0.6950000000000001
+        ],
+        "6": [
+          -0.002,
+          0.07100000000000001
+        ]
+      },
+      "final_q_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "can_error_bursts": [],
+      "sdk_send_calls": 1581,
+      "sdk_send_errors": [],
+      "sdk_send_id_counts": {
+        "0x151": 101,
+        "0x155": 493,
+        "0x156": 493,
+        "0x157": 493,
+        "0x471": 1
+      }
+    }
+  ],
+  "operator_environment_confirmation": "User reported no power cycle, cable/power/base/table changes since the previous failed session.",
+  "scope": "Hardware records; MoveIt+CPV task and MOVE_J zero hold. No OSCBF task or obstacle demo.",
+  "interpretation": "Current errors were not reproduced. CPV runs have CAN error bursts at segment-end zero commands; MOVE_J captures do not. Temporal correlation is not proof that these CAN errors caused the earlier J2 driver fault."
+}

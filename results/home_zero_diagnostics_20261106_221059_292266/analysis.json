@@ -1,0 +1,87 @@
+{
+  "directory": "/home/kaiwen/research/OSCBF-research/results/home_zero_diagnostics_20261106_221059_292266",
+  "error": null,
+  "raw_frames": 33219,
+  "state_snapshots": 274,
+  "control_samples": 0,
+  "raw_capture_duration_s": 13.724661827087402,
+  "can_error_frames": 0,
+  "can_error_phases": {},
+  "error_decode_source": "/usr/include/linux/can/error.h",
+  "recorder_error": null,
+  "driver_feedback_pauses": null,
+  "initial_mode": 5,
+  "final_mode": 1,
+  "driver_codes": {
+    "1": {
+      "0x40": 274
+    },
+    "2": {
+      "0x40": 274
+    },
+    "3": {
+      "0x40": 274
+    },
+    "4": {
+      "0x40": 275
+    },
+    "5": {
+      "0x40": 275
+    },
+    "6": {
+      "0x40": 274
+    }
+  },
+  "driver_max_gap_ms": {
+    "1": 50.522565841674805,
+    "2": 50.50921440124512,
+    "3": 50.501108169555664,
+    "4": 50.49300193786621,
+    "5": 50.52542686462402,
+    "6": 50.51469802856445
+  },
+  "motor_current_range_a": {
+    "1": [
+      -0.109,
+      0.019
+    ],
+    "2": [
+      0.682,
+      0.9450000000000001
+    ],
+    "3": [
+      -1.372,
+      -1.057
+    ],
+    "4": [
+      -0.129,
+      -0.036000000000000004
+    ],
+    "5": [
+      -0.97,
+      -0.725
+    ],
+    "6": [
+      -0.049,
+      0.117
+    ]
+  },
+  "final_q_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "can_error_bursts": [],
+  "sdk_send_calls": 1587,
+  "sdk_send_errors": [],
+  "sdk_send_id_counts": {
+    "0x151": 101,
+    "0x155": 495,
+    "0x156": 495,
+    "0x157": 495,
+    "0x471": 1
+  }
+}

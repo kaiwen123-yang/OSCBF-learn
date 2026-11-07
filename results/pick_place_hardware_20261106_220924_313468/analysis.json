@@ -1,0 +1,244 @@
+{
+  "directory": "/home/kaiwen/research/OSCBF-research/results/pick_place_hardware_20261106_220924_313468",
+  "error": null,
+  "raw_frames": 179261,
+  "state_snapshots": 1210,
+  "control_samples": 4679,
+  "raw_capture_duration_s": 60.83483028411865,
+  "can_error_frames": 106,
+  "can_error_phases": {
+    "zero_velocity": 106
+  },
+  "error_decode_source": "/usr/include/linux/can/error.h",
+  "recorder_error": null,
+  "driver_feedback_pauses": [],
+  "initial_mode": null,
+  "final_mode": 5,
+  "driver_codes": {
+    "1": {
+      "0x40": 1216
+    },
+    "2": {
+      "0x40": 1216
+    },
+    "3": {
+      "0x40": 1216
+    },
+    "4": {
+      "0x40": 1216
+    },
+    "5": {
+      "0x40": 1217
+    },
+    "6": {
+      "0x40": 1216
+    }
+  },
+  "driver_max_gap_ms": {
+    "1": 54.49223518371582,
+    "2": 50.801992416381836,
+    "3": 50.745248794555664,
+    "4": 50.800323486328125,
+    "5": 50.73118209838867,
+    "6": 53.77483367919922
+  },
+  "motor_current_range_a": {
+    "1": [
+      -0.305,
+      0.538
+    ],
+    "2": [
+      -2.217,
+      1.197
+    ],
+    "3": [
+      -1.429,
+      0.034
+    ],
+    "4": [
+      -0.337,
+      0.786
+    ],
+    "5": [
+      -1.158,
+      0.642
+    ],
+    "6": [
+      -0.289,
+      0.315
+    ]
+  },
+  "final_q_deg": [
+    0.027,
+    -0.061,
+    0.029,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "can_error_bursts": [
+    {
+      "start_elapsed_s": 18.75980806350708,
+      "duration_s": 0.2452077865600586,
+      "frames": 18,
+      "after_stage": "align",
+      "protocol_bit1_reports": 13,
+      "max_reported_tx_error_counter": 136,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 2.138418000185993,
+      "last_command_end_to_first_zero_start_ms": 0.060699999949065386
+    },
+    {
+      "start_elapsed_s": 20.625986337661743,
+      "duration_s": 0.29563260078430176,
+      "frames": 19,
+      "after_stage": "approach",
+      "protocol_bit1_reports": 16,
+      "max_reported_tx_error_counter": 151,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 1.9957700001214107,
+      "last_command_end_to_first_zero_start_ms": 0.10880199988605455
+    },
+    {
+      "start_elapsed_s": 27.388921976089478,
+      "duration_s": 0.24165105819702148,
+      "frames": 16,
+      "after_stage": "lift",
+      "protocol_bit1_reports": 9,
+      "max_reported_tx_error_counter": 136,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 1.937091999934637,
+      "last_command_end_to_first_zero_start_ms": 0.07200699997156335
+    },
+    {
+      "start_elapsed_s": 32.505372762680054,
+      "duration_s": 0.25299072265625,
+      "frames": 17,
+      "after_stage": "transfer",
+      "protocol_bit1_reports": 12,
+      "max_reported_tx_error_counter": 136,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 2.381262999961109,
+      "last_command_end_to_first_zero_start_ms": 0.05456599978970189
+    },
+    {
+      "start_elapsed_s": 36.790884256362915,
+      "duration_s": 0.2703275680541992,
+      "frames": 19,
+      "after_stage": "lower",
+      "protocol_bit1_reports": 15,
+      "max_reported_tx_error_counter": 151,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 3.111730999989959,
+      "last_command_end_to_first_zero_start_ms": 0.1234799999565439
+    },
+    {
+      "start_elapsed_s": 57.32145071029663,
+      "duration_s": 0.2605712413787842,
+      "frames": 17,
+      "after_stage": "return_initial",
+      "protocol_bit1_reports": 12,
+      "max_reported_tx_error_counter": 151,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 2.0365569998830324,
+      "last_command_end_to_first_zero_start_ms": 0.07483199988200795
+    }
+  ],
+  "max_tracking_error_deg": 0.4923896772272146,
+  "max_command_rad_s": 0.157,
+  "control_cycle_ms_median_p95_max": [
+    9.999909000043772,
+    10.470883500033779,
+    23.430620999988605
+  ],
+  "stage_metrics": {
+    "open": {
+      "duration_s": 1.5145247049999853,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "pregrasp": {
+      "duration_s": 13.63338902999999,
+      "control_samples": 1292,
+      "max_tracking_error_deg": 0.3748180212137209
+    },
+    "align": {
+      "duration_s": 3.2979252220000035,
+      "control_samples": 260,
+      "max_tracking_error_deg": 0.31662647693077495
+    },
+    "approach": {
+      "duration_s": 1.8694088360000478,
+      "control_samples": 117,
+      "max_tracking_error_deg": 0.2350010735546419
+    },
+    "grasp": {
+      "duration_s": 1.506704543000069,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "lift": {
+      "duration_s": 5.256489388999853,
+      "control_samples": 455,
+      "max_tracking_error_deg": 0.4923896772272146
+    },
+    "transfer": {
+      "duration_s": 5.116756742999996,
+      "control_samples": 441,
+      "max_tracking_error_deg": 0.2786002130587905
+    },
+    "lower": {
+      "duration_s": 4.290988248000076,
+      "control_samples": 358,
+      "max_tracking_error_deg": 0.2584580012621711
+    },
+    "release": {
+      "duration_s": 1.5501633060000586,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "retreat": {
+      "duration_s": 5.2889156910000565,
+      "control_samples": 458,
+      "max_tracking_error_deg": 0.4383828992985409
+    },
+    "return_initial": {
+      "duration_s": 13.689073220000182,
+      "control_samples": 1298,
+      "max_tracking_error_deg": 0.3486685532100156
+    }
+  },
+  "task_duration_s": 57.0162599570001,
+  "gripper_final": {
+    "open": {
+      "width_m": 0.0394,
+      "force_n": 0.122,
+      "command_width_m": 0.04,
+      "command_force_n": 1.0
+    },
+    "grasp": {
+      "width_m": 0.024999999999999998,
+      "force_n": -1.042,
+      "command_width_m": 0.015,
+      "command_force_n": 1.0
+    },
+    "release": {
+      "width_m": 0.0393,
+      "force_n": 0.19,
+      "command_width_m": 0.04,
+      "command_force_n": 1.0
+    }
+  },
+  "sdk_send_calls": 32029,
+  "sdk_send_errors": [],
+  "sdk_send_id_counts": {
+    "0x181": 5322,
+    "0x182": 5322,
+    "0x183": 5322,
+    "0x184": 5322,
+    "0x185": 5322,
+    "0x186": 5322,
+    "0x159": 89,
+    "0x151": 8
+  }
+}

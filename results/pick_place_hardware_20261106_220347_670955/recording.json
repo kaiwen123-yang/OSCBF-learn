@@ -1,0 +1,58 @@
+{
+  "started_at": "2026-11-06T22:03:47.671276+08:00",
+  "argv": [
+    "scripts/run_pick_place.py",
+    "results/pick_place_plan_20261104_224921_126900/task.json",
+    "--speed-scale",
+    "1.5",
+    "--descent-speed-scale",
+    "1.5",
+    "--record-diagnostics",
+    "--execute"
+  ],
+  "python": "/home/kaiwen/research/OSCBF-research/envs/oscbf/bin/python",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1",
+    "numpy": "1.26.4"
+  },
+  "interface_before": {
+    "rx_packets": 482574,
+    "rx_bytes": 3859796,
+    "rx_errors": 0,
+    "rx_dropped": 32292,
+    "tx_packets": 0,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "state_period_s": 0.05,
+  "raw_direction_note": "is_rx=false is local SocketCAN traffic; not proof of firmware execution",
+  "state_note": "SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame",
+  "ended_at": "2026-11-06T22:04:47.182189+08:00",
+  "raw_frames": 175198,
+  "state_snapshots": 1187,
+  "recorder_error": null,
+  "worker_stopped": true,
+  "interface_after": {
+    "rx_packets": 657655,
+    "rx_bytes": 5042774,
+    "rx_errors": 0,
+    "rx_dropped": 32292,
+    "tx_packets": 31166,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "interface_delta": {
+    "rx_packets": 175081,
+    "rx_bytes": 1182978,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 31166,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "post_run_coverage_note": "SDK local_loopback=False. All captured raw frames are received traffic. Full raw TX is absent in this first package; commands.csv contains six-axis velocity sends. Subsequent packages include sdk_tx.csv."
+}

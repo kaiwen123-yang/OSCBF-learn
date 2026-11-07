@@ -1,0 +1,5 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/research/OSCBF-research/results/home_zero_diagnostics_20261106_220921_031133
+当前角度 deg: [-0.022, -0.056, 0.055, 0.0, 0.0, 0.0]
+当前状态: {'ctrl_mode': CAN_CTRL(0x1), 'arm_status': NORMAL(0x0), 'mode_feedback': MOVE_CPV(0x5), 'teach_status': DISABLED(0x0), 'motion_status': REACH_TARGET_POS_SUCCESSFULLY(0x0), 'trajectory_num': 0, 'err_status': {'joint_1_angle_limit': False, 'joint_2_angle_limit': False, 'joint_3_angle_limit': False, 'joint_4_angle_limit': False, 'joint_5_angle_limit': False, 'joint_6_angle_limit': False, 'communication_status_joint_1': False, 'communication_status_joint_2': False, 'communication_status_joint_3': False, 'communication_status_joint_4': False, 'communication_status_joint_5': False, 'communication_status_joint_6': False}} 使能: [True, True, True, True, True, True]
+READ_ONLY: 未发送使能、运动或复位。
+仅继续采集停止后的状态3秒，不自动复位、重新使能或发送新目标。

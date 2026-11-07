@@ -1,0 +1,93 @@
+{
+  "time": "2026-11-04T22:57:42.877148+08:00",
+  "joint_feedback_rad": [
+    -0.029845130209103034,
+    0.04857251308300219,
+    0.027122416575991883,
+    0.08653342431387887,
+    0.4712912579160288,
+    0.1498365162837132
+  ],
+  "motor_position_rad": [
+    -0.029,
+    0.058,
+    0.02,
+    0.085,
+    0.463,
+    0.149
+  ],
+  "joint_feedback_deg": [
+    -1.71,
+    2.7830000000000004,
+    1.554,
+    4.958,
+    27.003,
+    8.585
+  ],
+  "motor_position_deg": [
+    -1.6615776058793874,
+    3.323155211758775,
+    1.1459155902616465,
+    4.870141258611998,
+    26.527945914557115,
+    8.537071147449266
+  ],
+  "motor_minus_joint_deg": [
+    0.048422394120612534,
+    0.5401552117587748,
+    -0.40808440973835364,
+    -0.08785874138800265,
+    -0.4750540854428848,
+    -0.04792885255073459
+  ],
+  "motor_velocity_rad_s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "joint_timestamp_s": 1793804262.875984,
+  "motor_timestamps_s": [
+    1793804262.8761842,
+    1793804262.8765244,
+    1793804262.8765757,
+    1793804262.8767078,
+    1793804262.8767962,
+    1793804262.8769288
+  ],
+  "controller_flange_pose_m_rad": [
+    0.061662999999999996,
+    0.0019399999999999999,
+    0.15762099999999998,
+    2.6820300082471666,
+    1.0550515328305723,
+    2.6382746038996685
+  ],
+  "flange_timestamp_s": 1793804262.875586,
+  "arm_status": {
+    "ctrl_mode": 0,
+    "arm_status": 1,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 1,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "interface_tx_delta": 0,
+  "note": "Passive CAN snapshot. Motor and joint feedback are not assumed equivalent."
+}

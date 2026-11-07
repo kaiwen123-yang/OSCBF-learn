@@ -1,0 +1,50 @@
+{
+  "started_at": "2026-11-06T22:02:55.031122+08:00",
+  "argv": [
+    "-"
+  ],
+  "python": "/home/kaiwen/research/OSCBF-research/envs/oscbf/bin/python",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1",
+    "numpy": "1.26.4"
+  },
+  "interface_before": {
+    "rx_packets": 355172,
+    "rx_bytes": 2840792,
+    "rx_errors": 0,
+    "rx_dropped": 32292,
+    "tx_packets": 0,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "state_period_s": 0.05,
+  "raw_direction_note": "is_rx=false is local SocketCAN traffic; not proof of firmware execution",
+  "state_note": "SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame",
+  "ended_at": "2026-11-06T22:02:57.645094+08:00",
+  "raw_frames": 6312,
+  "state_snapshots": 52,
+  "recorder_error": null,
+  "worker_stopped": true,
+  "interface_after": {
+    "rx_packets": 361494,
+    "rx_bytes": 2891356,
+    "rx_errors": 0,
+    "rx_dropped": 32292,
+    "tx_packets": 0,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "interface_delta": {
+    "rx_packets": 6322,
+    "rx_bytes": 50564,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 0,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  }
+}

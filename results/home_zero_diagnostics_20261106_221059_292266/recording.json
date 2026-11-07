@@ -1,0 +1,60 @@
+{
+  "started_at": "2026-11-06T22:10:59.292443+08:00",
+  "argv": [
+    "scripts/home_zero_simple.py",
+    "--target-deg",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "--record-diagnostics",
+    "--execute"
+  ],
+  "python": "/home/kaiwen/research/OSCBF-research/envs/piper-sdk/bin/python",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1"
+  },
+  "python_version": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "interface_before": {
+    "rx_packets": 1590156,
+    "rx_bytes": 12277805,
+    "rx_errors": 0,
+    "rx_dropped": 32292,
+    "tx_packets": 63195,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "state_period_s": 0.05,
+  "raw_direction_note": "SDK disables local loopback: raw_can.csv is received traffic; sdk_tx.csv records send calls, not proof of firmware execution",
+  "state_note": "SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame",
+  "ended_at": "2026-11-06T22:11:13.038846+08:00",
+  "raw_frames": 33219,
+  "state_snapshots": 274,
+  "sdk_send_calls": 1587,
+  "recorder_error": null,
+  "worker_stopped": true,
+  "interface_after": {
+    "rx_packets": 1623438,
+    "rx_bytes": 12544005,
+    "rx_errors": 0,
+    "rx_dropped": 32292,
+    "tx_packets": 64782,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "interface_delta": {
+    "rx_packets": 33282,
+    "rx_bytes": 266200,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 1587,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  }
+}

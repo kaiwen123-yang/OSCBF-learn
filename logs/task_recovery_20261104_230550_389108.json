@@ -1,0 +1,3210 @@
+{
+  "execute": true,
+  "status": "reset_only_completed",
+  "error": null,
+  "reset_sent": true,
+  "enable_sent": false,
+  "motion_sent": false,
+  "initial": {
+    "time_s": 1793804747.377072,
+    "status_timestamp_s": 1793804747.37386,
+    "q_rad": [
+      -0.029845130209103034,
+      0.04857251308300219,
+      0.027122416575991883,
+      0.08653342431387887,
+      0.4712912579160288,
+      0.1498365162837132
+    ],
+    "status": {
+      "ctrl_mode": 0,
+      "arm_status": 1,
+      "mode_feedback": 1,
+      "teach_status": 0,
+      "motion_status": 1,
+      "trajectory_num": 0,
+      "err_status": {
+        "joint_1_angle_limit": false,
+        "joint_2_angle_limit": false,
+        "joint_3_angle_limit": false,
+        "joint_4_angle_limit": false,
+        "joint_5_angle_limit": false,
+        "joint_6_angle_limit": false,
+        "communication_status_joint_1": false,
+        "communication_status_joint_2": false,
+        "communication_status_joint_3": false,
+        "communication_status_joint_4": false,
+        "communication_status_joint_5": false,
+        "communication_status_joint_6": false
+      }
+    },
+    "enabled": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "motor_status_timestamps_s": [
+      1793804747.3299494,
+      1793804747.37006,
+      1793804747.360193,
+      1793804747.3505476,
+      1793804747.3405354,
+      1793804747.3306837
+    ]
+  },
+  "final": {
+    "time_s": 1793804750.3847625,
+    "status_timestamp_s": 1793804750.3838847,
+    "q_rad": [
+      -0.029705503868943488,
+      -0.05237733085234983,
+      0.02780309498426967,
+      0.08503244115716373,
+      0.4713610710861086,
+      0.1494699971407944
+    ],
+    "status": {
+      "ctrl_mode": 0,
+      "arm_status": 0,
+      "mode_feedback": 1,
+      "teach_status": 0,
+      "motion_status": 1,
+      "trajectory_num": 0,
+      "err_status": {
+        "joint_1_angle_limit": false,
+        "joint_2_angle_limit": false,
+        "joint_3_angle_limit": false,
+        "joint_4_angle_limit": false,
+        "joint_5_angle_limit": false,
+        "joint_6_angle_limit": false,
+        "communication_status_joint_1": false,
+        "communication_status_joint_2": false,
+        "communication_status_joint_3": false,
+        "communication_status_joint_4": false,
+        "communication_status_joint_5": false,
+        "communication_status_joint_6": false
+      }
+    },
+    "enabled": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "motor_status_timestamps_s": [
+      1793804750.379978,
+      1793804750.3701024,
+      1793804750.3604074,
+      1793804750.3504572,
+      1793804750.3405063,
+      1793804750.3807352
+    ]
+  },
+  "snapshots": [
+    {
+      "time_s": 1793804747.377072,
+      "status_timestamp_s": 1793804747.37386,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 1,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.3299494,
+        1793804747.37006,
+        1793804747.360193,
+        1793804747.3505476,
+        1793804747.3405354,
+        1793804747.3306837
+      ]
+    },
+    {
+      "time_s": 1793804747.4274309,
+      "status_timestamp_s": 1793804747.4238923,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.3799486,
+        1793804747.4201474,
+        1793804747.4101892,
+        1793804747.400532,
+        1793804747.3905458,
+        1793804747.3806868
+      ]
+    },
+    {
+      "time_s": 1793804747.4775279,
+      "status_timestamp_s": 1793804747.473845,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.4299662,
+        1793804747.4700596,
+        1793804747.4601932,
+        1793804747.4505389,
+        1793804747.4405432,
+        1793804747.4306865
+      ]
+    },
+    {
+      "time_s": 1793804747.527786,
+      "status_timestamp_s": 1793804747.523848,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.4799743,
+        1793804747.5200539,
+        1793804747.5101988,
+        1793804747.500547,
+        1793804747.4905486,
+        1793804747.4806864
+      ]
+    },
+    {
+      "time_s": 1793804747.5779045,
+      "status_timestamp_s": 1793804747.5738862,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.529972,
+        1793804747.5701025,
+        1793804747.5601869,
+        1793804747.5505388,
+        1793804747.540534,
+        1793804747.5306823
+      ]
+    },
+    {
+      "time_s": 1793804747.6280231,
+      "status_timestamp_s": 1793804747.6238897,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.5799742,
+        1793804747.6200454,
+        1793804747.610193,
+        1793804747.6005476,
+        1793804747.590543,
+        1793804747.5806863
+      ]
+    },
+    {
+      "time_s": 1793804747.6781268,
+      "status_timestamp_s": 1793804747.6738827,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.6299667,
+        1793804747.6700573,
+        1793804747.6601932,
+        1793804747.6505415,
+        1793804747.6405387,
+        1793804747.6306722
+      ]
+    },
+    {
+      "time_s": 1793804747.7282338,
+      "status_timestamp_s": 1793804747.7238607,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.6799564,
+        1793804747.7200594,
+        1793804747.7101934,
+        1793804747.7005384,
+        1793804747.6905453,
+        1793804747.6806865
+      ]
+    },
+    {
+      "time_s": 1793804747.7783306,
+      "status_timestamp_s": 1793804747.7738597,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.729987,
+        1793804747.7700653,
+        1793804747.7601871,
+        1793804747.7505467,
+        1793804747.7406638,
+        1793804747.7306864
+      ]
+    },
+    {
+      "time_s": 1793804747.8285844,
+      "status_timestamp_s": 1793804747.8238962,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.7799435,
+        1793804747.820103,
+        1793804747.8104577,
+        1793804747.8005412,
+        1793804747.790544,
+        1793804747.7806826
+      ]
+    },
+    {
+      "time_s": 1793804747.8787751,
+      "status_timestamp_s": 1793804747.873931,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.8299618,
+        1793804747.8701084,
+        1793804747.8601933,
+        1793804747.8505452,
+        1793804747.8405495,
+        1793804747.8306863
+      ]
+    },
+    {
+      "time_s": 1793804747.9290276,
+      "status_timestamp_s": 1793804747.9238598,
+      "q_rad": [
+        -0.029845130209103034,
+        0.04857251308300219,
+        0.027122416575991883,
+        0.08653342431387887,
+        0.4712912579160288,
+        0.1498365162837132
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 5,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": true,
+          "communication_status_joint_2": true,
+          "communication_status_joint_3": true,
+          "communication_status_joint_4": true,
+          "communication_status_joint_5": true,
+          "communication_status_joint_6": true
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.8799698,
+        1793804747.9201026,
+        1793804747.910193,
+        1793804747.900548,
+        1793804747.8905382,
+        1793804747.8806863
+      ]
+    },
+    {
+      "time_s": 1793804747.9792387,
+      "status_timestamp_s": 1793804747.9789386,
+      "q_rad": [
+        0.0,
+        -0.011187560505283653,
+        0.00757472895365539,
+        0.0,
+        0.006719517620178169,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.9299486,
+        1793804747.9701583,
+        1793804747.9604454,
+        1793804747.9505482,
+        1793804747.940546,
+        1793804747.9306865
+      ]
+    },
+    {
+      "time_s": 1793804748.029325,
+      "status_timestamp_s": 1793804748.028898,
+      "q_rad": [
+        0.06270968002415626,
+        -0.046582837735728654,
+        -0.011955505376161158,
+        0.19320794819577228,
+        -0.07883652231258387,
+        -0.07031931556285154
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804747.9799867,
+        1793804748.020098,
+        1793804748.0101929,
+        1793804748.0004556,
+        1793804747.9905078,
+        1793804747.9807286
+      ]
+    },
+    {
+      "time_s": 1793804748.079417,
+      "status_timestamp_s": 1793804748.0788975,
+      "q_rad": [
+        0.06270968002415626,
+        -0.046582837735728654,
+        -0.011955505376161158,
+        0.19320794819577228,
+        -0.07883652231258387,
+        -0.07031931556285154
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.0299606,
+        1793804748.0701537,
+        1793804748.060457,
+        1793804748.0504615,
+        1793804748.0404587,
+        1793804748.0307276
+      ]
+    },
+    {
+      "time_s": 1793804748.129503,
+      "status_timestamp_s": 1793804748.129038,
+      "q_rad": [
+        0.06270968002415626,
+        -0.046582837735728654,
+        -0.011955505376161158,
+        0.19320794819577228,
+        -0.07883652231258387,
+        -0.07031931556285154
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.079987,
+        1793804748.1201081,
+        1793804748.1104486,
+        1793804748.1004608,
+        1793804748.0904574,
+        1793804748.0807207
+      ]
+    },
+    {
+      "time_s": 1793804748.1796052,
+      "status_timestamp_s": 1793804748.1788974,
+      "q_rad": [
+        0.06270968002415626,
+        -0.046582837735728654,
+        -0.011955505376161158,
+        0.19320794819577228,
+        -0.07883652231258387,
+        -0.07031931556285154
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.1299925,
+        1793804748.170099,
+        1793804748.1604512,
+        1793804748.1503732,
+        1793804748.1404579,
+        1793804748.1307275
+      ]
+    },
+    {
+      "time_s": 1793804748.2296968,
+      "status_timestamp_s": 1793804748.2288983,
+      "q_rad": [
+        0.06270968002415626,
+        -0.046582837735728654,
+        -0.011955505376161158,
+        0.19320794819577228,
+        -0.07883652231258387,
+        -0.07031931556285154
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.179949,
+        1793804748.2201028,
+        1793804748.210359,
+        1793804748.2004902,
+        1793804748.1904588,
+        1793804748.1807206
+      ]
+    },
+    {
+      "time_s": 1793804748.2798684,
+      "status_timestamp_s": 1793804748.2789028,
+      "q_rad": [
+        0.06270968002415626,
+        -0.046582837735728654,
+        -0.011955505376161158,
+        0.19320794819577228,
+        -0.07883652231258387,
+        -0.07031931556285154
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.2299922,
+        1793804748.2701,
+        1793804748.2604556,
+        1793804748.2504568,
+        1793804748.2404602,
+        1793804748.2307286
+      ]
+    },
+    {
+      "time_s": 1793804748.3301342,
+      "status_timestamp_s": 1793804748.3288894,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.3299916,
+        1793804748.3200927,
+        1793804748.3101933,
+        1793804748.3003645,
+        1793804748.2905283,
+        1793804748.2807276
+      ]
+    },
+    {
+      "time_s": 1793804748.3802161,
+      "status_timestamp_s": 1793804748.378902,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.3799608,
+        1793804748.370142,
+        1793804748.3602755,
+        1793804748.350453,
+        1793804748.340546,
+        1793804748.3307285
+      ]
+    },
+    {
+      "time_s": 1793804748.4302964,
+      "status_timestamp_s": 1793804748.4288886,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.4299486,
+        1793804748.4200451,
+        1793804748.4102974,
+        1793804748.4003882,
+        1793804748.3905184,
+        1793804748.3807275
+      ]
+    },
+    {
+      "time_s": 1793804748.4803762,
+      "status_timestamp_s": 1793804748.4788973,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.4799485,
+        1793804748.470103,
+        1793804748.460446,
+        1793804748.4504306,
+        1793804748.4405198,
+        1793804748.4307284
+      ]
+    },
+    {
+      "time_s": 1793804748.5304568,
+      "status_timestamp_s": 1793804748.5288925,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.5299437,
+        1793804748.5201025,
+        1793804748.5103312,
+        1793804748.500446,
+        1793804748.4904583,
+        1793804748.4807205
+      ]
+    },
+    {
+      "time_s": 1793804748.5805366,
+      "status_timestamp_s": 1793804748.5788927,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.579949,
+        1793804748.5701265,
+        1793804748.5604486,
+        1793804748.5504427,
+        1793804748.54046,
+        1793804748.5307274
+      ]
+    },
+    {
+      "time_s": 1793804748.6306148,
+      "status_timestamp_s": 1793804748.6289024,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.6299617,
+        1793804748.6201081,
+        1793804748.6101987,
+        1793804748.6004596,
+        1793804748.5904567,
+        1793804748.5807276
+      ]
+    },
+    {
+      "time_s": 1793804748.6806958,
+      "status_timestamp_s": 1793804748.678898,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.6799614,
+        1793804748.6701026,
+        1793804748.6604557,
+        1793804748.6504564,
+        1793804748.6404693,
+        1793804748.6307275
+      ]
+    },
+    {
+      "time_s": 1793804748.7307785,
+      "status_timestamp_s": 1793804748.7288992,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.7299602,
+        1793804748.7200923,
+        1793804748.7104557,
+        1793804748.7004545,
+        1793804748.6904588,
+        1793804748.730686
+      ]
+    },
+    {
+      "time_s": 1793804748.780905,
+      "status_timestamp_s": 1793804748.7788925,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.7799432,
+        1793804748.7701023,
+        1793804748.7604551,
+        1793804748.7503529,
+        1793804748.7404616,
+        1793804748.7807283
+      ]
+    },
+    {
+      "time_s": 1793804748.831024,
+      "status_timestamp_s": 1793804748.828896,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.8299484,
+        1793804748.820154,
+        1793804748.8104475,
+        1793804748.800459,
+        1793804748.7904603,
+        1793804748.8307285
+      ]
+    },
+    {
+      "time_s": 1793804748.881124,
+      "status_timestamp_s": 1793804748.8788953,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.8799484,
+        1793804748.8701024,
+        1793804748.860459,
+        1793804748.8504603,
+        1793804748.8404646,
+        1793804748.8807273
+      ]
+    },
+    {
+      "time_s": 1793804748.9312117,
+      "status_timestamp_s": 1793804748.9290354,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.9299717,
+        1793804748.9201026,
+        1793804748.9103653,
+        1793804748.90046,
+        1793804748.8904576,
+        1793804748.9307382
+      ]
+    },
+    {
+      "time_s": 1793804748.9813106,
+      "status_timestamp_s": 1793804748.9788864,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804748.9799757,
+        1793804748.9701025,
+        1793804748.9604616,
+        1793804748.9504592,
+        1793804748.9404597,
+        1793804748.9807284
+      ]
+    },
+    {
+      "time_s": 1793804749.0314171,
+      "status_timestamp_s": 1793804749.0288987,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.0299873,
+        1793804749.0200984,
+        1793804749.0104566,
+        1793804749.0004547,
+        1793804748.990459,
+        1793804749.0307212
+      ]
+    },
+    {
+      "time_s": 1793804749.0815222,
+      "status_timestamp_s": 1793804749.0788903,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.0799916,
+        1793804749.0701025,
+        1793804749.0604596,
+        1793804749.0504625,
+        1793804749.040463,
+        1793804749.0807283
+      ]
+    },
+    {
+      "time_s": 1793804749.131626,
+      "status_timestamp_s": 1793804749.1288905,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.1299553,
+        1793804749.1201024,
+        1793804749.110453,
+        1793804749.1003597,
+        1793804749.090477,
+        1793804749.1307206
+      ]
+    },
+    {
+      "time_s": 1793804749.1817362,
+      "status_timestamp_s": 1793804749.1788938,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.179949,
+        1793804749.1701536,
+        1793804749.1604435,
+        1793804749.1503644,
+        1793804749.1406696,
+        1793804749.1807206
+      ]
+    },
+    {
+      "time_s": 1793804749.2318418,
+      "status_timestamp_s": 1793804749.2288818,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.2299545,
+        1793804749.2200925,
+        1793804749.2102425,
+        1793804749.2003193,
+        1793804749.1904752,
+        1793804749.2307274
+      ]
+    },
+    {
+      "time_s": 1793804749.281914,
+      "status_timestamp_s": 1793804749.2788985,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.2799494,
+        1793804749.2701027,
+        1793804749.2602422,
+        1793804749.2503252,
+        1793804749.2404652,
+        1793804749.2807276
+      ]
+    },
+    {
+      "time_s": 1793804749.3321586,
+      "status_timestamp_s": 1793804749.3288944,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.3299868,
+        1793804749.3201027,
+        1793804749.3103814,
+        1793804749.3003213,
+        1793804749.2905533,
+        1793804749.3307283
+      ]
+    },
+    {
+      "time_s": 1793804749.382254,
+      "status_timestamp_s": 1793804749.3788896,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.3800697,
+        1793804749.3701477,
+        1793804749.3604562,
+        1793804749.3504581,
+        1793804749.3404572,
+        1793804749.3806942
+      ]
+    },
+    {
+      "time_s": 1793804749.4323518,
+      "status_timestamp_s": 1793804749.4288952,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.4300544,
+        1793804749.4200923,
+        1793804749.4104614,
+        1793804749.4004564,
+        1793804749.3904603,
+        1793804749.4307284
+      ]
+    },
+    {
+      "time_s": 1793804749.4824443,
+      "status_timestamp_s": 1793804749.4788885,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.479997,
+        1793804749.4701023,
+        1793804749.4604597,
+        1793804749.4504578,
+        1793804749.4404702,
+        1793804749.4807284
+      ]
+    },
+    {
+      "time_s": 1793804749.532537,
+      "status_timestamp_s": 1793804749.5288997,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.529992,
+        1793804749.5201025,
+        1793804749.5104585,
+        1793804749.5004606,
+        1793804749.4905057,
+        1793804749.5306861
+      ]
+    },
+    {
+      "time_s": 1793804749.5826297,
+      "status_timestamp_s": 1793804749.5788891,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.5799968,
+        1793804749.5701022,
+        1793804749.5604537,
+        1793804749.5504673,
+        1793804749.540467,
+        1793804749.5807273
+      ]
+    },
+    {
+      "time_s": 1793804749.6327486,
+      "status_timestamp_s": 1793804749.6288984,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.6299968,
+        1793804749.6201415,
+        1793804749.6104598,
+        1793804749.600464,
+        1793804749.5904553,
+        1793804749.6307273
+      ]
+    },
+    {
+      "time_s": 1793804749.6828449,
+      "status_timestamp_s": 1793804749.6788886,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.679997,
+        1793804749.6701415,
+        1793804749.6604564,
+        1793804749.650462,
+        1793804749.6404576,
+        1793804749.6807275
+      ]
+    },
+    {
+      "time_s": 1793804749.7329004,
+      "status_timestamp_s": 1793804749.7288907,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.7299964,
+        1793804749.7201025,
+        1793804749.710458,
+        1793804749.7004573,
+        1793804749.6904573,
+        1793804749.7307284
+      ]
+    },
+    {
+      "time_s": 1793804749.78299,
+      "status_timestamp_s": 1793804749.7788968,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.7799866,
+        1793804749.7700956,
+        1793804749.7604563,
+        1793804749.7504542,
+        1793804749.7404563,
+        1793804749.7807283
+      ]
+    },
+    {
+      "time_s": 1793804749.8330803,
+      "status_timestamp_s": 1793804749.8288991,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.8300517,
+        1793804749.8201416,
+        1793804749.8104548,
+        1793804749.8004522,
+        1793804749.7904587,
+        1793804749.8307204
+      ]
+    },
+    {
+      "time_s": 1793804749.8831716,
+      "status_timestamp_s": 1793804749.8788884,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.8800695,
+        1793804749.8701024,
+        1793804749.8604536,
+        1793804749.850458,
+        1793804749.840501,
+        1793804749.8806942
+      ]
+    },
+    {
+      "time_s": 1793804749.9332664,
+      "status_timestamp_s": 1793804749.9288874,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.9299917,
+        1793804749.9201267,
+        1793804749.910454,
+        1793804749.9005725,
+        1793804749.8904607,
+        1793804749.930734
+      ]
+    },
+    {
+      "time_s": 1793804749.983416,
+      "status_timestamp_s": 1793804749.9788873,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804749.9799914,
+        1793804749.9701023,
+        1793804749.9602363,
+        1793804749.950449,
+        1793804749.9404573,
+        1793804749.9807274
+      ]
+    },
+    {
+      "time_s": 1793804750.03357,
+      "status_timestamp_s": 1793804750.028898,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.0299618,
+        1793804750.0201023,
+        1793804750.0104575,
+        1793804750.0004575,
+        1793804749.9904606,
+        1793804750.0307274
+      ]
+    },
+    {
+      "time_s": 1793804750.0837243,
+      "status_timestamp_s": 1793804750.0788891,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.079997,
+        1793804750.0701082,
+        1793804750.060236,
+        1793804750.050368,
+        1793804750.0404594,
+        1793804750.0807285
+      ]
+    },
+    {
+      "time_s": 1793804750.1338809,
+      "status_timestamp_s": 1793804750.1288881,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.1299565,
+        1793804750.1201022,
+        1793804750.1102417,
+        1793804750.100375,
+        1793804750.0904582,
+        1793804750.1307275
+      ]
+    },
+    {
+      "time_s": 1793804750.1840937,
+      "status_timestamp_s": 1793804750.1838932,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.1799915,
+        1793804750.1701095,
+        1793804750.16025,
+        1793804750.1504526,
+        1793804750.140507,
+        1793804750.1807284
+      ]
+    },
+    {
+      "time_s": 1793804750.2342465,
+      "status_timestamp_s": 1793804750.2338912,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.2299955,
+        1793804750.2201376,
+        1793804750.2104576,
+        1793804750.2004657,
+        1793804750.190458,
+        1793804750.2307284
+      ]
+    },
+    {
+      "time_s": 1793804750.2843647,
+      "status_timestamp_s": 1793804750.2838995,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.2799864,
+        1793804750.2701082,
+        1793804750.2602417,
+        1793804750.2503676,
+        1793804750.240463,
+        1793804750.2807205
+      ]
+    },
+    {
+      "time_s": 1793804750.3344958,
+      "status_timestamp_s": 1793804750.3338978,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.3299563,
+        1793804750.3201025,
+        1793804750.3102324,
+        1793804750.3004615,
+        1793804750.2904582,
+        1793804750.3307352
+      ]
+    },
+    {
+      "time_s": 1793804750.3847067,
+      "status_timestamp_s": 1793804750.3838847,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.379978,
+        1793804750.3701024,
+        1793804750.3604074,
+        1793804750.3504572,
+        1793804750.3405063,
+        1793804750.3807352
+      ]
+    },
+    {
+      "time_s": 1793804750.3847625,
+      "status_timestamp_s": 1793804750.3838847,
+      "q_rad": [
+        -0.029705503868943488,
+        -0.05237733085234983,
+        0.02780309498426967,
+        0.08503244115716373,
+        0.4713610710861086,
+        0.1494699971407944
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 1,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "motor_status_timestamps_s": [
+        1793804750.379978,
+        1793804750.3701024,
+        1793804750.3604074,
+        1793804750.3504572,
+        1793804750.3405063,
+        1793804750.3807352
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-07",
+  "verification": "Fresh Git checkout at a different path with recursive pinned submodules; reused existing installed Python dependencies; no clean-OS installation claimed.",
+  "hardware_connected": false,
+  "checks": [
+    {
+      "name": "relocated_model_qp",
+      "exit_code": 0
+    },
+    {
+      "name": "pick_place_preview",
+      "exit_code": 0
+    },
+    {
+      "name": "diagnostic_analysis",
+      "exit_code": 0
+    }
+  ],
+  "model": {
+    "root": "/tmp/piper-transfer-hauc3bqt/OSCBF-learn",
+    "algorithm_urdf": "/tmp/piper-transfer-hauc3bqt/OSCBF-learn/models/piper_h_oscbf.urdf",
+    "robot_dof": 6,
+    "pybullet_joints": 12,
+    "qp_converged": true,
+    "qp_output": [
+      -0.010225882601411565,
+      -0.00176786275058684,
+      -0.002821916791008655,
+      0.013589268348635292,
+      0.004589868412913844,
+      -0.006111414210878898
+    ],
+    "hardware_connected": false
+  },
+  "submodule_status": [
+    " 286633e0d2edb038ee3a1047d9feb7f614a1c076 ros_ws/src/agx_arm_ros (heads/ros2)",
+    " 680fa925cd00db7e2628563d2edc5540963045de ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf (heads/main)",
+    " 6082329f8e1d61ee8e875a63a5cd80a14d513e12 src/oscbf (heads/main)",
+    " d90e234ba8e408cfa964b38aa9120b3131fc9f85 src/pyAgxArm (heads/master)"
+  ],
+  "verified_code_commit": "c8b703455d4b43ea8f50e7ae75837bae528bf38b",
+  "console_logs": [
+    "logs/migration_verify_20261107/migration_diagnostic_analysis.log",
+    "logs/migration_verify_20261107/migration_pick_place_preview.log",
+    "logs/migration_verify_20261107/migration_relocated_model_qp.log"
+  ]
+}

@@ -40,6 +40,8 @@ ROS安装按 [官方Ubuntu说明](https://docs.ros.org/en/humble/Installation/Ub
 
 本机旧conda显式导出和pip/apt记录仍在logs中，供核对。新机采用Python venv重建同一Python大版本和已固定的pip依赖；不是复制conda目录，也不宣称系统包逐字节一致。
 
+迁移时已在不同路径的独立Git克隆及递归子模块中验证模型/PyBullet DIRECT加载、QP、计划预览和诊断复算，见 [迁移验证](../logs/migration_verify_20261107.json)。该验证复用现有Python依赖，未重装本机环境或声称已验证另一台空白系统的整套安装。
+
 ## 3. 无硬件验证
 
 ```bash

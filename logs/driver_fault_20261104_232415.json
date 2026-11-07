@@ -1,0 +1,1891 @@
+{
+  "arm_status": {
+    "ctrl_mode": 0,
+    "arm_status": 1,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 1,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "q_rad": [
+    0.0,
+    0.03815289744859604,
+    0.04283037984394085,
+    0.00916297857297023,
+    0.39978511846182113,
+    0.0
+  ],
+  "drivers": [
+    {
+      "joint": 1,
+      "age_s": 0.005027055740356445,
+      "raw_status_byte": 64,
+      "status": {
+        "vol": 23.0,
+        "foc_temp": 34.0,
+        "motor_temp": 27.0,
+        "foc_status": {
+          "voltage_too_low": false,
+          "motor_overheating": false,
+          "driver_overcurrent": false,
+          "driver_overheating": false,
+          "collision_status": false,
+          "driver_error_status": false,
+          "driver_enable_status": true,
+          "stall_status": false
+        },
+        "bus_current": 0.0
+      }
+    },
+    {
+      "joint": 2,
+      "age_s": 0.014943599700927734,
+      "raw_status_byte": 164,
+      "status": {
+        "vol": 23.0,
+        "foc_temp": 32.0,
+        "motor_temp": 27.0,
+        "foc_status": {
+          "voltage_too_low": false,
+          "motor_overheating": false,
+          "driver_overcurrent": true,
+          "driver_overheating": false,
+          "collision_status": false,
+          "driver_error_status": true,
+          "driver_enable_status": false,
+          "stall_status": true
+        },
+        "bus_current": 0.0
+      }
+    },
+    {
+      "joint": 3,
+      "age_s": 0.02481532096862793,
+      "raw_status_byte": 64,
+      "status": {
+        "vol": 23.0,
+        "foc_temp": 35.0,
+        "motor_temp": 29.0,
+        "foc_status": {
+          "voltage_too_low": false,
+          "motor_overheating": false,
+          "driver_overcurrent": false,
+          "driver_overheating": false,
+          "collision_status": false,
+          "driver_error_status": false,
+          "driver_enable_status": true,
+          "stall_status": false
+        },
+        "bus_current": 0.0
+      }
+    },
+    {
+      "joint": 4,
+      "age_s": 0.03467416763305664,
+      "raw_status_byte": 64,
+      "status": {
+        "vol": 23.0,
+        "foc_temp": 37.0,
+        "motor_temp": 30.0,
+        "foc_status": {
+          "voltage_too_low": false,
+          "motor_overheating": false,
+          "driver_overcurrent": false,
+          "driver_overheating": false,
+          "collision_status": false,
+          "driver_error_status": false,
+          "driver_enable_status": true,
+          "stall_status": false
+        },
+        "bus_current": 0.0
+      }
+    },
+    {
+      "joint": 5,
+      "age_s": 0.044588565826416016,
+      "raw_status_byte": 64,
+      "status": {
+        "vol": 23.0,
+        "foc_temp": 38.0,
+        "motor_temp": 32.0,
+        "foc_status": {
+          "voltage_too_low": false,
+          "motor_overheating": false,
+          "driver_overcurrent": false,
+          "driver_overheating": false,
+          "collision_status": false,
+          "driver_error_status": false,
+          "driver_enable_status": true,
+          "stall_status": false
+        },
+        "bus_current": 0.0
+      }
+    },
+    {
+      "joint": 6,
+      "age_s": 0.004306316375732422,
+      "raw_status_byte": 64,
+      "status": {
+        "vol": 23.0,
+        "foc_temp": 38.0,
+        "motor_temp": 31.0,
+        "foc_status": {
+          "voltage_too_low": false,
+          "motor_overheating": false,
+          "driver_overcurrent": false,
+          "driver_overheating": false,
+          "collision_status": false,
+          "driver_error_status": false,
+          "driver_enable_status": true,
+          "stall_status": false
+        },
+        "bus_current": 0.0
+      }
+    }
+  ],
+  "driver_frames": [
+    {
+      "monotonic_s": 13749.826892741,
+      "can_timestamp_s": 1793805854.098748,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13749.83675903,
+      "can_timestamp_s": 1793805854.1086187,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13749.846673203,
+      "can_timestamp_s": 1793805854.1185284,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13749.856560219,
+      "can_timestamp_s": 1793805854.1283927,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13749.866539948,
+      "can_timestamp_s": 1793805854.1383903,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13749.867133912,
+      "can_timestamp_s": 1793805854.1389976,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13749.876882159,
+      "can_timestamp_s": 1793805854.14875,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13749.886785482,
+      "can_timestamp_s": 1793805854.1586523,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13749.896654538,
+      "can_timestamp_s": 1793805854.1685226,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13749.906659319,
+      "can_timestamp_s": 1793805854.1783895,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13749.916666129,
+      "can_timestamp_s": 1793805854.18839,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13749.917118615,
+      "can_timestamp_s": 1793805854.188982,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13749.92688537,
+      "can_timestamp_s": 1793805854.1987488,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002621400000"
+    },
+    {
+      "monotonic_s": 13749.936793022,
+      "can_timestamp_s": 1793805854.2086601,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13749.94672802,
+      "can_timestamp_s": 1793805854.218523,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13749.956528757,
+      "can_timestamp_s": 1793805854.228394,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13749.966552563,
+      "can_timestamp_s": 1793805854.238396,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13749.96711783,
+      "can_timestamp_s": 1793805854.2389824,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13749.976920629,
+      "can_timestamp_s": 1793805854.248787,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002621400000"
+    },
+    {
+      "monotonic_s": 13749.98679294,
+      "can_timestamp_s": 1793805854.25866,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13749.996675429,
+      "can_timestamp_s": 1793805854.2685285,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.006566757,
+      "can_timestamp_s": 1793805854.2783926,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.016642797,
+      "can_timestamp_s": 1793805854.2883823,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.017207274,
+      "can_timestamp_s": 1793805854.2890744,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.026883396,
+      "can_timestamp_s": 1793805854.2987502,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.03679318,
+      "can_timestamp_s": 1793805854.3086612,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.046706943,
+      "can_timestamp_s": 1793805854.3185284,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.056667924,
+      "can_timestamp_s": 1793805854.3283892,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.066533387,
+      "can_timestamp_s": 1793805854.338389,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.067138436,
+      "can_timestamp_s": 1793805854.338982,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.076887906,
+      "can_timestamp_s": 1793805854.348756,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.08675084,
+      "can_timestamp_s": 1793805854.3586187,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.096811666,
+      "can_timestamp_s": 1793805854.3685226,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.106541387,
+      "can_timestamp_s": 1793805854.3783915,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.116411387,
+      "can_timestamp_s": 1793805854.3882663,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.117123302,
+      "can_timestamp_s": 1793805854.388992,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.126888755,
+      "can_timestamp_s": 1793805854.398756,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.13679775,
+      "can_timestamp_s": 1793805854.408661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.146663238,
+      "can_timestamp_s": 1793805854.4185283,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.156550611,
+      "can_timestamp_s": 1793805854.428391,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ca40000"
+    },
+    {
+      "monotonic_s": 13750.166435037,
+      "can_timestamp_s": 1793805854.438291,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.167353194,
+      "can_timestamp_s": 1793805854.4389977,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.176896941,
+      "can_timestamp_s": 1793805854.4487436,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.186796274,
+      "can_timestamp_s": 1793805854.458661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.196682294,
+      "can_timestamp_s": 1793805854.4685452,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.206553606,
+      "can_timestamp_s": 1793805854.478395,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ca40000"
+    },
+    {
+      "monotonic_s": 13750.216538277,
+      "can_timestamp_s": 1793805854.4883947,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.217119124,
+      "can_timestamp_s": 1793805854.4889877,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.226918702,
+      "can_timestamp_s": 1793805854.498787,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.236751565,
+      "can_timestamp_s": 1793805854.5086186,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.246662579,
+      "can_timestamp_s": 1793805854.5185268,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.256549202,
+      "can_timestamp_s": 1793805854.5283918,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.266536459,
+      "can_timestamp_s": 1793805854.5383892,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.26729339,
+      "can_timestamp_s": 1793805854.5389829,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.27688976,
+      "can_timestamp_s": 1793805854.548756,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.286794111,
+      "can_timestamp_s": 1793805854.55866,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.296666014,
+      "can_timestamp_s": 1793805854.5685284,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.306551139,
+      "can_timestamp_s": 1793805854.578392,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.316639968,
+      "can_timestamp_s": 1793805854.5883896,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.317114391,
+      "can_timestamp_s": 1793805854.5889826,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.326883302,
+      "can_timestamp_s": 1793805854.59875,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.336750626,
+      "can_timestamp_s": 1793805854.6086187,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.346765507,
+      "can_timestamp_s": 1793805854.6185296,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.356523322,
+      "can_timestamp_s": 1793805854.6283908,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.366488819,
+      "can_timestamp_s": 1793805854.6382577,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.367112469,
+      "can_timestamp_s": 1793805854.6389809,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.37688189,
+      "can_timestamp_s": 1793805854.6487489,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.38679163,
+      "can_timestamp_s": 1793805854.65866,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.396658512,
+      "can_timestamp_s": 1793805854.6685226,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.406544714,
+      "can_timestamp_s": 1793805854.6783915,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.416540967,
+      "can_timestamp_s": 1793805854.6883974,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.417123747,
+      "can_timestamp_s": 1793805854.6889923,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.426880581,
+      "can_timestamp_s": 1793805854.6987488,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.43679283,
+      "can_timestamp_s": 1793805854.708661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.446663822,
+      "can_timestamp_s": 1793805854.7185228,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.45676641,
+      "can_timestamp_s": 1793805854.7285192,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.466644311,
+      "can_timestamp_s": 1793805854.7383888,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.467112465,
+      "can_timestamp_s": 1793805854.7389808,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.476925847,
+      "can_timestamp_s": 1793805854.7487931,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.486753229,
+      "can_timestamp_s": 1793805854.7586188,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.496679145,
+      "can_timestamp_s": 1793805854.7685285,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.506553331,
+      "can_timestamp_s": 1793805854.778395,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.516661893,
+      "can_timestamp_s": 1793805854.788394,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.517166437,
+      "can_timestamp_s": 1793805854.789035,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.526884827,
+      "can_timestamp_s": 1793805854.798749,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.536753881,
+      "can_timestamp_s": 1793805854.8086188,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.546665471,
+      "can_timestamp_s": 1793805854.8185282,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.556555478,
+      "can_timestamp_s": 1793805854.828393,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.566629729,
+      "can_timestamp_s": 1793805854.8383849,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.567163134,
+      "can_timestamp_s": 1793805854.8390281,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.576883366,
+      "can_timestamp_s": 1793805854.8487499,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.586793935,
+      "can_timestamp_s": 1793805854.858661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.596664481,
+      "can_timestamp_s": 1793805854.8685284,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.606554046,
+      "can_timestamp_s": 1793805854.8783944,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.616424959,
+      "can_timestamp_s": 1793805854.8882835,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.617193719,
+      "can_timestamp_s": 1793805854.889042,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.626883384,
+      "can_timestamp_s": 1793805854.89875,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.636793529,
+      "can_timestamp_s": 1793805854.9086611,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.64666122,
+      "can_timestamp_s": 1793805854.9185271,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.656543385,
+      "can_timestamp_s": 1793805854.9283903,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.666651364,
+      "can_timestamp_s": 1793805854.9383929,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.667169379,
+      "can_timestamp_s": 1793805854.9390352,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.676881661,
+      "can_timestamp_s": 1793805854.948749,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.686795385,
+      "can_timestamp_s": 1793805854.958661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.696687672,
+      "can_timestamp_s": 1793805854.9685228,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.706654735,
+      "can_timestamp_s": 1793805854.978394,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.716644493,
+      "can_timestamp_s": 1793805854.9883933,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.717293239,
+      "can_timestamp_s": 1793805854.9889975,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.727113682,
+      "can_timestamp_s": 1793805854.998792,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.7368221,
+      "can_timestamp_s": 1793805855.0086586,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.746666365,
+      "can_timestamp_s": 1793805855.0185218,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.756687405,
+      "can_timestamp_s": 1793805855.0283902,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.766544622,
+      "can_timestamp_s": 1793805855.0383925,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.767133756,
+      "can_timestamp_s": 1793805855.0389926,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.777033744,
+      "can_timestamp_s": 1793805855.0487487,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.786794781,
+      "can_timestamp_s": 1793805855.058661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.796661428,
+      "can_timestamp_s": 1793805855.0685282,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.806654453,
+      "can_timestamp_s": 1793805855.0783923,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.816644187,
+      "can_timestamp_s": 1793805855.0883894,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.817318452,
+      "can_timestamp_s": 1793805855.0890412,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.826881649,
+      "can_timestamp_s": 1793805855.098749,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.836794919,
+      "can_timestamp_s": 1793805855.10866,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.846663943,
+      "can_timestamp_s": 1793805855.1185281,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.856682855,
+      "can_timestamp_s": 1793805855.1283915,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.866649661,
+      "can_timestamp_s": 1793805855.1383915,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.867222916,
+      "can_timestamp_s": 1793805855.1389818,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.876900733,
+      "can_timestamp_s": 1793805855.148769,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.886893921,
+      "can_timestamp_s": 1793805855.158636,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.896804155,
+      "can_timestamp_s": 1793805855.168524,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.906701159,
+      "can_timestamp_s": 1793805855.1783972,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.916638108,
+      "can_timestamp_s": 1793805855.188377,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.917284932,
+      "can_timestamp_s": 1793805855.1890352,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.92688224,
+      "can_timestamp_s": 1793805855.1987498,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.936801195,
+      "can_timestamp_s": 1793805855.208667,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.946674766,
+      "can_timestamp_s": 1793805855.218542,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13750.956668529,
+      "can_timestamp_s": 1793805855.2283914,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13750.966655093,
+      "can_timestamp_s": 1793805855.2383866,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13750.967245692,
+      "can_timestamp_s": 1793805855.239026,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13750.976925544,
+      "can_timestamp_s": 1793805855.248793,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13750.986800549,
+      "can_timestamp_s": 1793805855.258668,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13750.996656172,
+      "can_timestamp_s": 1793805855.2685227,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.006546404,
+      "can_timestamp_s": 1793805855.2783928,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.016678967,
+      "can_timestamp_s": 1793805855.2883897,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.01728688,
+      "can_timestamp_s": 1793805855.2890253,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13751.026924752,
+      "can_timestamp_s": 1793805855.298792,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13751.036793687,
+      "can_timestamp_s": 1793805855.308661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13751.046663363,
+      "can_timestamp_s": 1793805855.3185227,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.056530879,
+      "can_timestamp_s": 1793805855.3283978,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.066640064,
+      "can_timestamp_s": 1793805855.338392,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.067248028,
+      "can_timestamp_s": 1793805855.3389814,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13751.076901549,
+      "can_timestamp_s": 1793805855.3487687,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13751.086795262,
+      "can_timestamp_s": 1793805855.358661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13751.096774546,
+      "can_timestamp_s": 1793805855.3685226,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.106860516,
+      "can_timestamp_s": 1793805855.3786032,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.116687031,
+      "can_timestamp_s": 1793805855.3883948,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.117208998,
+      "can_timestamp_s": 1793805855.389035,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13751.126901347,
+      "can_timestamp_s": 1793805855.398769,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13751.136787015,
+      "can_timestamp_s": 1793805855.4086528,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13751.146666912,
+      "can_timestamp_s": 1793805855.4185226,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.156717717,
+      "can_timestamp_s": 1793805855.4284139,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.166655737,
+      "can_timestamp_s": 1793805855.438398,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.167259135,
+      "can_timestamp_s": 1793805855.4389918,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13751.176925151,
+      "can_timestamp_s": 1793805855.448793,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13751.186793895,
+      "can_timestamp_s": 1793805855.4586608,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13751.196734273,
+      "can_timestamp_s": 1793805855.468528,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.206587704,
+      "can_timestamp_s": 1793805855.4784539,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.21663774,
+      "can_timestamp_s": 1793805855.488381,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.217274917,
+      "can_timestamp_s": 1793805855.4890351,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13751.227011647,
+      "can_timestamp_s": 1793805855.498792,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13751.236794822,
+      "can_timestamp_s": 1793805855.508661,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13751.246687866,
+      "can_timestamp_s": 1793805855.5185282,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.256553102,
+      "can_timestamp_s": 1793805855.528395,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.266698162,
+      "can_timestamp_s": 1793805855.5383859,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.267212191,
+      "can_timestamp_s": 1793805855.53908,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13751.276919671,
+      "can_timestamp_s": 1793805855.548787,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13751.286784423,
+      "can_timestamp_s": 1793805855.5586529,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13751.296708072,
+      "can_timestamp_s": 1793805855.5685225,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.306695551,
+      "can_timestamp_s": 1793805855.5783937,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.316527528,
+      "can_timestamp_s": 1793805855.5883942,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.317223749,
+      "can_timestamp_s": 1793805855.588992,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13751.327999605,
+      "can_timestamp_s": 1793805855.5987926,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13751.33683516,
+      "can_timestamp_s": 1793805855.60869,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13751.346664603,
+      "can_timestamp_s": 1793805855.618523,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.356524583,
+      "can_timestamp_s": 1793805855.628391,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.366567404,
+      "can_timestamp_s": 1793805855.6383007,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.367227437,
+      "can_timestamp_s": 1793805855.639025,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    },
+    {
+      "monotonic_s": 13751.376888667,
+      "can_timestamp_s": 1793805855.6487558,
+      "phase": "observe",
+      "joint": 5,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e6002620400000"
+    },
+    {
+      "monotonic_s": 13751.386840127,
+      "can_timestamp_s": 1793805855.6586668,
+      "phase": "observe",
+      "joint": 4,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600251e400000"
+    },
+    {
+      "monotonic_s": 13751.396663582,
+      "can_timestamp_s": 1793805855.6685226,
+      "phase": "observe",
+      "joint": 3,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600231d400000"
+    },
+    {
+      "monotonic_s": 13751.40658187,
+      "can_timestamp_s": 1793805855.6783907,
+      "phase": "observe",
+      "joint": 2,
+      "status_byte": 164,
+      "enabled": false,
+      "raw_hex": "00e600201ba40000"
+    },
+    {
+      "monotonic_s": 13751.416554679,
+      "can_timestamp_s": 1793805855.6883001,
+      "phase": "observe",
+      "joint": 1,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600221b400000"
+    },
+    {
+      "monotonic_s": 13751.417326838,
+      "can_timestamp_s": 1793805855.689041,
+      "phase": "observe",
+      "joint": 6,
+      "status_byte": 64,
+      "enabled": true,
+      "raw_hex": "00e600261f400000"
+    }
+  ],
+  "tx_delta": 0
+}

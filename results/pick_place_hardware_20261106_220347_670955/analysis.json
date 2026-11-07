@@ -1,0 +1,244 @@
+{
+  "directory": "/home/kaiwen/research/OSCBF-research/results/pick_place_hardware_20261106_220347_670955",
+  "error": null,
+  "raw_frames": 175198,
+  "state_snapshots": 1187,
+  "control_samples": 4566,
+  "raw_capture_duration_s": 59.50513553619385,
+  "can_error_frames": 118,
+  "can_error_phases": {
+    "zero_velocity": 118
+  },
+  "error_decode_source": "/usr/include/linux/can/error.h",
+  "recorder_error": null,
+  "driver_feedback_pauses": [],
+  "initial_mode": null,
+  "final_mode": 5,
+  "driver_codes": {
+    "1": {
+      "0x40": 1190
+    },
+    "2": {
+      "0x40": 1190
+    },
+    "3": {
+      "0x40": 1190
+    },
+    "4": {
+      "0x40": 1189
+    },
+    "5": {
+      "0x40": 1190
+    },
+    "6": {
+      "0x40": 1191
+    }
+  },
+  "driver_max_gap_ms": {
+    "1": 50.72212219238281,
+    "2": 50.698280334472656,
+    "3": 50.71425437927246,
+    "4": 51.48601531982422,
+    "5": 50.717830657958984,
+    "6": 50.69899559020996
+  },
+  "motor_current_range_a": {
+    "1": [
+      -0.392,
+      0.544
+    ],
+    "2": [
+      -2.239,
+      1.215
+    ],
+    "3": [
+      -1.499,
+      0.04
+    ],
+    "4": [
+      -0.298,
+      0.812
+    ],
+    "5": [
+      -1.147,
+      0.676
+    ],
+    "6": [
+      -0.271,
+      0.35000000000000003
+    ]
+  },
+  "final_q_deg": [
+    -0.022,
+    -0.056,
+    0.055,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "can_error_bursts": [
+    {
+      "start_elapsed_s": 15.24264931678772,
+      "duration_s": 0.2597212791442871,
+      "frames": 17,
+      "after_stage": "pregrasp",
+      "protocol_bit1_reports": 10,
+      "max_reported_tx_error_counter": 143,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 2.0100750000437984,
+      "last_command_end_to_first_zero_start_ms": 0.04674799993154011
+    },
+    {
+      "start_elapsed_s": 18.571357488632202,
+      "duration_s": 0.25516653060913086,
+      "frames": 17,
+      "after_stage": "align",
+      "protocol_bit1_reports": 14,
+      "max_reported_tx_error_counter": 143,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 1.904505999846151,
+      "last_command_end_to_first_zero_start_ms": 0.03146900007777731
+    },
+    {
+      "start_elapsed_s": 26.436376333236694,
+      "duration_s": 0.2350785732269287,
+      "frames": 15,
+      "after_stage": "lift",
+      "protocol_bit1_reports": 10,
+      "max_reported_tx_error_counter": 128,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 1.9232780000493221,
+      "last_command_end_to_first_zero_start_ms": 0.04433700019035314
+    },
+    {
+      "start_elapsed_s": 31.50583577156067,
+      "duration_s": 0.23814606666564941,
+      "frames": 16,
+      "after_stage": "transfer",
+      "protocol_bit1_reports": 11,
+      "max_reported_tx_error_counter": 128,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 1.8414849998862337,
+      "last_command_end_to_first_zero_start_ms": 0.05385400004342955
+    },
+    {
+      "start_elapsed_s": 35.80256938934326,
+      "duration_s": 0.25541067123413086,
+      "frames": 19,
+      "after_stage": "lower",
+      "protocol_bit1_reports": 15,
+      "max_reported_tx_error_counter": 151,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 1.798218000203633,
+      "last_command_end_to_first_zero_start_ms": 0.043694999931176426
+    },
+    {
+      "start_elapsed_s": 42.301953077316284,
+      "duration_s": 0.25681233406066895,
+      "frames": 18,
+      "after_stage": "retreat",
+      "protocol_bit1_reports": 11,
+      "max_reported_tx_error_counter": 143,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 1.7818630001329439,
+      "last_command_end_to_first_zero_start_ms": 0.041848999899229966
+    },
+    {
+      "start_elapsed_s": 56.00251388549805,
+      "duration_s": 0.2345881462097168,
+      "frames": 16,
+      "after_stage": "return_initial",
+      "protocol_bit1_reports": 11,
+      "max_reported_tx_error_counter": 136,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 2.1227160000307776,
+      "last_command_end_to_first_zero_start_ms": 0.054592999958913424
+    }
+  ],
+  "max_tracking_error_deg": 0.4728083350626054,
+  "max_command_rad_s": 0.155,
+  "control_cycle_ms_median_p95_max": [
+    9.999854500051697,
+    10.190427600014118,
+    32.068394999896555
+  ],
+  "stage_metrics": {
+    "open": {
+      "duration_s": 1.5078631010001118,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "pregrasp": {
+      "duration_s": 13.528028419999828,
+      "control_samples": 1283,
+      "max_tracking_error_deg": 0.334494387920901
+    },
+    "align": {
+      "duration_s": 3.330049895000002,
+      "control_samples": 263,
+      "max_tracking_error_deg": 0.3328945966681885
+    },
+    "approach": {
+      "duration_s": 1.9166060879999804,
+      "control_samples": 122,
+      "max_tracking_error_deg": 0.22444614219222128
+    },
+    "grasp": {
+      "duration_s": 1.5100814219999847,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "lift": {
+      "duration_s": 4.437403207999978,
+      "control_samples": 374,
+      "max_tracking_error_deg": 0.4561331517117574
+    },
+    "transfer": {
+      "duration_s": 5.076958495000099,
+      "control_samples": 436,
+      "max_tracking_error_deg": 0.23789772928853212
+    },
+    "lower": {
+      "duration_s": 4.290787122000211,
+      "control_samples": 359,
+      "max_tracking_error_deg": 0.2768831871877849
+    },
+    "release": {
+      "duration_s": 1.5101804429998538,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "retreat": {
+      "duration_s": 4.988715616000036,
+      "control_samples": 429,
+      "max_tracking_error_deg": 0.4728083350626054
+    },
+    "return_initial": {
+      "duration_s": 13.698881855000081,
+      "control_samples": 1300,
+      "max_tracking_error_deg": 0.3454158952835597
+    }
+  },
+  "task_duration_s": 55.79724730900011,
+  "gripper_final": {
+    "open": {
+      "width_m": 0.0395,
+      "force_n": 0.105,
+      "command_width_m": 0.04,
+      "command_force_n": 1.0
+    },
+    "grasp": {
+      "width_m": 0.0249,
+      "force_n": -1.043,
+      "command_width_m": 0.015,
+      "command_force_n": 1.0
+    },
+    "release": {
+      "width_m": 0.0394,
+      "force_n": 0.148,
+      "command_width_m": 0.04,
+      "command_force_n": 1.0
+    }
+  },
+  "sdk_tx_coverage": "SDK local loopback was off; full raw TX was not captured in this first run. commands.csv has six-axis velocity send records."
+}

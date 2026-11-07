@@ -1,0 +1,19 @@
+{
+  "speed_percent": 10,
+  "target_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "record_seconds": 10,
+  "calibration_changed": false,
+  "motion_requested": false,
+  "error": "PackageNotFoundError: No package metadata was found for numpy",
+  "exception_time_s": 1793974147.222471,
+  "exception_monotonic_s": 1839.525642472,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/kaiwen/research/OSCBF-research/scripts/home_zero_simple.py\", line 98, in main\n    recording=TaskRecording(out,ROOT,extra_sources=('scripts/home_zero_simple.py',))\n  File \"/home/kaiwen/research/OSCBF-research/piper_oscbf/recording.py\", line 72, in __init__\n    'versions': {name: version(name) for name in ('pyAgxArm', 'python-can', 'numpy')},\n  File \"/home/kaiwen/research/OSCBF-research/piper_oscbf/recording.py\", line 72, in <dictcomp>\n    'versions': {name: version(name) for name in ('pyAgxArm', 'python-can', 'numpy')},\n  File \"/home/kaiwen/research/OSCBF-research/envs/piper-sdk/lib/python3.10/importlib/metadata/__init__.py\", line 996, in version\n    return distribution(distribution_name).version\n  File \"/home/kaiwen/research/OSCBF-research/envs/piper-sdk/lib/python3.10/importlib/metadata/__init__.py\", line 969, in distribution\n    return Distribution.from_name(distribution_name)\n  File \"/home/kaiwen/research/OSCBF-research/envs/piper-sdk/lib/python3.10/importlib/metadata/__init__.py\", line 548, in from_name\n    raise PackageNotFoundError(name)\nimportlib.metadata.PackageNotFoundError: No package metadata was found for numpy\n",
+  "driver_frames": []
+}

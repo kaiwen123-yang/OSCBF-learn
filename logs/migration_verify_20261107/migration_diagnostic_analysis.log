@@ -1,0 +1,142 @@
+[
+  {
+    "directory": "/tmp/piper-transfer-hauc3bqt/OSCBF-learn/results/pick_place_hardware_20261106_220347_670955",
+    "task_duration_s": 55.79724730900011,
+    "raw_frames": 175198,
+    "can_error_frames": 118,
+    "max_tracking_error_deg": 0.4728083350626054,
+    "max_command_rad_s": 0.155,
+    "sdk_send_calls": null,
+    "motor_current_range_a": {
+      "1": [
+        -0.392,
+        0.544
+      ],
+      "2": [
+        -2.239,
+        1.215
+      ],
+      "3": [
+        -1.499,
+        0.04
+      ],
+      "4": [
+        -0.298,
+        0.812
+      ],
+      "5": [
+        -1.147,
+        0.676
+      ],
+      "6": [
+        -0.271,
+        0.35000000000000003
+      ]
+    }
+  },
+  {
+    "directory": "/tmp/piper-transfer-hauc3bqt/OSCBF-learn/results/pick_place_hardware_20261106_220924_313468",
+    "task_duration_s": 57.0162599570001,
+    "raw_frames": 179261,
+    "can_error_frames": 106,
+    "max_tracking_error_deg": 0.4923896772272146,
+    "max_command_rad_s": 0.157,
+    "sdk_send_calls": 32029,
+    "motor_current_range_a": {
+      "1": [
+        -0.305,
+        0.538
+      ],
+      "2": [
+        -2.217,
+        1.197
+      ],
+      "3": [
+        -1.429,
+        0.034
+      ],
+      "4": [
+        -0.337,
+        0.786
+      ],
+      "5": [
+        -1.158,
+        0.642
+      ],
+      "6": [
+        -0.289,
+        0.315
+      ]
+    }
+  },
+  {
+    "directory": "/tmp/piper-transfer-hauc3bqt/OSCBF-learn/results/home_zero_diagnostics_20261106_221059_292266",
+    "task_duration_s": null,
+    "raw_frames": 33219,
+    "can_error_frames": 0,
+    "max_tracking_error_deg": null,
+    "max_command_rad_s": null,
+    "sdk_send_calls": 1587,
+    "motor_current_range_a": {
+      "1": [
+        -0.109,
+        0.019
+      ],
+      "2": [
+        0.682,
+        0.9450000000000001
+      ],
+      "3": [
+        -1.372,
+        -1.057
+      ],
+      "4": [
+        -0.129,
+        -0.036000000000000004
+      ],
+      "5": [
+        -0.97,
+        -0.725
+      ],
+      "6": [
+        -0.049,
+        0.117
+      ]
+    }
+  },
+  {
+    "directory": "/tmp/piper-transfer-hauc3bqt/OSCBF-learn/results/home_zero_diagnostics_20261106_221142_770204",
+    "task_duration_s": null,
+    "raw_frames": 33211,
+    "can_error_frames": 0,
+    "max_tracking_error_deg": null,
+    "max_command_rad_s": null,
+    "sdk_send_calls": 1581,
+    "motor_current_range_a": {
+      "1": [
+        -0.01,
+        0.023
+      ],
+      "2": [
+        0.777,
+        0.8150000000000001
+      ],
+      "3": [
+        -1.325,
+        -1.033
+      ],
+      "4": [
+        -0.124,
+        -0.034
+      ],
+      "5": [
+        -0.995,
+        -0.6950000000000001
+      ],
+      "6": [
+        -0.002,
+        0.07100000000000001
+      ]
+    }
+  }
+]

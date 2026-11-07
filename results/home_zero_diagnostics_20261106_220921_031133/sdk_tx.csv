@@ -1,0 +1,1 @@
+time_s,send_start_s,phase,arbitration_id,dlc,data_hex,exception,send_end_s,comm_error_after_send

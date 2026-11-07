@@ -1,0 +1,3722 @@
+{
+  "execute": true,
+  "status": "reset_only_completed",
+  "error": null,
+  "reset_sent": true,
+  "enable_sent": false,
+  "motion_sent": false,
+  "initial": {
+    "time_s": 1793806692.0346854,
+    "status_timestamp_s": 1793806692.033572,
+    "q_rad": [
+      0.0,
+      0.034033920413889425,
+      0.04380776422505767,
+      0.0076270888312152205,
+      0.4034852164760491,
+      0.0
+    ],
+    "status": {
+      "ctrl_mode": 0,
+      "arm_status": 1,
+      "mode_feedback": 1,
+      "teach_status": 0,
+      "motion_status": 0,
+      "trajectory_num": 0,
+      "err_status": {
+        "joint_1_angle_limit": false,
+        "joint_2_angle_limit": false,
+        "joint_3_angle_limit": false,
+        "joint_4_angle_limit": false,
+        "joint_5_angle_limit": false,
+        "joint_6_angle_limit": false,
+        "communication_status_joint_1": false,
+        "communication_status_joint_2": false,
+        "communication_status_joint_3": false,
+        "communication_status_joint_4": false,
+        "communication_status_joint_5": false,
+        "communication_status_joint_6": false
+      }
+    },
+    "enabled": [
+      true,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "driver_status_codes": [
+      64,
+      0,
+      64,
+      64,
+      64,
+      64
+    ],
+    "motor_status_timestamps_s": [
+      1793806691.9946089,
+      1793806691.9847033,
+      1793806692.0248246,
+      1793806692.0149627,
+      1793806692.0050802,
+      1793806691.9954257
+    ]
+  },
+  "final": {
+    "time_s": 1793806695.046364,
+    "status_timestamp_s": 1793806695.0435097,
+    "q_rad": [
+      0.0,
+      0.03405137370640937,
+      0.044087016905376766,
+      0.009023352232810684,
+      0.40507346609536393,
+      0.0
+    ],
+    "status": {
+      "ctrl_mode": 0,
+      "arm_status": 0,
+      "mode_feedback": 1,
+      "teach_status": 0,
+      "motion_status": 0,
+      "trajectory_num": 0,
+      "err_status": {
+        "joint_1_angle_limit": false,
+        "joint_2_angle_limit": false,
+        "joint_3_angle_limit": false,
+        "joint_4_angle_limit": false,
+        "joint_5_angle_limit": false,
+        "joint_6_angle_limit": false,
+        "communication_status_joint_1": false,
+        "communication_status_joint_2": false,
+        "communication_status_joint_3": false,
+        "communication_status_joint_4": false,
+        "communication_status_joint_5": false,
+        "communication_status_joint_6": false
+      }
+    },
+    "enabled": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "driver_status_codes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "motor_status_timestamps_s": [
+      1793806695.044615,
+      1793806695.0347388,
+      1793806695.0248497,
+      1793806695.01499,
+      1793806695.0053332,
+      1793806695.0454352
+    ]
+  },
+  "snapshots": [
+    {
+      "time_s": 1793806692.0346854,
+      "status_timestamp_s": 1793806692.033572,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 1,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806691.9946089,
+        1793806691.9847033,
+        1793806692.0248246,
+        1793806692.0149627,
+        1793806692.0050802,
+        1793806691.9954257
+      ]
+    },
+    {
+      "time_s": 1793806692.084923,
+      "status_timestamp_s": 1793806692.0835798,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.0445676,
+        1793806692.084703,
+        1793806692.0748072,
+        1793806692.0649464,
+        1793806692.0550752,
+        1793806692.0454228
+      ]
+    },
+    {
+      "time_s": 1793806692.135036,
+      "status_timestamp_s": 1793806692.1335785,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.0945678,
+        1793806692.1346989,
+        1793806692.1248074,
+        1793806692.1149573,
+        1793806692.105075,
+        1793806692.0954204
+      ]
+    },
+    {
+      "time_s": 1793806692.1852944,
+      "status_timestamp_s": 1793806692.1835883,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.144602,
+        1793806692.1847181,
+        1793806692.17483,
+        1793806692.1649544,
+        1793806692.1550753,
+        1793806692.145423
+      ]
+    },
+    {
+      "time_s": 1793806692.2354078,
+      "status_timestamp_s": 1793806692.233522,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.1945677,
+        1793806692.1847181,
+        1793806692.22483,
+        1793806692.2149467,
+        1793806692.2050688,
+        1793806692.1954217
+      ]
+    },
+    {
+      "time_s": 1793806692.2856207,
+      "status_timestamp_s": 1793806692.2835114,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.2445676,
+        1793806692.2847202,
+        1793806692.274843,
+        1793806692.264947,
+        1793806692.2550747,
+        1793806692.245343
+      ]
+    },
+    {
+      "time_s": 1793806692.3358703,
+      "status_timestamp_s": 1793806692.333511,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.2945676,
+        1793806692.334698,
+        1793806692.324825,
+        1793806692.3149297,
+        1793806692.3050685,
+        1793806692.295343
+      ]
+    },
+    {
+      "time_s": 1793806692.3861353,
+      "status_timestamp_s": 1793806692.3835804,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.3446023,
+        1793806692.384698,
+        1793806692.3748422,
+        1793806692.3649468,
+        1793806692.355069,
+        1793806692.3454292
+      ]
+    },
+    {
+      "time_s": 1793806692.43627,
+      "status_timestamp_s": 1793806692.4335797,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.394609,
+        1793806692.434736,
+        1793806692.42485,
+        1793806692.414941,
+        1793806692.4050746,
+        1793806692.3954222
+      ]
+    },
+    {
+      "time_s": 1793806692.486379,
+      "status_timestamp_s": 1793806692.4835799,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.4445677,
+        1793806692.484698,
+        1793806692.4748251,
+        1793806692.4649374,
+        1793806692.4550745,
+        1793806692.445415
+      ]
+    },
+    {
+      "time_s": 1793806692.5364916,
+      "status_timestamp_s": 1793806692.5335739,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.4945664,
+        1793806692.5347362,
+        1793806692.52483,
+        1793806692.514957,
+        1793806692.505069,
+        1793806692.495423
+      ]
+    },
+    {
+      "time_s": 1793806692.5867634,
+      "status_timestamp_s": 1793806692.5835733,
+      "q_rad": [
+        0.0,
+        0.034033920413889425,
+        0.04380776422505767,
+        0.0076270888312152205,
+        0.4034852164760491,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 5,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": true,
+          "communication_status_joint_2": true,
+          "communication_status_joint_3": true,
+          "communication_status_joint_4": true,
+          "communication_status_joint_5": true,
+          "communication_status_joint_6": true
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.544608,
+        1793806692.5846977,
+        1793806692.5748298,
+        1793806692.564955,
+        1793806692.5550745,
+        1793806692.5454302
+      ]
+    },
+    {
+      "time_s": 1793806692.6371255,
+      "status_timestamp_s": 1793806692.6335819,
+      "q_rad": [
+        0.0,
+        -0.011623892818282236,
+        0.007592182246175334,
+        0.0,
+        0.0069638637154573755,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.5945609,
+        1793806692.6347415,
+        1793806692.62483,
+        1793806692.6149578,
+        1793806692.6050591,
+        1793806692.5954273
+      ]
+    },
+    {
+      "time_s": 1793806692.6872473,
+      "status_timestamp_s": 1793806692.6835802,
+      "q_rad": [
+        -0.04792674125976429,
+        -0.060039326268604934,
+        0.004363323129985824,
+        0.1176700981694577,
+        -0.14657275058248379,
+        -0.21952751331584677
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        64,
+        64,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.6446164,
+        1793806692.684703,
+        1793806692.674842,
+        1793806692.6649413,
+        1793806692.6553345,
+        1793806692.6453424
+      ]
+    },
+    {
+      "time_s": 1793806692.7373707,
+      "status_timestamp_s": 1793806692.7335765,
+      "q_rad": [
+        -0.04792674125976429,
+        -0.060039326268604934,
+        0.004363323129985824,
+        0.1176700981694577,
+        -0.14657275058248379,
+        -0.21952751331584677
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        true,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "driver_status_codes": [
+        64,
+        0,
+        0,
+        0,
+        64,
+        64
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.6945736,
+        1793806692.734702,
+        1793806692.7248418,
+        1793806692.7149808,
+        1793806692.7050679,
+        1793806692.6953418
+      ]
+    },
+    {
+      "time_s": 1793806692.7874744,
+      "status_timestamp_s": 1793806692.783578,
+      "q_rad": [
+        -0.04792674125976429,
+        -0.060039326268604934,
+        0.004363323129985824,
+        0.1176700981694577,
+        -0.14657275058248379,
+        -0.21952751331584677
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.7445676,
+        1793806692.784702,
+        1793806692.774842,
+        1793806692.7649896,
+        1793806692.7550745,
+        1793806692.745412
+      ]
+    },
+    {
+      "time_s": 1793806692.837616,
+      "status_timestamp_s": 1793806692.8335695,
+      "q_rad": [
+        -0.04792674125976429,
+        -0.060039326268604934,
+        0.004363323129985824,
+        0.1176700981694577,
+        -0.14657275058248379,
+        -0.21952751331584677
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.7945738,
+        1793806692.834698,
+        1793806692.8248298,
+        1793806692.814947,
+        1793806692.8050747,
+        1793806692.7954185
+      ]
+    },
+    {
+      "time_s": 1793806692.8878636,
+      "status_timestamp_s": 1793806692.8835204,
+      "q_rad": [
+        -0.04792674125976429,
+        -0.060039326268604934,
+        0.004363323129985824,
+        0.1176700981694577,
+        -0.14657275058248379,
+        -0.21952751331584677
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.8446152,
+        1793806692.8846927,
+        1793806692.874843,
+        1793806692.8649676,
+        1793806692.855075,
+        1793806692.8454227
+      ]
+    },
+    {
+      "time_s": 1793806692.938014,
+      "status_timestamp_s": 1793806692.933576,
+      "q_rad": [
+        -0.04792674125976429,
+        -0.060039326268604934,
+        0.004363323129985824,
+        0.1176700981694577,
+        -0.14657275058248379,
+        -0.21952751331584677
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.8945732,
+        1793806692.9347026,
+        1793806692.9248497,
+        1793806692.914984,
+        1793806692.9053316,
+        1793806692.8953447
+      ]
+    },
+    {
+      "time_s": 1793806692.988162,
+      "status_timestamp_s": 1793806692.983532,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.944608,
+        1793806692.984718,
+        1793806692.974842,
+        1793806692.9649277,
+        1793806692.9550745,
+        1793806692.945427
+      ]
+    },
+    {
+      "time_s": 1793806693.0382824,
+      "status_timestamp_s": 1793806693.0335727,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806692.994615,
+        1793806693.0346925,
+        1793806693.0248299,
+        1793806693.0149808,
+        1793806693.0053258,
+        1793806692.9954298
+      ]
+    },
+    {
+      "time_s": 1793806693.088394,
+      "status_timestamp_s": 1793806693.0835762,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.0446103,
+        1793806693.0847414,
+        1793806693.0748298,
+        1793806693.0649898,
+        1793806693.0552866,
+        1793806693.0454206
+      ]
+    },
+    {
+      "time_s": 1793806693.1384957,
+      "status_timestamp_s": 1793806693.133576,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.0946152,
+        1793806693.134699,
+        1793806693.12483,
+        1793806693.1149912,
+        1793806693.105337,
+        1793806693.0953436
+      ]
+    },
+    {
+      "time_s": 1793806693.1886907,
+      "status_timestamp_s": 1793806693.183576,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.1446102,
+        1793806693.1847417,
+        1793806693.17483,
+        1793806693.1649895,
+        1793806693.155235,
+        1793806693.1453414
+      ]
+    },
+    {
+      "time_s": 1793806693.238873,
+      "status_timestamp_s": 1793806693.2385707,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.1946154,
+        1793806693.2347357,
+        1793806693.2248302,
+        1793806693.2149909,
+        1793806693.2052271,
+        1793806693.1953428
+      ]
+    },
+    {
+      "time_s": 1793806693.2889729,
+      "status_timestamp_s": 1793806693.2885735,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.2445676,
+        1793806693.2847412,
+        1793806693.27483,
+        1793806693.2649894,
+        1793806693.2553294,
+        1793806693.2453392
+      ]
+    },
+    {
+      "time_s": 1793806693.339124,
+      "status_timestamp_s": 1793806693.3385751,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.2945812,
+        1793806693.3347409,
+        1793806693.324825,
+        1793806693.3149805,
+        1793806693.3053246,
+        1793806693.2954202
+      ]
+    },
+    {
+      "time_s": 1793806693.3893058,
+      "status_timestamp_s": 1793806693.3885744,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.3445745,
+        1793806693.384742,
+        1793806693.3748684,
+        1793806693.364974,
+        1793806693.3550744,
+        1793806693.345558
+      ]
+    },
+    {
+      "time_s": 1793806693.4404671,
+      "status_timestamp_s": 1793806693.4385755,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.394614,
+        1793806693.434736,
+        1793806693.4248421,
+        1793806693.4149797,
+        1793806693.4050744,
+        1793806693.395573
+      ]
+    },
+    {
+      "time_s": 1793806693.4906406,
+      "status_timestamp_s": 1793806693.488574,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.444615,
+        1793806693.4847422,
+        1793806693.4748418,
+        1793806693.464984,
+        1793806693.4550745,
+        1793806693.445343
+      ]
+    },
+    {
+      "time_s": 1793806693.5407944,
+      "status_timestamp_s": 1793806693.5385735,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.49461,
+        1793806693.534741,
+        1793806693.524852,
+        1793806693.5149798,
+        1793806693.5052805,
+        1793806693.4953427
+      ]
+    },
+    {
+      "time_s": 1793806693.590926,
+      "status_timestamp_s": 1793806693.5885725,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.54461,
+        1793806693.5846977,
+        1793806693.5748427,
+        1793806693.5649893,
+        1793806693.5553336,
+        1793806693.5453393
+      ]
+    },
+    {
+      "time_s": 1793806693.64111,
+      "status_timestamp_s": 1793806693.6385734,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.5946136,
+        1793806693.634742,
+        1793806693.624843,
+        1793806693.6149817,
+        1793806693.6053262,
+        1793806693.5954483
+      ]
+    },
+    {
+      "time_s": 1793806693.6912525,
+      "status_timestamp_s": 1793806693.6885688,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.644609,
+        1793806693.684742,
+        1793806693.6748428,
+        1793806693.6649795,
+        1793806693.6553442,
+        1793806693.6453369
+      ]
+    },
+    {
+      "time_s": 1793806693.7413664,
+      "status_timestamp_s": 1793806693.7385712,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.6946073,
+        1793806693.7347422,
+        1793806693.724841,
+        1793806693.71499,
+        1793806693.7050748,
+        1793806693.6954217
+      ]
+    },
+    {
+      "time_s": 1793806693.7915154,
+      "status_timestamp_s": 1793806693.7885711,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.7446098,
+        1793806693.784705,
+        1793806693.7748299,
+        1793806693.7649841,
+        1793806693.7552521,
+        1793806693.74534
+      ]
+    },
+    {
+      "time_s": 1793806693.8416302,
+      "status_timestamp_s": 1793806693.8385687,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.7946212,
+        1793806693.8347409,
+        1793806693.82483,
+        1793806693.8149896,
+        1793806693.805333,
+        1793806693.79534
+      ]
+    },
+    {
+      "time_s": 1793806693.8917701,
+      "status_timestamp_s": 1793806693.8885672,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.8446088,
+        1793806693.8846989,
+        1793806693.8748426,
+        1793806693.864975,
+        1793806693.8553402,
+        1793806693.845429
+      ]
+    },
+    {
+      "time_s": 1793806693.9419909,
+      "status_timestamp_s": 1793806693.9385724,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.8946211,
+        1793806693.9347358,
+        1793806693.9248679,
+        1793806693.9149737,
+        1793806693.90534,
+        1793806693.8953483
+      ]
+    },
+    {
+      "time_s": 1793806693.9921262,
+      "status_timestamp_s": 1793806693.9885736,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.9446096,
+        1793806693.984742,
+        1793806693.9748418,
+        1793806693.964984,
+        1793806693.9553351,
+        1793806693.9453442
+      ]
+    },
+    {
+      "time_s": 1793806694.0422337,
+      "status_timestamp_s": 1793806694.0385723,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806693.9946096,
+        1793806694.0347419,
+        1793806694.0248296,
+        1793806694.0149837,
+        1793806694.0053344,
+        1793806693.9953425
+      ]
+    },
+    {
+      "time_s": 1793806694.0923371,
+      "status_timestamp_s": 1793806694.0885708,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.0446017,
+        1793806694.0847409,
+        1793806694.0748296,
+        1793806694.064974,
+        1793806694.0553277,
+        1793806694.0453353
+      ]
+    },
+    {
+      "time_s": 1793806694.1424534,
+      "status_timestamp_s": 1793806694.1385717,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.0946155,
+        1793806694.134741,
+        1793806694.1248426,
+        1793806694.1149757,
+        1793806694.1053267,
+        1793806694.095349
+      ]
+    },
+    {
+      "time_s": 1793806694.1926649,
+      "status_timestamp_s": 1793806694.188571,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.1446075,
+        1793806694.1847365,
+        1793806694.1748428,
+        1793806694.1649797,
+        1793806694.1552515,
+        1793806694.145426
+      ]
+    },
+    {
+      "time_s": 1793806694.24289,
+      "status_timestamp_s": 1793806694.238572,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.194609,
+        1793806694.2347417,
+        1793806694.2248497,
+        1793806694.2150228,
+        1793806694.2053366,
+        1793806694.1954322
+      ]
+    },
+    {
+      "time_s": 1793806694.2930622,
+      "status_timestamp_s": 1793806694.2885191,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.2446096,
+        1793806694.2847457,
+        1793806694.274868,
+        1793806694.264984,
+        1793806694.255335,
+        1793806694.2453382
+      ]
+    },
+    {
+      "time_s": 1793806694.3443825,
+      "status_timestamp_s": 1793806694.3435395,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.29461,
+        1793806694.334718,
+        1793806694.3248298,
+        1793806694.314987,
+        1793806694.3051114,
+        1793806694.2953427
+      ]
+    },
+    {
+      "time_s": 1793806694.3945036,
+      "status_timestamp_s": 1793806694.3935053,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.3446097,
+        1793806694.3847408,
+        1793806694.3748302,
+        1793806694.3649888,
+        1793806694.3552816,
+        1793806694.3453445
+      ]
+    },
+    {
+      "time_s": 1793806694.4445944,
+      "status_timestamp_s": 1793806694.443576,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.3946092,
+        1793806694.4347408,
+        1793806694.4248428,
+        1793806694.4150226,
+        1793806694.4053361,
+        1793806694.3953435
+      ]
+    },
+    {
+      "time_s": 1793806694.494806,
+      "status_timestamp_s": 1793806694.4935741,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.4946089,
+        1793806694.4847417,
+        1793806694.4748678,
+        1793806694.4650288,
+        1793806694.455227,
+        1793806694.445344
+      ]
+    },
+    {
+      "time_s": 1793806694.545024,
+      "status_timestamp_s": 1793806694.5435784,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.544616,
+        1793806694.5347407,
+        1793806694.5248415,
+        1793806694.514999,
+        1793806694.5053403,
+        1793806694.4953368
+      ]
+    },
+    {
+      "time_s": 1793806694.5951388,
+      "status_timestamp_s": 1793806694.593574,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.59461,
+        1793806694.5847418,
+        1793806694.574873,
+        1793806694.56499,
+        1793806694.5551264,
+        1793806694.5453396
+      ]
+    },
+    {
+      "time_s": 1793806694.6452544,
+      "status_timestamp_s": 1793806694.6435666,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.6446097,
+        1793806694.6347358,
+        1793806694.624873,
+        1793806694.6149807,
+        1793806694.605345,
+        1793806694.5953398
+      ]
+    },
+    {
+      "time_s": 1793806694.6953936,
+      "status_timestamp_s": 1793806694.6935391,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.694602,
+        1793806694.6847336,
+        1793806694.6748428,
+        1793806694.6649902,
+        1793806694.6553392,
+        1793806694.6453438
+      ]
+    },
+    {
+      "time_s": 1793806694.7456026,
+      "status_timestamp_s": 1793806694.7436304,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.7446089,
+        1793806694.734718,
+        1793806694.7248428,
+        1793806694.7149837,
+        1793806694.7052455,
+        1793806694.7453437
+      ]
+    },
+    {
+      "time_s": 1793806694.795719,
+      "status_timestamp_s": 1793806694.7935855,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.794602,
+        1793806694.7847407,
+        1793806694.7748277,
+        1793806694.764984,
+        1793806694.755284,
+        1793806694.7953396
+      ]
+    },
+    {
+      "time_s": 1793806694.8458483,
+      "status_timestamp_s": 1793806694.8435078,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.8446066,
+        1793806694.8347418,
+        1793806694.8248417,
+        1793806694.8149848,
+        1793806694.8051178,
+        1793806694.8453395
+      ]
+    },
+    {
+      "time_s": 1793806694.895913,
+      "status_timestamp_s": 1793806694.8935723,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.894609,
+        1793806694.8847358,
+        1793806694.8748682,
+        1793806694.8649898,
+        1793806694.8551178,
+        1793806694.8953397
+      ]
+    },
+    {
+      "time_s": 1793806694.9460537,
+      "status_timestamp_s": 1793806694.943575,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.944609,
+        1793806694.934736,
+        1793806694.9248729,
+        1793806694.9149895,
+        1793806694.905325,
+        1793806694.945341
+      ]
+    },
+    {
+      "time_s": 1793806694.9961903,
+      "status_timestamp_s": 1793806694.9935718,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806694.994609,
+        1793806694.9847357,
+        1793806694.9748728,
+        1793806694.9649897,
+        1793806694.9553406,
+        1793806694.995557
+      ]
+    },
+    {
+      "time_s": 1793806695.0463157,
+      "status_timestamp_s": 1793806695.0435097,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806695.044615,
+        1793806695.0347388,
+        1793806695.0248497,
+        1793806695.01499,
+        1793806695.0053332,
+        1793806695.0454352
+      ]
+    },
+    {
+      "time_s": 1793806695.046364,
+      "status_timestamp_s": 1793806695.0435097,
+      "q_rad": [
+        0.0,
+        0.03405137370640937,
+        0.044087016905376766,
+        0.009023352232810684,
+        0.40507346609536393,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 0,
+        "arm_status": 0,
+        "mode_feedback": 1,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "enabled": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "driver_status_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "motor_status_timestamps_s": [
+        1793806695.044615,
+        1793806695.0347388,
+        1793806695.0248497,
+        1793806695.01499,
+        1793806695.0053332,
+        1793806695.0454352
+      ]
+    }
+  ]
+}
