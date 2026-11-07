@@ -1,0 +1,7 @@
+{
+  "status": "planned",
+  "data_source": "MoveIt offline planning, no hardware motion",
+  "purpose": "empty-gripper CPV transition from demonstrated ready pose to zero; no MOVE_J zero hold",
+  "error": null,
+  "arm_segments": 1
+}

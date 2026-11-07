@@ -1,0 +1,162 @@
+{
+  "status": "failed",
+  "error": "RuntimeError: Motor enable feedback failed: [{'joint': 6, 'age_s': 0.00658726692199707, 'enabled': False, 'status': {'vol': 4414.7, 'foc_temp': 28672.0, 'motor_temp': 0.0, 'foc_status': {'voltage_too_low': False, 'motor_overheating': False, 'driver_overcurrent': False, 'driver_overheating': False, 'collision_status': False, 'driver_error_status': False, 'driver_enable_status': False, 'stall_status': False}, 'bus_current': 0.0}}]",
+  "controller": "MoveIt path + joint CPV tracking (not OSCBF)",
+  "source_plan": "/home/kaiwen/research/OSCBF-research/results/pick_place_plan_20261104_232956_473856/task.json",
+  "completed_stages": [
+    "open",
+    "pregrasp",
+    "align",
+    "approach",
+    "grasp",
+    "lift",
+    "transfer",
+    "lower",
+    "release",
+    "retreat"
+  ],
+  "speed_scale": 1.5,
+  "joint_velocity_limit_rad_s": 0.30000000000000004,
+  "descent_speed_scale": 1.0,
+  "stage_velocity_limits_rad_s": {
+    "approach": 0.2,
+    "lower": 0.2
+  },
+  "object_transfer_success": false,
+  "stop_state_error": "Motor enable feedback failed: [{'joint': 6, 'age_s': 0.00664067268371582, 'enabled': False, 'status': {'vol': 4414.7, 'foc_temp': 28672.0, 'motor_temp': 0.0, 'foc_status': {'voltage_too_low': False, 'motor_overheating': False, 'driver_overcurrent': False, 'driver_overheating': False, 'collision_status': False, 'driver_error_status': False, 'driver_enable_status': False, 'stall_status': False}, 'bus_current': 0.0}}]",
+  "stop_send_errors": [],
+  "driver_check_at_failure": {
+    "time_s": 1793806802.753164,
+    "phase": "return_initial",
+    "drivers": [
+      {
+        "joint": 1,
+        "age_s": 0.007511138916015625,
+        "enabled": true,
+        "status": {
+          "vol": 23.0,
+          "foc_temp": 34.0,
+          "motor_temp": 27.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "joint": 2,
+        "age_s": 0.017321109771728516,
+        "enabled": true,
+        "status": {
+          "vol": 23.0,
+          "foc_temp": 34.0,
+          "motor_temp": 28.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "joint": 3,
+        "age_s": 0.027238845825195312,
+        "enabled": true,
+        "status": {
+          "vol": 23.0,
+          "foc_temp": 35.0,
+          "motor_temp": 29.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "joint": 4,
+        "age_s": 0.03683280944824219,
+        "enabled": true,
+        "status": {
+          "vol": 23.0,
+          "foc_temp": 36.0,
+          "motor_temp": 29.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "joint": 5,
+        "age_s": 0.046744346618652344,
+        "enabled": true,
+        "status": {
+          "vol": 23.0,
+          "foc_temp": 39.0,
+          "motor_temp": 32.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "joint": 6,
+        "age_s": 0.00664067268371582,
+        "enabled": false,
+        "status": {
+          "vol": 4414.7,
+          "foc_temp": 28672.0,
+          "motor_temp": 0.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": false,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      }
+    ]
+  },
+  "operator_confirmation": "用户明确报告未夹到方块。",
+  "post_run_review": "Gripper opened to 40.0 mm, closed to 15.1 mm with -0.073 N: empty grasp. Return interrupted by one raw J6 frame ac73700000000000 after a normal 0x40 frame; decoded voltage/temperature are implausible. Source of malformed frame remains unknown."
+}

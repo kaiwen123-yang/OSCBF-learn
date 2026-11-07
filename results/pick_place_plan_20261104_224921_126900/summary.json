@@ -1,0 +1,8 @@
+{
+  "status": "planned",
+  "data_source": "MoveIt offline planning, no hardware motion",
+  "scene_status": "operator_confirmed_approximate",
+  "physical_grasp_success": "not_tested",
+  "error": null,
+  "arm_segments": 8
+}

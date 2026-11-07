@@ -1,0 +1,247 @@
+[INFO] [launch]: All log files can be found below /home/kaiwen/research/OSCBF-research/logs/ros/2026-11-04-22-29-05-107825-kaiwen-Legion-Y9000P-IAX10H-148886
+[INFO] [launch]: Default logging verbosity is set to INFO
+WARNING:root:[33;21mCannot infer SRDF from `/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+[INFO] [robot_state_publisher-1]: process started with pid [148926]
+[INFO] [move_group-2]: process started with pid [148928]
+[INFO] [ros2_control_node-3]: process started with pid [148930]
+[INFO] [spawner-4]: process started with pid [148932]
+[INFO] [spawner-5]: process started with pid [148934]
+[INFO] [spawner-6]: process started with pid [148936]
+[robot_state_publisher-1] [INFO] [1793802545.355238447] [piper_task.robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1793802545.355301191] [piper_task.robot_state_publisher]: got segment flange_link
+[robot_state_publisher-1] [INFO] [1793802545.355306943] [piper_task.robot_state_publisher]: got segment gripper_base
+[robot_state_publisher-1] [INFO] [1793802545.355310158] [piper_task.robot_state_publisher]: got segment gripper_link
+[robot_state_publisher-1] [INFO] [1793802545.355312671] [piper_task.robot_state_publisher]: got segment gripper_link1
+[robot_state_publisher-1] [INFO] [1793802545.355315193] [piper_task.robot_state_publisher]: got segment gripper_link2
+[robot_state_publisher-1] [INFO] [1793802545.355317534] [piper_task.robot_state_publisher]: got segment link1
+[robot_state_publisher-1] [INFO] [1793802545.355320070] [piper_task.robot_state_publisher]: got segment link2
+[robot_state_publisher-1] [INFO] [1793802545.355322321] [piper_task.robot_state_publisher]: got segment link3
+[robot_state_publisher-1] [INFO] [1793802545.355324526] [piper_task.robot_state_publisher]: got segment link4
+[robot_state_publisher-1] [INFO] [1793802545.355326752] [piper_task.robot_state_publisher]: got segment link5
+[robot_state_publisher-1] [INFO] [1793802545.355328899] [piper_task.robot_state_publisher]: got segment link6
+[robot_state_publisher-1] [INFO] [1793802545.355331068] [piper_task.robot_state_publisher]: got segment tcp_link
+[robot_state_publisher-1] [INFO] [1793802545.355333354] [piper_task.robot_state_publisher]: got segment world
+[ros2_control_node-3] [WARN] [1793802545.363945194] [piper_task.controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[ros2_control_node-3] [INFO] [1793802545.364119883] [resource_manager]: Loading hardware 'FakeSystem' 
+[ros2_control_node-3] [INFO] [1793802545.364588477] [resource_manager]: Initialize hardware 'FakeSystem' 
+[ros2_control_node-3] [INFO] [1793802545.364624508] [resource_manager]: Successful initialization of hardware 'FakeSystem'
+[ros2_control_node-3] [INFO] [1793802545.364656229] [resource_manager]: 'configure' hardware 'FakeSystem' 
+[ros2_control_node-3] [INFO] [1793802545.364661285] [resource_manager]: Successful 'configure' of hardware 'FakeSystem'
+[ros2_control_node-3] [INFO] [1793802545.364666188] [resource_manager]: 'activate' hardware 'FakeSystem' 
+[ros2_control_node-3] [INFO] [1793802545.364669487] [resource_manager]: Successful 'activate' of hardware 'FakeSystem'
+[ros2_control_node-3] [INFO] [1793802545.367044286] [piper_task.controller_manager]: update rate is 200 Hz
+[ros2_control_node-3] [INFO] [1793802545.367060191] [piper_task.controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[ros2_control_node-3] [WARN] [1793802545.367211372] [piper_task.controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[move_group-2] [INFO] [1793802545.395357682] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0017945 seconds
+[move_group-2] [INFO] [1793802545.395406960] [moveit_robot_model.robot_model]: Loading robot model 'agx_arm'...
+[move_group-2] [INFO] [1793802545.395412666] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[ros2_control_node-3] [INFO] [1793802545.539746180] [piper_task.controller_manager]: Loading controller 'gripper_controller'
+[ros2_control_node-3] [WARN] [1793802545.546838791] [piper_task.gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ros2_control_node-3] [INFO] [1793802545.547419305] [piper_task.controller_manager]: Loading controller 'arm_controller'
+[ros2_control_node-3] [WARN] [1793802545.551213537] [piper_task.arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ros2_control_node-3] [INFO] [1793802545.552603482] [piper_task.controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-5] [INFO] [1793802545.554782069] [piper_task.spawner_gripper_controller]: [94mLoaded [1mgripper_controller[0m
+[ros2_control_node-3] [INFO] [1793802545.557529307] [piper_task.controller_manager]: Configuring controller 'gripper_controller'
+[ros2_control_node-3] [INFO] [1793802545.557844400] [piper_task.gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ros2_control_node-3] [INFO] [1793802545.557859767] [piper_task.gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ros2_control_node-3] [INFO] [1793802545.557876649] [piper_task.gripper_controller]: Using 'splines' interpolation method.
+[ros2_control_node-3] [INFO] [1793802545.559311163] [piper_task.gripper_controller]: Controller state will be published at 50.00 Hz.
+[spawner-4] [INFO] [1793802545.560476909] [piper_task.spawner_arm_controller]: [94mLoaded [1marm_controller[0m
+[ros2_control_node-3] [INFO] [1793802545.562491420] [piper_task.gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-6] [INFO] [1793802545.565425203] [piper_task.spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[ros2_control_node-3] [INFO] [1793802545.567462011] [piper_task.controller_manager]: Configuring controller 'arm_controller'
+[ros2_control_node-3] [INFO] [1793802545.567552481] [piper_task.arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ros2_control_node-3] [INFO] [1793802545.567563371] [piper_task.arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ros2_control_node-3] [INFO] [1793802545.567571208] [piper_task.arm_controller]: Using 'splines' interpolation method.
+[ros2_control_node-3] [INFO] [1793802545.567734124] [piper_task.arm_controller]: Controller state will be published at 50.00 Hz.
+[ros2_control_node-3] [INFO] [1793802545.568595242] [piper_task.arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[ros2_control_node-3] [INFO] [1793802545.572487811] [piper_task.controller_manager]: Configuring controller 'joint_state_broadcaster'
+[ros2_control_node-3] [INFO] [1793802545.572527697] [piper_task.joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-5] [INFO] [1793802545.587985311] [piper_task.spawner_gripper_controller]: [92mConfigured and activated [1mgripper_controller[0m
+[spawner-4] [INFO] [1793802545.598283671] [piper_task.spawner_arm_controller]: [92mConfigured and activated [1marm_controller[0m
+[spawner-6] [INFO] [1793802545.608269526] [piper_task.spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [spawner-5]: process has finished cleanly [pid 148934]
+[INFO] [spawner-4]: process has finished cleanly [pid 148932]
+[INFO] [spawner-6]: process has finished cleanly [pid 148936]
+[move_group-2] [INFO] [1793802546.191811614] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-2] [INFO] [1793802546.191918094] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-2] [INFO] [1793802546.192256982] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-2] [INFO] [1793802546.192368080] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/piper_task/attached_collision_object' for attached collision objects
+[move_group-2] [INFO] [1793802546.192375290] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-2] [INFO] [1793802546.192441302] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/piper_task/planning_scene'
+[move_group-2] [INFO] [1793802546.192446207] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-2] [INFO] [1793802546.192510871] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-2] [INFO] [1793802546.192571209] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-2] [WARN] [1793802546.192639328] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-2] [ERROR] [1793802546.192683167] [moveit.ros.occupancy_map_monitor.middleware_handle]: Exception while loading octomap updater 'occupancy_map_monitor/PointCloudOctomapUpdater': According to the loaded plugin descriptions the class occupancy_map_monitor/PointCloudOctomapUpdater with base class type occupancy_map_monitor::OccupancyMapUpdater does not exist. Declared types are 
+[move_group-2] 
+[move_group-2] [ERROR] [1793802546.192707368] [moveit.ros.occupancy_map_monitor]: Failed to load sensor: `point_cloud_sensor` of type: `occupancy_map_monitor/PointCloudOctomapUpdater`
+[move_group-2] [INFO] [1793802547.058620590] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[move_group-2] [INFO] [1793802547.076333183] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-2] [INFO] [1793802547.078616778] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[move_group-2] [INFO] [1793802547.078625279] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[move_group-2] [INFO] [1793802547.078627634] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[move_group-2] [INFO] [1793802547.078636657] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-2] [INFO] [1793802547.078643052] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[move_group-2] [INFO] [1793802547.078645509] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-2] [INFO] [1793802547.078650002] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-2] [INFO] [1793802547.078652302] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was set to 0.050000
+[move_group-2] [INFO] [1793802547.078654569] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[move_group-2] [INFO] [1793802547.078658825] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-2] [INFO] [1793802547.078660383] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-2] [INFO] [1793802547.078661512] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-2] [INFO] [1793802547.078662650] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-2] [INFO] [1793802547.078663735] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-2] [INFO] [1793802547.078664840] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-2] [INFO] [1793802547.079861504] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'pilz_industrial_motion_planner'
+[move_group-2] [INFO] [1793802547.081604492] [moveit.pilz_industrial_motion_planner.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-2] [INFO] [1793802547.082869373] [moveit.pilz_industrial_motion_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[move_group-2] [INFO] [1793802547.082876086] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[move_group-2] [INFO] [1793802547.084230371] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [CIRC]
+[move_group-2] [INFO] [1793802547.084235874] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[move_group-2] [INFO] [1793802547.084825842] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [LIN]
+[move_group-2] [INFO] [1793802547.084829155] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[move_group-2] [INFO] [1793802547.085402638] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [PTP]
+[move_group-2] [INFO] [1793802547.085408980] [moveit.ros_planning.planning_pipeline]: Using planning interface 'Pilz Industrial Motion Planner'
+[move_group-2] [INFO] [1793802547.085606721] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'chomp'
+[move_group-2] [INFO] [1793802547.088225758] [moveit.ros_planning.planning_pipeline]: Using planning interface 'CHOMP'
+[move_group-2] [INFO] [1793802547.088575787] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.path_tolerance' was not set. Using default value: 0.100000
+[move_group-2] [INFO] [1793802547.088581849] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.resample_dt' was not set. Using default value: 0.100000
+[move_group-2] [INFO] [1793802547.088598469] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.min_angle_change' was not set. Using default value: 0.001000
+[move_group-2] [INFO] [1793802547.088609064] [moveit_ros.fix_workspace_bounds]: Param 'chomp.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-2] [INFO] [1793802547.088615379] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_bounds_error' was set to 0.100000
+[move_group-2] [INFO] [1793802547.088617530] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-2] [INFO] [1793802547.088622845] [moveit_ros.fix_start_state_collision]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-2] [INFO] [1793802547.088624950] [moveit_ros.fix_start_state_collision]: Param 'chomp.jiggle_fraction' was set to 0.050000
+[move_group-2] [INFO] [1793802547.088626739] [moveit_ros.fix_start_state_collision]: Param 'chomp.max_sampling_attempts' was not set. Using default value: 100
+[move_group-2] [INFO] [1793802547.088631487] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-2] [INFO] [1793802547.088633123] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-2] [INFO] [1793802547.088634317] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-2] [INFO] [1793802547.088635659] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-2] [INFO] [1793802547.088636843] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-2] [INFO] [1793802547.088638012] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-2] [INFO] [1793802547.099684754] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for arm_controller
+[move_group-2] [INFO] [1793802547.100093322] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for gripper_controller
+[move_group-2] [INFO] [1793802547.100168199] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1793802547.100179154] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1793802547.100279605] [moveit_ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-2] [INFO] [1793802547.100285068] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-2] [INFO] [1793802547.106200607] [move_group.move_group]: 
+[move_group-2] 
+[move_group-2] ********************************************************
+[move_group-2] * MoveGroup using: 
+[move_group-2] *     - ApplyPlanningSceneService
+[move_group-2] *     - ClearOctomapService
+[move_group-2] *     - CartesianPathService
+[move_group-2] *     - ExecuteTrajectoryAction
+[move_group-2] *     - GetPlanningSceneService
+[move_group-2] *     - KinematicsService
+[move_group-2] *     - MoveAction
+[move_group-2] *     - MotionPlanService
+[move_group-2] *     - QueryPlannersService
+[move_group-2] *     - StateValidationService
+[move_group-2] ********************************************************
+[move_group-2] 
+[move_group-2] [INFO] [1793802547.106218217] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-2] [INFO] [1793802547.106222429] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-2] [96mLoading 'move_group/ApplyPlanningSceneService'...
+[move_group-2] [0m[96mLoading 'move_group/ClearOctomapService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupCartesianPathService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupKinematicsService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupMoveAction'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupPlanService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupStateValidationService'...
+[move_group-2] [0m[92m
+[move_group-2] You can start planning now!
+[move_group-2] 
+[move_group-2] [INFO] [1793802731.045169349] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[move_group-2] [INFO] [1793802731.045208586] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-2] [WARN] [1793802731.045367499] [moveit.ompl_planning.planning_context_manager]: Cannot find planning configuration for group 'arm' using planner 'RRTConnectkConfigDefault'. Will use defaults instead.
+[move_group-2] [INFO] [1793802731.054837280] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-2] [INFO] [1793802731.076928034] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1793802731.076983634] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[move_group-2] [INFO] [1793802731.078297964] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 25 points (followed 100.000000% of requested trajectory)
+[move_group-2] [WARN] [1793802731.080371241] [moveit_planning_scene.planning_scene]: Tried to remove world object 'cube', but it does not exist in this scene.
+[move_group-2] [INFO] [1793802840.112721638] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[move_group-2] [INFO] [1793802840.112756005] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-2] [INFO] [1793802840.112970558] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-2] [INFO] [1793802840.123537010] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1793802840.123581862] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[move_group-2] [INFO] [1793802840.124681497] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 25 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1793802914.888281378] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[move_group-2] [INFO] [1793802914.888309617] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-2] [INFO] [1793802914.888574185] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-2] [INFO] [1793802914.900038526] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1793802914.900096819] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[move_group-2] [INFO] [1793802914.901396201] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1793802914.905092391] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1793802914.905130471] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[move_group-2] [INFO] [1793802914.906563469] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1793802914.911277401] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[move_group-2] [INFO] [1793802914.911312516] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-2] [INFO] [1793802914.911530628] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-2] [INFO] [1793802914.918851384] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1793802914.918897643] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[move_group-2] [INFO] [1793802914.920307018] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 25 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1793802914.923694266] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1793802914.923725850] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[move_group-2] [INFO] [1793802914.924974389] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1793802914.927082060] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[move_group-2] [INFO] [1793802914.927103161] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-2] [INFO] [1793802914.927535495] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [ros2_control_node-3]: sending signal 'SIGINT' to process[ros2_control_node-3]
+[INFO] [move_group-2]: sending signal 'SIGINT' to process[move_group-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[ros2_control_node-3] [INFO] [1793802991.009097794] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ros2_control_node-3] [INFO] [1793802991.009160367] [piper_task.controller_manager]: Shutdown request received....
+[ros2_control_node-3] [INFO] [1793802991.009199052] [piper_task.controller_manager]: Shutting down all controllers in the controller manager.
+[ros2_control_node-3] [INFO] [1793802991.009212532] [piper_task.controller_manager]: Deactivating controller 'gripper_controller'
+[ros2_control_node-3] [INFO] [1793802991.009237008] [piper_task.controller_manager]: Shutting down controller 'gripper_controller'
+[ros2_control_node-3] [INFO] [1793802991.009260638] [piper_task.controller_manager]: Deactivating controller 'arm_controller'
+[ros2_control_node-3] [INFO] [1793802991.009272519] [piper_task.controller_manager]: Shutting down controller 'arm_controller'
+[ros2_control_node-3] [INFO] [1793802991.009281138] [piper_task.controller_manager]: Deactivating controller 'joint_state_broadcaster'
+[ros2_control_node-3] [INFO] [1793802991.009291739] [piper_task.controller_manager]: Shutting down controller 'joint_state_broadcaster'
+[ros2_control_node-3] [INFO] [1793802991.009304737] [resource_manager]: 'deactivate' hardware 'FakeSystem' 
+[ros2_control_node-3] [INFO] [1793802991.009310674] [resource_manager]: Successful 'deactivate' of hardware 'FakeSystem'
+[ros2_control_node-3] [INFO] [1793802991.009312804] [resource_manager]: 'shutdown' hardware 'FakeSystem' 
+[ros2_control_node-3] [INFO] [1793802991.009315570] [resource_manager]: Successful 'shutdown' of hardware 'FakeSystem'
+[ros2_control_node-3] [INFO] [1793802991.009317886] [piper_task.controller_manager]: Shutting down the controller manager.
+[move_group-2] [INFO] [1793802991.009249531] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-1] [INFO] [1793802991.010363111] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[move_group-2] [INFO] [1793802991.018984183] [moveit.ros_planning_interface.moveit_cpp]: Deleting MoveItCpp
+[move_group-2] [INFO] [1793802991.019274949] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-2] [INFO] [1793802991.019625773] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping world geometry monitor
+[move_group-2] [INFO] [1793802991.019752669] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[move_group-2] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[move_group-2]          at line 127 in ./src/class_loader.cpp
+[move_group-2] Stack trace (most recent call last):
+[move_group-2] #16   Object "", at 0xffffffffffffffff, in 
+[move_group-2] #15   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x58a192740704, in 
+[move_group-2] #14   Source "../csu/libc-start.c", line 392, in __libc_start_main_impl [0x7cf87fc29e3f]
+[move_group-2] #13   Source "../sysdeps/nptl/libc_start_call_main.h", line 58, in __libc_start_call_main [0x7cf87fc29d8f]
+[move_group-2] #12   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x58a19273f63b, in 
+[move_group-2] #11   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x58a1927416e9, in 
+[move_group-2] #10   Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.10", at 0x7cf880871836, in moveit_cpp::MoveItCpp::~MoveItCpp()
+[move_group-2] #9    Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.10", at 0x7cf88086fb99, in 
+[move_group-2] #8    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.10", at 0x7cf87fb8d3a5, in trajectory_execution_manager::TrajectoryExecutionManager::~TrajectoryExecutionManager()
+[move_group-2] #7    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.10", at 0x7cf87fba02c9, in 
+[move_group-2] #6    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7cf8804d2b8c, in rclcpp::Node::~Node()
+[move_group-2] #5    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7cf8804d2b2e, in rclcpp::Node::~Node()
+[move_group-2] #4    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7cf8804add39, in 
+[move_group-2] #3    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7cf8804dc0b9, in 
+[move_group-2] #2    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7cf8804dc000, in rclcpp::node_interfaces::NodeBase::~NodeBase()
+[move_group-2] #1    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7cf8804add39, in 
+[move_group-2] #0    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7cf8804b2b31, in rclcpp::CallbackGroup::~CallbackGroup()
+[move_group-2] Segmentation fault (Address not mapped to object [0x7cf855e24798])
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 148926]
+[INFO] [ros2_control_node-3]: process has finished cleanly [pid 148930]
+[ERROR] [move_group-2]: process has died [pid 148928, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args -r __ns:=/piper_task --params-file /tmp/launch_params_6t334kty --params-file /tmp/launch_params_gerxefbn -r /robot_description:=robot_description -r joint_states:=control/joint_states'].
+[move_group-2] [0m

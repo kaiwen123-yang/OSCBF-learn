@@ -1,0 +1,59 @@
+1793807050.4759018 [INFO] [launch]: All log files can be found below /home/kaiwen/research/OSCBF-research/logs/ros/2026-11-04-23-44-10-475370-kaiwen-Legion-Y9000P-IAX10H-190173
+1793807050.4759827 [INFO] [launch]: Default logging verbosity is set to INFO
+1793807050.6759839 [INFO] [robot_state_publisher-1]: process started with pid [190195]
+1793807050.6761153 [INFO] [move_group-2]: process started with pid [190197]
+1793807050.6761713 [INFO] [ros2_control_node-3]: process started with pid [190199]
+1793807050.6762161 [INFO] [spawner-4]: process started with pid [190201]
+1793807050.6762547 [INFO] [spawner-5]: process started with pid [190203]
+1793807050.6762900 [INFO] [spawner-6]: process started with pid [190205]
+1793807050.6954257 [ros2_control_node-3] [WARN] [1793807050.695280635] [piper_task.controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+1793807050.6956272 [ros2_control_node-3] [INFO] [1793807050.695462837] [resource_manager]: Loading hardware 'FakeSystem' 
+1793807050.6967952 [ros2_control_node-3] [INFO] [1793807050.695785609] [resource_manager]: Initialize hardware 'FakeSystem' 
+1793807050.6968894 [ros2_control_node-3] [INFO] [1793807050.695825402] [resource_manager]: Successful initialization of hardware 'FakeSystem'
+1793807050.6969342 [ros2_control_node-3] [INFO] [1793807050.695860744] [resource_manager]: 'configure' hardware 'FakeSystem' 
+1793807050.6969700 [ros2_control_node-3] [INFO] [1793807050.695866514] [resource_manager]: Successful 'configure' of hardware 'FakeSystem'
+1793807050.6970024 [ros2_control_node-3] [INFO] [1793807050.695871324] [resource_manager]: 'activate' hardware 'FakeSystem' 
+1793807050.6970346 [ros2_control_node-3] [INFO] [1793807050.695874670] [resource_manager]: Successful 'activate' of hardware 'FakeSystem'
+1793807050.6985312 [ros2_control_node-3] [INFO] [1793807050.698422016] [piper_task.controller_manager]: update rate is 200 Hz
+1793807050.6986201 [ros2_control_node-3] [INFO] [1793807050.698441284] [piper_task.controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+1793807050.6987925 [ros2_control_node-3] [WARN] [1793807050.698512433] [piper_task.controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+1793807050.8760808 [ros2_control_node-3] [INFO] [1793807050.875835269] [piper_task.controller_manager]: Loading controller 'joint_state_broadcaster'
+1793807050.8847854 [ros2_control_node-3] [INFO] [1793807050.883945991] [piper_task.controller_manager]: Loading controller 'arm_controller'
+1793807050.8881805 [ros2_control_node-3] [WARN] [1793807050.888069537] [piper_task.arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+1793807050.8925049 [ros2_control_node-3] [INFO] [1793807050.892420759] [piper_task.controller_manager]: Configuring controller 'joint_state_broadcaster'
+1793807050.8928127 [ros2_control_node-3] [INFO] [1793807050.892486144] [piper_task.joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+1793807050.8991585 [ros2_control_node-3] [INFO] [1793807050.898939136] [piper_task.controller_manager]: Configuring controller 'arm_controller'
+1793807050.8992381 [ros2_control_node-3] [INFO] [1793807050.899044495] [piper_task.arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+1793807050.8992736 [ros2_control_node-3] [INFO] [1793807050.899059077] [piper_task.arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+1793807050.8993032 [ros2_control_node-3] [INFO] [1793807050.899073473] [piper_task.arm_controller]: Using 'splines' interpolation method.
+1793807050.8997085 [ros2_control_node-3] [INFO] [1793807050.899626129] [piper_task.arm_controller]: Controller state will be published at 50.00 Hz.
+1793807050.9005919 [ros2_control_node-3] [INFO] [1793807050.900510287] [piper_task.arm_controller]: Action status changes will be monitored at 20.00 Hz.
+1793807051.0395238 [INFO] [spawner-6]: process has finished cleanly [pid 190205]
+1793807051.0495305 [INFO] [spawner-4]: process has finished cleanly [pid 190201]
+1793807051.1360545 [ros2_control_node-3] [INFO] [1793807051.134896437] [piper_task.controller_manager]: Loading controller 'gripper_controller'
+1793807051.1378980 [ros2_control_node-3] [WARN] [1793807051.137749583] [piper_task.gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+1793807051.1399417 [ros2_control_node-3] [INFO] [1793807051.139874443] [piper_task.controller_manager]: Configuring controller 'gripper_controller'
+1793807051.1401145 [ros2_control_node-3] [INFO] [1793807051.139924880] [piper_task.gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+1793807051.1401770 [ros2_control_node-3] [INFO] [1793807051.139934672] [piper_task.gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+1793807051.1402361 [ros2_control_node-3] [INFO] [1793807051.139939724] [piper_task.gripper_controller]: Using 'splines' interpolation method.
+1793807051.1403837 [ros2_control_node-3] [INFO] [1793807051.140084277] [piper_task.gripper_controller]: Controller state will be published at 50.00 Hz.
+1793807051.1408384 [ros2_control_node-3] [INFO] [1793807051.140738038] [piper_task.gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+1793807051.2763121 [INFO] [spawner-5]: process has finished cleanly [pid 190203]
+1793807340.3515463 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1793807340.3535495 [ros2_control_node-3] [INFO] [1793807340.351607623] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1793807340.3536131 [ros2_control_node-3] [INFO] [1793807340.351662805] [piper_task.controller_manager]: Shutdown request received....
+1793807340.3536444 [ros2_control_node-3] [INFO] [1793807340.351701336] [piper_task.controller_manager]: Shutting down all controllers in the controller manager.
+1793807340.3536696 [ros2_control_node-3] [INFO] [1793807340.351714619] [piper_task.controller_manager]: Deactivating controller 'joint_state_broadcaster'
+1793807340.3536897 [ros2_control_node-3] [INFO] [1793807340.351735235] [piper_task.controller_manager]: Shutting down controller 'joint_state_broadcaster'
+1793807340.3537087 [ros2_control_node-3] [INFO] [1793807340.351749216] [piper_task.controller_manager]: Deactivating controller 'arm_controller'
+1793807340.3537273 [ros2_control_node-3] [INFO] [1793807340.351763592] [piper_task.controller_manager]: Shutting down controller 'arm_controller'
+1793807340.3537452 [ros2_control_node-3] [INFO] [1793807340.351770115] [piper_task.controller_manager]: Deactivating controller 'gripper_controller'
+1793807340.3537834 [ros2_control_node-3] [INFO] [1793807340.351778290] [piper_task.controller_manager]: Shutting down controller 'gripper_controller'
+1793807340.3542068 [ros2_control_node-3] [INFO] [1793807340.351792661] [resource_manager]: 'deactivate' hardware 'FakeSystem' 
+1793807340.3542438 [ros2_control_node-3] [INFO] [1793807340.351798220] [resource_manager]: Successful 'deactivate' of hardware 'FakeSystem'
+1793807340.3542681 [ros2_control_node-3] [INFO] [1793807340.351800158] [resource_manager]: 'shutdown' hardware 'FakeSystem' 
+1793807340.3542888 [ros2_control_node-3] [INFO] [1793807340.351802895] [resource_manager]: Successful 'shutdown' of hardware 'FakeSystem'
+1793807340.3543079 [ros2_control_node-3] [INFO] [1793807340.351804905] [piper_task.controller_manager]: Shutting down the controller manager.
+1793807340.4568992 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 190195]
+1793807340.4667044 [INFO] [ros2_control_node-3]: process has finished cleanly [pid 190199]
+1793807341.4562759 [ERROR] [move_group-2]: process has died [pid 190197, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args -r __ns:=/piper_task --params-file /tmp/launch_params_tsn_awk3 --params-file /tmp/launch_params_pj_fomrw -r /robot_description:=robot_description -r joint_states:=control/joint_states'].

@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "data_source": "MoveIt offline planning, no hardware motion",
+  "scene_status": "unmeasured_example_do_not_execute",
+  "physical_grasp_success": "not_tested",
+  "error": "RuntimeError: apply_planning_scene unavailable; run bash scripts/run_task_planner.sh"
+}

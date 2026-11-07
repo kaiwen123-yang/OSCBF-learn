@@ -1,0 +1,56 @@
+{
+  "config": {
+    "scene_status": "unmeasured_example_do_not_execute",
+    "description": "Offline planning fixture only. Replace with measured scene before hardware use.",
+    "frame": "base_link",
+    "tcp_offset_m": [
+      0.0,
+      0.0,
+      0.1425
+    ],
+    "tcp_status": "manufacturer_nominal_tip_not_field_verified",
+    "initial_q_rad": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "cube_size_m": 0.04,
+    "pick_xy_m": [
+      0.3,
+      -0.12
+    ],
+    "place_xy_m": [
+      0.3,
+      0.12
+    ],
+    "table_top_z_m": 0.0,
+    "table_center_xy_m": [
+      0.35,
+      0.0
+    ],
+    "table_size_xy_m": [
+      1.2,
+      1.0
+    ],
+    "tip_clearance_m": 0.008,
+    "lift_m": 0.12,
+    "gripper_open_m": 0.06,
+    "gripper_close_command_m": 0.035,
+    "gripper_force_n": 1.0,
+    "obstacles": [],
+    "joint_velocity_limit_rad_s": 0.05,
+    "tracking_tolerance_rad": 0.02,
+    "gripper_width_tolerance_m": 0.003
+  },
+  "report": {
+    "status": "failed",
+    "data_source": "MoveIt offline planning, no hardware motion",
+    "scene_status": "unmeasured_example_do_not_execute",
+    "physical_grasp_success": "not_tested",
+    "error": "RuntimeError: apply_planning_scene unavailable; run bash scripts/run_task_planner.sh"
+  },
+  "steps": []
+}

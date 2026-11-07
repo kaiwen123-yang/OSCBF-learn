@@ -1,0 +1,61 @@
+[INFO] [1793795935.045546891] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1793795935.045604924] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1793795935.095754179] [rviz2]: Stereo is NOT SUPPORTED
+[ERROR] [1793795938.182224786] [moveit_ros_visualization.motion_planning_frame]: Action server: /recognize_objects not available
+[INFO] [1793795938.196077185] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: /oscbf_offline -> . Reloading params.
+[INFO] [1793795938.232503501] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0011644 seconds
+[INFO] [1793795938.232527100] [moveit_robot_model.robot_model]: Loading robot model 'agx_arm'...
+[INFO] [1793795938.232532788] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[INFO] [1793795938.902558655] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[INFO] [1793795938.902858202] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/oscbf_offline/monitored_planning_scene'
+[INFO] [1793795939.422351367] [oscbf_offline.interactive_marker_display_97940387846464]: Connected on namespace: /oscbf_offline/rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[INFO] [1793795939.463595007] [oscbf_offline.interactive_marker_display_97940387846464]: Sending request for interactive markers
+[INFO] [1793795939.464715041] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[INFO] [1793795939.467546384] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.000877899 seconds
+[INFO] [1793795939.467556632] [moveit_robot_model.robot_model]: Loading robot model 'agx_arm'...
+[INFO] [1793795939.467559564] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1793795939.496800988] [oscbf_offline.interactive_marker_display_97940387846464]: Server not available during initialization, resetting
+[INFO] [1793795940.162441547] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[INFO] [1793795940.162691359] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/oscbf_offline/monitored_planning_scene'
+[INFO] [1793795940.176557674] [moveit_ros_visualization.motion_planning_frame]: group arm
+[INFO] [1793795940.176570072] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'arm' in namespace '/oscbf_offline'
+[INFO] [1793795940.179228956] [move_group_interface]: Ready to take commands for planning group arm.
+[INFO] [1793795940.179836973] [moveit_ros_visualization.motion_planning_frame]: group arm
+[INFO] [1793795940.180400343] [moveit_ros_visualization.motion_planning_frame]: group arm
+[INFO] [1793795940.194466547] [oscbf_offline.interactive_marker_display_97940387846464]: Sending request for interactive markers
+[INFO] [1793795940.226645159] [oscbf_offline.interactive_marker_display_97940387846464]: Service response received for initialization
+[INFO] [1793796010.937714998] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796014.971790493] [move_group_interface]: Plan and Execute request complete!
+[INFO] [1793796030.752633086] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796030.756030990] [move_group_interface]: Plan and Execute request complete!
+[INFO] [1793796039.803814124] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796043.896105580] [move_group_interface]: Plan and Execute request complete!
+[WARN] [1793796044.897213652] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Maybe failed to update robot state, time diff: 0.012s
+[INFO] [1793796045.141764853] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796045.146076514] [move_group_interface]: Plan and Execute request complete!
+[INFO] [1793796081.764224943] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796085.646380673] [move_group_interface]: Plan and Execute request aborted
+[ERROR] [1793796085.646988454] [move_group_interface]: MoveGroupInterface::move() failed or timeout reached
+[WARN] [1793796086.647227255] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Maybe failed to update robot state, time diff: 0.002s
+[INFO] [1793796087.485623766] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796087.565867567] [move_group_interface]: Plan and Execute request complete!
+[INFO] [1793796090.806908415] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796090.885773344] [move_group_interface]: Plan and Execute request complete!
+[INFO] [1793796571.582468473] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796575.106184227] [move_group_interface]: Plan and Execute request aborted
+[ERROR] [1793796575.106648047] [move_group_interface]: MoveGroupInterface::move() failed or timeout reached
+[INFO] [1793796578.271488009] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796579.591072805] [move_group_interface]: Plan and Execute request aborted
+[ERROR] [1793796579.591625658] [move_group_interface]: MoveGroupInterface::move() failed or timeout reached
+[INFO] [1793796889.609331779] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796896.000802176] [move_group_interface]: Plan and Execute request complete!
+[WARN] [1793796897.001655882] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Maybe failed to update robot state, time diff: 0.026s
+[INFO] [1793796897.470099942] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796899.496135351] [move_group_interface]: Plan and Execute request complete!
+[INFO] [1793796901.007799192] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796907.340968406] [move_group_interface]: Plan and Execute request complete!
+[WARN] [1793796908.341805447] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Maybe failed to update robot state, time diff: 0.026s
+[INFO] [1793796914.654780303] [move_group_interface]: Plan and Execute request accepted
+[INFO] [1793796919.925988932] [move_group_interface]: Plan and Execute request aborted
+[ERROR] [1793796919.926640765] [move_group_interface]: MoveGroupInterface::move() failed or timeout reached
+[INFO] [1793797134.614788509] [rclcpp]: signal_handler(SIGINT/SIGTERM)

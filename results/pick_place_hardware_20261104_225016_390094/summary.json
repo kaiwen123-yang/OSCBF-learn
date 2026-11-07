@@ -1,0 +1,20 @@
+{
+  "status": "staged_stop",
+  "error": null,
+  "controller": "MoveIt path + joint CPV tracking (not OSCBF)",
+  "source_plan": "/home/kaiwen/research/OSCBF-research/results/pick_place_plan_20261104_224921_126900/task.json",
+  "completed_stages": [
+    "align"
+  ],
+  "object_transfer_success": "requires_operator_confirmation",
+  "final_q_rad": [
+    -0.25996679208455536,
+    1.7477552596546015,
+    -1.055156252585692,
+    0.0,
+    0.9645387578221464,
+    -0.2605776573227534
+  ],
+  "final_mode_feedback": 5,
+  "normal_stop_action": "zero CPV velocity; no switch to MOVE_J"
+}

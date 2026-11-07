@@ -1,0 +1,364 @@
+{
+  "status": "sequence_completed",
+  "error": null,
+  "controller": "MoveIt path + joint CPV tracking (not OSCBF)",
+  "source_plan": "/home/kaiwen/research/OSCBF-research/results/pick_place_plan_20261104_224921_126900/task.json",
+  "completed_stages": [
+    "open",
+    "pregrasp",
+    "align",
+    "approach",
+    "grasp",
+    "lift",
+    "transfer",
+    "lower",
+    "release",
+    "retreat",
+    "return_initial"
+  ],
+  "speed_scale": 1.0,
+  "joint_velocity_limit_rad_s": 0.2,
+  "descent_speed_scale": 1.0,
+  "stage_velocity_limits_rad_s": {
+    "approach": 0.2,
+    "lower": 0.2
+  },
+  "object_transfer_success": "operator_confirmed",
+  "final_q_rad": [
+    0.0,
+    -0.0008726646259971648,
+    0.0012915436464758037,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "final_mode_feedback": 5,
+  "normal_stop_action": "zero CPV velocity; no switch to MOVE_J",
+  "last_driver_check": null,
+  "driver_feedback_pauses": [],
+  "operator_confirmation": "用户明确回报本轮完整慢速抓放：成功了。",
+  "execution_metrics": {
+    "feedback_samples": 15418,
+    "control_samples": 6613,
+    "feedback_span_s": 77.0856458319995,
+    "max_joint_tracking_error_deg": 0.46848105266210543,
+    "final_q_deg": [
+      0.0,
+      -0.05,
+      0.074,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "method": {
+    "name": "MoveIt joint path + measured-joint CPV velocity tracking",
+    "oscbf_used": false,
+    "cbf_used": false,
+    "additional_static_obstacles": false,
+    "feedback_source": "CAN joint-angle feedback 0x2A5-0x2A7; actual Cartesian pose not externally measured",
+    "nominal_loop_hz": 100,
+    "joint_velocity_cap_rad_s": 0.2,
+    "path_feedforward_cap_rad_s": 0.1,
+    "controller": "u = v_ref + 2*(q_ref-q); uniform scaling to joint velocity cap; SDK rounding at 0.001 rad/s",
+    "reference_progress": "rate=clip(1-max(abs(q_ref-q))/0.01,0,1); pause reference during unconfirmed enable feedback",
+    "path_arrival_tolerance_rad": 0.002,
+    "gripper_command_duration_s": 1.5,
+    "normal_end": "zero CPV; stay enabled; no CPV-to-MOVE_J transition",
+    "feedback_exception_behavior": "explicit driver faults/communication failure stop; unconfirmed enable without fault bits pauses reference, sends zero CPV and waits within 200 ms. No such event occurred in this successful run."
+  },
+  "stage_metrics": {
+    "pregrasp": {
+      "samples": 1881,
+      "elapsed_s": 18.800051367001288,
+      "reference_duration_s": 16.625417799142497,
+      "max_joint_tracking_error_deg": 0.3657480077420809,
+      "cycle_ms_median_p95_max": [
+        9.99990750096913,
+        10.111466050420859,
+        12.335743000221555
+      ],
+      "final_q_deg": [
+        -14.958,
+        94.115,
+        -72.982,
+        0.0,
+        73.842,
+        -14.979000000000003
+      ],
+      "final_reference_q_deg": [
+        -14.927286845662477,
+        94.11385200809526,
+        -72.94280840430102,
+        -0.0037002066785383394,
+        73.82620762289999,
+        -14.927779760867239
+      ]
+    },
+    "align": {
+      "samples": 383,
+      "elapsed_s": 3.820040611000877,
+      "reference_duration_s": 3.237105336189392,
+      "max_joint_tracking_error_deg": 0.29916051009875244,
+      "cycle_ms_median_p95_max": [
+        10.000694500376994,
+        10.099087949674868,
+        12.690200999713852
+      ],
+      "final_q_deg": [
+        -14.959000000000001,
+        100.20800000000001,
+        -60.38700000000001,
+        0.0,
+        55.27600000000001,
+        -14.989000000000003
+      ],
+      "final_reference_q_deg": [
+        -14.931416842092466,
+        100.12896850870386,
+        -60.45552456433727,
+        -6.906266002330397e-06,
+        55.32655666228455,
+        -14.931406096734662
+      ]
+    },
+    "approach": {
+      "samples": 173,
+      "elapsed_s": 1.7200469660001545,
+      "reference_duration_s": 1.3295132300396435,
+      "max_joint_tracking_error_deg": 0.2202759075208525,
+      "cycle_ms_median_p95_max": [
+        9.99980950018653,
+        10.006615099337068,
+        10.054668000520905
+      ],
+      "final_q_deg": [
+        -14.959000000000001,
+        104.02,
+        -56.92600000000001,
+        0.0,
+        47.811,
+        -14.879
+      ],
+      "final_reference_q_deg": [
+        -14.931417026004993,
+        104.13012433540636,
+        -56.89287784844555,
+        -7.650193945070129e-06,
+        47.76275411969036,
+        -14.931405072528289
+      ]
+    },
+    "lift": {
+      "samples": 545,
+      "elapsed_s": 5.450582289000522,
+      "reference_duration_s": 4.559292554886865,
+      "max_joint_tracking_error_deg": 0.4663291840832059,
+      "cycle_ms_median_p95_max": [
+        9.998691500186396,
+        10.141337450204446,
+        20.120302000577794
+      ],
+      "final_q_deg": [
+        -14.944,
+        94.131,
+        -72.979,
+        0.0,
+        73.896,
+        -14.992
+      ],
+      "final_reference_q_deg": [
+        -14.931416469313607,
+        94.11089524672289,
+        -72.94070183774399,
+        -5.8550158522425e-06,
+        73.82980719767218,
+        -14.931408041670503
+      ]
+    },
+    "transfer": {
+      "samples": 625,
+      "elapsed_s": 6.240135103000284,
+      "reference_duration_s": 5.407565452453573,
+      "max_joint_tracking_error_deg": 0.2639074238895821,
+      "cycle_ms_median_p95_max": [
+        10.001184999964607,
+        10.09520700044959,
+        10.903731001235428
+      ],
+      "final_q_deg": [
+        14.973000000000003,
+        94.092,
+        -72.979,
+        0.0,
+        73.91,
+        14.912000000000003
+      ],
+      "final_reference_q_deg": [
+        14.931502117513478,
+        94.1121665458489,
+        -72.94038308878295,
+        0.004732686171025399,
+        73.82621989613963,
+        14.927574597179653
+      ]
+    },
+    "lower": {
+      "samples": 554,
+      "elapsed_s": 5.530060585000683,
+      "reference_duration_s": 4.558671207110963,
+      "max_joint_tracking_error_deg": 0.2515848880583919,
+      "cycle_ms_median_p95_max": [
+        10.000686999774189,
+        10.142083999016904,
+        12.515956001152517
+      ],
+      "final_q_deg": [
+        14.975,
+        104.102,
+        -56.931000000000004,
+        0.0,
+        47.827,
+        14.904000000000002
+      ],
+      "final_reference_q_deg": [
+        14.931412933127952,
+        104.13012433575734,
+        -56.892877849121376,
+        7.118696100430715e-08,
+        47.762754120551996,
+        14.931412191500945
+      ]
+    },
+    "retreat": {
+      "samples": 545,
+      "elapsed_s": 5.440017958000681,
+      "reference_duration_s": 4.5592925548485645,
+      "max_joint_tracking_error_deg": 0.46848105266210543,
+      "cycle_ms_median_p95_max": [
+        9.999265000260493,
+        10.083072299039486,
+        10.862567000003764
+      ],
+      "final_q_deg": [
+        14.977000000000002,
+        94.11,
+        -72.968,
+        0.0,
+        73.906,
+        14.909
+      ],
+      "final_reference_q_deg": [
+        14.931413521641852,
+        94.11089524716428,
+        -72.94070183828838,
+        5.448238072701568e-08,
+        73.82980719831198,
+        14.931412812823606
+      ]
+    },
+    "return_initial": {
+      "samples": 1907,
+      "elapsed_s": 19.060061060001317,
+      "reference_duration_s": 16.624172049216387,
+      "max_joint_tracking_error_deg": 0.33291866372370904,
+      "cycle_ms_median_p95_max": [
+        9.999790999245306,
+        10.139520000848279,
+        12.626633999389014
+      ],
+      "final_q_deg": [
+        0.0,
+        -0.05,
+        0.08700000000000001,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_reference_q_deg": [
+        -0.005424979755556707,
+        0.0040758667207754515,
+        -0.0022330183086885806,
+        -0.0018494375249271562,
+        0.0007544037906758283,
+        0.0029312890767917567
+      ]
+    }
+  },
+  "gripper_metrics": {
+    "open": {
+      "samples": 30,
+      "command_width_mm": 40.0,
+      "command_force_n": 1.0,
+      "final_measured_width_mm": 39.5,
+      "final_measured_force_n": 0.096
+    },
+    "grasp": {
+      "samples": 30,
+      "command_width_mm": 15.0,
+      "command_force_n": 1.0,
+      "final_measured_width_mm": 24.8,
+      "final_measured_force_n": -1.036
+    },
+    "release": {
+      "samples": 30,
+      "command_width_mm": 40.0,
+      "command_force_n": 1.0,
+      "final_measured_width_mm": 39.300000000000004,
+      "final_measured_force_n": 0.18
+    }
+  },
+  "recording": {
+    "start_local": "2026-11-04T23:52:51.900605+08:00",
+    "end_local": "2026-11-04T23:54:08.986278+08:00",
+    "feedback_rows": 15418,
+    "control_rows": 6613,
+    "command_rows": 7275,
+    "gripper_rows": 90,
+    "driver_rows": 9251,
+    "driver_status_bytes_by_joint": {
+      "1": [
+        64
+      ],
+      "2": [
+        64
+      ],
+      "3": [
+        64
+      ],
+      "4": [
+        64
+      ],
+      "5": [
+        64
+      ],
+      "6": [
+        64
+      ]
+    },
+    "max_abs_sent_velocity_rad_s": 0.106,
+    "files": {
+      "feedback.csv": "Measured joints and motor feedback, timestamps, phase",
+      "control.csv": "Per-cycle joint references, measured joints, tracking error, SDK velocity and reference progress",
+      "commands.csv": "Actual SDK velocity values and send start/end times, including zero commands",
+      "gripper.csv": "Width/force commands and actual gripper feedback",
+      "driver_feedback.csv": "Raw 0x261-0x266 payloads, enable bits, timestamps and phase",
+      "task.json": "Exact path and configuration used for this run"
+    }
+  },
+  "reproduction": {
+    "preparation_result": "results/pick_place_hardware_20261104_235037_396048",
+    "preparation_command": "env -u LD_LIBRARY_PATH ./envs/oscbf/bin/python -I scripts/run_pick_place.py results/pick_place_plan_20261104_234828_184708/task.json --execute",
+    "task_command": "env -u LD_LIBRARY_PATH ./envs/oscbf/bin/python -I scripts/run_pick_place.py results/pick_place_plan_20261104_224921_126900/task.json --execute",
+    "precondition": "Already at planned zero-near start, enabled CPV, object at confirmed right pick position; do not blindly execute recovery from an unknown state."
+  },
+  "video_status": "连续录像是否已保存未获明确确认，当前结果目录无视频文件；用户要求结束本轮，不再追问。",
+  "failure_analysis_notes": [
+    "Two successful full slow runs: 23:09 and 23:52, same saved task path. This establishes repeatability for these two executions, not general reliability.",
+    "First faster trial at 23:14 did grip the cube (24.9 mm and about -1.04 N), then stopped during lower on an ambiguous enable check; failure-time raw driver data was not recorded.",
+    "MOVE_J zero-hold trials subsequently produced J2 0xA4 with and without an object. Cause deferred by operator; cannot attribute solely to the held cube or conflate with the earlier lower-phase failure.",
+    "Ready-start fast trial at 23:39 was an empty grasp (15.1 mm and -0.073 N), then stopped on one implausible J6 raw frame. It had a different start/return path. Do not attribute all differences solely to speed.",
+    "CPV zero transition at 23:50 and this slow full run completed without driver faults; zero-hold mode is a diagnostic lead, not a proven root cause."
+  ],
+  "source_snapshot": "sources/ contains the two unchanged custom control modules used for this run, for inspection; run through the project entrypoint, not directly from this snapshot."
+}

@@ -1,0 +1,81 @@
+[WARN] [1793795934.382470538] [oscbf_offline.controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[INFO] [1793795934.382644486] [resource_manager]: Loading hardware 'FakeSystem' 
+[INFO] [1793795934.382946330] [resource_manager]: Initialize hardware 'FakeSystem' 
+[INFO] [1793795934.382978965] [resource_manager]: Successful initialization of hardware 'FakeSystem'
+[INFO] [1793795934.383013428] [resource_manager]: 'configure' hardware 'FakeSystem' 
+[INFO] [1793795934.383018058] [resource_manager]: Successful 'configure' of hardware 'FakeSystem'
+[INFO] [1793795934.383022271] [resource_manager]: 'activate' hardware 'FakeSystem' 
+[INFO] [1793795934.383025699] [resource_manager]: Successful 'activate' of hardware 'FakeSystem'
+[INFO] [1793795934.385161571] [oscbf_offline.controller_manager]: update rate is 200 Hz
+[INFO] [1793795934.385178021] [oscbf_offline.controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[WARN] [1793795934.385246939] [oscbf_offline.controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[INFO] [1793795934.546639337] [oscbf_offline.controller_manager]: Loading controller 'arm_controller'
+[WARN] [1793795934.552946365] [oscbf_offline.arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[INFO] [1793795934.555470828] [oscbf_offline.controller_manager]: Loading controller 'joint_state_broadcaster'
+[INFO] [1793795934.560840308] [oscbf_offline.controller_manager]: Loading controller 'gripper_controller'
+[WARN] [1793795934.564854147] [oscbf_offline.gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[INFO] [1793795934.568031512] [oscbf_offline.controller_manager]: Configuring controller 'arm_controller'
+[INFO] [1793795934.568180146] [oscbf_offline.arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[INFO] [1793795934.568196291] [oscbf_offline.arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[INFO] [1793795934.568211626] [oscbf_offline.arm_controller]: Using 'splines' interpolation method.
+[INFO] [1793795934.569811007] [oscbf_offline.arm_controller]: Controller state will be published at 50.00 Hz.
+[INFO] [1793795934.572327042] [oscbf_offline.arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[INFO] [1793795934.575767460] [oscbf_offline.controller_manager]: Configuring controller 'joint_state_broadcaster'
+[INFO] [1793795934.575808175] [oscbf_offline.joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[INFO] [1793795934.654158825] [oscbf_offline.controller_manager]: Configuring controller 'gripper_controller'
+[INFO] [1793795934.654236650] [oscbf_offline.gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[INFO] [1793795934.654247184] [oscbf_offline.gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[INFO] [1793795934.654252645] [oscbf_offline.gripper_controller]: Using 'splines' interpolation method.
+[INFO] [1793795934.654436485] [oscbf_offline.gripper_controller]: Controller state will be published at 50.00 Hz.
+[INFO] [1793795934.655149718] [oscbf_offline.gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[INFO] [1793796010.951853736] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796010.951933394] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796014.935372317] [oscbf_offline.arm_controller]: Goal reached, success!
+[INFO] [1793796039.825958903] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796039.826001595] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796043.855364979] [oscbf_offline.arm_controller]: Goal reached, success!
+[INFO] [1793796081.786088510] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796081.786121005] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796085.625255329] [oscbf_offline.arm_controller]: Got request to cancel goal
+[INFO] [1793796085.625292770] [oscbf_offline.arm_controller]: Canceling active action goal because cancel callback received.
+[INFO] [1793796087.495797554] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796087.495826016] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796087.500389546] [oscbf_offline.arm_controller]: Goal reached, success!
+[INFO] [1793796090.815955245] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796090.815989028] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796090.820374873] [oscbf_offline.arm_controller]: Goal reached, success!
+[INFO] [1793796571.596161320] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796571.596196523] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796575.084904328] [oscbf_offline.arm_controller]: Got request to cancel goal
+[INFO] [1793796575.084937980] [oscbf_offline.arm_controller]: Canceling active action goal because cancel callback received.
+[INFO] [1793796578.281341153] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796578.281390190] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796579.569729345] [oscbf_offline.arm_controller]: Got request to cancel goal
+[INFO] [1793796579.569757823] [oscbf_offline.arm_controller]: Canceling active action goal because cancel callback received.
+[INFO] [1793796889.630783665] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796889.630842653] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796895.970371747] [oscbf_offline.arm_controller]: Goal reached, success!
+[INFO] [1793796897.476346769] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796897.476375129] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796899.440362965] [oscbf_offline.arm_controller]: Goal reached, success!
+[INFO] [1793796901.021069474] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796901.021101964] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796907.275376957] [oscbf_offline.arm_controller]: Goal reached, success!
+[INFO] [1793796914.666157723] [oscbf_offline.arm_controller]: Received new action goal
+[INFO] [1793796914.666206508] [oscbf_offline.arm_controller]: Accepted new action goal
+[INFO] [1793796919.908448445] [oscbf_offline.arm_controller]: Got request to cancel goal
+[INFO] [1793796919.908473222] [oscbf_offline.arm_controller]: Canceling active action goal because cancel callback received.
+[INFO] [1793797134.614931972] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1793797134.614974447] [oscbf_offline.controller_manager]: Shutdown request received....
+[INFO] [1793797134.615001956] [oscbf_offline.controller_manager]: Shutting down all controllers in the controller manager.
+[INFO] [1793797134.615013374] [oscbf_offline.controller_manager]: Deactivating controller 'arm_controller'
+[INFO] [1793797134.615035671] [oscbf_offline.controller_manager]: Shutting down controller 'arm_controller'
+[INFO] [1793797134.615049089] [oscbf_offline.controller_manager]: Deactivating controller 'joint_state_broadcaster'
+[INFO] [1793797134.615057765] [oscbf_offline.controller_manager]: Shutting down controller 'joint_state_broadcaster'
+[INFO] [1793797134.615064145] [oscbf_offline.controller_manager]: Deactivating controller 'gripper_controller'
+[INFO] [1793797134.615071509] [oscbf_offline.controller_manager]: Shutting down controller 'gripper_controller'
+[INFO] [1793797134.615082853] [resource_manager]: 'deactivate' hardware 'FakeSystem' 
+[INFO] [1793797134.615088084] [resource_manager]: Successful 'deactivate' of hardware 'FakeSystem'
+[INFO] [1793797134.615089819] [resource_manager]: 'shutdown' hardware 'FakeSystem' 
+[INFO] [1793797134.615092271] [resource_manager]: Successful 'shutdown' of hardware 'FakeSystem'
+[INFO] [1793797134.615094319] [oscbf_offline.controller_manager]: Shutting down the controller manager.

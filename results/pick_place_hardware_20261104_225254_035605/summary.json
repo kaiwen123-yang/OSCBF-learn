@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "error": "RuntimeError: grasp: observed width 24.8mm, expected about 20.0mm; inspect object",
+  "controller": "MoveIt path + joint CPV tracking (not OSCBF)",
+  "source_plan": "/home/kaiwen/research/OSCBF-research/results/pick_place_plan_20261104_224921_126900/task.json",
+  "completed_stages": [
+    "approach"
+  ],
+  "object_transfer_success": "requires_operator_confirmation",
+  "stop_send_errors": []
+}

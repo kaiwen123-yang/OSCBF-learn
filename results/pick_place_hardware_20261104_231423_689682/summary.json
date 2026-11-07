@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "error": "RuntimeError: Six enabled motors not confirmed",
+  "controller": "MoveIt path + joint CPV tracking (not OSCBF)",
+  "source_plan": "/home/kaiwen/research/OSCBF-research/results/pick_place_plan_20261104_224921_126900/task.json",
+  "completed_stages": [
+    "open",
+    "pregrasp",
+    "align",
+    "approach",
+    "grasp",
+    "lift",
+    "transfer"
+  ],
+  "speed_scale": 1.5,
+  "joint_velocity_limit_rad_s": 0.30000000000000004,
+  "object_transfer_success": "requires_operator_confirmation",
+  "stop_send_errors": []
+}

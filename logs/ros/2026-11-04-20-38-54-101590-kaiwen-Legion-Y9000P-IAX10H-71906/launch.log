@@ -1,0 +1,182 @@
+1793795934.1020122 [INFO] [launch]: All log files can be found below /home/kaiwen/research/OSCBF-research/logs/ros/2026-11-04-20-38-54-101590-kaiwen-Legion-Y9000P-IAX10H-71906
+1793795934.1020727 [INFO] [launch]: Default logging verbosity is set to INFO
+1793795934.3545792 [INFO] [robot_state_publisher-1]: process started with pid [71928]
+1793795934.3546741 [INFO] [move_group-2]: process started with pid [71930]
+1793795934.3547156 [INFO] [rviz2-3]: process started with pid [71932]
+1793795934.3547487 [INFO] [ros2_control_node-4]: process started with pid [71934]
+1793795934.3547781 [INFO] [spawner-5]: process started with pid [71936]
+1793795934.3548055 [INFO] [spawner-6]: process started with pid [71938]
+1793795934.3548322 [INFO] [spawner-7]: process started with pid [71940]
+1793795934.3829100 [ros2_control_node-4] [WARN] [1793795934.382470538] [oscbf_offline.controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+1793795934.3830383 [ros2_control_node-4] [INFO] [1793795934.382644486] [resource_manager]: Loading hardware 'FakeSystem' 
+1793795934.3832383 [ros2_control_node-4] [INFO] [1793795934.382946330] [resource_manager]: Initialize hardware 'FakeSystem' 
+1793795934.3832796 [ros2_control_node-4] [INFO] [1793795934.382978965] [resource_manager]: Successful initialization of hardware 'FakeSystem'
+1793795934.3833077 [ros2_control_node-4] [INFO] [1793795934.383013428] [resource_manager]: 'configure' hardware 'FakeSystem' 
+1793795934.3833315 [ros2_control_node-4] [INFO] [1793795934.383018058] [resource_manager]: Successful 'configure' of hardware 'FakeSystem'
+1793795934.3833542 [ros2_control_node-4] [INFO] [1793795934.383022271] [resource_manager]: 'activate' hardware 'FakeSystem' 
+1793795934.3833752 [ros2_control_node-4] [INFO] [1793795934.383025699] [resource_manager]: Successful 'activate' of hardware 'FakeSystem'
+1793795934.3855298 [ros2_control_node-4] [INFO] [1793795934.385161571] [oscbf_offline.controller_manager]: update rate is 200 Hz
+1793795934.3856261 [ros2_control_node-4] [INFO] [1793795934.385178021] [oscbf_offline.controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+1793795934.3856702 [ros2_control_node-4] [WARN] [1793795934.385246939] [oscbf_offline.controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+1793795934.5473018 [ros2_control_node-4] [INFO] [1793795934.546639337] [oscbf_offline.controller_manager]: Loading controller 'arm_controller'
+1793795934.5531037 [ros2_control_node-4] [WARN] [1793795934.552946365] [oscbf_offline.arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+1793795934.5555682 [ros2_control_node-4] [INFO] [1793795934.555470828] [oscbf_offline.controller_manager]: Loading controller 'joint_state_broadcaster'
+1793795934.5609980 [ros2_control_node-4] [INFO] [1793795934.560840308] [oscbf_offline.controller_manager]: Loading controller 'gripper_controller'
+1793795934.5649626 [ros2_control_node-4] [WARN] [1793795934.564854147] [oscbf_offline.gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+1793795934.5680864 [ros2_control_node-4] [INFO] [1793795934.568031512] [oscbf_offline.controller_manager]: Configuring controller 'arm_controller'
+1793795934.5682302 [ros2_control_node-4] [INFO] [1793795934.568180146] [oscbf_offline.arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+1793795934.5683520 [ros2_control_node-4] [INFO] [1793795934.568196291] [oscbf_offline.arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+1793795934.5683873 [ros2_control_node-4] [INFO] [1793795934.568211626] [oscbf_offline.arm_controller]: Using 'splines' interpolation method.
+1793795934.5698855 [ros2_control_node-4] [INFO] [1793795934.569811007] [oscbf_offline.arm_controller]: Controller state will be published at 50.00 Hz.
+1793795934.5723977 [ros2_control_node-4] [INFO] [1793795934.572327042] [oscbf_offline.arm_controller]: Action status changes will be monitored at 20.00 Hz.
+1793795934.5758395 [ros2_control_node-4] [INFO] [1793795934.575767460] [oscbf_offline.controller_manager]: Configuring controller 'joint_state_broadcaster'
+1793795934.5759714 [ros2_control_node-4] [INFO] [1793795934.575808175] [oscbf_offline.joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+1793795934.6544721 [ros2_control_node-4] [INFO] [1793795934.654158825] [oscbf_offline.controller_manager]: Configuring controller 'gripper_controller'
+1793795934.6545789 [ros2_control_node-4] [INFO] [1793795934.654236650] [oscbf_offline.gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+1793795934.6546092 [ros2_control_node-4] [INFO] [1793795934.654247184] [oscbf_offline.gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+1793795934.6546338 [ros2_control_node-4] [INFO] [1793795934.654252645] [oscbf_offline.gripper_controller]: Using 'splines' interpolation method.
+1793795934.6547754 [ros2_control_node-4] [INFO] [1793795934.654436485] [oscbf_offline.gripper_controller]: Controller state will be published at 50.00 Hz.
+1793795934.6551969 [ros2_control_node-4] [INFO] [1793795934.655149718] [oscbf_offline.gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+1793795934.7149370 [INFO] [spawner-5]: process has finished cleanly [pid 71936]
+1793795934.7238996 [INFO] [spawner-7]: process has finished cleanly [pid 71940]
+1793795934.7928309 [INFO] [spawner-6]: process has finished cleanly [pid 71938]
+1793795935.0459199 [rviz2-3] [INFO] [1793795935.045546891] [rviz2]: Stereo is NOT SUPPORTED
+1793795935.0460289 [rviz2-3] [INFO] [1793795935.045604924] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+1793795935.0962062 [rviz2-3] [INFO] [1793795935.095754179] [rviz2]: Stereo is NOT SUPPORTED
+1793795935.1705236 [rviz2-3] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+1793795935.1706276 [rviz2-3]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
+1793795938.1827276 [rviz2-3] [ERROR] [1793795938.182224786] [moveit_ros_visualization.motion_planning_frame]: Action server: /recognize_objects not available
+1793795938.1962321 [rviz2-3] [INFO] [1793795938.196077185] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: /oscbf_offline -> . Reloading params.
+1793795938.2326570 [rviz2-3] [INFO] [1793795938.232503501] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0011644 seconds
+1793795938.2327433 [rviz2-3] [INFO] [1793795938.232527100] [moveit_robot_model.robot_model]: Loading robot model 'agx_arm'...
+1793795938.2327683 [rviz2-3] [INFO] [1793795938.232532788] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+1793795938.9028933 [rviz2-3] [INFO] [1793795938.902558655] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+1793795938.9031279 [rviz2-3] [INFO] [1793795938.902858202] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/oscbf_offline/monitored_planning_scene'
+1793795939.4226570 [rviz2-3] [INFO] [1793795939.422351367] [oscbf_offline.interactive_marker_display_97940387846464]: Connected on namespace: /oscbf_offline/rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+1793795939.4638064 [rviz2-3] [INFO] [1793795939.463595007] [oscbf_offline.interactive_marker_display_97940387846464]: Sending request for interactive markers
+1793795939.4647863 [rviz2-3] [INFO] [1793795939.464715041] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+1793795939.4677455 [rviz2-3] [INFO] [1793795939.467546384] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.000877899 seconds
+1793795939.4677975 [rviz2-3] [INFO] [1793795939.467556632] [moveit_robot_model.robot_model]: Loading robot model 'agx_arm'...
+1793795939.4678240 [rviz2-3] [INFO] [1793795939.467559564] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+1793795939.4969747 [rviz2-3] [WARN] [1793795939.496800988] [oscbf_offline.interactive_marker_display_97940387846464]: Server not available during initialization, resetting
+1793795940.1627343 [rviz2-3] [INFO] [1793795940.162441547] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+1793795940.1630065 [rviz2-3] [INFO] [1793795940.162691359] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/oscbf_offline/monitored_planning_scene'
+1793795940.1768732 [rviz2-3] [INFO] [1793795940.176557674] [moveit_ros_visualization.motion_planning_frame]: group arm
+1793795940.1769667 [rviz2-3] [INFO] [1793795940.176570072] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'arm' in namespace '/oscbf_offline'
+1793795940.1793497 [rviz2-3] [INFO] [1793795940.179228956] [move_group_interface]: Ready to take commands for planning group arm.
+1793795940.1799290 [rviz2-3] [INFO] [1793795940.179836973] [moveit_ros_visualization.motion_planning_frame]: group arm
+1793795940.1805305 [rviz2-3] [INFO] [1793795940.180400343] [moveit_ros_visualization.motion_planning_frame]: group arm
+1793795940.1946678 [rviz2-3] [INFO] [1793795940.194466547] [oscbf_offline.interactive_marker_display_97940387846464]: Sending request for interactive markers
+1793795940.2268922 [rviz2-3] [INFO] [1793795940.226645159] [oscbf_offline.interactive_marker_display_97940387846464]: Service response received for initialization
+1793796010.9393032 [rviz2-3] [INFO] [1793796010.937714998] [move_group_interface]: Plan and Execute request accepted
+1793796010.9519165 [ros2_control_node-4] [INFO] [1793796010.951853736] [oscbf_offline.arm_controller]: Received new action goal
+1793796010.9520383 [ros2_control_node-4] [INFO] [1793796010.951933394] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796014.9356263 [ros2_control_node-4] [INFO] [1793796014.935372317] [oscbf_offline.arm_controller]: Goal reached, success!
+1793796014.9718411 [rviz2-3] [INFO] [1793796014.971790493] [move_group_interface]: Plan and Execute request complete!
+1793796030.7529950 [rviz2-3] [INFO] [1793796030.752633086] [move_group_interface]: Plan and Execute request accepted
+1793796030.7561107 [rviz2-3] [INFO] [1793796030.756030990] [move_group_interface]: Plan and Execute request complete!
+1793796039.8041654 [rviz2-3] [INFO] [1793796039.803814124] [move_group_interface]: Plan and Execute request accepted
+1793796039.8262038 [ros2_control_node-4] [INFO] [1793796039.825958903] [oscbf_offline.arm_controller]: Received new action goal
+1793796039.8262572 [ros2_control_node-4] [INFO] [1793796039.826001595] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796043.8557601 [ros2_control_node-4] [INFO] [1793796043.855364979] [oscbf_offline.arm_controller]: Goal reached, success!
+1793796043.8962901 [rviz2-3] [INFO] [1793796043.896105580] [move_group_interface]: Plan and Execute request complete!
+1793796044.8975439 [rviz2-3] [WARN] [1793796044.897213652] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Maybe failed to update robot state, time diff: 0.012s
+1793796045.1420426 [rviz2-3] [INFO] [1793796045.141764853] [move_group_interface]: Plan and Execute request accepted
+1793796045.1461251 [rviz2-3] [INFO] [1793796045.146076514] [move_group_interface]: Plan and Execute request complete!
+1793796081.7644985 [rviz2-3] [INFO] [1793796081.764224943] [move_group_interface]: Plan and Execute request accepted
+1793796081.7862227 [ros2_control_node-4] [INFO] [1793796081.786088510] [oscbf_offline.arm_controller]: Received new action goal
+1793796081.7862687 [ros2_control_node-4] [INFO] [1793796081.786121005] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796085.6253681 [ros2_control_node-4] [INFO] [1793796085.625255329] [oscbf_offline.arm_controller]: Got request to cancel goal
+1793796085.6254756 [ros2_control_node-4] [INFO] [1793796085.625292770] [oscbf_offline.arm_controller]: Canceling active action goal because cancel callback received.
+1793796085.6466291 [rviz2-3] [INFO] [1793796085.646380673] [move_group_interface]: Plan and Execute request aborted
+1793796085.6472580 [rviz2-3] [ERROR] [1793796085.646988454] [move_group_interface]: MoveGroupInterface::move() failed or timeout reached
+1793796086.6477683 [rviz2-3] [WARN] [1793796086.647227255] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Maybe failed to update robot state, time diff: 0.002s
+1793796087.4860504 [rviz2-3] [INFO] [1793796087.485623766] [move_group_interface]: Plan and Execute request accepted
+1793796087.4960454 [ros2_control_node-4] [INFO] [1793796087.495797554] [oscbf_offline.arm_controller]: Received new action goal
+1793796087.4960825 [ros2_control_node-4] [INFO] [1793796087.495826016] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796087.5005229 [ros2_control_node-4] [INFO] [1793796087.500389546] [oscbf_offline.arm_controller]: Goal reached, success!
+1793796087.5660625 [rviz2-3] [INFO] [1793796087.565867567] [move_group_interface]: Plan and Execute request complete!
+1793796090.8071427 [rviz2-3] [INFO] [1793796090.806908415] [move_group_interface]: Plan and Execute request accepted
+1793796090.8160136 [ros2_control_node-4] [INFO] [1793796090.815955245] [oscbf_offline.arm_controller]: Received new action goal
+1793796090.8161037 [ros2_control_node-4] [INFO] [1793796090.815989028] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796090.8205044 [ros2_control_node-4] [INFO] [1793796090.820374873] [oscbf_offline.arm_controller]: Goal reached, success!
+1793796090.8858256 [rviz2-3] [INFO] [1793796090.885773344] [move_group_interface]: Plan and Execute request complete!
+1793796571.5827253 [rviz2-3] [INFO] [1793796571.582468473] [move_group_interface]: Plan and Execute request accepted
+1793796571.5962133 [ros2_control_node-4] [INFO] [1793796571.596161320] [oscbf_offline.arm_controller]: Received new action goal
+1793796571.5963104 [ros2_control_node-4] [INFO] [1793796571.596196523] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796575.0852220 [ros2_control_node-4] [INFO] [1793796575.084904328] [oscbf_offline.arm_controller]: Got request to cancel goal
+1793796575.0852942 [ros2_control_node-4] [INFO] [1793796575.084937980] [oscbf_offline.arm_controller]: Canceling active action goal because cancel callback received.
+1793796575.1064501 [rviz2-3] [INFO] [1793796575.106184227] [move_group_interface]: Plan and Execute request aborted
+1793796575.1068466 [rviz2-3] [ERROR] [1793796575.106648047] [move_group_interface]: MoveGroupInterface::move() failed or timeout reached
+1793796578.2718976 [rviz2-3] [INFO] [1793796578.271488009] [move_group_interface]: Plan and Execute request accepted
+1793796578.2814198 [ros2_control_node-4] [INFO] [1793796578.281341153] [oscbf_offline.arm_controller]: Received new action goal
+1793796578.2815378 [ros2_control_node-4] [INFO] [1793796578.281390190] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796579.5700140 [ros2_control_node-4] [INFO] [1793796579.569729345] [oscbf_offline.arm_controller]: Got request to cancel goal
+1793796579.5700665 [ros2_control_node-4] [INFO] [1793796579.569757823] [oscbf_offline.arm_controller]: Canceling active action goal because cancel callback received.
+1793796579.5911558 [rviz2-3] [INFO] [1793796579.591072805] [move_group_interface]: Plan and Execute request aborted
+1793796579.5916700 [rviz2-3] [ERROR] [1793796579.591625658] [move_group_interface]: MoveGroupInterface::move() failed or timeout reached
+1793796889.6096480 [rviz2-3] [INFO] [1793796889.609331779] [move_group_interface]: Plan and Execute request accepted
+1793796889.6308768 [ros2_control_node-4] [INFO] [1793796889.630783665] [oscbf_offline.arm_controller]: Received new action goal
+1793796889.6309814 [ros2_control_node-4] [INFO] [1793796889.630842653] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796895.9706595 [ros2_control_node-4] [INFO] [1793796895.970371747] [oscbf_offline.arm_controller]: Goal reached, success!
+1793796896.0010054 [rviz2-3] [INFO] [1793796896.000802176] [move_group_interface]: Plan and Execute request complete!
+1793796897.0020502 [rviz2-3] [WARN] [1793796897.001655882] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Maybe failed to update robot state, time diff: 0.026s
+1793796897.4704680 [rviz2-3] [INFO] [1793796897.470099942] [move_group_interface]: Plan and Execute request accepted
+1793796897.4763858 [ros2_control_node-4] [INFO] [1793796897.476346769] [oscbf_offline.arm_controller]: Received new action goal
+1793796897.4764681 [ros2_control_node-4] [INFO] [1793796897.476375129] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796899.4405835 [ros2_control_node-4] [INFO] [1793796899.440362965] [oscbf_offline.arm_controller]: Goal reached, success!
+1793796899.4961903 [rviz2-3] [INFO] [1793796899.496135351] [move_group_interface]: Plan and Execute request complete!
+1793796901.0078852 [rviz2-3] [INFO] [1793796901.007799192] [move_group_interface]: Plan and Execute request accepted
+1793796901.0212460 [ros2_control_node-4] [INFO] [1793796901.021069474] [oscbf_offline.arm_controller]: Received new action goal
+1793796901.0212996 [ros2_control_node-4] [INFO] [1793796901.021101964] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796907.2756014 [ros2_control_node-4] [INFO] [1793796907.275376957] [oscbf_offline.arm_controller]: Goal reached, success!
+1793796907.3410335 [rviz2-3] [INFO] [1793796907.340968406] [move_group_interface]: Plan and Execute request complete!
+1793796908.3421144 [rviz2-3] [WARN] [1793796908.341805447] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Maybe failed to update robot state, time diff: 0.026s
+1793796914.6551378 [rviz2-3] [INFO] [1793796914.654780303] [move_group_interface]: Plan and Execute request accepted
+1793796914.6666031 [ros2_control_node-4] [INFO] [1793796914.666157723] [oscbf_offline.arm_controller]: Received new action goal
+1793796914.6666458 [ros2_control_node-4] [INFO] [1793796914.666206508] [oscbf_offline.arm_controller]: Accepted new action goal
+1793796919.9089303 [ros2_control_node-4] [INFO] [1793796919.908448445] [oscbf_offline.arm_controller]: Got request to cancel goal
+1793796919.9089878 [ros2_control_node-4] [INFO] [1793796919.908473222] [oscbf_offline.arm_controller]: Canceling active action goal because cancel callback received.
+1793796919.9260359 [rviz2-3] [INFO] [1793796919.925988932] [move_group_interface]: Plan and Execute request aborted
+1793796919.9269753 [rviz2-3] [ERROR] [1793796919.926640765] [move_group_interface]: MoveGroupInterface::move() failed or timeout reached
+1793797134.6150675 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1793797134.6161046 [rviz2-3] [INFO] [1793797134.614788509] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1793797134.6163087 [ros2_control_node-4] [INFO] [1793797134.614931972] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1793797134.6163368 [ros2_control_node-4] [INFO] [1793797134.614974447] [oscbf_offline.controller_manager]: Shutdown request received....
+1793797134.6163578 [ros2_control_node-4] [INFO] [1793797134.615001956] [oscbf_offline.controller_manager]: Shutting down all controllers in the controller manager.
+1793797134.6163759 [ros2_control_node-4] [INFO] [1793797134.615013374] [oscbf_offline.controller_manager]: Deactivating controller 'arm_controller'
+1793797134.6163914 [ros2_control_node-4] [INFO] [1793797134.615035671] [oscbf_offline.controller_manager]: Shutting down controller 'arm_controller'
+1793797134.6164114 [ros2_control_node-4] [INFO] [1793797134.615049089] [oscbf_offline.controller_manager]: Deactivating controller 'joint_state_broadcaster'
+1793797134.6164262 [ros2_control_node-4] [INFO] [1793797134.615057765] [oscbf_offline.controller_manager]: Shutting down controller 'joint_state_broadcaster'
+1793797134.6164401 [ros2_control_node-4] [INFO] [1793797134.615064145] [oscbf_offline.controller_manager]: Deactivating controller 'gripper_controller'
+1793797134.6164539 [ros2_control_node-4] [INFO] [1793797134.615071509] [oscbf_offline.controller_manager]: Shutting down controller 'gripper_controller'
+1793797134.6164680 [ros2_control_node-4] [INFO] [1793797134.615082853] [resource_manager]: 'deactivate' hardware 'FakeSystem' 
+1793797134.6164818 [ros2_control_node-4] [INFO] [1793797134.615088084] [resource_manager]: Successful 'deactivate' of hardware 'FakeSystem'
+1793797134.6164958 [ros2_control_node-4] [INFO] [1793797134.615089819] [resource_manager]: 'shutdown' hardware 'FakeSystem' 
+1793797134.6165104 [ros2_control_node-4] [INFO] [1793797134.615092271] [resource_manager]: Successful 'shutdown' of hardware 'FakeSystem'
+1793797134.6165245 [ros2_control_node-4] [INFO] [1793797134.615094319] [oscbf_offline.controller_manager]: Shutting down the controller manager.
+1793797134.6438401 [rviz2-3] [WARN] [1793797134.643610924] [oscbf_offline.interactive_marker_display_97940387846464]: Server not available while running, resetting
+1793797134.6852498 [rviz2-3] 
+1793797134.6853344 [rviz2-3] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+1793797134.6853678 [rviz2-3] This error state is being overwritten:
+1793797134.6853936 [rviz2-3] 
+1793797134.6854177 [rviz2-3]   'rcl node's context is invalid, at ./src/rcl/node.c:428'
+1793797134.6854386 [rviz2-3] 
+1793797134.6854618 [rviz2-3] with this new error message:
+1793797134.6854827 [rviz2-3] 
+1793797134.6855023 [rviz2-3]   'publisher's context is invalid, at ./src/rcl/publisher.c:389'
+1793797134.6855202 [rviz2-3] 
+1793797134.6855383 [rviz2-3] rcutils_reset_error() should be called after error handling to avoid this.
+1793797134.6855562 [rviz2-3] <<<
+1793797134.6861570 [rviz2-3] [INFO] [1793797134.686088963] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+1793797134.7236829 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 71928]
+1793797134.7327049 [INFO] [ros2_control_node-4]: process has finished cleanly [pid 71934]
+1793797135.9531102 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1793797139.6212554 [ERROR] [rviz2-3]: process[rviz2-3] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1793797139.6214917 [ERROR] [move_group-2]: process[move_group-2] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1793797139.6216791 [INFO] [rviz2-3]: sending signal 'SIGTERM' to process[rviz2-3]
+1793797139.6218929 [INFO] [move_group-2]: sending signal 'SIGTERM' to process[move_group-2]
+1793797139.9463351 [ERROR] [move_group-2]: process has died [pid 71930, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args -r __ns:=/oscbf_offline --params-file /tmp/launch_params_g_pgmjxt --params-file /tmp/launch_params_mf99wpal -r /robot_description:=robot_description -r joint_states:=control/joint_states'].
+1793797144.6213245 [ERROR] [rviz2-3]: process[rviz2-3] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1793797144.6216407 [INFO] [rviz2-3]: sending signal 'SIGKILL' to process[rviz2-3]
+1793797144.7001939 [ERROR] [rviz2-3]: process has died [pid 71932, exit code -9, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /tmp/moveit_btmf14rn.rviz --ros-args -r __ns:=/oscbf_offline --params-file /tmp/launch_params_944lfpz3 --params-file /tmp/launch_params_5qfww01e --params-file /tmp/launch_params_4iycn1mq --params-file /tmp/launch_params_8ife95cv --params-file /tmp/launch_params_xghmso1z -r /robot_description:=robot_description -r joint_states:=control/joint_states'].
