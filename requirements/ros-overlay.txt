@@ -1,0 +1,5 @@
+# ROS uses Ubuntu 22.04 system Python/numpy/scipy; pip overlay only.
+packaging==26.3
+python-can==4.6.1
+typing_extensions==4.16.0
+wrapt==1.17.3

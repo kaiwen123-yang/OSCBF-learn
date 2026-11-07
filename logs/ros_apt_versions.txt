@@ -1,0 +1,10 @@
+build-essential	12.9ubuntu3
+cmake	3.22.1-1ubuntu1.22.04.2
+python3-colcon-common-extensions	0.3.0-100
+ros-humble-joint-state-publisher-gui	2.4.0-1jammy.20260907.220733
+ros-humble-moveit	2.5.10-1jammy.20261006.203658
+ros-humble-ros2-control	2.54.3-1jammy.20261005.220306
+ros-humble-ros2-controllers	2.54.1-1jammy.20261005.222410
+ros-humble-rosidl-default-generators	1.2.1-1jammy.20260304.210325
+ros-humble-topic-tools	1.1.2-1jammy.20260907.224415
+ros-humble-xacro	2.1.1-1jammy.20260304.195513

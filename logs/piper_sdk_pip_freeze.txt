@@ -1,0 +1,5 @@
+packaging==26.0
+pyAgxArm @ file:///home/kaiwen/research/OSCBF-research/src/pyAgxArm
+python-can==4.6.1
+typing_extensions==4.16.0
+wrapt==1.17.3

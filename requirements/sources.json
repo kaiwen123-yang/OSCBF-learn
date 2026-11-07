@@ -1,0 +1,25 @@
+{
+  "platform": "Ubuntu 22.04 x86_64; ROS 2 Humble; Python 3.10",
+  "sources": [
+    {
+      "path": "src/oscbf",
+      "url": "https://github.com/StanfordASL/oscbf.git",
+      "commit": "6082329f8e1d61ee8e875a63a5cd80a14d513e12"
+    },
+    {
+      "path": "src/pyAgxArm",
+      "url": "https://github.com/agilexrobotics/pyAgxArm.git",
+      "commit": "d90e234ba8e408cfa964b38aa9120b3131fc9f85"
+    },
+    {
+      "path": "ros_ws/src/agx_arm_ros",
+      "url": "https://github.com/agilexrobotics/agx_arm_ros.git",
+      "commit": "286633e0d2edb038ee3a1047d9feb7f614a1c076"
+    },
+    {
+      "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf",
+      "url": "https://github.com/agilexrobotics/agx_arm_urdf.git",
+      "commit": "680fa925cd00db7e2628563d2edc5540963045de"
+    }
+  ]
+}

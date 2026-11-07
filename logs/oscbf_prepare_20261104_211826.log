@@ -1,0 +1,873 @@
+Cloning into '/home/kaiwen/research/OSCBF-research/src/oscbf'...
+HEAD is now at 6082329 Update asset directory handling
+2 channel Terms of Service accepted
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+Solving environment: / done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 26.3.2
+    latest version: 26.9.4
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/kaiwen/research/OSCBF-research/envs/oscbf
+
+  added / updated specs:
+    - pip
+    - python=3.10
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2026.10.20 |       h59cdc77_1         113 KB
+    libexpat-2.10.0            |       h7354ed3_0         132 KB
+    ncurses-6.6                |       hfaaeb4e_0         893 KB
+    openssl-3.5.9              |       h1b28b03_0         5.7 MB
+    packaging-26.3             |  py310h06a4308_0         329 KB
+    pip-26.2.2                 |     pyhc872135_0         1.1 MB
+    pthread-stubs-0.3          |       h47b2149_2           7 KB
+    python-3.10.22             |       hd9cb797_1        24.4 MB
+    setuptools-84.2.1          |  py310h06a4308_0         1.0 MB
+    sqlite-3.53.4              |       h795bf6d_0         1.2 MB
+    tzdata-2026c               |       he532380_0         117 KB
+    wheel-0.48.0               |  py310h06a4308_0          59 KB
+    xorg-libx11-1.8.14         |       h65de747_0         820 KB
+    xorg-xorgproto-2025.1      |       h47b2149_0         555 KB
+    xz-5.8.4                   |       h140a991_0         652 KB
+    ------------------------------------------------------------
+                                           Total:        37.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-52_gnu 
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6 
+  ca-certificates    pkgs/main/noarch::ca-certificates-2026.10.20-h59cdc77_1 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.44-h9e0c5a2_3 
+  libexpat           pkgs/main/linux-64::libexpat-2.10.0-h7354ed3_0 
+  libffi             pkgs/main/linux-64::libffi-3.4.8-h06d3fd0_3 
+  libgcc             pkgs/main/linux-64::libgcc-15.2.0-h69a1729_8 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-15.2.0-h166f726_8 
+  libnsl             pkgs/main/linux-64::libnsl-2.0.0-h5eee18b_0 
+  libstdcxx          pkgs/main/linux-64::libstdcxx-15.2.0-h39759b7_8 
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0 
+  libxcb             pkgs/main/linux-64::libxcb-1.17.0-h9b100fa_0 
+  libzlib            pkgs/main/linux-64::libzlib-1.3.2-h47b2149_0 
+  ncurses            pkgs/main/linux-64::ncurses-6.6-hfaaeb4e_0 
+  openssl            pkgs/main/linux-64::openssl-3.5.9-h1b28b03_0 
+  packaging          pkgs/main/linux-64::packaging-26.3-py310h06a4308_0 
+  pip                pkgs/main/noarch::pip-26.2.2-pyhc872135_0 
+  pthread-stubs      pkgs/main/linux-64::pthread-stubs-0.3-h47b2149_2 
+  python             pkgs/main/linux-64::python-3.10.22-hd9cb797_1 
+  readline           pkgs/main/linux-64::readline-8.3-hc2a1206_0 
+  setuptools         pkgs/main/linux-64::setuptools-84.2.1-py310h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.53.4-h795bf6d_0 
+  tk                 pkgs/main/linux-64::tk-8.6.15-h54e0aa7_0 
+  tzdata             pkgs/main/noarch::tzdata-2026c-he532380_0 
+  wheel              pkgs/main/linux-64::wheel-0.48.0-py310h06a4308_0 
+  xorg-libx11        pkgs/main/linux-64::xorg-libx11-1.8.14-h65de747_0 
+  xorg-libxau        pkgs/main/linux-64::xorg-libxau-1.0.12-h9b100fa_0 
+  xorg-libxdmcp      pkgs/main/linux-64::xorg-libxdmcp-1.1.5-h9b100fa_0 
+  xorg-xorgproto     pkgs/main/linux-64::xorg-xorgproto-2025.1-h47b2149_0 
+  xz                 pkgs/main/linux-64::xz-5.8.4-h140a991_0 
+  zlib               pkgs/main/linux-64::zlib-1.3.2-h47b2149_0 
+
+
+
+Downloading and Extracting Packages: ...working...python-3.10.22       | 24.4 MB   |            |   0% 
+openssl-3.5.9        | 5.7 MB    |            |   0% [A
+
+sqlite-3.53.4        | 1.2 MB    |            |   0% [A[A
+
+
+pip-26.2.2           | 1.1 MB    |            |   0% [A[A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    |            |   0% [A[A[A[A
+
+
+
+
+ncurses-6.6          | 893 KB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+xorg-libx11-1.8.14   | 820 KB    |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+packaging-26.3       | 329 KB    |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libexpat-2.10.0      | 132 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 117 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 113 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.48.0         | 59 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+pthread-stubs-0.3    | 7 KB      |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+sqlite-3.53.4        | 1.2 MB    | 1          |   1% [A[A
+
+
+pip-26.2.2           | 1.1 MB    | 1          |   1% [A[A[Apython-3.10.22       | 24.4 MB   |            |   0% 
+
+sqlite-3.53.4        | 1.2 MB    | 2          |   3% [A[A
+
+
+pip-26.2.2           | 1.1 MB    | 2          |   3% [A[A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | 1          |   2% [A[A[A[Apython-3.10.22       | 24.4 MB   |            |   0% 
+
+
+
+setuptools-84.2.1    | 1.0 MB    | 4          |   5% [A[A[A[A
+
+sqlite-3.53.4        | 1.2 MB    | 5          |   5% [A[A
+
+
+pip-26.2.2           | 1.1 MB    | 5          |   5% [A[A[Apython-3.10.22       | 24.4 MB   |            |   0% 
+
+sqlite-3.53.4        | 1.2 MB    | 8          |   9% [A[A
+
+
+pip-26.2.2           | 1.1 MB    | #          |  11% [A[A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | 7          |   8% [A[A[A[Apython-3.10.22       | 24.4 MB   |            |   1% 
+
+sqlite-3.53.4        | 1.2 MB    | #3         |  14% [A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | #2         |  12% [A[A[A[Apython-3.10.22       | 24.4 MB   | 1          |   1% 
+
+sqlite-3.53.4        | 1.2 MB    | ##2        |  23% [A[A
+
+
+pip-26.2.2           | 1.1 MB    | #3         |  14% [A[A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | #8         |  18% [A[A[A[Apython-3.10.22       | 24.4 MB   | 1          |   2% 
+
+sqlite-3.53.4        | 1.2 MB    | ###4       |  34% [A[A
+
+
+pip-26.2.2           | 1.1 MB    | ###8       |  38% [A[A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | ##7        |  28% [A[A[A[Apython-3.10.22       | 24.4 MB   | 2          |   3% 
+
+sqlite-3.53.4        | 1.2 MB    | #####5     |  55% [A[A
+
+
+pip-26.2.2           | 1.1 MB    | #####1     |  52% [A[A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | ####3      |  43% [A[A[A[Apython-3.10.22       | 24.4 MB   | 4          |   4% 
+
+sqlite-3.53.4        | 1.2 MB    | ########3  |  83% [A[A
+
+sqlite-3.53.4        | 1.2 MB    | ########## | 100% [A[A
+openssl-3.5.9        | 5.7 MB    |            |   0% [A
+
+sqlite-3.53.4        | 1.2 MB    | ########## | 100% [A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | ######4    |  65% [A[A[A[Apython-3.10.22       | 24.4 MB   | 6          |   7% 
+openssl-3.5.9        | 5.7 MB    |            |   1% [A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | ########## | 100% [A[A[A[Apython-3.10.22       | 24.4 MB   | #          |  10% 
+
+
+
+setuptools-84.2.1    | 1.0 MB    | ########## | 100% [A[A[A[A
+
+
+
+setuptools-84.2.1    | 1.0 MB    | ########## | 100% [A[A[A[A
+openssl-3.5.9        | 5.7 MB    | 1          |   1% [A
+
+
+
+
+ncurses-6.6          | 893 KB    | 1          |   2% [A[A[A[A[A
+
+
+
+
+ncurses-6.6          | 893 KB    | ########## | 100% [A[A[A[A[A
+openssl-3.5.9        | 5.7 MB    | 2          |   2% [Apython-3.10.22       | 24.4 MB   | #3         |  13% 
+
+
+pip-26.2.2           | 1.1 MB    | ######2    |  63% [A[A[A
+
+
+pip-26.2.2           | 1.1 MB    | ########## | 100% [A[A[A
+openssl-3.5.9        | 5.7 MB    | 3          |   4% [A
+
+
+
+
+
+xorg-libx11-1.8.14   | 820 KB    | 1          |   2% [A[A[A[A[A[Apython-3.10.22       | 24.4 MB   | ##1        |  21% 
+
+
+pip-26.2.2           | 1.1 MB    | ########## | 100% [A[A[A
+openssl-3.5.9        | 5.7 MB    | 5          |   6% [A
+
+
+
+
+ncurses-6.6          | 893 KB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+ncurses-6.6          | 893 KB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+
+xorg-libx11-1.8.14   | 820 KB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+xorg-libx11-1.8.14   | 820 KB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+xorg-libx11-1.8.14   | 820 KB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | 2          |   2% [A[A[A[A[A[A[A
+openssl-3.5.9        | 5.7 MB    | 9          |   9% [Apython-3.10.22       | 24.4 MB   | ##8        |  29% 
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ########8  |  88% [A[A[A[A[A[A[A
+openssl-3.5.9        | 5.7 MB    | #3         |  14% [A
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | 2          |   3% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+openssl-3.5.9        | 5.7 MB    | ##1        |  21% [A
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+packaging-26.3       | 329 KB    | 4          |   5% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+packaging-26.3       | 329 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+packaging-26.3       | 329 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+openssl-3.5.9        | 5.7 MB    | ###2       |  33% [Apython-3.10.22       | 24.4 MB   | ###4       |  34% 
+openssl-3.5.9        | 5.7 MB    | #####      |  51% [Apython-3.10.22       | 24.4 MB   | ####1      |  42% 
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libexpat-2.10.0      | 132 KB    | #2         |  12% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libexpat-2.10.0      | 132 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+openssl-3.5.9        | 5.7 MB    | #######3   |  74% [A
+
+
+
+
+
+
+
+
+
+libexpat-2.10.0      | 132 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+openssl-3.5.9        | 5.7 MB    | #########4 |  95% [Apython-3.10.22       | 24.4 MB   | ####9      |  49% 
+openssl-3.5.9        | 5.7 MB    | ########## | 100% [A
+openssl-3.5.9        | 5.7 MB    | ########## | 100% [A
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 113 KB    | #4         |  14% [A[A[A[A[A[A[A[A[A[A[A[Apython-3.10.22       | 24.4 MB   | #####6     |  57% 
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 113 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 113 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.48.0         | 59 KB     | ##7        |  27% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.48.0         | 59 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.48.0         | 59 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.10.22       | 24.4 MB   | ######4    |  64% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+pthread-stubs-0.3    | 7 KB      | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+pthread-stubs-0.3    | 7 KB      | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+pthread-stubs-0.3    | 7 KB      | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.10.22       | 24.4 MB   | ######9    |  69% python-3.10.22       | 24.4 MB   | #######4   |  74% 
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 117 KB    | #3         |  14% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 117 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 117 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[Apython-3.10.22       | 24.4 MB   | #######8   |  78% python-3.10.22       | 24.4 MB   | ########5  |  85% python-3.10.22       | 24.4 MB   | ########8  |  88% python-3.10.22       | 24.4 MB   | #########  |  91% python-3.10.22       | 24.4 MB   | #########4 |  94% python-3.10.22       | 24.4 MB   | ########## | 100% python-3.10.22       | 24.4 MB   | ########## | 100% python-3.10.22       | 24.4 MB   | ########## | 100%                                                      
+                                                     [A
+
+                                                     [A[A
+
+
+                                                     [A[A[A
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A done
+Preparing transaction: \ done
+Verifying transaction: / - \ | / done
+Executing transaction: \ | / - \ | / - \ | / - done
+#
+# To activate this environment, use
+#
+#     $ conda activate /home/kaiwen/research/OSCBF-research/envs/oscbf
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+/home/kaiwen/research/OSCBF-research/envs/oscbf/bin/python
+Obtaining file:///home/kaiwen/research/OSCBF-research/src/oscbf
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting numpy (from oscbf==0.0.1)
+  Using cached numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting jax==0.4.30 (from oscbf==0.0.1)
+  Downloading jax-0.4.30-py3-none-any.whl.metadata (22 kB)
+Collecting jaxlib==0.4.30 (from oscbf==0.0.1)
+  Downloading jaxlib-0.4.30-cp310-cp310-manylinux2014_x86_64.whl.metadata (1.0 kB)
+Collecting cbfpy==0.0.1 (from oscbf==0.0.1)
+  Downloading cbfpy-0.0.1-py3-none-any.whl.metadata (8.9 kB)
+Collecting qpax (from oscbf==0.0.1)
+  Downloading qpax-0.1.4-py3-none-any.whl.metadata (18 kB)
+Collecting pybullet>=3.2.7 (from oscbf==0.0.1)
+  Downloading pybullet-3.2.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.8 kB)
+Collecting matplotlib (from oscbf==0.0.1)
+  Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+Collecting networkx (from oscbf==0.0.1)
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting lxml (from oscbf==0.0.1)
+  Downloading lxml-6.1.3-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting trimesh (from oscbf==0.0.1)
+  Downloading trimesh-5.2.0-py3-none-any.whl.metadata (13 kB)
+Collecting numpy (from oscbf==0.0.1)
+  Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting ml-dtypes>=0.2.0 (from jax==0.4.30->oscbf==0.0.1)
+  Downloading ml_dtypes-0.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting opt-einsum (from jax==0.4.30->oscbf==0.0.1)
+  Downloading opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting scipy>=1.9 (from jax==0.4.30->oscbf==0.0.1)
+  Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+INFO: pip is looking at multiple versions of ml-dtypes to determine which version is compatible with other requirements. This could take a while.
+Collecting ml-dtypes>=0.2.0 (from jax==0.4.30->oscbf==0.0.1)
+  Downloading ml_dtypes-0.5.4-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.9 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->oscbf==0.0.1)
+  Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib->oscbf==0.0.1)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib->oscbf==0.0.1)
+  Downloading fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (125 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->oscbf==0.0.1)
+  Downloading kiwisolver-1.5.1-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (5.2 kB)
+Requirement already satisfied: packaging>=20.0 in ./envs/oscbf/lib/python3.10/site-packages (from matplotlib->oscbf==0.0.1) (26.3)
+Collecting pillow>=8 (from matplotlib->oscbf==0.0.1)
+  Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib->oscbf==0.0.1)
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil>=2.7 (from matplotlib->oscbf==0.0.1)
+  Downloading python_dateutil-3.0.0-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting six>=1.6 (from python-dateutil>=2.7->matplotlib->oscbf==0.0.1)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting tzdata (from python-dateutil>=2.7->matplotlib->oscbf==0.0.1)
+  Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading cbfpy-0.0.1-py3-none-any.whl (46 kB)
+Downloading jax-0.4.30-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 874.7 kB/s  0:00:02
+Downloading jaxlib-0.4.30-cp310-cp310-manylinux2014_x86_64.whl (79.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.6/79.6 MB 3.1 MB/s  0:00:25
+Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 9.3 MB/s  0:00:02
+Downloading ml_dtypes-0.5.4-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (5.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 7.2 MB/s  0:00:00
+Downloading pybullet-3.2.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (103.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 MB 6.1 MB/s  0:00:17
+Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 3.8 MB/s  0:00:09
+Downloading lxml-6.1.3-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 3.2 MB/s  0:00:01
+Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 4.2 MB/s  0:00:02
+Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 4.8 MB/s  0:00:01
+Downloading kiwisolver-1.5.1-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 20.1 MB/s  0:00:00
+Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 5.4 MB/s  0:00:01
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 5.5 MB/s  0:00:00
+Downloading opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+Downloading qpax-0.1.4-py3-none-any.whl (36 kB)
+Downloading trimesh-5.2.0-py3-none-any.whl (751 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 751.5/751.5 kB 5.6 MB/s  0:00:00
+Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Building wheels for collected packages: oscbf
+  Building editable for oscbf (pyproject.toml): started
+  Building editable for oscbf (pyproject.toml): finished with status 'done'
+  Created wheel for oscbf: filename=oscbf-0.0.1-0.editable-py3-none-any.whl size=5719 sha256=fb09cdc18b4a4873c90f058ba2219106d48a1ba48a5e8a611e7cdb6eb543faf0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-a5cui_r_/wheels/5b/1a/73/f72978c79666519654d8dc2a148eb8b853b1f351da9246f92e
+Successfully built oscbf
+Installing collected packages: pybullet, tzdata, six, pyparsing, pillow, opt-einsum, numpy, networkx, lxml, kiwisolver, fonttools, cycler, trimesh, scipy, python-dateutil, ml-dtypes, contourpy, matplotlib, jaxlib, jax, qpax, cbfpy, oscbf
+
+Successfully installed cbfpy-0.0.1 contourpy-1.3.2 cycler-0.12.1 fonttools-4.65.0 jax-0.4.30 jaxlib-0.4.30 kiwisolver-1.5.1 lxml-6.1.3 matplotlib-3.10.9 ml-dtypes-0.5.4 networkx-3.4.2 numpy-1.26.4 opt-einsum-3.4.0 oscbf-0.0.1 pillow-12.3.0 pybullet-3.2.7 pyparsing-3.3.3 python-dateutil-3.0.0 qpax-0.1.4 scipy-1.15.3 six-1.17.0 trimesh-5.2.0 tzdata-2026.6
+No broken requirements found.
+pybullet build time: Jan 29 2025 23:16:28
+{
+  "time": "2026-11-04T21:20:35.161801+08:00",
+  "robot": "official Franka Panda (not Piper H)",
+  "hardware_connected": false,
+  "versions": {
+    "oscbf": "0.0.1",
+    "jax": "0.4.30",
+    "jaxlib": "0.4.30",
+    "cbfpy": "0.0.1",
+    "qpax": "0.1.4",
+    "numpy": "1.26.4",
+    "pybullet": "3.2.7"
+  },
+  "devices": [
+    "TFRT_CPU_0"
+  ],
+  "warmup_s": 0.7613918400002149,
+  "ten_warm_calls_ms": [
+    0.07816899960744195,
+    0.052925000090908725,
+    0.0478429992654128,
+    0.04616599926521303,
+    0.045336999392020516,
+    0.045136000153434,
+    0.04481699943426065,
+    0.04489599996304605,
+    0.04494099994190037,
+    0.044240000534045976
+  ],
+  "qdot_output": [
+    1.1012044303367233e-05,
+    0.0002902585599779657,
+    -7.303507405116629e-06,
+    0.00016328561702043962,
+    -5.195225618493824e-06,
+    0.0001229649867190005,
+    5.922287804742336e-06
+  ],
+  "note": "Smoke test only, not a control-period benchmark or a Piper H replication result."
+}
+OSCBF_VELOCITY_QP_OK: /home/kaiwen/research/OSCBF-research/logs/oscbf_smoke_20261104_212035.json
+OSCBF_ENV_OK: official velocity QP warmed up on CPU; GUI demo can now run.

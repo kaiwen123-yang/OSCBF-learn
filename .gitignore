@@ -1,0 +1,23 @@
+# Recreated on each machine; experiment logs/results are intentionally tracked.
+/envs/
+/ros_ws/build/
+/ros_ws/install/
+/ros_ws/log/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/.vscode/
+/logs/hardware_command.lock
+
+# Captured login pages, not Piper technical documentation. Keep local only.
+/logs/piper_h_manual_page.html
+/logs/piper_h_manual_page_decoded.html
+/logs/piper_h_manual_export.txt
+
+# Local credentials and editor/temp files.
+.env
+.env.*
+*.pem
+*.key
+*.swp
+.DS_Store

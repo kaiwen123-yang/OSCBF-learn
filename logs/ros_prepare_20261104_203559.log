@@ -1,0 +1,1335 @@
+Cloning into '/home/kaiwen/research/OSCBF-research/ros_ws/src/agx_arm_ros'...
+Reset branch 'ros2'
+Your branch is up to date with 'origin/ros2'.
+Submodule 'src/agx_arm_description/agx_arm_urdf' (https://github.com/agilexrobotics/agx_arm_urdf.git) registered for path 'src/agx_arm_description/agx_arm_urdf'
+Cloning into '/home/kaiwen/research/OSCBF-research/ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf'...
+Submodule path 'src/agx_arm_description/agx_arm_urdf': checked out '680fa925cd00db7e2628563d2edc5540963045de'
+Missing system/ROS packages: ros-humble-xacro ros-humble-joint-state-publisher-gui ros-humble-moveit ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-topic-tools
+Get:1 https://cli.github.com/packages stable InRelease [3917 B]
+Get:2 https://nvidia.github.io/libnvidia-container/stable/deb/amd64  InRelease [1477 B]
+Get:3 https://packages.microsoft.com/repos/code stable InRelease [3590 B]
+Get:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  InRelease [1578 B]
+Get:5 https://cli.github.com/packages stable/main amd64 Packages [357 B]
+Get:6 https://nvidia.github.io/libnvidia-container/stable/deb/amd64  Packages [28.0 kB]
+Get:7 https://packages.microsoft.com/repos/code stable/main amd64 Packages [31.0 kB]
+Get:8 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages [3195 kB]
+Get:9 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy InRelease [4682 B]
+Get:10 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 Packages [1867 kB]
+Get:11 https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu jammy InRelease [48.5 kB]
+Hit:12 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy InRelease
+Get:13 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates InRelease [128 kB]
+Get:14 https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu jammy/stable amd64 Packages [92.7 kB]
+Get:15 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports InRelease [127 kB]
+Get:16 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security InRelease [129 kB]
+Get:17 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 Packages [3939 kB]
+Get:18 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main i386 Packages [1108 kB]
+Get:19 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main Translation-en [579 kB]
+Get:20 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 DEP-11 Metadata [118 kB]
+Get:21 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/restricted i386 Packages [55.9 kB]
+Get:22 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/restricted amd64 Packages [6778 kB]
+Get:23 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/restricted Translation-en [1303 kB]
+Get:24 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 Packages [1289 kB]
+Get:25 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe i386 Packages [824 kB]
+Get:26 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe Translation-en [326 kB]
+Get:27 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [360 kB]
+Get:28 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/multiverse amd64 Packages [86.1 kB]
+Get:29 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/multiverse i386 Packages [15.7 kB]
+Get:30 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/multiverse Translation-en [16.6 kB]
+Get:31 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:32 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/main amd64 Packages [70.2 kB]
+Get:33 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/main i386 Packages [61.7 kB]
+Get:34 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/main amd64 DEP-11 Metadata [5772 B]
+Get:35 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/universe i386 Packages [19.6 kB]
+Get:36 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/universe amd64 Packages [30.8 kB]
+Get:37 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/universe Translation-en [16.9 kB]
+Get:38 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [12.4 kB]
+Get:39 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/universe DEP-11 48x48 Icons [19.7 kB]
+Get:40 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/universe DEP-11 64x64 Icons [28.3 kB]
+Get:41 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/main amd64 Packages [3674 kB]
+Get:42 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/main i386 Packages [934 kB]
+Get:43 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/main Translation-en [513 kB]
+Get:44 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/main amd64 DEP-11 Metadata [74.3 kB]
+Get:45 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/restricted i386 Packages [52.9 kB]
+Get:46 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/restricted amd64 Packages [6545 kB]
+Get:47 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/restricted Translation-en [1261 kB]
+Get:48 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/universe amd64 Packages [1057 kB]
+Get:49 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/universe i386 Packages [715 kB]
+Get:50 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/universe Translation-en [238 kB]
+Get:51 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/universe amd64 DEP-11 Metadata [127 kB]
+Get:52 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/multiverse amd64 Packages [79.6 kB]
+Get:53 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/multiverse i386 Packages [12.3 kB]
+Get:54 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/multiverse Translation-en [13.7 kB]
+Fetched 38.0 MB in 21s (1791 kB/s)
+Reading package lists...
+W: https://mirrors.ustc.edu.cn/ros2/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  gir1.2-snapd-1 libavahi-ui-gtk3-0 libbsd0:i386 libdrm2:i386 libexpat1:i386
+  libffi8:i386 libgbm1:i386 libmd0:i386 libminiupnpc17 libnatpmp1
+  libnvidia-egl-wayland1:i386 libvncclient1 libwayland-client0:i386
+  libwayland-server0:i386 libx11-6:i386 libx11-xcb1:i386 libxau6:i386
+  libxcb-dri3-0:i386 libxcb-present0:i386 libxcb-randr0:i386 libxcb1:i386
+  libxdmcp6:i386 libxext6:i386 mobile-broadband-provider-info
+  nvidia-firmware-595-595.71.05 python3-debconf remmina-common
+  transmission-common update-notifier-common
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libcap-dev libccd-dev libccd2 libexpected-dev libfcl-dev libfcl0.7
+  liboctomap-dev liboctomap1.9 libomp-14-dev libomp-dev libomp5-14
+  python-babel-localedata python3-babel python3-graphviz python3-jinja2
+  python3-typeguard ros-humble-ackermann-msgs
+  ros-humble-ackermann-steering-controller ros-humble-admittance-controller
+  ros-humble-backward-ros ros-humble-bicycle-steering-controller
+  ros-humble-chomp-motion-planner ros-humble-control-msgs
+  ros-humble-control-toolbox ros-humble-controller-interface
+  ros-humble-controller-manager ros-humble-controller-manager-msgs
+  ros-humble-diff-drive-controller ros-humble-effort-controllers
+  ros-humble-eigen-stl-containers ros-humble-filters
+  ros-humble-force-torque-sensor-broadcaster
+  ros-humble-forward-command-controller ros-humble-generate-parameter-library
+  ros-humble-generate-parameter-library-py ros-humble-geometric-shapes
+  ros-humble-gpio-controllers ros-humble-gripper-controllers
+  ros-humble-hardware-interface ros-humble-imu-sensor-broadcaster
+  ros-humble-joint-limits ros-humble-joint-state-broadcaster
+  ros-humble-joint-state-publisher ros-humble-joint-trajectory-controller
+  ros-humble-kinematics-interface ros-humble-launch-param-builder
+  ros-humble-mecanum-drive-controller ros-humble-moveit-common
+  ros-humble-moveit-configs-utils ros-humble-moveit-core
+  ros-humble-moveit-kinematics ros-humble-moveit-msgs
+  ros-humble-moveit-planners ros-humble-moveit-planners-chomp
+  ros-humble-moveit-planners-ompl ros-humble-moveit-plugins
+  ros-humble-moveit-ros ros-humble-moveit-ros-benchmarks
+  ros-humble-moveit-ros-move-group ros-humble-moveit-ros-occupancy-map-monitor
+  ros-humble-moveit-ros-planning ros-humble-moveit-ros-planning-interface
+  ros-humble-moveit-ros-robot-interaction ros-humble-moveit-ros-visualization
+  ros-humble-moveit-ros-warehouse ros-humble-moveit-setup-app-plugins
+  ros-humble-moveit-setup-assistant ros-humble-moveit-setup-controllers
+  ros-humble-moveit-setup-core-plugins ros-humble-moveit-setup-framework
+  ros-humble-moveit-setup-srdf-plugins
+  ros-humble-moveit-simple-controller-manager
+  ros-humble-object-recognition-msgs ros-humble-octomap
+  ros-humble-octomap-msgs ros-humble-ompl ros-humble-parameter-traits
+  ros-humble-pid-controller ros-humble-pilz-industrial-motion-planner
+  ros-humble-pose-broadcaster ros-humble-position-controllers
+  ros-humble-random-numbers ros-humble-range-sensor-broadcaster
+  ros-humble-realtime-tools ros-humble-ros2-control-test-assets
+  ros-humble-ros2controlcli ros-humble-rsl ros-humble-ruckig
+  ros-humble-srdfdom ros-humble-steering-controllers-library
+  ros-humble-tcb-span ros-humble-tl-expected ros-humble-topic-tools-interfaces
+  ros-humble-transmission-interface ros-humble-tricycle-controller
+  ros-humble-tricycle-steering-controller ros-humble-urdfdom-py
+  ros-humble-velocity-controllers ros-humble-warehouse-ros
+Suggested packages:
+  libomp-14-doc python-jinja2-doc
+The following NEW packages will be installed:
+  libcap-dev libccd-dev libccd2 libexpected-dev libfcl-dev libfcl0.7
+  liboctomap-dev liboctomap1.9 libomp-14-dev libomp-dev libomp5-14
+  python-babel-localedata python3-babel python3-graphviz python3-jinja2
+  python3-typeguard ros-humble-ackermann-msgs
+  ros-humble-ackermann-steering-controller ros-humble-admittance-controller
+  ros-humble-backward-ros ros-humble-bicycle-steering-controller
+  ros-humble-chomp-motion-planner ros-humble-control-msgs
+  ros-humble-control-toolbox ros-humble-controller-interface
+  ros-humble-controller-manager ros-humble-controller-manager-msgs
+  ros-humble-diff-drive-controller ros-humble-effort-controllers
+  ros-humble-eigen-stl-containers ros-humble-filters
+  ros-humble-force-torque-sensor-broadcaster
+  ros-humble-forward-command-controller ros-humble-generate-parameter-library
+  ros-humble-generate-parameter-library-py ros-humble-geometric-shapes
+  ros-humble-gpio-controllers ros-humble-gripper-controllers
+  ros-humble-hardware-interface ros-humble-imu-sensor-broadcaster
+  ros-humble-joint-limits ros-humble-joint-state-broadcaster
+  ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui
+  ros-humble-joint-trajectory-controller ros-humble-kinematics-interface
+  ros-humble-launch-param-builder ros-humble-mecanum-drive-controller
+  ros-humble-moveit ros-humble-moveit-common ros-humble-moveit-configs-utils
+  ros-humble-moveit-core ros-humble-moveit-kinematics ros-humble-moveit-msgs
+  ros-humble-moveit-planners ros-humble-moveit-planners-chomp
+  ros-humble-moveit-planners-ompl ros-humble-moveit-plugins
+  ros-humble-moveit-ros ros-humble-moveit-ros-benchmarks
+  ros-humble-moveit-ros-move-group ros-humble-moveit-ros-occupancy-map-monitor
+  ros-humble-moveit-ros-planning ros-humble-moveit-ros-planning-interface
+  ros-humble-moveit-ros-robot-interaction ros-humble-moveit-ros-visualization
+  ros-humble-moveit-ros-warehouse ros-humble-moveit-setup-app-plugins
+  ros-humble-moveit-setup-assistant ros-humble-moveit-setup-controllers
+  ros-humble-moveit-setup-core-plugins ros-humble-moveit-setup-framework
+  ros-humble-moveit-setup-srdf-plugins
+  ros-humble-moveit-simple-controller-manager
+  ros-humble-object-recognition-msgs ros-humble-octomap
+  ros-humble-octomap-msgs ros-humble-ompl ros-humble-parameter-traits
+  ros-humble-pid-controller ros-humble-pilz-industrial-motion-planner
+  ros-humble-pose-broadcaster ros-humble-position-controllers
+  ros-humble-random-numbers ros-humble-range-sensor-broadcaster
+  ros-humble-realtime-tools ros-humble-ros2-control
+  ros-humble-ros2-control-test-assets ros-humble-ros2-controllers
+  ros-humble-ros2controlcli ros-humble-rsl ros-humble-ruckig
+  ros-humble-srdfdom ros-humble-steering-controllers-library
+  ros-humble-tcb-span ros-humble-tl-expected ros-humble-topic-tools
+  ros-humble-topic-tools-interfaces ros-humble-transmission-interface
+  ros-humble-tricycle-controller ros-humble-tricycle-steering-controller
+  ros-humble-urdfdom-py ros-humble-velocity-controllers
+  ros-humble-warehouse-ros ros-humble-xacro
+0 upgraded, 105 newly installed, 0 to remove and 624 not upgraded.
+Need to get 26.5 MB of archives.
+After this operation, 164 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Get:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 libcap-dev amd64 1:2.44-1ubuntu0.22.04.3 [39.7 kB]
+Get:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 libexpected-dev all 1.0.0~dfsg-2 [16.0 kB]
+Get:3 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 libccd2 amd64 2.1-2 [21.8 kB]
+Get:4 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 liboctomap1.9 amd64 1.9.7+dfsg-3 [80.4 kB]
+Get:5 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 libfcl0.7 amd64 0.7.0-3 [922 kB]
+Get:6 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-ackermann-msgs amd64 2.0.2-3jammy.20260907.210926 [48.0 kB]
+Get:7 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 liboctomap-dev amd64 1.9.7+dfsg-3 [1164 kB]
+Get:8 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 libomp5-14 amd64 1:14.0.0-1ubuntu1.1 [389 kB]
+Get:9 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 libomp-14-dev amd64 1:14.0.0-1ubuntu1.1 [347 kB]
+Get:10 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 python-babel-localedata all 2.8.0+dfsg.1-7 [4982 kB]
+Get:11 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-backward-ros amd64 1.0.8-2jammy.20260226.010809 [59.6 kB]
+Get:12 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-control-msgs amd64 4.9.0-1jammy.20260907.212955 [460 kB]
+Get:13 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 python3-babel all 2.8.0+dfsg.1-7 [85.1 kB]
+Get:14 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 python3-graphviz all 0.14.2-1 [27.0 kB]
+Get:15 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 python3-jinja2 all 3.0.3-1ubuntu0.4 [108 kB]
+Get:16 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 python3-typeguard all 2.2.2-1.1 [13.3 kB]
+Get:17 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 libccd-dev amd64 2.1-2 [10.5 kB]
+Get:18 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 libfcl-dev amd64 0.7.0-3 [235 kB]
+Get:19 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 libomp-dev amd64 1:14.0-55~exp2 [3074 B]
+Get:20 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-hardware-interface amd64 2.54.3-1jammy.20261005.211947 [229 kB]
+Get:21 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-controller-interface amd64 2.54.3-1jammy.20261005.212803 [36.1 kB]
+Get:22 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-generate-parameter-library-py amd64 0.7.7-1jammy.20261005.210934 [47.7 kB]
+Get:23 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-tcb-span amd64 1.3.2-1jammy.20260611.075323 [10.9 kB]
+Get:24 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-rsl amd64 1.3.0-1jammy.20260907.222817 [18.6 kB]
+Get:25 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-tl-expected amd64 1.3.2-1jammy.20260611.075453 [17.4 kB]
+Get:26 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-parameter-traits amd64 0.7.7-1jammy.20261005.211109 [10.7 kB]
+Get:27 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-generate-parameter-library amd64 0.7.7-1jammy.20261005.211941 [9546 B]
+Get:28 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-realtime-tools amd64 2.15.1-1jammy.20260907.224545 [44.0 kB]
+Get:29 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-steering-controllers-library amd64 2.54.1-1jammy.20261005.220236 [194 kB]
+Get:30 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-ackermann-steering-controller amd64 2.54.1-1jammy.20261005.221220 [41.8 kB]
+Get:31 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-filters amd64 2.2.2-1jammy.20260907.223102 [75.2 kB]
+Get:32 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-control-toolbox amd64 3.7.1-1jammy.20261005.213725 [136 kB]
+Get:33 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-kinematics-interface amd64 0.4.2-1jammy.20260908.011512 [15.3 kB]
+Get:34 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-admittance-controller amd64 2.54.1-1jammy.20261005.215353 [257 kB]
+Get:35 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-bicycle-steering-controller amd64 2.54.1-1jammy.20261005.221403 [39.6 kB]
+Get:36 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-eigen-stl-containers amd64 1.1.0-1jammy.20260304.090336 [10.0 kB]
+Get:37 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-random-numbers amd64 2.0.5-1jammy.20260616.085807 [29.5 kB]
+Get:38 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-geometric-shapes amd64 2.3.4-1jammy.20260907.223227 [102 kB]
+Get:39 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-octomap amd64 1.9.8-1jammy.20260226.005011 [227 kB]
+Get:40 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-urdfdom-py amd64 1.2.1-1jammy.20260907.220847 [34.0 kB]
+Get:41 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-srdfdom amd64 2.0.7-1jammy.20260908.002942 [62.0 kB]
+Get:42 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-common amd64 2.5.10-1jammy.20260902.113342 [8272 B]
+Get:43 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-object-recognition-msgs amd64 2.0.0-3jammy.20260908.065709 [163 kB]
+Get:44 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-octomap-msgs amd64 2.0.1-1jammy.20260907.212327 [82.3 kB]
+Get:45 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-msgs amd64 2.2.3-1jammy.20260908.070153 [1096 kB]
+Get:46 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-ruckig amd64 0.9.2-1jammy.20260226.012139 [76.6 kB]
+Get:47 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-core amd64 2.5.10-1jammy.20261005.213935 [1165 kB]
+Get:48 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-chomp-motion-planner amd64 2.5.10-1jammy.20261006.001220 [101 kB]
+Get:49 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-controller-manager-msgs amd64 2.54.3-1jammy.20261005.193950 [209 kB]
+Get:50 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-controller-manager amd64 2.54.3-1jammy.20261005.213325 [434 kB]
+Get:51 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-diff-drive-controller amd64 2.54.1-1jammy.20261005.215421 [214 kB]
+Get:52 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-forward-command-controller amd64 2.54.1-1jammy.20261005.215520 [123 kB]
+Get:53 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-effort-controllers amd64 2.54.1-1jammy.20261005.220233 [21.5 kB]
+Get:54 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-force-torque-sensor-broadcaster amd64 2.54.1-1jammy.20261005.215506 [180 kB]
+Get:55 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-gpio-controllers amd64 2.54.1-1jammy.20261005.215541 [143 kB]
+Get:56 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-gripper-controllers amd64 2.54.1-1jammy.20261005.220452 [81.2 kB]
+Get:57 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-imu-sensor-broadcaster amd64 2.54.1-1jammy.20261005.215550 [79.4 kB]
+Get:58 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-joint-limits amd64 2.54.3-1jammy.20261005.211221 [134 kB]
+Get:59 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-joint-state-broadcaster amd64 2.54.1-1jammy.20261005.215610 [96.3 kB]
+Get:60 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-joint-state-publisher amd64 2.4.0-1jammy.20260907.215925 [16.1 kB]
+Get:61 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-joint-state-publisher-gui amd64 2.4.0-1jammy.20260907.220733 [15.5 kB]
+Get:62 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-joint-trajectory-controller amd64 2.54.1-1jammy.20261005.215624 [261 kB]
+Get:63 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-xacro amd64 2.1.1-1jammy.20260304.195513 [37.8 kB]
+Get:64 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-launch-param-builder amd64 0.1.1-1jammy.20260907.220739 [8314 B]
+Get:65 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-mecanum-drive-controller amd64 2.54.1-1jammy.20261005.220217 [190 kB]
+Get:66 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-planners-chomp amd64 2.5.10-1jammy.20261006.002018 [37.8 kB]
+Get:67 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros-occupancy-map-monitor amd64 2.5.10-1jammy.20261006.001254 [242 kB]
+Get:68 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros-planning amd64 2.5.10-1jammy.20261006.002346 [1110 kB]
+Get:69 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-ompl amd64 1.7.0-4jammy.20260226.011457 [2420 kB]
+Get:70 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-planners-ompl amd64 2.5.10-1jammy.20261006.004959 [331 kB]
+Get:71 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-kinematics amd64 2.5.10-1jammy.20261006.005613 [473 kB]
+Get:72 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros-move-group amd64 2.5.10-1jammy.20261006.010000 [353 kB]
+Get:73 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-warehouse-ros amd64 2.0.9-1jammy.20260915.214935 [122 kB]
+Get:74 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros-warehouse amd64 2.5.10-1jammy.20261006.004621 [450 kB]
+Get:75 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros-planning-interface amd64 2.5.10-1jammy.20261006.190700 [265 kB]
+Get:76 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-pilz-industrial-motion-planner amd64 2.5.10-1jammy.20261006.191949 [1725 kB]
+Get:77 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-planners amd64 2.5.10-1jammy.20261006.195921 [6682 B]
+Get:78 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-simple-controller-manager amd64 2.5.10-1jammy.20261006.001254 [99.2 kB]
+Get:79 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-plugins amd64 2.5.10-1jammy.20261006.002800 [6634 B]
+Get:80 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-configs-utils amd64 2.5.10-1jammy.20260908.003510 [24.9 kB]
+Get:81 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros-benchmarks amd64 2.5.10-1jammy.20261006.005431 [215 kB]
+Get:82 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros-robot-interaction amd64 2.5.10-1jammy.20261006.005213 [174 kB]
+Get:83 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros-visualization amd64 2.5.10-1jammy.20261006.192006 [716 kB]
+Get:84 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-ros amd64 2.5.10-1jammy.20261006.194930 [7176 B]
+Get:85 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-setup-framework amd64 2.5.10-1jammy.20261006.195302 [187 kB]
+Get:86 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-setup-app-plugins amd64 2.5.10-1jammy.20261006.200235 [71.0 kB]
+Get:87 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-setup-controllers amd64 2.5.10-1jammy.20261006.200259 [162 kB]
+Get:88 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-setup-core-plugins amd64 2.5.10-1jammy.20261006.200231 [62.6 kB]
+Get:89 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-setup-srdf-plugins amd64 2.5.10-1jammy.20261006.200441 [310 kB]
+Get:90 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit-setup-assistant amd64 2.5.10-1jammy.20261006.202414 [293 kB]
+Get:91 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-moveit amd64 2.5.10-1jammy.20261006.203658 [13.5 kB]
+Get:92 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-pid-controller amd64 2.54.1-1jammy.20261005.220229 [167 kB]
+Get:93 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-pose-broadcaster amd64 2.54.1-1jammy.20261005.215612 [86.8 kB]
+Get:94 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-position-controllers amd64 2.54.1-1jammy.20261005.220331 [20.9 kB]
+Get:95 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-range-sensor-broadcaster amd64 2.54.1-1jammy.20261005.220301 [74.1 kB]
+Get:96 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-ros2-control-test-assets amd64 2.54.3-1jammy.20261005.211102 [14.0 kB]
+Get:97 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-ros2controlcli amd64 2.54.3-1jammy.20261005.215818 [24.9 kB]
+Get:98 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-transmission-interface amd64 2.54.3-1jammy.20261005.212908 [50.8 kB]
+Get:99 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-ros2-control amd64 2.54.3-1jammy.20261005.220306 [6700 B]
+Get:100 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-tricycle-controller amd64 2.54.1-1jammy.20261005.220402 [186 kB]
+Get:101 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-tricycle-steering-controller amd64 2.54.1-1jammy.20261005.221813 [40.3 kB]
+Get:102 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-velocity-controllers amd64 2.54.1-1jammy.20261005.220432 [21.5 kB]
+Get:103 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-ros2-controllers amd64 2.54.1-1jammy.20261005.222410 [7542 B]
+Get:104 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-topic-tools-interfaces amd64 1.1.2-1jammy.20260907.205032 [80.9 kB]
+Get:105 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-topic-tools amd64 1.1.2-1jammy.20260907.224415 [197 kB]
+Fetched 26.5 MB in 18s (1460 kB/s)
+Selecting previously unselected package libcap-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 394281 files and directories currently installed.)
+Preparing to unpack .../000-libcap-dev_1%3a2.44-1ubuntu0.22.04.3_amd64.deb ...
+Unpacking libcap-dev:amd64 (1:2.44-1ubuntu0.22.04.3) ...
+Selecting previously unselected package libexpected-dev.
+Preparing to unpack .../001-libexpected-dev_1.0.0~dfsg-2_all.deb ...
+Unpacking libexpected-dev (1.0.0~dfsg-2) ...
+Selecting previously unselected package libccd2:amd64.
+Preparing to unpack .../002-libccd2_2.1-2_amd64.deb ...
+Unpacking libccd2:amd64 (2.1-2) ...
+Selecting previously unselected package liboctomap1.9:amd64.
+Preparing to unpack .../003-liboctomap1.9_1.9.7+dfsg-3_amd64.deb ...
+Unpacking liboctomap1.9:amd64 (1.9.7+dfsg-3) ...
+Selecting previously unselected package libfcl0.7:amd64.
+Preparing to unpack .../004-libfcl0.7_0.7.0-3_amd64.deb ...
+Unpacking libfcl0.7:amd64 (0.7.0-3) ...
+Selecting previously unselected package liboctomap-dev:amd64.
+Preparing to unpack .../005-liboctomap-dev_1.9.7+dfsg-3_amd64.deb ...
+Unpacking liboctomap-dev:amd64 (1.9.7+dfsg-3) ...
+Selecting previously unselected package libomp5-14:amd64.
+Preparing to unpack .../006-libomp5-14_1%3a14.0.0-1ubuntu1.1_amd64.deb ...
+Unpacking libomp5-14:amd64 (1:14.0.0-1ubuntu1.1) ...
+Selecting previously unselected package libomp-14-dev.
+Preparing to unpack .../007-libomp-14-dev_1%3a14.0.0-1ubuntu1.1_amd64.deb ...
+Unpacking libomp-14-dev (1:14.0.0-1ubuntu1.1) ...
+Selecting previously unselected package python-babel-localedata.
+Preparing to unpack .../008-python-babel-localedata_2.8.0+dfsg.1-7_all.deb ...
+Unpacking python-babel-localedata (2.8.0+dfsg.1-7) ...
+Selecting previously unselected package python3-babel.
+Preparing to unpack .../009-python3-babel_2.8.0+dfsg.1-7_all.deb ...
+Unpacking python3-babel (2.8.0+dfsg.1-7) ...
+Selecting previously unselected package python3-graphviz.
+Preparing to unpack .../010-python3-graphviz_0.14.2-1_all.deb ...
+Unpacking python3-graphviz (0.14.2-1) ...
+Selecting previously unselected package python3-jinja2.
+Preparing to unpack .../011-python3-jinja2_3.0.3-1ubuntu0.4_all.deb ...
+Unpacking python3-jinja2 (3.0.3-1ubuntu0.4) ...
+Selecting previously unselected package python3-typeguard.
+Preparing to unpack .../012-python3-typeguard_2.2.2-1.1_all.deb ...
+Unpacking python3-typeguard (2.2.2-1.1) ...
+Selecting previously unselected package ros-humble-ackermann-msgs.
+Preparing to unpack .../013-ros-humble-ackermann-msgs_2.0.2-3jammy.20260907.210926_amd64.deb ...
+Unpacking ros-humble-ackermann-msgs (2.0.2-3jammy.20260907.210926) ...
+Selecting previously unselected package ros-humble-backward-ros.
+Preparing to unpack .../014-ros-humble-backward-ros_1.0.8-2jammy.20260226.010809_amd64.deb ...
+Unpacking ros-humble-backward-ros (1.0.8-2jammy.20260226.010809) ...
+Selecting previously unselected package ros-humble-control-msgs.
+Preparing to unpack .../015-ros-humble-control-msgs_4.9.0-1jammy.20260907.212955_amd64.deb ...
+Unpacking ros-humble-control-msgs (4.9.0-1jammy.20260907.212955) ...
+Selecting previously unselected package ros-humble-hardware-interface.
+Preparing to unpack .../016-ros-humble-hardware-interface_2.54.3-1jammy.20261005.211947_amd64.deb ...
+Unpacking ros-humble-hardware-interface (2.54.3-1jammy.20261005.211947) ...
+Selecting previously unselected package ros-humble-controller-interface.
+Preparing to unpack .../017-ros-humble-controller-interface_2.54.3-1jammy.20261005.212803_amd64.deb ...
+Unpacking ros-humble-controller-interface (2.54.3-1jammy.20261005.212803) ...
+Selecting previously unselected package ros-humble-generate-parameter-library-py.
+Preparing to unpack .../018-ros-humble-generate-parameter-library-py_0.7.7-1jammy.20261005.210934_amd64.deb ...
+Unpacking ros-humble-generate-parameter-library-py (0.7.7-1jammy.20261005.210934) ...
+Selecting previously unselected package ros-humble-tcb-span.
+Preparing to unpack .../019-ros-humble-tcb-span_1.3.2-1jammy.20260611.075323_amd64.deb ...
+Unpacking ros-humble-tcb-span (1.3.2-1jammy.20260611.075323) ...
+Selecting previously unselected package ros-humble-rsl.
+Preparing to unpack .../020-ros-humble-rsl_1.3.0-1jammy.20260907.222817_amd64.deb ...
+Unpacking ros-humble-rsl (1.3.0-1jammy.20260907.222817) ...
+Selecting previously unselected package ros-humble-tl-expected.
+Preparing to unpack .../021-ros-humble-tl-expected_1.3.2-1jammy.20260611.075453_amd64.deb ...
+Unpacking ros-humble-tl-expected (1.3.2-1jammy.20260611.075453) ...
+Selecting previously unselected package ros-humble-parameter-traits.
+Preparing to unpack .../022-ros-humble-parameter-traits_0.7.7-1jammy.20261005.211109_amd64.deb ...
+Unpacking ros-humble-parameter-traits (0.7.7-1jammy.20261005.211109) ...
+Selecting previously unselected package ros-humble-generate-parameter-library.
+Preparing to unpack .../023-ros-humble-generate-parameter-library_0.7.7-1jammy.20261005.211941_amd64.deb ...
+Unpacking ros-humble-generate-parameter-library (0.7.7-1jammy.20261005.211941) ...
+Selecting previously unselected package ros-humble-realtime-tools.
+Preparing to unpack .../024-ros-humble-realtime-tools_2.15.1-1jammy.20260907.224545_amd64.deb ...
+Unpacking ros-humble-realtime-tools (2.15.1-1jammy.20260907.224545) ...
+Selecting previously unselected package ros-humble-steering-controllers-library.
+Preparing to unpack .../025-ros-humble-steering-controllers-library_2.54.1-1jammy.20261005.220236_amd64.deb ...
+Unpacking ros-humble-steering-controllers-library (2.54.1-1jammy.20261005.220236) ...
+Selecting previously unselected package ros-humble-ackermann-steering-controller.
+Preparing to unpack .../026-ros-humble-ackermann-steering-controller_2.54.1-1jammy.20261005.221220_amd64.deb ...
+Unpacking ros-humble-ackermann-steering-controller (2.54.1-1jammy.20261005.221220) ...
+Selecting previously unselected package ros-humble-filters.
+Preparing to unpack .../027-ros-humble-filters_2.2.2-1jammy.20260907.223102_amd64.deb ...
+Unpacking ros-humble-filters (2.2.2-1jammy.20260907.223102) ...
+Selecting previously unselected package ros-humble-control-toolbox.
+Preparing to unpack .../028-ros-humble-control-toolbox_3.7.1-1jammy.20261005.213725_amd64.deb ...
+Unpacking ros-humble-control-toolbox (3.7.1-1jammy.20261005.213725) ...
+Selecting previously unselected package ros-humble-kinematics-interface.
+Preparing to unpack .../029-ros-humble-kinematics-interface_0.4.2-1jammy.20260908.011512_amd64.deb ...
+Unpacking ros-humble-kinematics-interface (0.4.2-1jammy.20260908.011512) ...
+Selecting previously unselected package ros-humble-admittance-controller.
+Preparing to unpack .../030-ros-humble-admittance-controller_2.54.1-1jammy.20261005.215353_amd64.deb ...
+Unpacking ros-humble-admittance-controller (2.54.1-1jammy.20261005.215353) ...
+Selecting previously unselected package ros-humble-bicycle-steering-controller.
+Preparing to unpack .../031-ros-humble-bicycle-steering-controller_2.54.1-1jammy.20261005.221403_amd64.deb ...
+Unpacking ros-humble-bicycle-steering-controller (2.54.1-1jammy.20261005.221403) ...
+Selecting previously unselected package ros-humble-eigen-stl-containers.
+Preparing to unpack .../032-ros-humble-eigen-stl-containers_1.1.0-1jammy.20260304.090336_amd64.deb ...
+Unpacking ros-humble-eigen-stl-containers (1.1.0-1jammy.20260304.090336) ...
+Selecting previously unselected package ros-humble-random-numbers.
+Preparing to unpack .../033-ros-humble-random-numbers_2.0.5-1jammy.20260616.085807_amd64.deb ...
+Unpacking ros-humble-random-numbers (2.0.5-1jammy.20260616.085807) ...
+Selecting previously unselected package ros-humble-geometric-shapes.
+Preparing to unpack .../034-ros-humble-geometric-shapes_2.3.4-1jammy.20260907.223227_amd64.deb ...
+Unpacking ros-humble-geometric-shapes (2.3.4-1jammy.20260907.223227) ...
+Selecting previously unselected package ros-humble-octomap.
+Preparing to unpack .../035-ros-humble-octomap_1.9.8-1jammy.20260226.005011_amd64.deb ...
+Unpacking ros-humble-octomap (1.9.8-1jammy.20260226.005011) ...
+Selecting previously unselected package ros-humble-urdfdom-py.
+Preparing to unpack .../036-ros-humble-urdfdom-py_1.2.1-1jammy.20260907.220847_amd64.deb ...
+Unpacking ros-humble-urdfdom-py (1.2.1-1jammy.20260907.220847) ...
+Selecting previously unselected package ros-humble-srdfdom.
+Preparing to unpack .../037-ros-humble-srdfdom_2.0.7-1jammy.20260908.002942_amd64.deb ...
+Unpacking ros-humble-srdfdom (2.0.7-1jammy.20260908.002942) ...
+Selecting previously unselected package libccd-dev:amd64.
+Preparing to unpack .../038-libccd-dev_2.1-2_amd64.deb ...
+Unpacking libccd-dev:amd64 (2.1-2) ...
+Selecting previously unselected package libfcl-dev:amd64.
+Preparing to unpack .../039-libfcl-dev_0.7.0-3_amd64.deb ...
+Unpacking libfcl-dev:amd64 (0.7.0-3) ...
+Selecting previously unselected package ros-humble-moveit-common.
+Preparing to unpack .../040-ros-humble-moveit-common_2.5.10-1jammy.20260902.113342_amd64.deb ...
+Unpacking ros-humble-moveit-common (2.5.10-1jammy.20260902.113342) ...
+Selecting previously unselected package ros-humble-object-recognition-msgs.
+Preparing to unpack .../041-ros-humble-object-recognition-msgs_2.0.0-3jammy.20260908.065709_amd64.deb ...
+Unpacking ros-humble-object-recognition-msgs (2.0.0-3jammy.20260908.065709) ...
+Selecting previously unselected package ros-humble-octomap-msgs.
+Preparing to unpack .../042-ros-humble-octomap-msgs_2.0.1-1jammy.20260907.212327_amd64.deb ...
+Unpacking ros-humble-octomap-msgs (2.0.1-1jammy.20260907.212327) ...
+Selecting previously unselected package ros-humble-moveit-msgs.
+Preparing to unpack .../043-ros-humble-moveit-msgs_2.2.3-1jammy.20260908.070153_amd64.deb ...
+Unpacking ros-humble-moveit-msgs (2.2.3-1jammy.20260908.070153) ...
+Selecting previously unselected package ros-humble-ruckig.
+Preparing to unpack .../044-ros-humble-ruckig_0.9.2-1jammy.20260226.012139_amd64.deb ...
+Unpacking ros-humble-ruckig (0.9.2-1jammy.20260226.012139) ...
+Selecting previously unselected package ros-humble-moveit-core.
+Preparing to unpack .../045-ros-humble-moveit-core_2.5.10-1jammy.20261005.213935_amd64.deb ...
+Unpacking ros-humble-moveit-core (2.5.10-1jammy.20261005.213935) ...
+Selecting previously unselected package ros-humble-chomp-motion-planner.
+Preparing to unpack .../046-ros-humble-chomp-motion-planner_2.5.10-1jammy.20261006.001220_amd64.deb ...
+Unpacking ros-humble-chomp-motion-planner (2.5.10-1jammy.20261006.001220) ...
+Selecting previously unselected package ros-humble-controller-manager-msgs.
+Preparing to unpack .../047-ros-humble-controller-manager-msgs_2.54.3-1jammy.20261005.193950_amd64.deb ...
+Unpacking ros-humble-controller-manager-msgs (2.54.3-1jammy.20261005.193950) ...
+Selecting previously unselected package ros-humble-controller-manager.
+Preparing to unpack .../048-ros-humble-controller-manager_2.54.3-1jammy.20261005.213325_amd64.deb ...
+Unpacking ros-humble-controller-manager (2.54.3-1jammy.20261005.213325) ...
+Selecting previously unselected package ros-humble-diff-drive-controller.
+Preparing to unpack .../049-ros-humble-diff-drive-controller_2.54.1-1jammy.20261005.215421_amd64.deb ...
+Unpacking ros-humble-diff-drive-controller (2.54.1-1jammy.20261005.215421) ...
+Selecting previously unselected package ros-humble-forward-command-controller.
+Preparing to unpack .../050-ros-humble-forward-command-controller_2.54.1-1jammy.20261005.215520_amd64.deb ...
+Unpacking ros-humble-forward-command-controller (2.54.1-1jammy.20261005.215520) ...
+Selecting previously unselected package ros-humble-effort-controllers.
+Preparing to unpack .../051-ros-humble-effort-controllers_2.54.1-1jammy.20261005.220233_amd64.deb ...
+Unpacking ros-humble-effort-controllers (2.54.1-1jammy.20261005.220233) ...
+Selecting previously unselected package ros-humble-force-torque-sensor-broadcaster.
+Preparing to unpack .../052-ros-humble-force-torque-sensor-broadcaster_2.54.1-1jammy.20261005.215506_amd64.deb ...
+Unpacking ros-humble-force-torque-sensor-broadcaster (2.54.1-1jammy.20261005.215506) ...
+Selecting previously unselected package ros-humble-gpio-controllers.
+Preparing to unpack .../053-ros-humble-gpio-controllers_2.54.1-1jammy.20261005.215541_amd64.deb ...
+Unpacking ros-humble-gpio-controllers (2.54.1-1jammy.20261005.215541) ...
+Selecting previously unselected package ros-humble-gripper-controllers.
+Preparing to unpack .../054-ros-humble-gripper-controllers_2.54.1-1jammy.20261005.220452_amd64.deb ...
+Unpacking ros-humble-gripper-controllers (2.54.1-1jammy.20261005.220452) ...
+Selecting previously unselected package ros-humble-imu-sensor-broadcaster.
+Preparing to unpack .../055-ros-humble-imu-sensor-broadcaster_2.54.1-1jammy.20261005.215550_amd64.deb ...
+Unpacking ros-humble-imu-sensor-broadcaster (2.54.1-1jammy.20261005.215550) ...
+Selecting previously unselected package ros-humble-joint-limits.
+Preparing to unpack .../056-ros-humble-joint-limits_2.54.3-1jammy.20261005.211221_amd64.deb ...
+Unpacking ros-humble-joint-limits (2.54.3-1jammy.20261005.211221) ...
+Selecting previously unselected package ros-humble-joint-state-broadcaster.
+Preparing to unpack .../057-ros-humble-joint-state-broadcaster_2.54.1-1jammy.20261005.215610_amd64.deb ...
+Unpacking ros-humble-joint-state-broadcaster (2.54.1-1jammy.20261005.215610) ...
+Selecting previously unselected package ros-humble-joint-state-publisher.
+Preparing to unpack .../058-ros-humble-joint-state-publisher_2.4.0-1jammy.20260907.215925_amd64.deb ...
+Unpacking ros-humble-joint-state-publisher (2.4.0-1jammy.20260907.215925) ...
+Selecting previously unselected package ros-humble-joint-state-publisher-gui.
+Preparing to unpack .../059-ros-humble-joint-state-publisher-gui_2.4.0-1jammy.20260907.220733_amd64.deb ...
+Unpacking ros-humble-joint-state-publisher-gui (2.4.0-1jammy.20260907.220733) ...
+Selecting previously unselected package ros-humble-joint-trajectory-controller.
+Preparing to unpack .../060-ros-humble-joint-trajectory-controller_2.54.1-1jammy.20261005.215624_amd64.deb ...
+Unpacking ros-humble-joint-trajectory-controller (2.54.1-1jammy.20261005.215624) ...
+Selecting previously unselected package ros-humble-xacro.
+Preparing to unpack .../061-ros-humble-xacro_2.1.1-1jammy.20260304.195513_amd64.deb ...
+Unpacking ros-humble-xacro (2.1.1-1jammy.20260304.195513) ...
+Selecting previously unselected package ros-humble-launch-param-builder.
+Preparing to unpack .../062-ros-humble-launch-param-builder_0.1.1-1jammy.20260907.220739_amd64.deb ...
+Unpacking ros-humble-launch-param-builder (0.1.1-1jammy.20260907.220739) ...
+Selecting previously unselected package ros-humble-mecanum-drive-controller.
+Preparing to unpack .../063-ros-humble-mecanum-drive-controller_2.54.1-1jammy.20261005.220217_amd64.deb ...
+Unpacking ros-humble-mecanum-drive-controller (2.54.1-1jammy.20261005.220217) ...
+Selecting previously unselected package ros-humble-moveit-planners-chomp.
+Preparing to unpack .../064-ros-humble-moveit-planners-chomp_2.5.10-1jammy.20261006.002018_amd64.deb ...
+Unpacking ros-humble-moveit-planners-chomp (2.5.10-1jammy.20261006.002018) ...
+Selecting previously unselected package ros-humble-moveit-ros-occupancy-map-monitor.
+Preparing to unpack .../065-ros-humble-moveit-ros-occupancy-map-monitor_2.5.10-1jammy.20261006.001254_amd64.deb ...
+Unpacking ros-humble-moveit-ros-occupancy-map-monitor (2.5.10-1jammy.20261006.001254) ...
+Selecting previously unselected package ros-humble-moveit-ros-planning.
+Preparing to unpack .../066-ros-humble-moveit-ros-planning_2.5.10-1jammy.20261006.002346_amd64.deb ...
+Unpacking ros-humble-moveit-ros-planning (2.5.10-1jammy.20261006.002346) ...
+Selecting previously unselected package ros-humble-ompl.
+Preparing to unpack .../067-ros-humble-ompl_1.7.0-4jammy.20260226.011457_amd64.deb ...
+Unpacking ros-humble-ompl (1.7.0-4jammy.20260226.011457) ...
+Selecting previously unselected package libomp-dev:amd64.
+Preparing to unpack .../068-libomp-dev_1%3a14.0-55~exp2_amd64.deb ...
+Unpacking libomp-dev:amd64 (1:14.0-55~exp2) ...
+Selecting previously unselected package ros-humble-moveit-planners-ompl.
+Preparing to unpack .../069-ros-humble-moveit-planners-ompl_2.5.10-1jammy.20261006.004959_amd64.deb ...
+Unpacking ros-humble-moveit-planners-ompl (2.5.10-1jammy.20261006.004959) ...
+Selecting previously unselected package ros-humble-moveit-kinematics.
+Preparing to unpack .../070-ros-humble-moveit-kinematics_2.5.10-1jammy.20261006.005613_amd64.deb ...
+Unpacking ros-humble-moveit-kinematics (2.5.10-1jammy.20261006.005613) ...
+Selecting previously unselected package ros-humble-moveit-ros-move-group.
+Preparing to unpack .../071-ros-humble-moveit-ros-move-group_2.5.10-1jammy.20261006.010000_amd64.deb ...
+Unpacking ros-humble-moveit-ros-move-group (2.5.10-1jammy.20261006.010000) ...
+Selecting previously unselected package ros-humble-warehouse-ros.
+Preparing to unpack .../072-ros-humble-warehouse-ros_2.0.9-1jammy.20260915.214935_amd64.deb ...
+Unpacking ros-humble-warehouse-ros (2.0.9-1jammy.20260915.214935) ...
+Selecting previously unselected package ros-humble-moveit-ros-warehouse.
+Preparing to unpack .../073-ros-humble-moveit-ros-warehouse_2.5.10-1jammy.20261006.004621_amd64.deb ...
+Unpacking ros-humble-moveit-ros-warehouse (2.5.10-1jammy.20261006.004621) ...
+Selecting previously unselected package ros-humble-moveit-ros-planning-interface.
+Preparing to unpack .../074-ros-humble-moveit-ros-planning-interface_2.5.10-1jammy.20261006.190700_amd64.deb ...
+Unpacking ros-humble-moveit-ros-planning-interface (2.5.10-1jammy.20261006.190700) ...
+Selecting previously unselected package ros-humble-pilz-industrial-motion-planner.
+Preparing to unpack .../075-ros-humble-pilz-industrial-motion-planner_2.5.10-1jammy.20261006.191949_amd64.deb ...
+Unpacking ros-humble-pilz-industrial-motion-planner (2.5.10-1jammy.20261006.191949) ...
+Selecting previously unselected package ros-humble-moveit-planners.
+Preparing to unpack .../076-ros-humble-moveit-planners_2.5.10-1jammy.20261006.195921_amd64.deb ...
+Unpacking ros-humble-moveit-planners (2.5.10-1jammy.20261006.195921) ...
+Selecting previously unselected package ros-humble-moveit-simple-controller-manager.
+Preparing to unpack .../077-ros-humble-moveit-simple-controller-manager_2.5.10-1jammy.20261006.001254_amd64.deb ...
+Unpacking ros-humble-moveit-simple-controller-manager (2.5.10-1jammy.20261006.001254) ...
+Selecting previously unselected package ros-humble-moveit-plugins.
+Preparing to unpack .../078-ros-humble-moveit-plugins_2.5.10-1jammy.20261006.002800_amd64.deb ...
+Unpacking ros-humble-moveit-plugins (2.5.10-1jammy.20261006.002800) ...
+Selecting previously unselected package ros-humble-moveit-configs-utils.
+Preparing to unpack .../079-ros-humble-moveit-configs-utils_2.5.10-1jammy.20260908.003510_amd64.deb ...
+Unpacking ros-humble-moveit-configs-utils (2.5.10-1jammy.20260908.003510) ...
+Selecting previously unselected package ros-humble-moveit-ros-benchmarks.
+Preparing to unpack .../080-ros-humble-moveit-ros-benchmarks_2.5.10-1jammy.20261006.005431_amd64.deb ...
+Unpacking ros-humble-moveit-ros-benchmarks (2.5.10-1jammy.20261006.005431) ...
+Selecting previously unselected package ros-humble-moveit-ros-robot-interaction.
+Preparing to unpack .../081-ros-humble-moveit-ros-robot-interaction_2.5.10-1jammy.20261006.005213_amd64.deb ...
+Unpacking ros-humble-moveit-ros-robot-interaction (2.5.10-1jammy.20261006.005213) ...
+Selecting previously unselected package ros-humble-moveit-ros-visualization.
+Preparing to unpack .../082-ros-humble-moveit-ros-visualization_2.5.10-1jammy.20261006.192006_amd64.deb ...
+Unpacking ros-humble-moveit-ros-visualization (2.5.10-1jammy.20261006.192006) ...
+Selecting previously unselected package ros-humble-moveit-ros.
+Preparing to unpack .../083-ros-humble-moveit-ros_2.5.10-1jammy.20261006.194930_amd64.deb ...
+Unpacking ros-humble-moveit-ros (2.5.10-1jammy.20261006.194930) ...
+Selecting previously unselected package ros-humble-moveit-setup-framework.
+Preparing to unpack .../084-ros-humble-moveit-setup-framework_2.5.10-1jammy.20261006.195302_amd64.deb ...
+Unpacking ros-humble-moveit-setup-framework (2.5.10-1jammy.20261006.195302) ...
+Selecting previously unselected package ros-humble-moveit-setup-app-plugins.
+Preparing to unpack .../085-ros-humble-moveit-setup-app-plugins_2.5.10-1jammy.20261006.200235_amd64.deb ...
+Unpacking ros-humble-moveit-setup-app-plugins (2.5.10-1jammy.20261006.200235) ...
+Selecting previously unselected package ros-humble-moveit-setup-controllers.
+Preparing to unpack .../086-ros-humble-moveit-setup-controllers_2.5.10-1jammy.20261006.200259_amd64.deb ...
+Unpacking ros-humble-moveit-setup-controllers (2.5.10-1jammy.20261006.200259) ...
+Selecting previously unselected package ros-humble-moveit-setup-core-plugins.
+Preparing to unpack .../087-ros-humble-moveit-setup-core-plugins_2.5.10-1jammy.20261006.200231_amd64.deb ...
+Unpacking ros-humble-moveit-setup-core-plugins (2.5.10-1jammy.20261006.200231) ...
+Selecting previously unselected package ros-humble-moveit-setup-srdf-plugins.
+Preparing to unpack .../088-ros-humble-moveit-setup-srdf-plugins_2.5.10-1jammy.20261006.200441_amd64.deb ...
+Unpacking ros-humble-moveit-setup-srdf-plugins (2.5.10-1jammy.20261006.200441) ...
+Selecting previously unselected package ros-humble-moveit-setup-assistant.
+Preparing to unpack .../089-ros-humble-moveit-setup-assistant_2.5.10-1jammy.20261006.202414_amd64.deb ...
+Unpacking ros-humble-moveit-setup-assistant (2.5.10-1jammy.20261006.202414) ...
+Selecting previously unselected package ros-humble-moveit.
+Preparing to unpack .../090-ros-humble-moveit_2.5.10-1jammy.20261006.203658_amd64.deb ...
+Unpacking ros-humble-moveit (2.5.10-1jammy.20261006.203658) ...
+Selecting previously unselected package ros-humble-pid-controller.
+Preparing to unpack .../091-ros-humble-pid-controller_2.54.1-1jammy.20261005.220229_amd64.deb ...
+Unpacking ros-humble-pid-controller (2.54.1-1jammy.20261005.220229) ...
+Selecting previously unselected package ros-humble-pose-broadcaster.
+Preparing to unpack .../092-ros-humble-pose-broadcaster_2.54.1-1jammy.20261005.215612_amd64.deb ...
+Unpacking ros-humble-pose-broadcaster (2.54.1-1jammy.20261005.215612) ...
+Selecting previously unselected package ros-humble-position-controllers.
+Preparing to unpack .../093-ros-humble-position-controllers_2.54.1-1jammy.20261005.220331_amd64.deb ...
+Unpacking ros-humble-position-controllers (2.54.1-1jammy.20261005.220331) ...
+Selecting previously unselected package ros-humble-range-sensor-broadcaster.
+Preparing to unpack .../094-ros-humble-range-sensor-broadcaster_2.54.1-1jammy.20261005.220301_amd64.deb ...
+Unpacking ros-humble-range-sensor-broadcaster (2.54.1-1jammy.20261005.220301) ...
+Selecting previously unselected package ros-humble-ros2-control-test-assets.
+Preparing to unpack .../095-ros-humble-ros2-control-test-assets_2.54.3-1jammy.20261005.211102_amd64.deb ...
+Unpacking ros-humble-ros2-control-test-assets (2.54.3-1jammy.20261005.211102) ...
+Selecting previously unselected package ros-humble-ros2controlcli.
+Preparing to unpack .../096-ros-humble-ros2controlcli_2.54.3-1jammy.20261005.215818_amd64.deb ...
+Unpacking ros-humble-ros2controlcli (2.54.3-1jammy.20261005.215818) ...
+Selecting previously unselected package ros-humble-transmission-interface.
+Preparing to unpack .../097-ros-humble-transmission-interface_2.54.3-1jammy.20261005.212908_amd64.deb ...
+Unpacking ros-humble-transmission-interface (2.54.3-1jammy.20261005.212908) ...
+Selecting previously unselected package ros-humble-ros2-control.
+Preparing to unpack .../098-ros-humble-ros2-control_2.54.3-1jammy.20261005.220306_amd64.deb ...
+Unpacking ros-humble-ros2-control (2.54.3-1jammy.20261005.220306) ...
+Selecting previously unselected package ros-humble-tricycle-controller.
+Preparing to unpack .../099-ros-humble-tricycle-controller_2.54.1-1jammy.20261005.220402_amd64.deb ...
+Unpacking ros-humble-tricycle-controller (2.54.1-1jammy.20261005.220402) ...
+Selecting previously unselected package ros-humble-tricycle-steering-controller.
+Preparing to unpack .../100-ros-humble-tricycle-steering-controller_2.54.1-1jammy.20261005.221813_amd64.deb ...
+Unpacking ros-humble-tricycle-steering-controller (2.54.1-1jammy.20261005.221813) ...
+Selecting previously unselected package ros-humble-velocity-controllers.
+Preparing to unpack .../101-ros-humble-velocity-controllers_2.54.1-1jammy.20261005.220432_amd64.deb ...
+Unpacking ros-humble-velocity-controllers (2.54.1-1jammy.20261005.220432) ...
+Selecting previously unselected package ros-humble-ros2-controllers.
+Preparing to unpack .../102-ros-humble-ros2-controllers_2.54.1-1jammy.20261005.222410_amd64.deb ...
+Unpacking ros-humble-ros2-controllers (2.54.1-1jammy.20261005.222410) ...
+Selecting previously unselected package ros-humble-topic-tools-interfaces.
+Preparing to unpack .../103-ros-humble-topic-tools-interfaces_1.1.2-1jammy.20260907.205032_amd64.deb ...
+Unpacking ros-humble-topic-tools-interfaces (1.1.2-1jammy.20260907.205032) ...
+Selecting previously unselected package ros-humble-topic-tools.
+Preparing to unpack .../104-ros-humble-topic-tools_1.1.2-1jammy.20260907.224415_amd64.deb ...
+Unpacking ros-humble-topic-tools (1.1.2-1jammy.20260907.224415) ...
+Setting up ros-humble-backward-ros (1.0.8-2jammy.20260226.010809) ...
+Setting up ros-humble-filters (2.2.2-1jammy.20260907.223102) ...
+Setting up ros-humble-tl-expected (1.3.2-1jammy.20260611.075453) ...
+Setting up libomp5-14:amd64 (1:14.0.0-1ubuntu1.1) ...
+Setting up ros-humble-octomap (1.9.8-1jammy.20260226.005011) ...
+Setting up ros-humble-ros2-control-test-assets (2.54.3-1jammy.20261005.211102) ...
+Setting up ros-humble-topic-tools-interfaces (1.1.2-1jammy.20260907.205032) ...
+Setting up ros-humble-warehouse-ros (2.0.9-1jammy.20260915.214935) ...
+Setting up ros-humble-urdfdom-py (1.2.1-1jammy.20260907.220847) ...
+Setting up liboctomap1.9:amd64 (1.9.7+dfsg-3) ...
+Setting up ros-humble-eigen-stl-containers (1.1.0-1jammy.20260304.090336) ...
+Setting up python3-graphviz (0.14.2-1) ...
+Setting up ros-humble-octomap-msgs (2.0.1-1jammy.20260907.212327) ...
+Setting up python3-typeguard (2.2.2-1.1) ...
+Setting up ros-humble-topic-tools (1.1.2-1jammy.20260907.224415) ...
+Setting up ros-humble-moveit-common (2.5.10-1jammy.20260902.113342) ...
+Setting up libccd2:amd64 (2.1-2) ...
+Setting up liboctomap-dev:amd64 (1.9.7+dfsg-3) ...
+Setting up python-babel-localedata (2.8.0+dfsg.1-7) ...
+Setting up libexpected-dev (1.0.0~dfsg-2) ...
+Setting up ros-humble-joint-state-publisher (2.4.0-1jammy.20260907.215925) ...
+Setting up ros-humble-random-numbers (2.0.5-1jammy.20260616.085807) ...
+Setting up ros-humble-control-msgs (4.9.0-1jammy.20260907.212955) ...
+Setting up ros-humble-kinematics-interface (0.4.2-1jammy.20260908.011512) ...
+Setting up ros-humble-joint-limits (2.54.3-1jammy.20261005.211221) ...
+Setting up ros-humble-ackermann-msgs (2.0.2-3jammy.20260907.210926) ...
+Setting up ros-humble-xacro (2.1.1-1jammy.20260304.195513) ...
+Setting up ros-humble-ompl (1.7.0-4jammy.20260226.011457) ...
+Setting up ros-humble-tcb-span (1.3.2-1jammy.20260611.075323) ...
+Setting up ros-humble-controller-manager-msgs (2.54.3-1jammy.20261005.193950) ...
+Setting up libcap-dev:amd64 (1:2.44-1ubuntu0.22.04.3) ...
+Setting up ros-humble-object-recognition-msgs (2.0.0-3jammy.20260908.065709) ...
+Setting up libccd-dev:amd64 (2.1-2) ...
+Setting up libomp-14-dev (1:14.0.0-1ubuntu1.1) ...
+Setting up ros-humble-hardware-interface (2.54.3-1jammy.20261005.211947) ...
+Setting up libomp-dev:amd64 (1:14.0-55~exp2) ...
+Setting up ros-humble-ruckig (0.9.2-1jammy.20260226.012139) ...
+Setting up ros-humble-moveit-msgs (2.2.3-1jammy.20260908.070153) ...
+Setting up ros-humble-srdfdom (2.0.7-1jammy.20260908.002942) ...
+Setting up python3-babel (2.8.0+dfsg.1-7) ...
+update-alternatives: using /usr/bin/pybabel-python3 to provide /usr/bin/pybabel (pybabel) in auto mode
+Setting up libfcl0.7:amd64 (0.7.0-3) ...
+Setting up ros-humble-joint-state-publisher-gui (2.4.0-1jammy.20260907.220733) ...
+Setting up ros-humble-rsl (1.3.0-1jammy.20260907.222817) ...
+Setting up libfcl-dev:amd64 (0.7.0-3) ...
+Setting up python3-jinja2 (3.0.3-1ubuntu0.4) ...
+Setting up ros-humble-geometric-shapes (2.3.4-1jammy.20260907.223227) ...
+Setting up ros-humble-launch-param-builder (0.1.1-1jammy.20260907.220739) ...
+Setting up ros-humble-parameter-traits (0.7.7-1jammy.20261005.211109) ...
+Setting up ros-humble-controller-interface (2.54.3-1jammy.20261005.212803) ...
+Setting up ros-humble-realtime-tools (2.15.1-1jammy.20260907.224545) ...
+Setting up ros-humble-diff-drive-controller (2.54.1-1jammy.20261005.215421) ...
+Setting up ros-humble-generate-parameter-library-py (0.7.7-1jammy.20261005.210934) ...
+Setting up ros-humble-transmission-interface (2.54.3-1jammy.20261005.212908) ...
+Setting up ros-humble-moveit-configs-utils (2.5.10-1jammy.20260908.003510) ...
+Setting up ros-humble-generate-parameter-library (0.7.7-1jammy.20261005.211941) ...
+Setting up ros-humble-control-toolbox (3.7.1-1jammy.20261005.213725) ...
+Setting up ros-humble-gpio-controllers (2.54.1-1jammy.20261005.215541) ...
+Setting up ros-humble-joint-trajectory-controller (2.54.1-1jammy.20261005.215624) ...
+Setting up ros-humble-joint-state-broadcaster (2.54.1-1jammy.20261005.215610) ...
+Setting up ros-humble-range-sensor-broadcaster (2.54.1-1jammy.20261005.220301) ...
+Setting up ros-humble-gripper-controllers (2.54.1-1jammy.20261005.220452) ...
+Setting up ros-humble-moveit-core (2.5.10-1jammy.20261005.213935) ...
+Setting up ros-humble-steering-controllers-library (2.54.1-1jammy.20261005.220236) ...
+Setting up ros-humble-tricycle-controller (2.54.1-1jammy.20261005.220402) ...
+Setting up ros-humble-forward-command-controller (2.54.1-1jammy.20261005.215520) ...
+Setting up ros-humble-force-torque-sensor-broadcaster (2.54.1-1jammy.20261005.215506) ...
+Setting up ros-humble-admittance-controller (2.54.1-1jammy.20261005.215353) ...
+Setting up ros-humble-chomp-motion-planner (2.5.10-1jammy.20261006.001220) ...
+Setting up ros-humble-pose-broadcaster (2.54.1-1jammy.20261005.215612) ...
+Setting up ros-humble-moveit-ros-occupancy-map-monitor (2.5.10-1jammy.20261006.001254) ...
+Setting up ros-humble-pid-controller (2.54.1-1jammy.20261005.220229) ...
+Setting up ros-humble-ackermann-steering-controller (2.54.1-1jammy.20261005.221220) ...
+Setting up ros-humble-position-controllers (2.54.1-1jammy.20261005.220331) ...
+Setting up ros-humble-mecanum-drive-controller (2.54.1-1jammy.20261005.220217) ...
+Setting up ros-humble-tricycle-steering-controller (2.54.1-1jammy.20261005.221813) ...
+Setting up ros-humble-imu-sensor-broadcaster (2.54.1-1jammy.20261005.215550) ...
+Setting up ros-humble-bicycle-steering-controller (2.54.1-1jammy.20261005.221403) ...
+Setting up ros-humble-controller-manager (2.54.3-1jammy.20261005.213325) ...
+Setting up ros-humble-velocity-controllers (2.54.1-1jammy.20261005.220432) ...
+Setting up ros-humble-moveit-simple-controller-manager (2.5.10-1jammy.20261006.001254) ...
+Setting up ros-humble-moveit-planners-chomp (2.5.10-1jammy.20261006.002018) ...
+Setting up ros-humble-moveit-ros-planning (2.5.10-1jammy.20261006.002346) ...
+Setting up ros-humble-effort-controllers (2.54.1-1jammy.20261005.220233) ...
+Setting up ros-humble-moveit-plugins (2.5.10-1jammy.20261006.002800) ...
+Setting up ros-humble-moveit-planners-ompl (2.5.10-1jammy.20261006.004959) ...
+Setting up ros-humble-ros2controlcli (2.54.3-1jammy.20261005.215818) ...
+Setting up ros-humble-moveit-ros-robot-interaction (2.5.10-1jammy.20261006.005213) ...
+Setting up ros-humble-ros2-control (2.54.3-1jammy.20261005.220306) ...
+Setting up ros-humble-moveit-kinematics (2.5.10-1jammy.20261006.005613) ...
+Setting up ros-humble-moveit-ros-warehouse (2.5.10-1jammy.20261006.004621) ...
+Setting up ros-humble-ros2-controllers (2.54.1-1jammy.20261005.222410) ...
+Setting up ros-humble-moveit-ros-benchmarks (2.5.10-1jammy.20261006.005431) ...
+Setting up ros-humble-moveit-ros-move-group (2.5.10-1jammy.20261006.010000) ...
+Setting up ros-humble-moveit-ros-planning-interface (2.5.10-1jammy.20261006.190700) ...
+Setting up ros-humble-pilz-industrial-motion-planner (2.5.10-1jammy.20261006.191949) ...
+Setting up ros-humble-moveit-ros-visualization (2.5.10-1jammy.20261006.192006) ...
+Setting up ros-humble-moveit-planners (2.5.10-1jammy.20261006.195921) ...
+Setting up ros-humble-moveit-setup-framework (2.5.10-1jammy.20261006.195302) ...
+Setting up ros-humble-moveit-setup-srdf-plugins (2.5.10-1jammy.20261006.200441) ...
+Setting up ros-humble-moveit-setup-app-plugins (2.5.10-1jammy.20261006.200235) ...
+Setting up ros-humble-moveit-setup-controllers (2.5.10-1jammy.20261006.200259) ...
+Setting up ros-humble-moveit-ros (2.5.10-1jammy.20261006.194930) ...
+Setting up ros-humble-moveit-setup-core-plugins (2.5.10-1jammy.20261006.200231) ...
+Setting up ros-humble-moveit-setup-assistant (2.5.10-1jammy.20261006.202414) ...
+Setting up ros-humble-moveit (2.5.10-1jammy.20261006.203658) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.14) ...
+Processing triggers for man-db (2.10.2-1) ...
+ROS Python: /home/kaiwen/research/OSCBF-research/envs/ros-humble/bin/python base: /usr
+Processing ./src/pyAgxArm
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy<2 in /usr/lib/python3/dist-packages (1.21.5)
+Requirement already satisfied: scipy in /usr/lib/python3/dist-packages (1.8.0)
+Collecting python-can==4.6.1
+  Using cached python_can-4.6.1-py3-none-any.whl.metadata (8.6 kB)
+Collecting typing-extensions==4.16.0
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting wrapt~=1.10 (from python-can==4.6.1)
+  Using cached wrapt-1.17.3-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+Collecting packaging>=23.1 (from python-can==4.6.1)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Using cached python_can-4.6.1-py3-none-any.whl (276 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached wrapt-1.17.3-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (81 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Building wheels for collected packages: pyAgxArm
+  Building wheel for pyAgxArm (pyproject.toml): started
+  Building wheel for pyAgxArm (pyproject.toml): finished with status 'done'
+  Created wheel for pyAgxArm: filename=pyagxarm-1.0.0-py3-none-any.whl size=297964 sha256=d1e38ead26d99c3a488067a48e77ec7154ff85692e41b2d417c87edab7a3217c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ouw_1_uc/wheels/79/51/f2/2fa931b1ba0103a433206950fb51c60f21456543ee26e172df
+Successfully built pyAgxArm
+Installing collected packages: wrapt, typing-extensions, packaging, python-can, pyAgxArm
+  Attempting uninstall: packaging
+    Found existing installation: packaging 21.3
+    Not uninstalling packaging at /usr/lib/python3/dist-packages, outside environment /home/kaiwen/research/OSCBF-research/envs/ros-humble
+    Can't uninstall 'packaging'. No files were found to uninstall.
+
+Successfully installed packaging-26.3 pyAgxArm-1.0.0 python-can-4.6.1 typing-extensions-4.16.0 wrapt-1.17.3
+ROS/SDK/scipy imports OK
+Starting >>> agx_arm_msgs
+Starting >>> agx_arm_description
+-- The C compiler identification is GNU 11.4.0
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting CXX compiler ABI info
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/kaiwen/research/OSCBF-research/envs/ros-humble/bin/python (found version "3.10.12") found components: Interpreter 
+-- Found Python3: /home/kaiwen/research/OSCBF-research/envs/ros-humble/bin/python (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Configuring done
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PYTHON_EXECUTABLE
+
+
+-- Build files have been written to: /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_description
+-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/.git
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/.gitignore
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/LICENSE
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/README.md
+-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/README_EN.md
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/dae/gripper_base.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/dae/gripper_link1.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/dae/gripper_link2.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/gripper_base.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/gripper_link1.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/gripper_link2.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/agx_gripper/urdf/agx_gripper_description.urdf
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/base_link.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/base_link.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/flange.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/link1.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/link2.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/link3.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/link4.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/link5.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/link6.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/dae/link7.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/flange.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/link1.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/link2.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/link3.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/link4.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/link5.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/link6.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/meshes/link7.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/urdf/nero_description.urdf
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/urdf/nero_with_flange_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/urdf/nero_with_gripper_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/urdf/nero_with_left_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/nero/urdf/nero_with_right_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/base_link.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/dae/base_link.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/dae/flange.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/dae/link1.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/dae/link2.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/dae/link3.dae
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/dae/link4.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/dae/link5.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/dae/link6.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/flange.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/link1.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/link2.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/link3.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/link4.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/link5.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/meshes/link6.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/urdf/piper_description.urdf
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/urdf/piper_with_gripper_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/urdf/piper_with_left_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper/urdf/piper_with_right_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/base_link.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/base_link.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/flange.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/link1.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/link2.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/link3.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/link4.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/link5.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/link6.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/flange.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/link1.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/link2.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/link3.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/link4.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/link5.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/meshes/link6.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/urdf/piper_h_description.urdf
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/urdf/piper_h_with_gripper_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/urdf/piper_h_with_left_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_h/urdf/piper_h_with_right_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/base_link.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/dae/base_link.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/dae/flange.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/dae/link1.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/dae/link2.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/dae/link3.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/dae/link4.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/dae/link5.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/dae/link6.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/flange.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/link1.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/link2.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/link3.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/link4.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/link5.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/meshes/link6.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/urdf/piper_l_description.urdf
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/urdf/piper_l_with_gripper_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/urdf/piper_l_with_left_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_l/urdf/piper_l_with_right_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/base_link.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/dae/base_link.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/dae/flange.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/dae/link1.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/dae/link2.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/dae/link3.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/dae/link4.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/dae/link5.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/dae/link6.dae
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/flange.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/link1.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/link2.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/link3.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/link4.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/link5.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/meshes/link6.stl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/urdf/piper_x_description.urdf
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/urdf/piper_x_with_gripper_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/urdf/piper_x_with_left_revo2_description.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/piper_x/urdf/piper_x_with_right_revo2_description.xacro
+-- Found PythonInterp: /home/kaiwen/research/OSCBF-research/envs/ros-humble/bin/python (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_base_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_base_visual_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_index_distal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_index_proximal_link.STL
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /home/kaiwen/research/OSCBF-research/envs/ros-humble/bin/python
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_index_tip_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_index_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_middle_distal_link.STL
+-- Found PythonExtra: .so  
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_middle_proximal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_middle_tip_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_middle_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_pinky_distal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_pinky_proximal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_pinky_tip_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_pinky_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_ring_distal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_ring_proximal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_ring_tip_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_ring_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_thumb_distal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_thumb_metacarpal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_thumb_proximal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_thumb_proximal_visual_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_thumb_tip_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_left_hand/left_thumb_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_base_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_base_visual_link.STL
+-- Configuring done
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_distal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_proximal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_tip.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_distal_link.STL
+-- Generating done
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_proximal_link.STL
+-- Build files have been written to: /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_msgs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_tip.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_distal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_proximal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_tip.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_touch_link.STL
+[  2%] Generating C code for ROS interfaces
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_distal_link.STL
+[  4%] Generating Rust code for ROS interfaces
+[  6%] Generating C++ code for ROS interfaces
+[  6%] Built target ament_cmake_python_symlink_agx_arm_msgs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_proximal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_tip.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_distal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_metacarpal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_proximal_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_proximal_visual_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_tip.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_touch_link.STL
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/urdf/revo2_left_hand.urdf
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/agx_arm_urdf/revo2/urdf/revo2_right_hand.urdf
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/launch/display.launch.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/rviz/display.rviz
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/ament_index/resource_index/package_run_dependencies/agx_arm_description
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/ament_index/resource_index/parent_prefix_path/agx_arm_description
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/environment/path.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/environment/path.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/local_setup.bash
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/local_setup.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/local_setup.zsh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/local_setup.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/package.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/ament_index/resource_index/packages/agx_arm_description
+running egg_info
+creating agx_arm_msgs.egg-info
+writing agx_arm_msgs.egg-info/PKG-INFO
+writing dependency_links to agx_arm_msgs.egg-info/dependency_links.txt
+writing top-level names to agx_arm_msgs.egg-info/top_level.txt
+writing manifest file 'agx_arm_msgs.egg-info/SOURCES.txt'
+reading manifest file 'agx_arm_msgs.egg-info/SOURCES.txt'
+writing manifest file 'agx_arm_msgs.egg-info/SOURCES.txt'
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/cmake/agx_arm_descriptionConfig.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/cmake/agx_arm_descriptionConfig-version.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_description/share/agx_arm_description/package.xml
+[  6%] Built target ament_cmake_python_build_agx_arm_msgs_egg
+--- stderr: agx_arm_description
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PYTHON_EXECUTABLE
+
+
+---
+Finished <<< agx_arm_description [1.32s]
+[  6%] Built target agx_arm_msgs__rs
+[  6%] Built target agx_arm_msgs__cpp
+[  8%] Generating C++ type support for eProsima Fast-RTPS
+[ 10%] Generating C++ type support dispatch for ROS interfaces
+[ 12%] Generating C++ introspection for ROS interfaces
+[ 14%] Building C object CMakeFiles/agx_arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/agx_arm_msgs/msg/detail/hand_cmd__functions.c.o
+[ 16%] Building C object CMakeFiles/agx_arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/agx_arm_msgs/msg/detail/hand_position_time_cmd__functions.c.o
+[ 18%] Building C object CMakeFiles/agx_arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/agx_arm_msgs/msg/detail/move_mit_msg__functions.c.o
+[ 20%] Linking C shared library libagx_arm_msgs__rosidl_generator_c.so
+[ 20%] Built target agx_arm_msgs__rosidl_generator_c
+[ 22%] Generating C introspection for ROS interfaces
+[ 27%] Generating C type support dispatch for ROS interfaces
+[ 27%] Generating C type support for eProsima Fast-RTPS
+[ 29%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/agx_arm_msgs/msg/hand_cmd__type_support.cpp.o
+[ 31%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/agx_arm_msgs/msg/hand_position_time_cmd__type_support.cpp.o
+[ 33%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/agx_arm_msgs/msg/move_mit_msg__type_support.cpp.o
+[ 37%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/agx_arm_msgs/msg/detail/dds_fastrtps/move_mit_msg__type_support.cpp.o
+[ 37%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/agx_arm_msgs/msg/detail/move_mit_msg__type_support.cpp.o
+[ 43%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/agx_arm_msgs/msg/detail/dds_fastrtps/hand_cmd__type_support.cpp.o
+[ 43%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/agx_arm_msgs/msg/detail/dds_fastrtps/hand_position_time_cmd__type_support.cpp.o
+[ 43%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/agx_arm_msgs/msg/detail/hand_cmd__type_support.cpp.o
+[ 45%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/agx_arm_msgs/msg/detail/hand_position_time_cmd__type_support.cpp.o
+[ 47%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/agx_arm_msgs/msg/hand_cmd__type_support.cpp.o
+[ 50%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/agx_arm_msgs/msg/move_mit_msg__type_support.cpp.o
+[ 52%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/agx_arm_msgs/msg/hand_position_time_cmd__type_support.cpp.o
+[ 56%] Building C object CMakeFiles/agx_arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/agx_arm_msgs/msg/detail/move_mit_msg__type_support.c.o
+[ 56%] Building C object CMakeFiles/agx_arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/agx_arm_msgs/msg/detail/hand_position_time_cmd__type_support.c.o
+[ 60%] Linking CXX shared library libagx_arm_msgs__rosidl_typesupport_c.so
+[ 60%] Building C object CMakeFiles/agx_arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/agx_arm_msgs/msg/detail/hand_cmd__type_support.c.o
+[ 64%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/agx_arm_msgs/msg/detail/hand_cmd__type_support_c.cpp.o
+[ 64%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/agx_arm_msgs/msg/detail/hand_position_time_cmd__type_support_c.cpp.o
+[ 66%] Building CXX object CMakeFiles/agx_arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/agx_arm_msgs/msg/detail/move_mit_msg__type_support_c.cpp.o
+[ 68%] Linking C shared library libagx_arm_msgs__rosidl_typesupport_introspection_c.so
+[ 68%] Built target agx_arm_msgs__rosidl_typesupport_c
+[ 68%] Built target agx_arm_msgs__rosidl_typesupport_introspection_c
+[ 70%] Linking CXX shared library libagx_arm_msgs__rosidl_typesupport_cpp.so
+[ 70%] Built target agx_arm_msgs__rosidl_typesupport_cpp
+[ 72%] Linking CXX shared library libagx_arm_msgs__rosidl_typesupport_fastrtps_cpp.so
+[ 75%] Linking CXX shared library libagx_arm_msgs__rosidl_typesupport_introspection_cpp.so
+[ 77%] Linking CXX shared library libagx_arm_msgs__rosidl_typesupport_fastrtps_c.so
+[ 77%] Built target agx_arm_msgs__rosidl_typesupport_fastrtps_cpp
+[ 77%] Built target agx_arm_msgs__rosidl_typesupport_introspection_cpp
+[ 77%] Built target agx_arm_msgs__rosidl_typesupport_fastrtps_c
+[ 77%] Built target agx_arm_msgs
+[ 79%] Generating Python code for ROS interfaces
+[ 79%] Built target agx_arm_msgs__py
+[ 81%] Building C object CMakeFiles/agx_arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/agx_arm_msgs/msg/_hand_cmd_s.c.o
+[ 83%] Building C object CMakeFiles/agx_arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/agx_arm_msgs/msg/_move_mit_msg_s.c.o
+[ 85%] Building C object CMakeFiles/agx_arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/agx_arm_msgs/msg/_hand_position_time_cmd_s.c.o
+[ 87%] Linking C shared library rosidl_generator_py/agx_arm_msgs/libagx_arm_msgs__rosidl_generator_py.so
+[ 87%] Built target agx_arm_msgs__rosidl_generator_py
+[ 89%] Building C object CMakeFiles/agx_arm_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/agx_arm_msgs/_agx_arm_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+[ 91%] Building C object CMakeFiles/agx_arm_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/agx_arm_msgs/_agx_arm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[ 93%] Building C object CMakeFiles/agx_arm_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/agx_arm_msgs/_agx_arm_msgs_s.ep.rosidl_typesupport_c.c.o
+[100%] Linking C shared library rosidl_generator_py/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[100%] Linking C shared library rosidl_generator_py/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[100%] Linking C shared library rosidl_generator_py/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[100%] Built target agx_arm_msgs__rosidl_typesupport_c__pyext
+[100%] Built target agx_arm_msgs__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target agx_arm_msgs__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/ament_index/resource_index/rosidl_interfaces/agx_arm_msgs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__functions.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__struct.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__type_support.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__functions.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__struct.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__type_support.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__functions.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__struct.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__type_support.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/hand_cmd.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/hand_position_time_cmd.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/move_mit_msg.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/environment/library_path.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/environment/library_path.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__builder.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__struct.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__traits.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__type_support.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__builder.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__struct.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__traits.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__type_support.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__builder.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__struct.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__traits.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__type_support.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/hand_cmd.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/hand_position_time_cmd.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/move_mit_msg.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_cmd__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/hand_position_time_cmd__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/include/agx_arm_msgs/agx_arm_msgs/msg/detail/move_mit_msg__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/environment/pythonpath.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/environment/pythonpath.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs-0.0.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/__init__.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/_agx_arm_msgs_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/_agx_arm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/_agx_arm_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/libagx_arm_msgs__rosidl_generator_py.so
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/__init__.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_hand_cmd.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_hand_cmd_s.c
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_hand_position_time_cmd.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_hand_position_time_cmd_s.c
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_move_mit_msg.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_move_mit_msg_s.c
+-- Up-to-date symlink: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/agx_arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/ament_index/resource_index/rust_packages/agx_arm_msgs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/rust/Cargo.toml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/rust/build.rs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/rust/src/lib.rs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/rust/src/msg.rs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/rust/src/msg/rmw.rs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/msg/HandCmd.idl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/msg/HandPositionTimeCmd.idl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/msg/MoveMITMsg.idl
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/msg/HandCmd.msg
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/msg/HandPositionTimeCmd.msg
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/msg/MoveMITMsg.msg
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/ament_index/resource_index/package_run_dependencies/agx_arm_msgs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/ament_index/resource_index/parent_prefix_path/agx_arm_msgs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/environment/ament_prefix_path.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/environment/path.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/environment/path.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/local_setup.bash
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/local_setup.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/local_setup.zsh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/local_setup.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/package.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/ament_index/resource_index/packages/agx_arm_msgs
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgsConfig.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgsConfig-version.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/package.xml
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_generator_c.so
+-- Set runtime path of "/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_generator_c.so" to ""
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_c.so
+-- Set runtime path of "/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_c.so" to ""
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_typesupport_cpp.so" to ""
+Listing '/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs'...
+Compiling '/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/__init__.py'...
+Listing '/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg'...
+Compiling '/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/__init__.py'...
+Compiling '/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_hand_cmd.py'...
+Compiling '/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_hand_position_time_cmd.py'...
+Compiling '/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/python3.10/site-packages/agx_arm_msgs/msg/_move_mit_msg.py'...
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_generator_py.so
+-- Set runtime path of "/home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/lib/libagx_arm_msgs__rosidl_generator_py.so" to ""
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_generator_cExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/agx_arm_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_generator_pyExport.cmake
+-- Installing: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_msgs/share/agx_arm_msgs/cmake/export_agx_arm_msgs__rosidl_generator_pyExport-noconfig.cmake
+Finished <<< agx_arm_msgs [3.47s]
+Starting >>> agx_arm_ctrl
+running develop
+running egg_info
+creating agx_arm_ctrl.egg-info
+writing agx_arm_ctrl.egg-info/PKG-INFO
+writing dependency_links to agx_arm_ctrl.egg-info/dependency_links.txt
+writing entry points to agx_arm_ctrl.egg-info/entry_points.txt
+writing requirements to agx_arm_ctrl.egg-info/requires.txt
+writing top-level names to agx_arm_ctrl.egg-info/top_level.txt
+writing manifest file 'agx_arm_ctrl.egg-info/SOURCES.txt'
+reading manifest file 'agx_arm_ctrl.egg-info/SOURCES.txt'
+writing manifest file 'agx_arm_ctrl.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/lib/python3.10/site-packages/agx-arm-ctrl.egg-link (link to .)
+Installing agx_arm_ctrl_single script to /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/lib/agx_arm_ctrl
+
+Installed /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_ctrl
+running symlink_data
+creating /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/ament_index
+creating /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/ament_index/resource_index
+creating /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/ament_index/resource_index/packages
+symbolically linking /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_ctrl/resource/agx_arm_ctrl -> /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/ament_index/resource_index/packages
+symbolically linking /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_ctrl/package.xml -> /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/agx_arm_ctrl
+creating /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/agx_arm_ctrl/launch
+symbolically linking /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_ctrl/launch/start_single_agx_arm.launch.py -> /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/agx_arm_ctrl/launch
+symbolically linking /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_ctrl/launch/start_single_agx_arm_moveit.launch.py -> /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/agx_arm_ctrl/launch
+symbolically linking /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_ctrl/launch/start_single_agx_arm_rviz.launch.py -> /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_ctrl/share/agx_arm_ctrl/launch
+Finished <<< agx_arm_ctrl [0.50s]
+Starting >>> agx_arm_moveit
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/kaiwen/research/OSCBF-research/envs/ros-humble/bin/python (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PYTHON_EXECUTABLE
+
+
+-- Build files have been written to: /home/kaiwen/research/OSCBF-research/ros_ws/build/agx_arm_moveit
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/ament_index/resource_index/package_run_dependencies/agx_arm_moveit
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/ament_index/resource_index/parent_prefix_path/agx_arm_moveit
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/environment/ament_prefix_path.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/environment/path.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/environment/path.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/local_setup.bash
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/local_setup.sh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/local_setup.zsh
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/local_setup.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/package.dsv
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/ament_index/resource_index/packages/agx_arm_moveit
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/cmake/agx_arm_moveitConfig.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/cmake/agx_arm_moveitConfig-version.cmake
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/package.xml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/launch/_moveit_config_builder.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/launch/demo.launch.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/launch/move_group.launch.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/launch/moveit_rviz.launch.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/launch/rsp.launch.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/launch/spawn_controllers.launch.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/launch/static_virtual_joint_tfs.launch.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/launch/warehouse_db.launch.py
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/agx_arm.ros2_control.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/agx_arm.srdf
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/agx_arm.srdf.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/agx_arm.urdf.xacro
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/initial_positions.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/joint_limits.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/kinematics.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/moveit.rviz
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/moveit_controllers_gripper.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/moveit_controllers_none.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/moveit_controllers_revo2_left.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/moveit_controllers_revo2_right.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/pilz_cartesian_limits.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/ros2_controllers.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/ros2_controllers_nero.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/share/agx_arm_moveit/config/sensors_3d.yaml
+-- Symlinking: /home/kaiwen/research/OSCBF-research/ros_ws/install/agx_arm_moveit/lib/agx_arm_moveit/agx_arm_control_gate
+--- stderr: agx_arm_moveit
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PYTHON_EXECUTABLE
+
+
+---
+Finished <<< agx_arm_moveit [0.49s]
+
+Summary: 4 packages finished [4.60s]
+  2 packages had stderr output: agx_arm_description agx_arm_moveit
+Built message import and driver entrypoint OK; driver not started
+joint1 axis= 0 0 1 deg= [-150.0, 150.0]
+joint2 axis= 0 0 1 deg= [0.0, 180.0]
+joint3 axis= 0 0 1 deg= [-170.0, 0.0]
+joint4 axis= 0 0 1 deg= [-135.0, 135.0]
+joint5 axis= 0 0 1 deg= [-89.5, 89.5]
+joint6 axis= 0 0 1 deg= [-170.0, 170.0]
+MODEL: /home/kaiwen/research/OSCBF-research/models/piper_h_with_gripper.urdf
+MISSING_MESHES: []
+ROS_OFFLINE_BUILD_OK
+LOG: /home/kaiwen/research/OSCBF-research/logs/ros_prepare_20261104_203559.log

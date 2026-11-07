@@ -1,0 +1,4 @@
+286633e0d2edb038ee3a1047d9feb7f614a1c076
+2026-10-21T07:54:18+08:00
+feat!: migrate arm and effector status to diagnostics
+ 680fa925cd00db7e2628563d2edc5540963045de src/agx_arm_description/agx_arm_urdf (heads/main)
