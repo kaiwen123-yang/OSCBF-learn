@@ -1,0 +1,140 @@
+[INFO] [1794050866.376951750] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00154746 seconds
+[INFO] [1794050866.377002627] [moveit_robot_model.robot_model]: Loading robot model 'agx_arm'...
+[INFO] [1794050866.377008449] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[INFO] [1794050867.120392366] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[INFO] [1794050867.120515379] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[INFO] [1794050867.120805796] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[INFO] [1794050867.120921339] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/piper_task/attached_collision_object' for attached collision objects
+[INFO] [1794050867.120928195] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[INFO] [1794050867.120998291] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/piper_task/planning_scene'
+[INFO] [1794050867.121002922] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[INFO] [1794050867.121076383] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[INFO] [1794050867.121148368] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[WARN] [1794050867.121298654] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[ERROR] [1794050867.121351930] [moveit.ros.occupancy_map_monitor.middleware_handle]: Exception while loading octomap updater 'occupancy_map_monitor/PointCloudOctomapUpdater': According to the loaded plugin descriptions the class occupancy_map_monitor/PointCloudOctomapUpdater with base class type occupancy_map_monitor::OccupancyMapUpdater does not exist. Declared types are 
+
+[ERROR] [1794050867.121374898] [moveit.ros.occupancy_map_monitor]: Failed to load sensor: `point_cloud_sensor` of type: `occupancy_map_monitor/PointCloudOctomapUpdater`
+[INFO] [1794050867.841241577] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[INFO] [1794050867.857570245] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[INFO] [1794050867.860072350] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[INFO] [1794050867.860094249] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[INFO] [1794050867.860096756] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[INFO] [1794050867.860105965] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[INFO] [1794050867.860111959] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[INFO] [1794050867.860113971] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[INFO] [1794050867.860118180] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[INFO] [1794050867.860120143] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was set to 0.050000
+[INFO] [1794050867.860122087] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[INFO] [1794050867.860126069] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[INFO] [1794050867.860127956] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[INFO] [1794050867.860129209] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[INFO] [1794050867.860130338] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[INFO] [1794050867.860131381] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[INFO] [1794050867.860132402] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[INFO] [1794050867.862050728] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'chomp'
+[INFO] [1794050867.866361511] [moveit.ros_planning.planning_pipeline]: Using planning interface 'CHOMP'
+[INFO] [1794050867.866713765] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.path_tolerance' was not set. Using default value: 0.100000
+[INFO] [1794050867.866719779] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.resample_dt' was not set. Using default value: 0.100000
+[INFO] [1794050867.866721603] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.min_angle_change' was not set. Using default value: 0.001000
+[INFO] [1794050867.866729506] [moveit_ros.fix_workspace_bounds]: Param 'chomp.default_workspace_bounds' was not set. Using default value: 10.000000
+[INFO] [1794050867.866734459] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_bounds_error' was set to 0.100000
+[INFO] [1794050867.866736491] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[INFO] [1794050867.866740736] [moveit_ros.fix_start_state_collision]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[INFO] [1794050867.866742716] [moveit_ros.fix_start_state_collision]: Param 'chomp.jiggle_fraction' was set to 0.050000
+[INFO] [1794050867.866744246] [moveit_ros.fix_start_state_collision]: Param 'chomp.max_sampling_attempts' was not set. Using default value: 100
+[INFO] [1794050867.866748014] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[INFO] [1794050867.866749722] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[INFO] [1794050867.866750954] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[INFO] [1794050867.866761193] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[INFO] [1794050867.866762758] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[INFO] [1794050867.866763837] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[INFO] [1794050867.866964768] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'pilz_industrial_motion_planner'
+[INFO] [1794050867.869034080] [moveit.pilz_industrial_motion_planner.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[INFO] [1794050867.870927429] [moveit.pilz_industrial_motion_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[INFO] [1794050867.870938999] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[INFO] [1794050867.872803448] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [CIRC]
+[INFO] [1794050867.872816683] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[INFO] [1794050867.873791348] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [LIN]
+[INFO] [1794050867.873804895] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[INFO] [1794050867.874658041] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [PTP]
+[INFO] [1794050867.874671403] [moveit.ros_planning.planning_pipeline]: Using planning interface 'Pilz Industrial Motion Planner'
+[INFO] [1794050867.887628338] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for arm_controller
+[INFO] [1794050867.888161427] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for gripper_controller
+[INFO] [1794050867.888293592] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[INFO] [1794050867.888306857] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[INFO] [1794050867.888443844] [moveit_ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[INFO] [1794050867.888452045] [move_group.move_group]: MoveGroup debug mode is ON
+[INFO] [1794050867.897070892] [move_group.move_group]: 
+
+********************************************************
+* MoveGroup using: 
+*     - ApplyPlanningSceneService
+*     - ClearOctomapService
+*     - CartesianPathService
+*     - ExecuteTrajectoryAction
+*     - GetPlanningSceneService
+*     - KinematicsService
+*     - MoveAction
+*     - MotionPlanService
+*     - QueryPlannersService
+*     - StateValidationService
+********************************************************
+
+[INFO] [1794050867.897103537] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[INFO] [1794050867.897108175] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[ERROR] [1794050868.127782969] [moveit_robot_state.robot_state]: Attached body 'cube' not found
+[INFO] [1794050868.132243278] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[INFO] [1794050868.132268724] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[INFO] [1794050868.134959109] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1794050868.150364152] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.150440179] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[INFO] [1794050868.151233034] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 18 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.152857931] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.152900946] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[WARN] [1794050868.153189997] [moveit_robot_state.cartesian_interpolator]: The computed trajectory is too short to detect jumps in joint-space Need at least 10 steps, only got 8. Try a lower max_step.
+[INFO] [1794050868.153304398] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 8 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.157879106] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.157973361] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[INFO] [1794050868.159213448] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.163236889] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[INFO] [1794050868.163263298] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[INFO] [1794050868.163553887] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1794050868.181834813] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.181913503] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[INFO] [1794050868.183083079] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.186817509] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.186886142] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[INFO] [1794050868.188051675] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.189961525] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[INFO] [1794050868.189994765] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[INFO] [1794050868.190282305] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[ERROR] [1794050868.639054767] [moveit_robot_state.robot_state]: Attached body 'cube' not found
+[INFO] [1794050868.642018665] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[INFO] [1794050868.642051135] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[INFO] [1794050868.642255043] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1794050868.654903658] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.654960655] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[INFO] [1794050868.655639524] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 18 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.657112596] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.657188863] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[WARN] [1794050868.657469130] [moveit_robot_state.cartesian_interpolator]: The computed trajectory is too short to detect jumps in joint-space Need at least 10 steps, only got 8. Try a lower max_step.
+[INFO] [1794050868.657581992] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 8 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.660868854] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.660913523] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[INFO] [1794050868.662018906] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.666831386] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[INFO] [1794050868.666864919] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[INFO] [1794050868.667069985] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1794050868.682456861] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[INFO] [1794050868.682481623] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[INFO] [1794050868.682695986] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1794050868.699709977] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.699776591] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[INFO] [1794050868.700914198] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 25 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.704617252] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[INFO] [1794050868.704695262] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tcp_link' using a step of 0.005000 m and jump threshold 1.500000 (in global reference frame)
+[INFO] [1794050868.705747597] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[INFO] [1794050868.707336121] [moveit_move_group_default_capabilities.plan_service_capability]: Received new planning service request...
+[INFO] [1794050868.707355127] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[INFO] [1794050868.707570679] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [1794050868.871670642] [rclcpp]: signal_handler(SIGINT/SIGTERM)

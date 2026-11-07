@@ -19,7 +19,7 @@ from geometry_msgs.msg import Pose, PoseStamped
 from moveit_msgs.msg import (AllowedCollisionEntry, AttachedCollisionObject, CollisionObject,
                              Constraints, JointConstraint, PlanningScene, PlanningSceneComponents, RobotState)
 from moveit_msgs.srv import (ApplyPlanningScene, GetCartesianPath, GetMotionPlan,
-                            GetPlanningScene, GetPositionIK, GetStateValidity)
+                            GetPlanningScene, GetPositionIK, GetPositionFK, GetStateValidity)
 from rosidl_runtime_py.convert import message_to_ordereddict
 from sensor_msgs.msg import JointState
 from shape_msgs.msg import SolidPrimitive
@@ -55,6 +55,7 @@ class Planner:
         self.clients = {}
         for name, typ in [("apply_planning_scene", ApplyPlanningScene),
                           ("compute_ik", GetPositionIK), ("plan_kinematic_path", GetMotionPlan),
+                          ("compute_fk", GetPositionFK),
                           ("compute_cartesian_path", GetCartesianPath),
                           ("get_planning_scene", GetPlanningScene),
                           ("check_state_validity", GetStateValidity)]:
@@ -63,6 +64,18 @@ class Planner:
                 raise RuntimeError(f"{name} unavailable; run bash scripts/run_task_planner.sh")
             self.clients[name] = client
         self.steps = []
+
+    def tcp_probe(self):
+        request = GetPositionFK.Request()
+        request.header.frame_id = 'base_link'
+        request.fk_link_names = ['tcp_link']
+        request.robot_state = self.state()
+        result = self.call('compute_fk', request)
+        if result.error_code.val != 1 or len(result.pose_stamped) != 1:
+            raise RuntimeError('MoveIt TCP FK verification query failed')
+        return {'joint_rad': list(self.q), 'gripper_width_m': self.width,
+                'pose': message_to_ordereddict(result.pose_stamped[0]),
+                'declared_tcp_offset_m': self.cfg['tcp_offset_m']}
 
     def call(self, name, request):
         future = self.clients[name].call_async(request)
@@ -206,10 +219,48 @@ class Planner:
                            "force_n": c["gripper_force_n"],
                            "scene_event": "attach_cube" if close else "detach_cube_at_place"})
 
+    def transfer(self, final_target):
+        via = self.cfg.get('transfer_via_tcp_m', [])
+        if not via:
+            self.arm('transfer', final_target)
+            return
+        first = len(self.steps)
+        for index, xyz in enumerate(via):
+            if len(xyz) != 3 or not all(math.isfinite(float(v)) for v in xyz):
+                raise ValueError('Finite XYZ required for each interior transfer reference')
+            self.arm(f'transfer_part_{index}', pose(xyz, True))
+        self.arm(f'transfer_part_{len(via)}', final_target)
+        parts = self.steps[first:]
+        combined = copy.deepcopy(parts[0])
+        combined['name'], combined['planner'] = 'transfer', 'ompl_via_concatenated'
+        trajectory = combined['trajectory']['joint_trajectory']
+        trajectory['points'] = []
+        components, offset_ns = [], 0
+        previous_end = None
+        for part in parts:
+            source = part['trajectory']['joint_trajectory']
+            if source['joint_names'] != trajectory['joint_names']:
+                raise RuntimeError('Transfer subplans use different joint orders')
+            points = copy.deepcopy(source['points'])
+            if previous_end is not None and max(abs(a-b) for a,b in zip(previous_end,points[0]['positions'])) > 1e-6:
+                raise RuntimeError('Discontinuous transfer subplans')
+            begin = len(trajectory['points'])
+            for point in points:
+                t = point['time_from_start']
+                ns = offset_ns + int(t['sec'])*1_000_000_000 + int(t['nanosec'])
+                point['time_from_start'] = {'sec':ns//1_000_000_000, 'nanosec':ns%1_000_000_000}
+                trajectory['points'].append(point)
+            last = trajectory['points'][-1]['time_from_start']
+            offset_ns = int(last['sec'])*1_000_000_000 + int(last['nanosec']) + 10_000_000
+            previous_end = points[-1]['positions']
+            components.append({'name':part['name'],'first_point':begin,'last_point':len(trajectory['points'])-1})
+        combined['interior_via_tcp_m'] = via
+        combined['subplans'] = components
+        combined['via_semantics'] = 'Interior references in one stage; no required arrival or gripper action at the via. All saved subplan points retained.'
+        self.steps[first:] = [combined]
+
     def run(self):
         c = self.cfg
-        if c["tcp_offset_m"] != [0.,0.,.1425]:
-            raise ValueError("Update run_task_planner.sh to match the configured TCP before planning")
         self.initial_scene()
         self.support_contact(False)
         self.steps.append({"kind":"gripper", "name":"open", "width_m":c["gripper_open_m"],
@@ -223,7 +274,7 @@ class Planner:
         self.support_contact(True)  # object starts in intended contact with its support
         self.arm("lift", pose([*c["pick_xy_m"],z+c["lift_m"]], True), cartesian=True)
         self.support_contact(False)
-        self.arm("transfer", pose([*c["place_xy_m"],z+c["lift_m"]], True))
+        self.transfer(pose([*c["place_xy_m"],z+c["lift_m"]], True))
         self.support_contact(True)  # allow only cube/table contact on vertical placement
         self.arm("lower", pose([*c["place_xy_m"],z], True), cartesian=True)
         self.grip(False)
@@ -245,6 +296,7 @@ def main():
     planner = None
     try:
         planner = Planner(cfg)
+        report['planning_tcp_probe'] = planner.tcp_probe()
         planner.run()
         report.update(status="planned", arm_segments=sum(s["kind"]=="arm" for s in planner.steps))
     except Exception as exc:

@@ -1,0 +1,326 @@
+{
+  "status": "offline_scene_and_ik_proposal_not_hardware_ready",
+  "config": "config/pick_place_obstacle_candidate.json",
+  "config_sha256": "6aa3f65429d632b0326352dba7551417184e8b588b7889abf2d4421a75eefa77",
+  "obstacle_center_proposed_m": [
+    0.2,
+    0.0,
+    0.028
+  ],
+  "obstacle_box_envelope_m": [
+    0.07,
+    0.07,
+    0.08
+  ],
+  "virtual_clearance_m": 0.02,
+  "transfer_via_tcp_m": [
+    0.25,
+    0.0,
+    0.1
+  ],
+  "via_ik_and_clearances": {
+    "tcp_x_m": 0.25,
+    "tcp_y_m": 0.0,
+    "tcp_z_m": 0.1,
+    "q_rad": [
+      -1.6724728715756653e-08,
+      1.444886817015542,
+      -0.9988626520059465,
+      -5.6970232514192e-08,
+      1.2120386349904062,
+      5.324073888582981e-08
+    ],
+    "q_deg": [
+      -9.582563689141096e-07,
+      82.78591648908181,
+      -57.23061427318539,
+      -3.2641538809421785e-06,
+      69.44469839174758,
+      3.050469636316093e-06
+    ],
+    "ik_position_error_m": 2.5135303678268146e-16,
+    "ik_angle_error_rad": 3.6412893266205413e-16,
+    "sigma_min": 0.16815800094512395,
+    "joint_margin_rad": 0.3500209650095938,
+    "min_physical_clearance_m": 0.010625010032962177,
+    "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+    "minimum_virtual_h_m": -0.009374989967037823,
+    "payload_center_m": [
+      0.2500000011139399,
+      -5.32559054002381e-10,
+      0.10500000288634428
+    ],
+    "payload_physical_clearance_m": 0.022604424572066982,
+    "payload_clearance_with_5mm_center_uncertainty_m": 0.01760442457206698,
+    "actual_opening_obstacle_clearance_range_m": [
+      0.01687500987226779,
+      0.016875010193656538
+    ],
+    "width_interval_lipschitz_upper_clearance_m": 0.01812501019365654,
+    "virtual_activation_for_entire_opening_interval": true,
+    "virtual_activation_for_all_checked_openings": true,
+    "qualified_ik_candidate": true
+  },
+  "old_path_required_endpoint_bounds": [
+    {
+      "plan": "pick_place_plan_20261104_224921_126900",
+      "center_x_m": 0.2,
+      "center_y_m": 0.0,
+      "center_z_m": 0.028,
+      "physical_minimum_m": 0.023648147584016517,
+      "nominal_width_physical_minimum_m": 0.023648147584016517,
+      "held_center_5mm_uncertainty_minimum_m": 0.023648147584016517,
+      "endpoint_minimum_m": 0.023648147584016517,
+      "initial_minimum_m": 0.08842025810863417,
+      "final_minimum_m": 0.08842135824658655,
+      "working_subset_minimum_m": 0.023648147584016517,
+      "worst_stage": "lower",
+      "worst_body": "gripper_base/sphere0",
+      "stage_minimum_physical_clearance_m": {
+        "open": 0.08842025810863417,
+        "pregrasp": 0.05566593372481119,
+        "align": 0.02964842832244082,
+        "approach": 0.023648148004827473,
+        "grasp": 0.023648148004827473,
+        "lift": 0.023648148004827473,
+        "transfer": 0.05040669799930489,
+        "lower": 0.023648147584016517,
+        "release": 0.023648147584016517,
+        "retreat": 0.023648147584016517,
+        "return_initial": 0.05565512748723591
+      },
+      "virtual_gap_cases": [
+        {
+          "virtual_clearance_m": 0.005,
+          "minimum_virtual_h_m": 0.018648147584016516,
+          "all_stage_endpoints_virtual_feasible": true,
+          "violation_reference_sample_fraction": 0.0,
+          "activation_candidate_stages": [],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.01,
+          "minimum_virtual_h_m": 0.013648147584016517,
+          "all_stage_endpoints_virtual_feasible": true,
+          "violation_reference_sample_fraction": 0.0,
+          "activation_candidate_stages": [],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.015,
+          "minimum_virtual_h_m": 0.008648147584016518,
+          "all_stage_endpoints_virtual_feasible": true,
+          "violation_reference_sample_fraction": 0.0,
+          "activation_candidate_stages": [],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.02,
+          "minimum_virtual_h_m": 0.0036481475840165166,
+          "all_stage_endpoints_virtual_feasible": true,
+          "violation_reference_sample_fraction": 0.0,
+          "activation_candidate_stages": [],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.025,
+          "minimum_virtual_h_m": -0.0013518524159834844,
+          "all_stage_endpoints_virtual_feasible": false,
+          "violation_reference_sample_fraction": 0.0706547338671691,
+          "activation_candidate_stages": [
+            "approach",
+            "grasp",
+            "lift",
+            "lower",
+            "release",
+            "retreat"
+          ],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.03,
+          "minimum_virtual_h_m": -0.006351852415983482,
+          "all_stage_endpoints_virtual_feasible": false,
+          "violation_reference_sample_fraction": 0.1902967498822421,
+          "activation_candidate_stages": [
+            "align",
+            "approach",
+            "grasp",
+            "lift",
+            "lower",
+            "release",
+            "retreat"
+          ],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.04,
+          "minimum_virtual_h_m": -0.016351852415983484,
+          "all_stage_endpoints_virtual_feasible": false,
+          "violation_reference_sample_fraction": 0.2670748940178992,
+          "activation_candidate_stages": [
+            "align",
+            "approach",
+            "grasp",
+            "lift",
+            "lower",
+            "release",
+            "retreat"
+          ],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.05,
+          "minimum_virtual_h_m": -0.026351852415983486,
+          "all_stage_endpoints_virtual_feasible": false,
+          "violation_reference_sample_fraction": 0.3080546396608573,
+          "activation_candidate_stages": [
+            "align",
+            "approach",
+            "grasp",
+            "lift",
+            "lower",
+            "release",
+            "retreat"
+          ],
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "plan": "pick_place_plan_20261104_232956_473856",
+      "center_x_m": 0.2,
+      "center_y_m": 0.0,
+      "center_z_m": 0.028,
+      "physical_minimum_m": 0.023648140537426664,
+      "nominal_width_physical_minimum_m": 0.023648140537426664,
+      "held_center_5mm_uncertainty_minimum_m": 0.023648140537426664,
+      "endpoint_minimum_m": 0.023648140537426664,
+      "initial_minimum_m": 0.09457737115873864,
+      "final_minimum_m": 0.09457930514537581,
+      "working_subset_minimum_m": 0.023648140537426664,
+      "worst_stage": "lower",
+      "worst_body": "gripper_base/sphere0",
+      "stage_minimum_physical_clearance_m": {
+        "open": 0.09457737115873864,
+        "pregrasp": 0.05566517907106839,
+        "align": 0.029648428787165636,
+        "approach": 0.023648148434919226,
+        "grasp": 0.023648148434919226,
+        "lift": 0.023648148434919226,
+        "transfer": 0.050406876437426404,
+        "lower": 0.023648140537426664,
+        "release": 0.023648140537426664,
+        "retreat": 0.023648140537426664,
+        "return_initial": 0.05565512686694534
+      },
+      "virtual_gap_cases": [
+        {
+          "virtual_clearance_m": 0.005,
+          "minimum_virtual_h_m": 0.018648140537426663,
+          "all_stage_endpoints_virtual_feasible": true,
+          "violation_reference_sample_fraction": 0.0,
+          "activation_candidate_stages": [],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.01,
+          "minimum_virtual_h_m": 0.013648140537426664,
+          "all_stage_endpoints_virtual_feasible": true,
+          "violation_reference_sample_fraction": 0.0,
+          "activation_candidate_stages": [],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.015,
+          "minimum_virtual_h_m": 0.008648140537426664,
+          "all_stage_endpoints_virtual_feasible": true,
+          "violation_reference_sample_fraction": 0.0,
+          "activation_candidate_stages": [],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.02,
+          "minimum_virtual_h_m": 0.0036481405374266633,
+          "all_stage_endpoints_virtual_feasible": true,
+          "violation_reference_sample_fraction": 0.0,
+          "activation_candidate_stages": [],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.025,
+          "minimum_virtual_h_m": -0.0013518594625733377,
+          "all_stage_endpoints_virtual_feasible": false,
+          "violation_reference_sample_fraction": 0.07938199254128929,
+          "activation_candidate_stages": [
+            "approach",
+            "grasp",
+            "lift",
+            "lower",
+            "release",
+            "retreat"
+          ],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.03,
+          "minimum_virtual_h_m": -0.006351859462573335,
+          "all_stage_endpoints_virtual_feasible": false,
+          "violation_reference_sample_fraction": 0.21523708044752266,
+          "activation_candidate_stages": [
+            "align",
+            "approach",
+            "grasp",
+            "lift",
+            "lower",
+            "release",
+            "retreat"
+          ],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.04,
+          "minimum_virtual_h_m": -0.016351859462573337,
+          "all_stage_endpoints_virtual_feasible": false,
+          "violation_reference_sample_fraction": 0.30207778369738947,
+          "activation_candidate_stages": [
+            "align",
+            "approach",
+            "grasp",
+            "lift",
+            "lower",
+            "release",
+            "retreat"
+          ],
+          "qualified": false
+        },
+        {
+          "virtual_clearance_m": 0.05,
+          "minimum_virtual_h_m": -0.02635185946257334,
+          "all_stage_endpoints_virtual_feasible": false,
+          "violation_reference_sample_fraction": 0.3484283431006926,
+          "activation_candidate_stages": [
+            "align",
+            "approach",
+            "grasp",
+            "lift",
+            "lower",
+            "release",
+            "retreat"
+          ],
+          "qualified": false
+        }
+      ]
+    }
+  ],
+  "old_unmodified_path_search": "No qualified uniform-gap activation scenario in 90 sampled plan/XY cases; useful activation must not make required stage endpoints infeasible.",
+  "actual_measurement_status": "Only rough cylinder dimensions/location supplied; proposed exact XY not confirmed.",
+  "still_required": [
+    "Full physical-box MoveIt path including interior transfer via",
+    "Whole-path rank and physical-distance checks on actual generated path",
+    "Ordinary CBF and OSCBF rollouts verifying feasible task completion and actual intervention",
+    "Exact proposed cylinder placement confirmed before any hardware run"
+  ],
+  "support_contact_quantization_note": "At intended cube/table contact, h≈0; exact quantized zero is admissible up to reported nanometre model residual, but blanket ±0.0005rad/s robust tightening excludes zero by about0.000278m/s. Check the final quantized request explicitly; do not erase negative h or relax fault/feedback rules.",
+  "rotation_note": "Obstacle payload circumsphere covers any orientation about assumed center. Arbitrary-3D sphere table envelope penetrates7.32mm at support contact, so it is not a usable contact model. Upright-on-face plus unknown initial yaw can be bounded by radius14.14mm/half-height10mm cylinder propagated rigidly; this assumption still needs onsite confirmation."
+}

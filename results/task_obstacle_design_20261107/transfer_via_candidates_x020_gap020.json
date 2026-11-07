@@ -1,0 +1,1924 @@
+{
+  "status": "ik_candidates_only",
+  "hardware_executed": false,
+  "MoveIt_path_validated": false,
+  "box_center_candidate_m": [
+    0.2,
+    0.0,
+    0.028
+  ],
+  "box_size_envelope_m": [
+    0.07,
+    0.07,
+    0.08
+  ],
+  "virtual_clearance_m": 0.02,
+  "actual_xy_status": "not_measured_or_field_confirmed",
+  "reference_note": "Via must be an interior reference point in a single transfer stage; it intentionally lies inside the virtual buffer but outside physical geometry, not an achievable required stop.",
+  "held_finger_width_envelope_m": [
+    0.015,
+    0.04
+  ],
+  "candidates": [
+    {
+      "tcp_x_m": 0.245,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.6588203208668364e-08,
+        1.432462908159409,
+        -0.9660991318661032,
+        -5.7420028502157914e-08,
+        1.1916990237067013,
+        5.4624493518853355e-08
+      ],
+      "q_deg": [
+        -9.504340335620673e-07,
+        82.07407894657018,
+        -55.35340284718049,
+        -3.2899252926945423e-06,
+        68.27932450825462,
+        3.1297529366700162e-06
+      ],
+      "ik_position_error_m": 5.294403887790146e-16,
+      "ik_angle_error_rad": 6.846122429035176e-15,
+      "sigma_min": 0.16508743908556403,
+      "joint_margin_rad": 0.37036057629329866,
+      "min_physical_clearance_m": 0.004541505910712005,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.015458494089287995,
+      "payload_center_m": [
+        0.24500000111394066,
+        -5.32559071923543e-10,
+        0.10000000288634428
+      ],
+      "payload_physical_clearance_m": 0.016205604239010116,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.011205604239010115,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.010791505747046147,
+        0.01079150607437783
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.012041506074377829,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.245,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.6046404326367932e-08,
+        1.4273500129021361,
+        -0.9813034284701168,
+        -5.6970712569672236e-08,
+        1.2120162155679843,
+        5.392042804692905e-08
+      ],
+      "q_deg": [
+        -9.193912442613473e-07,
+        81.78113162723601,
+        -56.224544873055564,
+        -3.264181386095128e-06,
+        69.44341385346368,
+        3.089412956627867e-06
+      ],
+      "ik_position_error_m": 2.3884939351062305e-16,
+      "ik_angle_error_rad": 2.614905198135432e-15,
+      "sigma_min": 0.1652211073903925,
+      "joint_margin_rad": 0.35004338443201566,
+      "min_physical_clearance_m": 0.009438757819042241,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.01056124218095776,
+      "payload_center_m": [
+        0.2450000011139403,
+        -5.325590525353157e-10,
+        0.10500000288634417
+      ],
+      "payload_physical_clearance_m": 0.02100703079379291,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.01600703079379291,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.015688757654688607,
+        0.01568875798339582
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.016938757983395822,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.245,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.5504604149688938e-08,
+        1.4226152829069647,
+        -0.9967954474054802,
+        -5.655333784388719e-08,
+        1.2322429644985173,
+        5.324063131115165e-08
+      ],
+      "q_deg": [
+        -8.883483807981986e-07,
+        81.50985158137868,
+        -57.11217217418864,
+        -3.240267575832215e-06,
+        70.60232120045397,
+        3.050463472741052e-06
+      ],
+      "ik_position_error_m": 1.9279784490391912e-16,
+      "ik_angle_error_rad": 4.77924761546457e-16,
+      "sigma_min": 0.16535077596190045,
+      "joint_margin_rad": 0.32981663550148266,
+      "min_physical_clearance_m": 0.014353850498970177,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.005646149501029823,
+      "payload_center_m": [
+        0.24500000111393994,
+        -5.325590502140038e-10,
+        0.1100000028863444
+      ],
+      "payload_physical_clearance_m": 0.025853561279022164,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.020853561279022163,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.020603850334098603,
+        0.020603850663841725
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.021853850663841726,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.245,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.11,
+      "q_rad": [
+        -1.49628032907423e-08,
+        1.4182550784111854,
+        -1.0125751655620716,
+        -5.6166452475855606e-08,
+        1.2523828871508877,
+        5.2583250266346124e-08
+      ],
+      "q_deg": [
+        -8.573054782439933e-07,
+        81.26003026595656,
+        -58.01628342646728,
+        -3.2181006770886394e-06,
+        71.75625376815472,
+        3.012798313341795e-06
+      ],
+      "ik_position_error_m": 8.886229962553592e-17,
+      "ik_angle_error_rad": 1.5800560106083257e-16,
+      "sigma_min": 0.16547672757910237,
+      "joint_margin_rad": 0.30967671284911225,
+      "min_physical_clearance_m": 0.01928253680262436,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.0007174631973756417,
+      "payload_center_m": [
+        0.24500000111394005,
+        -5.325590517342434e-10,
+        0.11500000288634438
+      ],
+      "payload_physical_clearance_m": 0.030731550085217073,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.025731550085217072,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.025532536637353345,
+        0.025532536967895342
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.026782536967895343,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.245,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.115,
+      "q_rad": [
+        -1.4421002237263391e-08,
+        1.4142658243270676,
+        -1.0286429280906602,
+        -5.5808729271463693e-08,
+        1.2724399037635938,
+        5.19465293243605e-08
+      ],
+      "q_deg": [
+        -8.262625645439101e-07,
+        81.03146284353129,
+        -58.93689840557386,
+        -3.197604647243087e-06,
+        72.90543616968657,
+        2.9763168906384247e-06
+      ],
+      "ik_position_error_m": 5.003715757632467e-17,
+      "ik_angle_error_rad": 9.968330188070562e-17,
+      "sigma_min": 0.1655992244758391,
+      "joint_margin_rad": 0.28961969623640615,
+      "min_physical_clearance_m": 0.024221811332012302,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.004221811332012302,
+      "payload_center_m": [
+        0.24500000111394013,
+        -5.325590523003304e-10,
+        0.12000000288634427
+      ],
+      "payload_physical_clearance_m": 0.03563230414757951,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.030632304147579507,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.03047181116642695,
+        0.03047181149759761
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.03172181149759761,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.25,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.7255693436463356e-08,
+        1.4499726538573274,
+        -0.9837349610876841,
+        -5.741714178287684e-08,
+        1.1918251072303594,
+        5.3949208533038154e-08
+      ],
+      "q_deg": [
+        -9.886784064809463e-07,
+        83.07731347540826,
+        -56.36386142979057,
+        -3.289759895863098e-06,
+        68.28654856202637,
+        3.0910619570142533e-06
+      ],
+      "ik_position_error_m": 7.200987302698522e-16,
+      "ik_angle_error_rad": 1.4762269917840855e-15,
+      "sigma_min": 0.1683521927891553,
+      "joint_margin_rad": 0.3702344927696406,
+      "min_physical_clearance_m": 0.005847680564857459,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.014152319435142542,
+      "payload_center_m": [
+        0.2500000011139398,
+        -5.325590582634522e-10,
+        0.10000000288634495
+      ],
+      "payload_physical_clearance_m": 0.01802068910371641,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.013020689103716409,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.012097680405599082,
+        0.012097680724115802
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.013347680724115801,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.25,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.6724728715756653e-08,
+        1.444886817015542,
+        -0.9988626520059465,
+        -5.6970232514192e-08,
+        1.2120386349904062,
+        5.324073888582981e-08
+      ],
+      "q_deg": [
+        -9.582563689141096e-07,
+        82.78591648908181,
+        -57.23061427318539,
+        -3.2641538809421785e-06,
+        69.44469839174758,
+        3.050469636316093e-06
+      ],
+      "ik_position_error_m": 2.5135303678268146e-16,
+      "ik_angle_error_rad": 3.6412893266205413e-16,
+      "sigma_min": 0.16815800094512395,
+      "joint_margin_rad": 0.3500209650095938,
+      "min_physical_clearance_m": 0.010625010032962177,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.009374989967037823,
+      "payload_center_m": [
+        0.2500000011139399,
+        -5.32559054002381e-10,
+        0.10500000288634428
+      ],
+      "payload_physical_clearance_m": 0.022604424572066982,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.01760442457206698,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.01687500987226779,
+        0.016875010193656538
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.01812501019365654,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.25,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.6193763802494615e-08,
+        1.4401740375046337,
+        -1.0142814048143767,
+        -5.655478740118129e-08,
+        1.2321701673097443,
+        5.255583631517569e-08
+      ],
+      "q_deg": [
+        -9.27834320314665e-07,
+        82.51589411333104,
+        -58.11404373446392,
+        -3.240350629347329e-06,
+        70.59815022877686,
+        3.0112276096399513e-06
+      ],
+      "ik_position_error_m": 8.886252898167169e-17,
+      "ik_angle_error_rad": 9.801769969611362e-17,
+      "sigma_min": 0.16733899266756364,
+      "joint_margin_rad": 0.3298894326902557,
+      "min_physical_clearance_m": 0.01543982689530212,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.004560173104697881,
+      "payload_center_m": [
+        0.25000000111394005,
+        -5.325590525812696e-10,
+        0.11000000288634437
+      ],
+      "payload_physical_clearance_m": 0.027277701258116786,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.022277701258116785,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.02168982673351251,
+        0.021689827057091694
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.022939827057091695,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.25,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.11,
+      "q_rad": [
+        -1.5662798776823324e-08,
+        1.435831067919281,
+        -1.029991370532642,
+        -5.616941157998392e-08,
+        1.2522231026133623,
+        5.1892704783727e-08
+      ],
+      "q_deg": [
+        -8.974122652746446e-07,
+        82.26706028553664,
+        -59.014158466415736,
+        -3.2182702212663318e-06,
+        71.74709878852308,
+        2.9732329716258947e-06
+      ],
+      "ik_position_error_m": 1.887583225977368e-16,
+      "ik_angle_error_rad": 1.0015737113899328e-16,
+      "sigma_min": 0.16648114869884365,
+      "joint_margin_rad": 0.30983649738663765,
+      "min_physical_clearance_m": 0.02028352835585158,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.000283528355851579,
+      "payload_center_m": [
+        0.25000000111394005,
+        -5.325590523815615e-10,
+        0.11500000288634449
+      ],
+      "payload_physical_clearance_m": 0.03201508054587245,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.027015080545872452,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.02653352819320908,
+        0.02653352851849406
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.027783528518494062,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.25,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.115,
+      "q_rad": [
+        -1.5131833710825926e-08,
+        1.4318547191218012,
+        -1.0459930688661343,
+        -5.5812828945067405e-08,
+        1.2722011497443346,
+        5.12496393069552e-08
+      ],
+      "q_deg": [
+        -8.669902079241086e-07,
+        82.03923228156914,
+        -59.93098824596637,
+        -3.197839541237961e-06,
+        72.89175657204123,
+        2.936388033856302e-06
+      ],
+      "ik_position_error_m": 1.0838898803770956e-16,
+      "ik_angle_error_rad": 1.7797805790032839e-16,
+      "sigma_min": 0.16558461790282406,
+      "joint_margin_rad": 0.28985845025566537,
+      "min_physical_clearance_m": 0.02514992451607391,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.0051499245160739095,
+      "payload_center_m": [
+        0.25000000111394005,
+        -5.325590524005532e-10,
+        0.12000000288634424
+      ],
+      "payload_physical_clearance_m": 0.03679973151625845,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.03179973151625845,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.03139992435275509,
+        0.0313999246793927
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.0326499246793927,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.255,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.789700534937358e-08,
+        1.4673953479451842,
+        -1.0016359962153292,
+        -5.740621271624291e-08,
+        1.1923034482701464,
+        5.327833928433834e-08
+      ],
+      "q_deg": [
+        -1.0254228724421634e-06,
+        84.07556031438999,
+        -57.38951519152006,
+        -3.2891337064709563e-06,
+        68.31395548477407,
+        3.0526239804586416e-06
+      ],
+      "ik_position_error_m": 2.0206633694439554e-16,
+      "ik_angle_error_rad": 1.7015814234677935e-16,
+      "sigma_min": 0.16784772298284492,
+      "joint_margin_rad": 0.36975615172985354,
+      "min_physical_clearance_m": 0.007619345554736116,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.012380654445263884,
+      "payload_center_m": [
+        0.25500000111394017,
+        -5.325590530734404e-10,
+        0.10000000288634411
+      ],
+      "payload_physical_clearance_m": 0.020415419489539663,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.015415419489539662,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.013869345401089986,
+        0.013869345708382212
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.015119345708382212,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.255,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.7376451389287314e-08,
+        1.4623412149845338,
+        -1.0166914479437197,
+        -5.696223914882428e-08,
+        1.2124130329591873,
+        5.2566239422919735e-08
+      ],
+      "q_deg": [
+        -9.95597327520399e-07,
+        83.78597982664677,
+        -58.25212903421978,
+        -3.263695894842502e-06,
+        69.46614981521701,
+        3.011823663807505e-06
+      ],
+      "ik_position_error_m": 1.3877922674091638e-16,
+      "ik_angle_error_rad": 5.582907107106977e-17,
+      "sigma_min": 0.16704924570588697,
+      "joint_margin_rad": 0.34964656704081265,
+      "min_physical_clearance_m": 0.012242716578758596,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.007757283421241405,
+      "payload_center_m": [
+        0.25500000111394,
+        -5.325590528362986e-10,
+        0.10500000288634423
+      ],
+      "payload_physical_clearance_m": 0.02473897668177067,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.01973897668177067,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.018492716422799496,
+        0.018492716734717675
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.019742716734717676,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.255,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.6855897417297795e-08,
+        1.4576551855114053,
+        -1.032041304433703,
+        -5.654923787502105e-08,
+        1.232448918922299,
+        5.187699041879355e-08
+      ],
+      "q_deg": [
+        -9.657717819166283e-07,
+        83.51749011516259,
+        -59.13161102722731,
+        -3.24003266492005e-06,
+        70.6141215197087,
+        2.9723326048374793e-06
+      ],
+      "ik_position_error_m": 2.3263418029065623e-16,
+      "ik_angle_error_rad": 2.386683995864995e-16,
+      "sigma_min": 0.1662127628421971,
+      "joint_margin_rad": 0.3296106810777011,
+      "min_physical_clearance_m": 0.016926949810834188,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.0030730501891658123,
+      "payload_center_m": [
+        0.25500000111394033,
+        -5.325590525303155e-10,
+        0.11000000288634423
+      ],
+      "payload_physical_clearance_m": 0.029198308406649866,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.024198308406649865,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.023176949653082736,
+        0.023176949968585617
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.024426949968585618,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.255,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.11,
+      "q_rad": [
+        -1.633534343082555e-08,
+        1.4533343892139607,
+        -1.0476858989311815,
+        -5.616587070042866e-08,
+        1.252414309717222,
+        5.120885181357528e-08
+      ],
+      "q_deg": [
+        -9.359462354830586e-07,
+        83.26992672318326,
+        -60.02798026412643,
+        -3.2180673438120513e-06,
+        71.75805414858715,
+        2.934051082628715e-06
+      ],
+      "ik_position_error_m": 6.938894155187656e-17,
+      "ik_angle_error_rad": 1.551026017462564e-16,
+      "sigma_min": 0.16533835292869395,
+      "joint_margin_rad": 0.309645290282778,
+      "min_physical_clearance_m": 0.021658748106939796,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.0016587481069397954,
+      "payload_center_m": [
+        0.25500000111394017,
+        -5.32559052422882e-10,
+        0.11500000288634427
+      ],
+      "payload_physical_clearance_m": 0.03375786617185184,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.028757866171851842,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.027908747947775057,
+        0.027908748266104476
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.029158748266104477,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.255,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.115,
+      "q_rad": [
+        -1.581478943737196e-08,
+        1.4493760092363084,
+        -1.0636259345702477,
+        -5.5810912593940476e-08,
+        1.2723127253339408,
+        5.0560168140895485e-08
+      ],
+      "q_deg": [
+        -9.06120688649487e-07,
+        83.0431282567547,
+        -60.94127703153303,
+        -3.197729742406323e-06,
+        72.89814938242235,
+        2.896884245945117e-06
+      ],
+      "ik_position_error_m": 1.9279638981754101e-16,
+      "ik_angle_error_rad": 1.2246476638507557e-16,
+      "sigma_min": 0.16442599879975006,
+      "joint_margin_rad": 0.2897468746660592,
+      "min_physical_clearance_m": 0.02642833839339996,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.006428338393399961,
+      "payload_center_m": [
+        0.25500000111393994,
+        -5.325590524122604e-10,
+        0.12000000288634421
+      ],
+      "payload_physical_clearance_m": 0.03839304812588553,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.03339304812588553,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.03267833823310342,
+        0.03267833855369647
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.03392833855369647,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.26,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.8513650994736624e-08,
+        1.4847379542964216,
+        -1.0198040315953834,
+        -5.7387395052983896e-08,
+        1.193128877298963,
+        5.2610716336329654e-08
+      ],
+      "q_deg": [
+        -1.0607540653765868e-06,
+        85.06921846407268,
+        -58.43046694084153,
+        -3.2880555337859164e-06,
+        68.36124908441283,
+        3.014372003231662e-06
+      ],
+      "ik_position_error_m": 2.775563396443525e-17,
+      "ik_angle_error_rad": 1.2748735445424042e-16,
+      "sigma_min": 0.16671967454100148,
+      "joint_margin_rad": 0.368930722701037,
+      "min_physical_clearance_m": 0.009809364786677049,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.010190635213322951,
+      "payload_center_m": [
+        0.2600000011139401,
+        -5.325590524399781e-10,
+        0.10000000288634428
+      ],
+      "payload_physical_clearance_m": 0.023287375892105375,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.018287375892105374,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.016059364639444566,
+        0.016059364933909512
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.017309364933909513,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.26,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.8003107655217367e-08,
+        1.4797199657483047,
+        -1.0347917261792106,
+        -5.6946863817760534e-08,
+        1.2131345604309074,
+        5.1895706728373103e-08
+      ],
+      "q_deg": [
+        -1.0315020867636188e-06,
+        84.7817088986206,
+        -59.2891985851259,
+        -3.262814953263933e-06,
+        69.5074902941493,
+        2.973404970384448e-06
+      ],
+      "ik_position_error_m": 1.0007417909552628e-16,
+      "ik_angle_error_rad": 3.946190673638899e-17,
+      "sigma_min": 0.1659037457060542,
+      "joint_margin_rad": 0.3489250395690926,
+      "min_physical_clearance_m": 0.014255096267971923,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.005744903732028078,
+      "payload_center_m": [
+        0.26000000111394017,
+        -5.325590524664799e-10,
+        0.10500000288634423
+      ],
+      "payload_physical_clearance_m": 0.027333722062084086,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.022333722062084085,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.020505096117527634,
+        0.02050509641841619
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.021755096418416192,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.26,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.7492564316465065e-08,
+        1.4750652896033092,
+        -1.0500771835905645,
+        -5.65367997102709e-08,
+        1.2330746939872568,
+        5.12028177894291e-08
+      ],
+      "q_deg": [
+        -1.002250108194594e-06,
+        84.51501560051213,
+        -60.16499078272345,
+        -3.239320010574978e-06,
+        70.64997578985532,
+        2.933705358511659e-06
+      ],
+      "ik_position_error_m": 6.938894500247494e-17,
+      "ik_angle_error_rad": 1.2247513976869793e-16,
+      "sigma_min": 0.16505066348044736,
+      "joint_margin_rad": 0.3289849060127432,
+      "min_physical_clearance_m": 0.018786098072178653,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.0012139019278213474,
+      "payload_center_m": [
+        0.26000000111394006,
+        -5.325590524343689e-10,
+        0.11000000288634434
+      ],
+      "payload_physical_clearance_m": 0.03155689261268849,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.026556892612688492,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.025036097919200598,
+        0.025036098225156678
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.02628609822515668,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.26,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.11,
+      "q_rad": [
+        -1.6982020976367843e-08,
+        1.470771418326016,
+        -1.0656609275298714,
+        -5.6155921158478986e-08,
+        1.2529523092038568,
+        5.053036371304426e-08
+      ],
+      "q_deg": [
+        -9.72998129548511e-07,
+        84.26899489855079,
+        -61.05787353945831,
+        -3.2174972770502463e-06,
+        71.78887924855152,
+        2.8951765780184397e-06
+      ],
+      "ik_position_error_m": 1.185718710630318e-16,
+      "ik_angle_error_rad": 1.7797600547443699e-16,
+      "sigma_min": 0.1641603545299133,
+      "joint_margin_rad": 0.3091072907961432,
+      "min_physical_clearance_m": 0.023384821318022816,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.003384821318022816,
+      "payload_center_m": [
+        0.26000000111394,
+        -5.325590524155213e-10,
+        0.11500000288634427
+      ],
+      "payload_physical_clearance_m": 0.035914821611530215,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.030914821611530214,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.029634821163018153,
+        0.02963482147302745
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.03088482147302745,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.26,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.115,
+      "q_rad": [
+        -1.647147763539673e-08,
+        1.4668358945228883,
+        -1.081543853622808,
+        -5.5803054358726636e-08,
+        1.2727707590999209,
+        4.987673781783034e-08
+      ],
+      "q_deg": [
+        -9.437461508523576e-07,
+        84.04350599445829,
+        -61.96789817090178,
+        -3.197279498694149e-06,
+        72.92439278408749,
+        2.857726572842222e-06
+      ],
+      "ik_position_error_m": 1.3877787808295015e-17,
+      "ik_angle_error_rad": 7.182435170522623e-17,
+      "sigma_min": 0.16323266713525003,
+      "joint_margin_rad": 0.2892888409000791,
+      "min_physical_clearance_m": 0.028038051008802883,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.008038051008802883,
+      "payload_center_m": [
+        0.2600000011139401,
+        -5.325590524130372e-10,
+        0.1200000028863443
+      ],
+      "payload_physical_clearance_m": 0.0403769819543067,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.035376981954306705,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.03428805085215637,
+        0.03428805116544938
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.035538051165449384,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.265,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.910702693803918e-08,
+        1.5020075061505285,
+        -1.0382413153118326,
+        -5.7360861652053796e-08,
+        1.1942966091613054,
+        5.194528000897045e-08
+      ],
+      "q_deg": [
+        -1.0947520025924174e-06,
+        86.05869089939532,
+        -59.48684548347934,
+        -3.2865352818964935e-06,
+        68.42815519172801,
+        2.976245310139294e-06
+      ],
+      "ik_position_error_m": 5.551115124564158e-17,
+      "ik_angle_error_rad": 1.8284690386368114e-16,
+      "sigma_min": 0.1655542931338451,
+      "joint_margin_rad": 0.36776299083869457,
+      "min_physical_clearance_m": 0.012367806927486192,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.007632193072513808,
+      "payload_center_m": [
+        0.2650000011139401,
+        -5.325590524128078e-10,
+        0.10000000288634436
+      ],
+      "payload_physical_clearance_m": 0.02654291918979891,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.02154291918979891,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.0186178067870997,
+        0.01861780706787266
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.01986780706787266,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.265,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.8606116490151982e-08,
+        1.4970299170312709,
+        -1.0531658548752219,
+        -5.692425607425597e-08,
+        1.2141987378439523,
+        5.1228027948768115e-08
+      ],
+      "q_deg": [
+        -1.066051948014473e-06,
+        85.77349605071161,
+        -60.341958611637565,
+        -3.261519624976807e-06,
+        69.56846316856993,
+        2.935149794242637e-06
+      ],
+      "ik_position_error_m": 1.0007415112816431e-16,
+      "ik_angle_error_rad": 9.958032048017664e-17,
+      "sigma_min": 0.1647217844249899,
+      "joint_margin_rad": 0.3478608621560477,
+      "min_physical_clearance_m": 0.016621966763458396,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.003378033236541605,
+      "payload_center_m": [
+        0.26500000111394006,
+        -5.325590524153227e-10,
+        0.1050000028863444
+      ],
+      "payload_physical_clearance_m": 0.03031351632211568,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.02531351632211568,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.02287196661902119,
+        0.022871966907895572
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.024121966907895573,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.265,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.810520604235328e-08,
+        1.4924110199315201,
+        -1.0683915429047537,
+        -5.651760126892678e-08,
+        1.234043322973235,
+        5.053215393152097e-08
+      ],
+      "q_deg": [
+        -1.0373518934415995e-06,
+        85.50885274089069,
+        -61.2143262759126,
+        -3.2382200209127305e-06,
+        70.7054741426659,
+        2.8952791499815614e-06
+      ],
+      "ik_position_error_m": 5.721958503113057e-17,
+      "ik_angle_error_rad": 1.2246475130136597e-16,
+      "sigma_min": 0.16385277383213934,
+      "joint_margin_rad": 0.32801627702676495,
+      "min_physical_clearance_m": 0.0209846753830229,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.000984675383022899,
+      "payload_center_m": [
+        0.26500000111394006,
+        -5.325590524147821e-10,
+        0.11000000288634429
+      ],
+      "payload_physical_clearance_m": 0.03429344652174646,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.029293446521746456,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.027234675235329818,
+        0.02723467553071595
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.02848467553071595,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.265,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.11,
+      "q_rad": [
+        -1.760429559451476e-08,
+        1.4881486567583748,
+        -1.0839191019988357,
+        -5.6139672178591034e-08,
+        1.2538332452404621,
+        4.98560258672456e-08
+      ],
+      "q_deg": [
+        -1.0086518388664442e-06,
+        85.26463732031748,
+        -62.10398987814348,
+        -3.2165662790812737e-06,
+        71.83935316547,
+        2.856539865488233e-06
+      ],
+      "ik_position_error_m": 4.1633363425174673e-17,
+      "ik_angle_error_rad": 1.1442399147180747e-17,
+      "sigma_min": 0.1629470650284222,
+      "joint_margin_rad": 0.30822635475953786,
+      "min_physical_clearance_m": 0.025435070987535613,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.0054350709875356125,
+      "payload_center_m": [
+        0.2650000011139401,
+        -5.325590524132854e-10,
+        0.11500000288634427
+      ],
+      "payload_physical_clearance_m": 0.03843790239341679,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.03343790239341679,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.03168507083719827,
+        0.031685071137872924
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.032935071137872925,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.265,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.115,
+      "q_rad": [
+        -1.7103385146608047e-08,
+        1.4842407176572725,
+        -1.0997496296131652,
+        -5.5789346287764973e-08,
+        1.273571711955894,
+        4.919808505621678e-08
+      ],
+      "q_deg": [
+        -9.79951784287382e-07,
+        85.04072890323016,
+        -63.011012297909865,
+        -3.1964940840827796e-06,
+        72.9702840023237,
+        2.818842633846867e-06
+      ],
+      "ik_position_error_m": 1.3877787807821766e-17,
+      "ik_angle_error_rad": 9.957992502326373e-17,
+      "sigma_min": 0.1620043956868503,
+      "joint_margin_rad": 0.28848788804410597,
+      "min_physical_clearance_m": 0.029957032358271296,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.009957032358271296,
+      "payload_center_m": [
+        0.2650000011139401,
+        -5.325590524130134e-10,
+        0.1200000028863443
+      ],
+      "payload_physical_clearance_m": 0.042712819059296483,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.037712819059296486,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.03620703220576458,
+        0.03620703251077797
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.03745703251077797,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.27,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.9678425989937304e-08,
+        1.519211112138548,
+        -1.056950566068628,
+        -5.7326801647066336e-08,
+        1.1958022539300814,
+        5.128106619094911e-08
+      ],
+      "q_deg": [
+        -1.1274907566839566e-06,
+        87.04438491491483,
+        -60.55880658969566,
+        -3.284583787360517e-06,
+        68.51442228242483,
+        2.9381886616724005e-06
+      ],
+      "ik_position_error_m": 1.1102230246489885e-16,
+      "ik_angle_error_rad": 3.919798380776596e-17,
+      "sigma_min": 0.1643518654283486,
+      "joint_margin_rad": 0.36625734606991855,
+      "min_physical_clearance_m": 0.015245854532776206,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.004754145467223794,
+      "payload_center_m": [
+        0.2700000011139401,
+        -5.32559052413503e-10,
+        0.1000000028863442
+      ],
+      "payload_physical_clearance_m": 0.030103117498564813,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.025103117498564812,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.021495854399367825,
+        0.021495854666184575
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.022745854666184576,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.27,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.918679166145387e-08,
+        1.5142780111156116,
+        -1.0718166786666605,
+        -5.6894581819329315e-08,
+        1.2156014675510505,
+        5.0562187323462e-08
+      ],
+      "q_deg": [
+        -1.0993221845981073e-06,
+        86.7617390463889,
+        -61.41057209932919,
+        -3.2598194154093146e-06,
+        69.64883366058429,
+        2.896999936584245e-06
+      ],
+      "ik_position_error_m": 1.2412670766236425e-16,
+      "ik_angle_error_rad": 3.919795360046506e-17,
+      "sigma_min": 0.16350344385487356,
+      "joint_margin_rad": 0.3464581324489495,
+      "min_physical_clearance_m": 0.01930271529445477,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.0006972847055452293,
+      "payload_center_m": [
+        0.27000000111394,
+        -5.325590524129881e-10,
+        0.10500000288634437
+      ],
+      "payload_physical_clearance_m": 0.03361082109863604,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.028610821098636042,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.025552715156266975,
+        0.025552715432642537
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.026802715432642538,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.27,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.8695157332938946e-08,
+        1.509699159779565,
+        -1.0869873658719826,
+        -5.649178741931185e-08,
+        1.2353510060924189,
+        4.986393310281443e-08
+      ],
+      "q_deg": [
+        -1.0711536125104541e-06,
+        86.4993901898156,
+        -62.27978844850726,
+        -3.2367409962768094e-06,
+        70.78039886633564,
+        2.8569929167139425e-06
+      ],
+      "ik_position_error_m": 6.938893903910253e-17,
+      "ik_angle_error_rad": 9.957992515226307e-17,
+      "sigma_min": 0.16261900646551436,
+      "joint_margin_rad": 0.3267085939075811,
+      "min_physical_clearance_m": 0.02348884324126166,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.0034888432412616584,
+      "payload_center_m": [
+        0.2700000011139402,
+        -5.325590524130469e-10,
+        0.11000000288634434
+      ],
+      "payload_physical_clearance_m": 0.037351242585136085,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.03235124258513609,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.029738843099160146,
+        0.02973884338336314
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.030988843383363142,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.27,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.11,
+      "q_rad": [
+        -1.8203523004425882e-08,
+        1.5054727371614316,
+        -1.1024635579283604,
+        -5.611724965069476e-08,
+        1.2550536207669298,
+        4.9184724067991564e-08
+      ],
+      "q_deg": [
+        -1.0429850404229072e-06,
+        86.25723401135792,
+        -63.1665089362716,
+        -3.215281562866803e-06,
+        71.90927553255764,
+        2.818077105611438e-06
+      ],
+      "ik_position_error_m": 8.88611994741686e-17,
+      "ik_angle_error_rad": 3.2162452993782145e-16,
+      "sigma_min": 0.16169825582250252,
+      "joint_margin_rad": 0.30700597923307016,
+      "min_physical_clearance_m": 0.027781194537240497,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.007781194537240497,
+      "payload_center_m": [
+        0.2700000011139402,
+        -5.325590524130186e-10,
+        0.11500000288634438
+      ],
+      "payload_physical_clearance_m": 0.041279836199537054,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.036279836199537056,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.034031194391910664,
+        0.0340311946825703
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.0352811946825703,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    },
+    {
+      "tcp_x_m": 0.27,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.115,
+      "q_rad": [
+        -1.7708038809371104e-08,
+        1.501596969969258,
+        -1.118246563838684,
+        -5.577514917441056e-08,
+        1.2747123938773974,
+        4.8530812705475325e-08
+      ],
+      "q_deg": [
+        -1.0145958872308315e-06,
+        86.0351689088711,
+        -64.07080856296318,
+        -3.1956806494063032e-06,
+        73.03564026219271,
+        2.7806107443636085e-06
+      ],
+      "ik_position_error_m": 5.814164077419999e-13,
+      "ik_angle_error_rad": 9.717506604090447e-12,
+      "sigma_min": 0.16074083725832325,
+      "joint_margin_rad": 0.28734720612260256,
+      "min_physical_clearance_m": 0.032161488778725766,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": 0.012161488778725766,
+      "payload_center_m": [
+        0.2700000011143732,
+        -5.326940657272837e-10,
+        0.12000000288674151
+      ],
+      "payload_physical_clearance_m": 0.04536123071721555,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.040361230717215556,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.03841148863073344,
+        0.038411488926718036
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.03966148892671804,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": false
+    }
+  ],
+  "qualified_candidates": [
+    {
+      "tcp_x_m": 0.245,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.6046404326367932e-08,
+        1.4273500129021361,
+        -0.9813034284701168,
+        -5.6970712569672236e-08,
+        1.2120162155679843,
+        5.392042804692905e-08
+      ],
+      "q_deg": [
+        -9.193912442613473e-07,
+        81.78113162723601,
+        -56.224544873055564,
+        -3.264181386095128e-06,
+        69.44341385346368,
+        3.089412956627867e-06
+      ],
+      "ik_position_error_m": 2.3884939351062305e-16,
+      "ik_angle_error_rad": 2.614905198135432e-15,
+      "sigma_min": 0.1652211073903925,
+      "joint_margin_rad": 0.35004338443201566,
+      "min_physical_clearance_m": 0.009438757819042241,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.01056124218095776,
+      "payload_center_m": [
+        0.2450000011139403,
+        -5.325590525353157e-10,
+        0.10500000288634417
+      ],
+      "payload_physical_clearance_m": 0.02100703079379291,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.01600703079379291,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.015688757654688607,
+        0.01568875798339582
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.016938757983395822,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.245,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.5504604149688938e-08,
+        1.4226152829069647,
+        -0.9967954474054802,
+        -5.655333784388719e-08,
+        1.2322429644985173,
+        5.324063131115165e-08
+      ],
+      "q_deg": [
+        -8.883483807981986e-07,
+        81.50985158137868,
+        -57.11217217418864,
+        -3.240267575832215e-06,
+        70.60232120045397,
+        3.050463472741052e-06
+      ],
+      "ik_position_error_m": 1.9279784490391912e-16,
+      "ik_angle_error_rad": 4.77924761546457e-16,
+      "sigma_min": 0.16535077596190045,
+      "joint_margin_rad": 0.32981663550148266,
+      "min_physical_clearance_m": 0.014353850498970177,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.005646149501029823,
+      "payload_center_m": [
+        0.24500000111393994,
+        -5.325590502140038e-10,
+        0.1100000028863444
+      ],
+      "payload_physical_clearance_m": 0.025853561279022164,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.020853561279022163,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.020603850334098603,
+        0.020603850663841725
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.021853850663841726,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.25,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.7255693436463356e-08,
+        1.4499726538573274,
+        -0.9837349610876841,
+        -5.741714178287684e-08,
+        1.1918251072303594,
+        5.3949208533038154e-08
+      ],
+      "q_deg": [
+        -9.886784064809463e-07,
+        83.07731347540826,
+        -56.36386142979057,
+        -3.289759895863098e-06,
+        68.28654856202637,
+        3.0910619570142533e-06
+      ],
+      "ik_position_error_m": 7.200987302698522e-16,
+      "ik_angle_error_rad": 1.4762269917840855e-15,
+      "sigma_min": 0.1683521927891553,
+      "joint_margin_rad": 0.3702344927696406,
+      "min_physical_clearance_m": 0.005847680564857459,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.014152319435142542,
+      "payload_center_m": [
+        0.2500000011139398,
+        -5.325590582634522e-10,
+        0.10000000288634495
+      ],
+      "payload_physical_clearance_m": 0.01802068910371641,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.013020689103716409,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.012097680405599082,
+        0.012097680724115802
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.013347680724115801,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.25,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.6724728715756653e-08,
+        1.444886817015542,
+        -0.9988626520059465,
+        -5.6970232514192e-08,
+        1.2120386349904062,
+        5.324073888582981e-08
+      ],
+      "q_deg": [
+        -9.582563689141096e-07,
+        82.78591648908181,
+        -57.23061427318539,
+        -3.2641538809421785e-06,
+        69.44469839174758,
+        3.050469636316093e-06
+      ],
+      "ik_position_error_m": 2.5135303678268146e-16,
+      "ik_angle_error_rad": 3.6412893266205413e-16,
+      "sigma_min": 0.16815800094512395,
+      "joint_margin_rad": 0.3500209650095938,
+      "min_physical_clearance_m": 0.010625010032962177,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.009374989967037823,
+      "payload_center_m": [
+        0.2500000011139399,
+        -5.32559054002381e-10,
+        0.10500000288634428
+      ],
+      "payload_physical_clearance_m": 0.022604424572066982,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.01760442457206698,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.01687500987226779,
+        0.016875010193656538
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.01812501019365654,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.25,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.6193763802494615e-08,
+        1.4401740375046337,
+        -1.0142814048143767,
+        -5.655478740118129e-08,
+        1.2321701673097443,
+        5.255583631517569e-08
+      ],
+      "q_deg": [
+        -9.27834320314665e-07,
+        82.51589411333104,
+        -58.11404373446392,
+        -3.240350629347329e-06,
+        70.59815022877686,
+        3.0112276096399513e-06
+      ],
+      "ik_position_error_m": 8.886252898167169e-17,
+      "ik_angle_error_rad": 9.801769969611362e-17,
+      "sigma_min": 0.16733899266756364,
+      "joint_margin_rad": 0.3298894326902557,
+      "min_physical_clearance_m": 0.01543982689530212,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.004560173104697881,
+      "payload_center_m": [
+        0.25000000111394005,
+        -5.325590525812696e-10,
+        0.11000000288634437
+      ],
+      "payload_physical_clearance_m": 0.027277701258116786,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.022277701258116785,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.02168982673351251,
+        0.021689827057091694
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.022939827057091695,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.255,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.789700534937358e-08,
+        1.4673953479451842,
+        -1.0016359962153292,
+        -5.740621271624291e-08,
+        1.1923034482701464,
+        5.327833928433834e-08
+      ],
+      "q_deg": [
+        -1.0254228724421634e-06,
+        84.07556031438999,
+        -57.38951519152006,
+        -3.2891337064709563e-06,
+        68.31395548477407,
+        3.0526239804586416e-06
+      ],
+      "ik_position_error_m": 2.0206633694439554e-16,
+      "ik_angle_error_rad": 1.7015814234677935e-16,
+      "sigma_min": 0.16784772298284492,
+      "joint_margin_rad": 0.36975615172985354,
+      "min_physical_clearance_m": 0.007619345554736116,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.012380654445263884,
+      "payload_center_m": [
+        0.25500000111394017,
+        -5.325590530734404e-10,
+        0.10000000288634411
+      ],
+      "payload_physical_clearance_m": 0.020415419489539663,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.015415419489539662,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.013869345401089986,
+        0.013869345708382212
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.015119345708382212,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.255,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.7376451389287314e-08,
+        1.4623412149845338,
+        -1.0166914479437197,
+        -5.696223914882428e-08,
+        1.2124130329591873,
+        5.2566239422919735e-08
+      ],
+      "q_deg": [
+        -9.95597327520399e-07,
+        83.78597982664677,
+        -58.25212903421978,
+        -3.263695894842502e-06,
+        69.46614981521701,
+        3.011823663807505e-06
+      ],
+      "ik_position_error_m": 1.3877922674091638e-16,
+      "ik_angle_error_rad": 5.582907107106977e-17,
+      "sigma_min": 0.16704924570588697,
+      "joint_margin_rad": 0.34964656704081265,
+      "min_physical_clearance_m": 0.012242716578758596,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.007757283421241405,
+      "payload_center_m": [
+        0.25500000111394,
+        -5.325590528362986e-10,
+        0.10500000288634423
+      ],
+      "payload_physical_clearance_m": 0.02473897668177067,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.01973897668177067,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.018492716422799496,
+        0.018492716734717675
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.019742716734717676,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.255,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.6855897417297795e-08,
+        1.4576551855114053,
+        -1.032041304433703,
+        -5.654923787502105e-08,
+        1.232448918922299,
+        5.187699041879355e-08
+      ],
+      "q_deg": [
+        -9.657717819166283e-07,
+        83.51749011516259,
+        -59.13161102722731,
+        -3.24003266492005e-06,
+        70.6141215197087,
+        2.9723326048374793e-06
+      ],
+      "ik_position_error_m": 2.3263418029065623e-16,
+      "ik_angle_error_rad": 2.386683995864995e-16,
+      "sigma_min": 0.1662127628421971,
+      "joint_margin_rad": 0.3296106810777011,
+      "min_physical_clearance_m": 0.016926949810834188,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.0030730501891658123,
+      "payload_center_m": [
+        0.25500000111394033,
+        -5.325590525303155e-10,
+        0.11000000288634423
+      ],
+      "payload_physical_clearance_m": 0.029198308406649866,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.024198308406649865,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.023176949653082736,
+        0.023176949968585617
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.024426949968585618,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.26,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.8513650994736624e-08,
+        1.4847379542964216,
+        -1.0198040315953834,
+        -5.7387395052983896e-08,
+        1.193128877298963,
+        5.2610716336329654e-08
+      ],
+      "q_deg": [
+        -1.0607540653765868e-06,
+        85.06921846407268,
+        -58.43046694084153,
+        -3.2880555337859164e-06,
+        68.36124908441283,
+        3.014372003231662e-06
+      ],
+      "ik_position_error_m": 2.775563396443525e-17,
+      "ik_angle_error_rad": 1.2748735445424042e-16,
+      "sigma_min": 0.16671967454100148,
+      "joint_margin_rad": 0.368930722701037,
+      "min_physical_clearance_m": 0.009809364786677049,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.010190635213322951,
+      "payload_center_m": [
+        0.2600000011139401,
+        -5.325590524399781e-10,
+        0.10000000288634428
+      ],
+      "payload_physical_clearance_m": 0.023287375892105375,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.018287375892105374,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.016059364639444566,
+        0.016059364933909512
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.017309364933909513,
+      "virtual_activation_for_entire_opening_interval": true,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.26,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.8003107655217367e-08,
+        1.4797199657483047,
+        -1.0347917261792106,
+        -5.6946863817760534e-08,
+        1.2131345604309074,
+        5.1895706728373103e-08
+      ],
+      "q_deg": [
+        -1.0315020867636188e-06,
+        84.7817088986206,
+        -59.2891985851259,
+        -3.262814953263933e-06,
+        69.5074902941493,
+        2.973404970384448e-06
+      ],
+      "ik_position_error_m": 1.0007417909552628e-16,
+      "ik_angle_error_rad": 3.946190673638899e-17,
+      "sigma_min": 0.1659037457060542,
+      "joint_margin_rad": 0.3489250395690926,
+      "min_physical_clearance_m": 0.014255096267971923,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.005744903732028078,
+      "payload_center_m": [
+        0.26000000111394017,
+        -5.325590524664799e-10,
+        0.10500000288634423
+      ],
+      "payload_physical_clearance_m": 0.027333722062084086,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.022333722062084085,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.020505096117527634,
+        0.02050509641841619
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.021755096418416192,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.26,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.105,
+      "q_rad": [
+        -1.7492564316465065e-08,
+        1.4750652896033092,
+        -1.0500771835905645,
+        -5.65367997102709e-08,
+        1.2330746939872568,
+        5.12028177894291e-08
+      ],
+      "q_deg": [
+        -1.002250108194594e-06,
+        84.51501560051213,
+        -60.16499078272345,
+        -3.239320010574978e-06,
+        70.64997578985532,
+        2.933705358511659e-06
+      ],
+      "ik_position_error_m": 6.938894500247494e-17,
+      "ik_angle_error_rad": 1.2247513976869793e-16,
+      "sigma_min": 0.16505066348044736,
+      "joint_margin_rad": 0.3289849060127432,
+      "min_physical_clearance_m": 0.018786098072178653,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.0012139019278213474,
+      "payload_center_m": [
+        0.26000000111394006,
+        -5.325590524343689e-10,
+        0.11000000288634434
+      ],
+      "payload_physical_clearance_m": 0.03155689261268849,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.026556892612688492,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.025036097919200598,
+        0.025036098225156678
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.02628609822515668,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.265,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.910702693803918e-08,
+        1.5020075061505285,
+        -1.0382413153118326,
+        -5.7360861652053796e-08,
+        1.1942966091613054,
+        5.194528000897045e-08
+      ],
+      "q_deg": [
+        -1.0947520025924174e-06,
+        86.05869089939532,
+        -59.48684548347934,
+        -3.2865352818964935e-06,
+        68.42815519172801,
+        2.976245310139294e-06
+      ],
+      "ik_position_error_m": 5.551115124564158e-17,
+      "ik_angle_error_rad": 1.8284690386368114e-16,
+      "sigma_min": 0.1655542931338451,
+      "joint_margin_rad": 0.36776299083869457,
+      "min_physical_clearance_m": 0.012367806927486192,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.007632193072513808,
+      "payload_center_m": [
+        0.2650000011139401,
+        -5.325590524128078e-10,
+        0.10000000288634436
+      ],
+      "payload_physical_clearance_m": 0.02654291918979891,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.02154291918979891,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.0186178067870997,
+        0.01861780706787266
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.01986780706787266,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": true,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.265,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.1,
+      "q_rad": [
+        -1.8606116490151982e-08,
+        1.4970299170312709,
+        -1.0531658548752219,
+        -5.692425607425597e-08,
+        1.2141987378439523,
+        5.1228027948768115e-08
+      ],
+      "q_deg": [
+        -1.066051948014473e-06,
+        85.77349605071161,
+        -60.341958611637565,
+        -3.261519624976807e-06,
+        69.56846316856993,
+        2.935149794242637e-06
+      ],
+      "ik_position_error_m": 1.0007415112816431e-16,
+      "ik_angle_error_rad": 9.958032048017664e-17,
+      "sigma_min": 0.1647217844249899,
+      "joint_margin_rad": 0.3478608621560477,
+      "min_physical_clearance_m": 0.016621966763458396,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.003378033236541605,
+      "payload_center_m": [
+        0.26500000111394006,
+        -5.325590524153227e-10,
+        0.1050000028863444
+      ],
+      "payload_physical_clearance_m": 0.03031351632211568,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.02531351632211568,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.02287196661902119,
+        0.022871966907895572
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.024121966907895573,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    },
+    {
+      "tcp_x_m": 0.27,
+      "tcp_y_m": 0.0,
+      "tcp_z_m": 0.095,
+      "q_rad": [
+        -1.9678425989937304e-08,
+        1.519211112138548,
+        -1.056950566068628,
+        -5.7326801647066336e-08,
+        1.1958022539300814,
+        5.128106619094911e-08
+      ],
+      "q_deg": [
+        -1.1274907566839566e-06,
+        87.04438491491483,
+        -60.55880658969566,
+        -3.284583787360517e-06,
+        68.51442228242483,
+        2.9381886616724005e-06
+      ],
+      "ik_position_error_m": 1.1102230246489885e-16,
+      "ik_angle_error_rad": 3.919798380776596e-17,
+      "sigma_min": 0.1643518654283486,
+      "joint_margin_rad": 0.36625734606991855,
+      "min_physical_clearance_m": 0.015245854532776206,
+      "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+      "minimum_virtual_h_m": -0.004754145467223794,
+      "payload_center_m": [
+        0.2700000011139401,
+        -5.32559052413503e-10,
+        0.1000000028863442
+      ],
+      "payload_physical_clearance_m": 0.030103117498564813,
+      "payload_clearance_with_5mm_center_uncertainty_m": 0.025103117498564812,
+      "actual_opening_obstacle_clearance_range_m": [
+        0.021495854399367825,
+        0.021495854666184575
+      ],
+      "width_interval_lipschitz_upper_clearance_m": 0.022745854666184576,
+      "virtual_activation_for_entire_opening_interval": false,
+      "virtual_activation_for_all_checked_openings": false,
+      "qualified_ik_candidate": true
+    }
+  ],
+  "next_checks": [
+    "MoveIt plan through a candidate using the physical box envelope",
+    "Check entire interpolated path geometry and rank",
+    "Run both filters with identical nominal reference and explicit phase schedule",
+    "Confirm actual box/cylinder center, dimensions and upright placement before hardware"
+  ]
+}

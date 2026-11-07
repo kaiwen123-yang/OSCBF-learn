@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "scope": "tiny numerical analysis fixtures; no hardware or robot simulation",
+  "identical_actual_schedule_detected": true,
+  "different_actual_schedule_detected": true,
+  "stale_identical_declared_schedule_does_not_override_control_trace": true,
+  "method_independent_geometry_mismatch_detected": true,
+  "phase_aligned_errors_equal_for_same_error_as_function_of_phase": true,
+  "raw_negative_h_and_small_negative_applied_margin_preserved": true,
+  "missing_CAN_not_reported_as_zero_errors": true,
+  "program_completion_not_operator_confirmation": true,
+  "output_inside_input_rejected": true,
+  "phase_aligned_fixture_window": {
+    "phase_weight_s": 0.30000000000000004,
+    "phase_fraction": 0.7500000000000001,
+    "position": {
+      "common_valid_phase_weight_s": 0.30000000000000004,
+      "run_a": {
+        "phase_weighted_rms": 0.015000222220576157,
+        "max": 0.017800000000000003
+      },
+      "run_b": {
+        "phase_weighted_rms": 0.015000222220576155,
+        "max": 0.017800000000000003
+      }
+    },
+    "orientation": {
+      "common_valid_phase_weight_s": 0.30000000000000004,
+      "run_a": {
+        "phase_weighted_rms": 0.025983969417059178,
+        "max": 0.03900000000000001
+      },
+      "run_b": {
+        "phase_weighted_rms": 0.025983969417059178,
+        "max": 0.03900000000000001
+      }
+    }
+  }
+}

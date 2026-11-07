@@ -1,0 +1,46 @@
+{
+  "status": "planned",
+  "data_source": "MoveIt offline planning, no hardware motion",
+  "scene_status": "operator_confirmed_approximate",
+  "physical_grasp_success": "not_tested",
+  "error": null,
+  "planning_tcp_probe": {
+    "joint_rad": [
+      -0.2605303038464489,
+      1.6425965892759393,
+      -1.273092172306444,
+      -6.458078954477743e-05,
+      1.288510397280541,
+      -0.2605389068397051
+    ],
+    "gripper_width_m": 0.04,
+    "pose": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "base_link"
+      },
+      "pose": {
+        "position": {
+          "x": 0.30002621677988606,
+          "y": -0.07999913384047806,
+          "z": 0.11299323073379264
+        },
+        "orientation": {
+          "x": -1.3320282377281217e-05,
+          "y": 0.9999999991433923,
+          "z": -3.612071951122951e-05,
+          "w": 1.5201289089141456e-05
+        }
+      }
+    },
+    "declared_tcp_offset_m": [
+      0.0,
+      0.0,
+      0.1425
+    ]
+  },
+  "arm_segments": 8
+}

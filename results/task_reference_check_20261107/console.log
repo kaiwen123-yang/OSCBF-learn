@@ -1,0 +1,86 @@
+{
+  "scope": "offline_reference_logic_only_no_hardware_no_geometry",
+  "status": "passed",
+  "checks": {
+    "saved_path_timing_and_waypoints": {
+      "passed": true,
+      "stage_scale_combinations": 48
+    },
+    "transverse_correction_and_actual_arrival": {
+      "passed": true,
+      "transverse_error_rad": 0.05,
+      "old_norm_gate_rate_at_this_error": 0.0,
+      "reference_finished_before_actual_arrival": true,
+      "arrival_tolerance_rad": 0.002,
+      "actual_done_error_rad": 0.001960784313725489,
+      "elapsed_s": 2.49
+    },
+    "blocked_actual_motion": {
+      "passed": true,
+      "reason": "no_measured_progress",
+      "state": {
+        "phase_s": 0.18461100494465735,
+        "rate": 0.0,
+        "requested_rate": 0.08099471081759291,
+        "actual_phase_rate": 0.08099471081759173,
+        "elapsed_s": 0.5,
+        "dt_s": 0.010000000000000009,
+        "tangential_lag_s": 0.18461100494465735,
+        "tangential_error_rad": 0.018461100494465737,
+        "projected_phase_s": 0.0,
+        "goal_error_rad": 0.2,
+        "reference_error_rad": 0.018461100494465737,
+        "no_progress_s": 0.5,
+        "reference_waypoints_reached": 1,
+        "paused": true,
+        "reason": "no_measured_progress",
+        "done": false,
+        "policy": "adaptive_tangential_v1"
+      }
+    },
+    "finite_total_duration": {
+      "passed": true,
+      "reason": "max_duration_exceeded",
+      "elapsed_s": 0.4
+    },
+    "one_point_hold_requires_arrival": {
+      "passed": true,
+      "initial_error_rad": 0.01999999999999999,
+      "final_error_rad": 0.0010000000000000009
+    },
+    "timed_stationary_hold": {
+      "passed": true,
+      "duration_s": 1.0,
+      "shorter_no_progress_timeout_s": 0.2
+    },
+    "late_calls_do_not_skip_waypoints": {
+      "passed": true,
+      "late_dt_s": 0.2,
+      "visited_boundaries": 3
+    },
+    "same_policy_not_same_schedule": {
+      "passed": true,
+      "policy": "adaptive_tangential_v1",
+      "faster_final_phase_s": 1.0,
+      "slower_final_phase_s": 0.6043767863978595,
+      "schedule_hashes_differ": true
+    }
+  },
+  "governor_metadata": {
+    "schema": 1,
+    "policy": "adaptive_tangential_v1",
+    "stage": "check",
+    "reference_signature": "5b6957a61feafcfd70fe673d657f4590d212767d97362b70e2cd9af34f711621",
+    "lag_metric": "local_joint_path_tangent; Cartesian transverse displacement is not assumed joint-transverse",
+    "reference_duration_s": 2.0,
+    "arrival_tolerance_rad": 0.002,
+    "max_tangential_lag_s": 0.2,
+    "no_progress_timeout_s": 5.0,
+    "max_duration_s": 18.0,
+    "max_phase_step_s": 0.05,
+    "progress_epsilon_rad": 0.0001,
+    "min_running_rate": 0.02,
+    "reference_time_comparison": "Actual phase traces must be compared. Same policy does not imply a common time schedule."
+  },
+  "schedule_replay_status": "Observed traces can be serialized; a fixed-schedule execution consumer is not implemented here."
+}

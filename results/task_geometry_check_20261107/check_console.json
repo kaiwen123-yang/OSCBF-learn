@@ -1,0 +1,142 @@
+{
+  "status": "passed",
+  "max_errors": {
+    "part_transform_difference": 4.440892098500626e-16,
+    "tcp_transform_difference": 4.3021142204224816e-16,
+    "tcp_linear_jacobian_error": 5.606792807810734e-11,
+    "tcp_angular_jacobian_error": 1.0016221185793484e-10,
+    "barrier_jacobian_error": 1.3584467621965968e-10
+  },
+  "attachment_roundtrip_error": 3.3306690738754696e-16,
+  "nominal_path_samples": [
+    {
+      "stage": "pregrasp",
+      "samples": 87,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.06277626997213769,
+      "worst_constraint": "table:link2/corner0",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "align",
+      "samples": 13,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.009106784791551241,
+      "worst_constraint": "world_cube:gripper_link2/sphere1",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "approach",
+      "samples": 9,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.004999993494778278,
+      "worst_constraint": "table:gripper_link2/corner7",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "lift",
+      "samples": 15,
+      "carrying": true,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.02,
+      "minimum_h_m": 0.0,
+      "worst_constraint": "table:payload/corner4",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "transfer",
+      "samples": 43,
+      "carrying": true,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.02,
+      "minimum_h_m": 0.0382376167039909,
+      "worst_constraint": "held_cube_robot:gripper_base/sphere2",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "lower",
+      "samples": 15,
+      "carrying": true,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.02,
+      "minimum_h_m": -9.862561236445577e-10,
+      "worst_constraint": "table:payload/corner4",
+      "negative_samples": 1,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "retreat",
+      "samples": 15,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.004999993038801763,
+      "worst_constraint": "table:gripper_link1/corner3",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "return_initial",
+      "samples": 87,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.0627728496827796,
+      "worst_constraint": "table:link2/corner0",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    }
+  ],
+  "gripper_sweeps": [
+    {
+      "stage": "open",
+      "post_stage_width_assumption_m": 0.04,
+      "width_start_m": 0.04,
+      "width_end_m": 0.04,
+      "samples": 21,
+      "maximum_between_sample_lipschitz_buffer_m": 0.0,
+      "minimum_sample_h_m": 0.06632466654455065,
+      "certified_lower_bound_m": 0.06632466654455065,
+      "clear_for_fixed_q": true,
+      "negative_within_1e_minus8_m_only": false,
+      "coverage": "Known boxes/table/cube pairs only; measured width and fixed arm state required."
+    },
+    {
+      "stage": "grasp",
+      "post_stage_width_assumption_m": 0.02,
+      "width_start_m": 0.04,
+      "width_end_m": 0.015,
+      "samples": 21,
+      "maximum_between_sample_lipschitz_buffer_m": 0.0003125,
+      "minimum_sample_h_m": 0.004999993494778278,
+      "certified_lower_bound_m": 0.004687493494778277,
+      "clear_for_fixed_q": true,
+      "negative_within_1e_minus8_m_only": false,
+      "coverage": "Known boxes/table/cube pairs only; measured width and fixed arm state required."
+    },
+    {
+      "stage": "release",
+      "post_stage_width_assumption_m": 0.04,
+      "width_start_m": 0.02,
+      "width_end_m": 0.04,
+      "samples": 21,
+      "maximum_between_sample_lipschitz_buffer_m": 0.00025,
+      "minimum_sample_h_m": -9.862561236445577e-10,
+      "certified_lower_bound_m": -9.862561236445577e-10,
+      "clear_for_fixed_q": false,
+      "negative_within_1e_minus8_m_only": true,
+      "coverage": "Known boxes/table/cube pairs only; measured width and fixed arm state required."
+    }
+  ]
+}

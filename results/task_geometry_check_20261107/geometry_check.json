@@ -1,0 +1,954 @@
+{
+  "status": "passed",
+  "numerical_failures": [],
+  "source_config": "config/pick_place.json",
+  "source_plan": "results/pick_place_plan_20261104_224921_126900/task.json",
+  "hardware_connected": false,
+  "geometric_model_validation_only": true,
+  "max_errors": {
+    "part_transform_difference": 4.440892098500626e-16,
+    "tcp_transform_difference": 4.3021142204224816e-16,
+    "tcp_linear_jacobian_error": 5.606792807810734e-11,
+    "tcp_angular_jacobian_error": 1.0016221185793484e-10,
+    "barrier_jacobian_error": 1.3584467621965968e-10
+  },
+  "attachment_roundtrip_error": 3.3306690738754696e-16,
+  "inactive_jacobian_error": 0.0,
+  "inactive_value_error": 0.0,
+  "support_contact_clearance_error": 8.673617379884035e-19,
+  "sdf_cases": [
+    {
+      "case": "outside",
+      "signed_distance_m": 1.414213562372095,
+      "gradient": [
+        0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "sphere_radius_m": 0.02,
+      "sphere_clearance_m": 1.394213562372095,
+      "physically_clear_for_radius": true,
+      "nonsmooth_note": "Boundary/interior ties provide subgradients; negative clearance is not accepted as a safe initial state."
+    },
+    {
+      "case": "face",
+      "signed_distance_m": 0.0,
+      "gradient": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "sphere_radius_m": 0.02,
+      "sphere_clearance_m": -0.02,
+      "physically_clear_for_radius": false,
+      "nonsmooth_note": "Boundary/interior ties provide subgradients; negative clearance is not accepted as a safe initial state."
+    },
+    {
+      "case": "inside",
+      "signed_distance_m": -1.0,
+      "gradient": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "sphere_radius_m": 0.02,
+      "sphere_clearance_m": -1.02,
+      "physically_clear_for_radius": false,
+      "nonsmooth_note": "Boundary/interior ties provide subgradients; negative clearance is not accepted as a safe initial state."
+    }
+  ],
+  "nominal_path_samples": [
+    {
+      "stage": "pregrasp",
+      "samples": 87,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.06277626997213769,
+      "worst_constraint": "table:link2/corner0",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "align",
+      "samples": 13,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.009106784791551241,
+      "worst_constraint": "world_cube:gripper_link2/sphere1",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "approach",
+      "samples": 9,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.004999993494778278,
+      "worst_constraint": "table:gripper_link2/corner7",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "lift",
+      "samples": 15,
+      "carrying": true,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.02,
+      "minimum_h_m": 0.0,
+      "worst_constraint": "table:payload/corner4",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "transfer",
+      "samples": 43,
+      "carrying": true,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.02,
+      "minimum_h_m": 0.0382376167039909,
+      "worst_constraint": "held_cube_robot:gripper_base/sphere2",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "lower",
+      "samples": 15,
+      "carrying": true,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.02,
+      "minimum_h_m": -9.862561236445577e-10,
+      "worst_constraint": "table:payload/corner4",
+      "negative_samples": 1,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "retreat",
+      "samples": 15,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.004999993038801763,
+      "worst_constraint": "table:gripper_link1/corner3",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    },
+    {
+      "stage": "return_initial",
+      "samples": 87,
+      "carrying": false,
+      "width_source": "plan nominal for offline check only",
+      "gripper_width_m": 0.04,
+      "minimum_h_m": 0.0627728496827796,
+      "worst_constraint": "table:link2/corner0",
+      "negative_samples": 0,
+      "below_minus_1e_6_samples": 0
+    }
+  ],
+  "gripper_sweeps": [
+    {
+      "stage": "open",
+      "post_stage_width_assumption_m": 0.04,
+      "width_start_m": 0.04,
+      "width_end_m": 0.04,
+      "samples": 21,
+      "maximum_between_sample_lipschitz_buffer_m": 0.0,
+      "minimum_sample_h_m": 0.06632466654455065,
+      "certified_lower_bound_m": 0.06632466654455065,
+      "clear_for_fixed_q": true,
+      "negative_within_1e_minus8_m_only": false,
+      "coverage": "Known boxes/table/cube pairs only; measured width and fixed arm state required."
+    },
+    {
+      "stage": "grasp",
+      "post_stage_width_assumption_m": 0.02,
+      "width_start_m": 0.04,
+      "width_end_m": 0.015,
+      "samples": 21,
+      "maximum_between_sample_lipschitz_buffer_m": 0.0003125,
+      "minimum_sample_h_m": 0.004999993494778278,
+      "certified_lower_bound_m": 0.004687493494778277,
+      "clear_for_fixed_q": true,
+      "negative_within_1e_minus8_m_only": false,
+      "coverage": "Known boxes/table/cube pairs only; measured width and fixed arm state required."
+    },
+    {
+      "stage": "release",
+      "post_stage_width_assumption_m": 0.04,
+      "width_start_m": 0.02,
+      "width_end_m": 0.04,
+      "samples": 21,
+      "maximum_between_sample_lipschitz_buffer_m": 0.00025,
+      "minimum_sample_h_m": -9.862561236445577e-10,
+      "certified_lower_bound_m": -9.862561236445577e-10,
+      "clear_for_fixed_q": false,
+      "negative_within_1e_minus8_m_only": true,
+      "coverage": "Known boxes/table/cube pairs only; measured width and fixed arm state required."
+    }
+  ],
+  "path_scope": "Every saved joint point and each midpoint, nominal grasp widths; not a continuous path or actual measured geometry certification.",
+  "fixture_status": "Synthetic obstacle used only for numerical derivative checks; no measured obstacle invented.",
+  "metadata": {
+    "frame": "base_link",
+    "task_frame": "tcp_link",
+    "tcp_offset_m": [
+      0.0,
+      0.0,
+      0.1425
+    ],
+    "tcp_calibrated": false,
+    "geometry_source": "Official fixed-revision collision meshes",
+    "moving_links": [
+      "link1",
+      "link2",
+      "link3",
+      "link4",
+      "link5",
+      "link6",
+      "flange_link",
+      "gripper_base",
+      "gripper_link1",
+      "gripper_link2"
+    ],
+    "sphere_count": 35,
+    "constraint_count": 158,
+    "constraint_labels": [
+      "table:link1/corner0",
+      "table:link1/corner1",
+      "table:link1/corner2",
+      "table:link1/corner3",
+      "table:link1/corner4",
+      "table:link1/corner5",
+      "table:link1/corner6",
+      "table:link1/corner7",
+      "table:link2/corner0",
+      "table:link2/corner1",
+      "table:link2/corner2",
+      "table:link2/corner3",
+      "table:link2/corner4",
+      "table:link2/corner5",
+      "table:link2/corner6",
+      "table:link2/corner7",
+      "table:link3/corner0",
+      "table:link3/corner1",
+      "table:link3/corner2",
+      "table:link3/corner3",
+      "table:link3/corner4",
+      "table:link3/corner5",
+      "table:link3/corner6",
+      "table:link3/corner7",
+      "table:link4/corner0",
+      "table:link4/corner1",
+      "table:link4/corner2",
+      "table:link4/corner3",
+      "table:link4/corner4",
+      "table:link4/corner5",
+      "table:link4/corner6",
+      "table:link4/corner7",
+      "table:link5/corner0",
+      "table:link5/corner1",
+      "table:link5/corner2",
+      "table:link5/corner3",
+      "table:link5/corner4",
+      "table:link5/corner5",
+      "table:link5/corner6",
+      "table:link5/corner7",
+      "table:link6/corner0",
+      "table:link6/corner1",
+      "table:link6/corner2",
+      "table:link6/corner3",
+      "table:link6/corner4",
+      "table:link6/corner5",
+      "table:link6/corner6",
+      "table:link6/corner7",
+      "table:flange_link/corner0",
+      "table:flange_link/corner1",
+      "table:flange_link/corner2",
+      "table:flange_link/corner3",
+      "table:flange_link/corner4",
+      "table:flange_link/corner5",
+      "table:flange_link/corner6",
+      "table:flange_link/corner7",
+      "table:gripper_base/corner0",
+      "table:gripper_base/corner1",
+      "table:gripper_base/corner2",
+      "table:gripper_base/corner3",
+      "table:gripper_base/corner4",
+      "table:gripper_base/corner5",
+      "table:gripper_base/corner6",
+      "table:gripper_base/corner7",
+      "table:gripper_link1/corner0",
+      "table:gripper_link1/corner1",
+      "table:gripper_link1/corner2",
+      "table:gripper_link1/corner3",
+      "table:gripper_link1/corner4",
+      "table:gripper_link1/corner5",
+      "table:gripper_link1/corner6",
+      "table:gripper_link1/corner7",
+      "table:gripper_link2/corner0",
+      "table:gripper_link2/corner1",
+      "table:gripper_link2/corner2",
+      "table:gripper_link2/corner3",
+      "table:gripper_link2/corner4",
+      "table:gripper_link2/corner5",
+      "table:gripper_link2/corner6",
+      "table:gripper_link2/corner7",
+      "table:payload/corner0",
+      "table:payload/corner1",
+      "table:payload/corner2",
+      "table:payload/corner3",
+      "table:payload/corner4",
+      "table:payload/corner5",
+      "table:payload/corner6",
+      "table:payload/corner7",
+      "world_cube:link1/sphere0",
+      "world_cube:link1/sphere1",
+      "world_cube:link2/sphere0",
+      "world_cube:link2/sphere1",
+      "world_cube:link2/sphere2",
+      "world_cube:link2/sphere3",
+      "world_cube:link2/sphere4",
+      "world_cube:link2/sphere5",
+      "world_cube:link2/sphere6",
+      "world_cube:link2/sphere7",
+      "world_cube:link2/sphere8",
+      "world_cube:link3/sphere0",
+      "world_cube:link3/sphere1",
+      "world_cube:link3/sphere2",
+      "world_cube:link3/sphere3",
+      "world_cube:link3/sphere4",
+      "world_cube:link3/sphere5",
+      "world_cube:link3/sphere6",
+      "world_cube:link4/sphere0",
+      "world_cube:link4/sphere1",
+      "world_cube:link5/sphere0",
+      "world_cube:link5/sphere1",
+      "world_cube:link5/sphere2",
+      "world_cube:link6/sphere0",
+      "world_cube:flange_link/sphere0",
+      "world_cube:flange_link/sphere1",
+      "world_cube:gripper_base/sphere0",
+      "world_cube:gripper_base/sphere1",
+      "world_cube:gripper_base/sphere2",
+      "world_cube:gripper_base/sphere3",
+      "world_cube:gripper_base/sphere4",
+      "world_cube:gripper_link1/sphere0",
+      "world_cube:gripper_link1/sphere1",
+      "world_cube:gripper_link2/sphere0",
+      "world_cube:gripper_link2/sphere1",
+      "held_cube_robot:link1/sphere0",
+      "held_cube_robot:link1/sphere1",
+      "held_cube_robot:link2/sphere0",
+      "held_cube_robot:link2/sphere1",
+      "held_cube_robot:link2/sphere2",
+      "held_cube_robot:link2/sphere3",
+      "held_cube_robot:link2/sphere4",
+      "held_cube_robot:link2/sphere5",
+      "held_cube_robot:link2/sphere6",
+      "held_cube_robot:link2/sphere7",
+      "held_cube_robot:link2/sphere8",
+      "held_cube_robot:link3/sphere0",
+      "held_cube_robot:link3/sphere1",
+      "held_cube_robot:link3/sphere2",
+      "held_cube_robot:link3/sphere3",
+      "held_cube_robot:link3/sphere4",
+      "held_cube_robot:link3/sphere5",
+      "held_cube_robot:link3/sphere6",
+      "held_cube_robot:link4/sphere0",
+      "held_cube_robot:link4/sphere1",
+      "held_cube_robot:link5/sphere0",
+      "held_cube_robot:link5/sphere1",
+      "held_cube_robot:link5/sphere2",
+      "held_cube_robot:link6/sphere0",
+      "held_cube_robot:flange_link/sphere0",
+      "held_cube_robot:flange_link/sphere1",
+      "held_cube_robot:gripper_base/sphere0",
+      "held_cube_robot:gripper_base/sphere1",
+      "held_cube_robot:gripper_base/sphere2",
+      "held_cube_robot:gripper_base/sphere3",
+      "held_cube_robot:gripper_base/sphere4",
+      "held_cube_robot:gripper_link1/sphere0",
+      "held_cube_robot:gripper_link1/sphere1",
+      "held_cube_robot:gripper_link2/sphere0",
+      "held_cube_robot:gripper_link2/sphere1"
+    ],
+    "settings": {
+      "sphere_cell_length_m": 0.04,
+      "model_padding_m": 0.0,
+      "obstacle_clearance_m": 0.0,
+      "robot_table_clearance_m": 0.0,
+      "payload_table_clearance_m": 0.0,
+      "target_cube_clearance_m": 0.0,
+      "payload_robot_clearance_m": 0.0
+    },
+    "default_payload_T_tcp": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.005
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "enabled_pairs": {
+      "moving_robot_to_static_boxes": true,
+      "moving_robot_to_table": true,
+      "held_cube_to_static_boxes": true,
+      "held_cube_to_table": true,
+      "moving_robot_to_world_cube": true,
+      "held_cube_to_nonfinger_robot": true
+    },
+    "mesh_coverage": [
+      {
+        "link": "link1",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/piper_h/meshes/link1.stl",
+            "sha256": "55ed2dc7e060800e510505c23f7dc5d1f3d6e7b21d70a689e471fb525add4b1f"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.03587707504630089,
+          -0.03674999997019768,
+          -0.0430000014603138
+        ],
+        "local_box_upper_m": [
+          0.03598610684275627,
+          0.04075000062584877,
+          0.029997291043400764
+        ],
+        "cover_axis": 1,
+        "cell_extent_m": [
+          0.07186318188905716,
+          0.038750000298023224,
+          0.07299729250371456
+        ],
+        "sphere_centers_m": [
+          [
+            5.451589822769165e-05,
+            -0.017374999821186066,
+            -0.006501355208456516
+          ],
+          [
+            5.451589822769165e-05,
+            0.021375000476837158,
+            -0.006501355208456516
+          ]
+        ],
+        "sphere_radii_m": [
+          0.05475966614943287,
+          0.05475966614943287
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.004796517211733853,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "link2",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/piper_h/meshes/link2.stl",
+            "sha256": "4b60473539386cd5d81090eee3dbc8c8a10b3d81798b73da1ca4aed97990c49e"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.03146239370107651,
+          -0.06501472741365433,
+          -0.048500001430511475
+        ],
+        "local_box_upper_m": [
+          0.31650593876838684,
+          0.031581904739141464,
+          0.048500001430511475
+        ],
+        "cover_axis": 0,
+        "cell_extent_m": [
+          0.038663148052162595,
+          0.09659663215279579,
+          0.09700000286102295
+        ],
+        "sphere_centers_m": [
+          [
+            -0.01213081967499521,
+            -0.01671641133725643,
+            0.0
+          ],
+          [
+            0.02653232837716739,
+            -0.01671641133725643,
+            0.0
+          ],
+          [
+            0.06519547642932998,
+            -0.01671641133725643,
+            0.0
+          ],
+          [
+            0.10385862448149258,
+            -0.01671641133725643,
+            0.0
+          ],
+          [
+            0.14252177253365517,
+            -0.01671641133725643,
+            0.0
+          ],
+          [
+            0.18118492058581775,
+            -0.01671641133725643,
+            0.0
+          ],
+          [
+            0.21984806863798034,
+            -0.01671641133725643,
+            0.0
+          ],
+          [
+            0.25851121669014293,
+            -0.01671641133725643,
+            0.0
+          ],
+          [
+            0.2971743647423056,
+            -0.01671641133725643,
+            0.0
+          ]
+        ],
+        "sphere_radii_m": [
+          0.07112444888293414,
+          0.07112444888293414,
+          0.07112444888293414,
+          0.07112444888293414,
+          0.07112444888293414,
+          0.07112444888293414,
+          0.07112444888293414,
+          0.07112444888293414,
+          0.07112444888293414
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.004297665441963555,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "link3",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/piper_h/meshes/link3.stl",
+            "sha256": "4ea19f971be435ede84f647c11408d9de6c230d3a9ac7e06582cbc8102bf3dc7"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.056671757251024246,
+          -0.2197338342666626,
+          -0.03999999910593033
+        ],
+        "local_box_upper_m": [
+          0.03018355369567871,
+          0.029987145215272903,
+          0.04075000062584877
+        ],
+        "cover_axis": 1,
+        "cell_extent_m": [
+          0.08685531094670296,
+          0.0356744256402765,
+          0.0807499997317791
+        ],
+        "sphere_centers_m": [
+          [
+            -0.013244101777672768,
+            -0.20189662144652434,
+            0.0003750007599592209
+          ],
+          [
+            -0.013244101777672768,
+            -0.16622219580624786,
+            0.0003750007599592209
+          ],
+          [
+            -0.013244101777672768,
+            -0.13054777016597136,
+            0.0003750007599592209
+          ],
+          [
+            -0.013244101777672768,
+            -0.09487334452569485,
+            0.0003750007599592209
+          ],
+          [
+            -0.013244101777672768,
+            -0.05919891888541834,
+            0.0003750007599592209
+          ],
+          [
+            -0.013244101777672768,
+            -0.02352449324514183,
+            0.0003750007599592209
+          ],
+          [
+            -0.013244101777672768,
+            0.01214993239513465,
+            0.0003750007599592209
+          ]
+        ],
+        "sphere_radii_m": [
+          0.06192146667573048,
+          0.06192146667573048,
+          0.06192146667573048,
+          0.06192146667573048,
+          0.06192146667573048,
+          0.06192146667573048,
+          0.06192146667573048
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.0030773253791483712,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "link4",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/piper_h/meshes/link4.stl",
+            "sha256": "2077c29f1f370aaaa922be19be1610ce6a0a2553e0953a75fcb703bdb3fc2c07"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.029996633529663086,
+          -0.02850000001490116,
+          -0.03800004720687866
+        ],
+        "local_box_upper_m": [
+          0.029996700584888458,
+          0.035062190145254135,
+          0.02850000187754631
+        ],
+        "cover_axis": 2,
+        "cell_extent_m": [
+          0.059993334114551544,
+          0.0635621901601553,
+          0.033250024542212486
+        ],
+        "sphere_centers_m": [
+          [
+            3.3527612686157227e-08,
+            0.003281095065176487,
+            -0.02137503493577242
+          ],
+          [
+            3.3527612686157227e-08,
+            0.003281095065176487,
+            0.011874989606440067
+          ]
+        ],
+        "sphere_radii_m": [
+          0.04675712856932537,
+          0.04675712856932537
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.002292090329659255,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "link5",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/piper_h/meshes/link5.stl",
+            "sha256": "964670daa2832688d2322d6d67029de555d8e626211fea30f68e90b96c6d0fe3"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.02969392016530037,
+          -0.0950000062584877,
+          -0.034886810928583145
+        ],
+        "local_box_upper_m": [
+          0.029693908989429474,
+          0.023730015382170677,
+          0.02850000001490116
+        ],
+        "cover_axis": 1,
+        "cell_extent_m": [
+          0.05938782915472984,
+          0.03957667388021946,
+          0.0633868109434843
+        ],
+        "sphere_centers_m": [
+          [
+            -5.587935447692871e-09,
+            -0.07521166931837797,
+            -0.003193405456840992
+          ],
+          [
+            -5.587935447692871e-09,
+            -0.03563499543815851,
+            -0.003193405456840992
+          ],
+          [
+            -5.587935447692871e-09,
+            0.003941678442060947,
+            -0.003193405456840992
+          ]
+        ],
+        "sphere_radii_m": [
+          0.04772608083825249,
+          0.04772608083825249,
+          0.04772608083825249
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.005169339032520606,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "link6",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/piper_h/meshes/link6.stl",
+            "sha256": "9222c39f2291d7b9839b1254b06a22876b19c071608041462a69bf7b565704a3"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.018973035737872124,
+          -0.01899179071187973,
+          -0.006700093857944012
+        ],
+        "local_box_upper_m": [
+          0.018973054364323616,
+          0.01899178884923458,
+          1.0058283805847168e-07
+        ],
+        "cover_axis": 1,
+        "cell_extent_m": [
+          0.03794609010219574,
+          0.03798357956111431,
+          0.00670019444078207
+        ],
+        "sphere_centers_m": [
+          [
+            9.313225746154785e-09,
+            -9.313225746154785e-10,
+            -0.0033499966375529766
+          ]
+        ],
+        "sphere_radii_m": [
+          0.027053422500044912
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.007794060527769452,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "flange_link",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/piper_h/meshes/flange.stl",
+            "sha256": "f9ce752f93a6598858a779e3d8755a09e466b588efcffc3a1c3953773753a22b"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.02850000187754631,
+          -0.028490856289863586,
+          -1.8729594184048314e-17
+        ],
+        "local_box_upper_m": [
+          0.028490856289863586,
+          0.028490856289863586,
+          0.010500000789761543
+        ],
+        "cover_axis": 0,
+        "cell_extent_m": [
+          0.02849542908370495,
+          0.05698171257972717,
+          0.010500000789761562
+        ],
+        "sphere_centers_m": [
+          [
+            -0.014252287335693836,
+            0.0,
+            0.005250000394880762
+          ],
+          [
+            0.014243141748011112,
+            0.0,
+            0.005250000394880762
+          ]
+        ],
+        "sphere_radii_m": [
+          0.032284497300438524,
+          0.032284497300438524
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.000310123995862166,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "gripper_base",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/gripper_base.stl",
+            "sha256": "0b839dc0bcb7d94e3422c74f6396b54a0441ba4836448ab5586e7f372d1bdbf3"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.04201316833496094,
+          -0.08201403170824051,
+          -2.2205088043847354e-06
+        ],
+        "local_box_upper_m": [
+          0.03298286348581314,
+          0.08206862211227417,
+          0.0649978518486023
+        ],
+        "cover_axis": 1,
+        "cell_extent_m": [
+          0.07499603182077408,
+          0.03281653076410294,
+          0.06500007235740668
+        ],
+        "sphere_centers_m": [
+          [
+            -0.004515152424573898,
+            -0.06560576632618904,
+            0.032497815669898955
+          ],
+          [
+            -0.004515152424573898,
+            -0.0327892355620861,
+            0.032497815669898955
+          ],
+          [
+            -0.004515152424573898,
+            2.7295202016830444e-05,
+            0.032497815669898955
+          ],
+          [
+            -0.004515152424573898,
+            0.032843825966119775,
+            0.032497815669898955
+          ],
+          [
+            -0.004515152424573898,
+            0.06566035673022272,
+            0.032497815669898955
+          ]
+        ],
+        "sphere_radii_m": [
+          0.052264564684693336,
+          0.052264564684693336,
+          0.052264564684693336,
+          0.052264564684693336,
+          0.052264564684693336
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.009539442804924435,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "gripper_link1",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/gripper_link1.stl",
+            "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.02800000086426735,
+          -0.07649999856948853,
+          -6.383782507399936e-18
+        ],
+        "local_box_upper_m": [
+          0.02800000086426735,
+          2.7755575615628914e-17,
+          0.026499999687075615
+        ],
+        "cover_axis": 1,
+        "cell_extent_m": [
+          0.0560000017285347,
+          0.03824999928474428,
+          0.026499999687075622
+        ],
+        "sphere_centers_m": [
+          [
+            0.0,
+            -0.05737499892711639,
+            0.013249999843537804
+          ],
+          [
+            0.0,
+            -0.01912499964237211,
+            0.013249999843537804
+          ]
+        ],
+        "sphere_radii_m": [
+          0.03640505673080951,
+          0.03640505673080951
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.003498701260686861,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      },
+      {
+        "link": "gripper_link2",
+        "meshes": [
+          {
+            "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf/agx_gripper/meshes/gripper_link2.stl",
+            "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606"
+          }
+        ],
+        "local_box_lower_m": [
+          -0.02800000086426735,
+          -0.07649999856948853,
+          -5.421010862427522e-18
+        ],
+        "local_box_upper_m": [
+          0.02800000086426735,
+          2.7755575615628914e-17,
+          0.026499999687075615
+        ],
+        "cover_axis": 1,
+        "cell_extent_m": [
+          0.0560000017285347,
+          0.03824999928474428,
+          0.026499999687075622
+        ],
+        "sphere_centers_m": [
+          [
+            0.0,
+            -0.05737499892711639,
+            0.013249999843537804
+          ],
+          [
+            0.0,
+            -0.01912499964237211,
+            0.013249999843537804
+          ]
+        ],
+        "sphere_radii_m": [
+          0.03640505673080951,
+          0.03640505673080951
+        ],
+        "max_mesh_vertex_outside_cover_m": -0.003498701260686861,
+        "coverage_reason": "Each slab is contained in its circumsphere; slabs tile the full local collision-mesh AABB."
+      }
+    ],
+    "table_model": "Infinite horizontal plane, conservative beyond finite table footprint",
+    "payload_assumption": "Rigid cube attachment; model FK/scene-derived pose, no slip measurement",
+    "gripper_width": "Actual SDK feedback required at runtime; plan width only for offline checks",
+    "arm_qp_assumption": "Gripper width is settled during arm velocity steps; width motion is separately checked at fixed q before gripper actuation.",
+    "permitted_contact": "Finger/target-cube during approach/grasp/release/retreat; finger/held-cube while carrying; cube/table extra clearance zero in support-contact stages, nonpenetration retained",
+    "omitted_pairs": [
+      "robot self-collision",
+      "fixed base",
+      "cables and unmodelled environment"
+    ],
+    "distance_status": "Conservative model calculations, not external metrology"
+  }
+}

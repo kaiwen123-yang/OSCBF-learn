@@ -1,0 +1,374 @@
+{
+  "created_at": "2026-11-07T19:42:14.889808+08:00",
+  "scope": "offline_reference_path_audit_no_hardware",
+  "urdf": "models/piper_h_oscbf.urdf",
+  "urdf_sha256": "d1ffe634ec32ddd20c58f2b8616de02452967f932ac5ae0b367cab14e0aedcc5",
+  "executor_sha256": "165368826dc2b19a6e6d1f5e6d2ea4ca61ea6cf888d693f25b0ce9c02bd9e885",
+  "path_arrays_exact_match_verified": true,
+  "parameters": {
+    "plans": [
+      "results/pick_place_plan_20261107_193629_186524/task.json"
+    ],
+    "out": "results/full_task_paths_preflight_20261107",
+    "speed_scale": 1.0,
+    "descent_speed_scale": 1.0,
+    "sample_period": 0.01,
+    "max_joint_step": 0.001,
+    "sigma_guard": 0.1,
+    "working_pose_study": false
+  },
+  "task_metric": "J_tcp.T @ J_tcp; Wo=I, N=0 full-rank square specialization",
+  "conditioning_units": "linear rows m/rad, angular rows rad/rad; conditioning depends on weights/units",
+  "joint_cbf_alpha_per_s": 3.0,
+  "quantum_rad_s": 0.001,
+  "joint_speed_feasibility_scope": "Joint-limit CBF and velocity box only, no obstacle/distance constraints; nominal margins assume actual state equals reference (tracking correction zero)",
+  "sampling_scope": "Every saved point, every segment at <=10 ms reference spacing and <=0.001 rad maximum joint increment; adaptive reference phases remain continuous within these same segments. Finite sampling is not a global proof.",
+  "candidate_postures": {
+    "zero": {
+      "q_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sigma": [
+        1.8190431295144607,
+        1.419727571777316,
+        1.0137956909351216,
+        0.20953495635753525,
+        0.058336222753353685,
+        1.1798311996137794e-17
+      ],
+      "metric_condition_number": 2.3770933635432407e+34,
+      "rank_at_1e-10": 5,
+      "joint_margin_rad": 0.0,
+      "tcp_position_m": [
+        0.20834606073391304,
+        1.1477813143442489e-08,
+        0.22658366633453628
+      ]
+    },
+    "historical_preparation": {
+      "q_deg": [
+        0,
+        20,
+        -50,
+        0,
+        30,
+        0
+      ],
+      "sigma": [
+        1.827263457838332,
+        1.4511382801557038,
+        0.9702642379450986,
+        0.21728285223830912,
+        0.17048778966690634,
+        0.019633547291147285
+      ],
+      "metric_condition_number": 8661.733005107182,
+      "rank_at_1e-10": 6,
+      "joint_margin_rad": 0.3490658503988659,
+      "tcp_position_m": [
+        0.18260371230529826,
+        4.489826236199659e-09,
+        0.4413560928114952
+      ]
+    },
+    "plane_experiment_start": {
+      "q_deg": [
+        0,
+        30,
+        -90,
+        0,
+        45,
+        0
+      ],
+      "sigma": [
+        1.8456031698986417,
+        1.534771973452132,
+        0.8213959281807283,
+        0.3035711804816233,
+        0.12441221617306397,
+        0.07690829530299356
+      ],
+      "metric_condition_number": 575.877730551772,
+      "rank_at_1e-10": 6,
+      "joint_margin_rad": 0.5235987755982988,
+      "tcp_position_m": [
+        0.08728371676578109,
+        -5.0251141354702015e-09,
+        0.6203700468973768
+      ]
+    }
+  },
+  "plans": [
+    {
+      "plan": "results/pick_place_plan_20261107_193629_186524/task.json",
+      "sha256": "5b970e4f5a2bd49f56ee81a3ddc945dd1b8c71b0e7e055c7dd2b7e6c5267f3a0",
+      "tcp_offset_m": [
+        0.0,
+        0.0,
+        0.1425
+      ],
+      "tcp_calibrated": false,
+      "speed_scale": 1.0,
+      "descent_speed_scale": 1.0,
+      "saved_initial_q_deg": [
+        -14.927286845662477,
+        94.11385200809526,
+        -72.94280840430102,
+        -0.0037002066785383394,
+        73.82620762289999,
+        -14.927779760867239
+      ],
+      "finite_difference_jacobian_max_abs_errors": [
+        1.476041418774746e-11,
+        5.898059818325077e-11,
+        1.0935397032341143e-10
+      ],
+      "stages": [
+        {
+          "stage": "pregrasp",
+          "saved_points": 1,
+          "samples": 1,
+          "full_rate_reference_duration_s": 0.0,
+          "sigma_min": 0.14956476541173142,
+          "minimum_at": {
+            "segment": 0,
+            "fraction": 0.0,
+            "reference_time_s": 0.0,
+            "q_deg": [
+              -14.927286845662477,
+              94.11385200809526,
+              -72.94280840430102,
+              -0.0037002066785383394,
+              73.82620762289999,
+              -14.927779760867239
+            ]
+          },
+          "rank_deficient_samples_at_1e-10": 0,
+          "samples_below_sigma_guard": 0,
+          "metric_condition_max": 143.20022989884265,
+          "min_joint_margin_rad": 0.2735592027194591,
+          "minimum_joint_speed_feasible_width_rad_s": 0.199,
+          "min_reference_joint_cbf_margin_rad_s": 0.8206776081583773,
+          "min_quantized_reference_joint_cbf_margin_rad_s": 0.8206776081583773,
+          "reference_joint_cbf_violating_samples": 0,
+          "max_reference_speed_rad_s": 0.0
+        },
+        {
+          "stage": "align",
+          "saved_points": 7,
+          "samples": 656,
+          "full_rate_reference_duration_s": 6.464210672378784,
+          "sigma_min": 0.14956476541173142,
+          "minimum_at": {
+            "segment": 0,
+            "fraction": 0.0,
+            "reference_time_s": 0.0,
+            "q_deg": [
+              -14.927286845662477,
+              94.11385200809526,
+              -72.94280840430102,
+              -0.0037002066785383394,
+              73.82620762289999,
+              -14.927779760867239
+            ]
+          },
+          "rank_deficient_samples_at_1e-10": 0,
+          "samples_below_sigma_guard": 0,
+          "metric_condition_max": 143.20022989884265,
+          "min_joint_margin_rad": 0.2735592027194591,
+          "minimum_joint_speed_feasible_width_rad_s": 0.199,
+          "min_reference_joint_cbf_margin_rad_s": 0.8706776081583774,
+          "min_quantized_reference_joint_cbf_margin_rad_s": 0.8706776081583774,
+          "reference_joint_cbf_violating_samples": 0,
+          "max_reference_speed_rad_s": 0.05
+        },
+        {
+          "stage": "approach",
+          "saved_points": 5,
+          "samples": 269,
+          "full_rate_reference_duration_s": 2.640265166779745,
+          "sigma_min": 0.16305995592165656,
+          "minimum_at": {
+            "segment": 0,
+            "fraction": 0.0,
+            "reference_time_s": 0.0,
+            "q_deg": [
+              -14.931416842092466,
+              100.12896850870386,
+              -60.45552456433727,
+              -6.906266002330397e-06,
+              55.32655666228455,
+              -14.931406096734662
+            ]
+          },
+          "rank_deficient_samples_at_1e-10": 0,
+          "samples_below_sigma_guard": 0,
+          "metric_condition_max": 122.62758940420989,
+          "min_joint_margin_rad": 0.5964390224519301,
+          "minimum_joint_speed_feasible_width_rad_s": 0.199,
+          "min_reference_joint_cbf_margin_rad_s": 1.8393170673557904,
+          "min_quantized_reference_joint_cbf_margin_rad_s": 1.8393170673557904,
+          "reference_joint_cbf_violating_samples": 0,
+          "max_reference_speed_rad_s": 0.05
+        },
+        {
+          "stage": "lift",
+          "saved_points": 8,
+          "samples": 922,
+          "full_rate_reference_duration_s": 9.10858510977373,
+          "sigma_min": 0.1495679046551582,
+          "minimum_at": {
+            "segment": 6,
+            "fraction": 1.0,
+            "reference_time_s": 9.10858510977373,
+            "q_deg": [
+              -14.931416469313607,
+              94.11089524672289,
+              -72.94070183774399,
+              -5.8550158522425e-06,
+              73.82980719767218,
+              -14.931408041670503
+            ]
+          },
+          "rank_deficient_samples_at_1e-10": 0,
+          "samples_below_sigma_guard": 0,
+          "metric_condition_max": 143.19325098380475,
+          "min_joint_margin_rad": 0.27349637828801243,
+          "minimum_joint_speed_feasible_width_rad_s": 0.199,
+          "min_reference_joint_cbf_margin_rad_s": 0.7720487207429154,
+          "min_quantized_reference_joint_cbf_margin_rad_s": 0.7720487207429154,
+          "reference_joint_cbf_violating_samples": 0,
+          "max_reference_speed_rad_s": 0.050000000000000086
+        },
+        {
+          "stage": "transfer",
+          "saved_points": 22,
+          "samples": 1081,
+          "full_rate_reference_duration_s": 10.516576591527167,
+          "sigma_min": 0.14956583171400686,
+          "minimum_at": {
+            "segment": 20,
+            "fraction": 1.0,
+            "reference_time_s": 10.516576591527167,
+            "q_deg": [
+              14.935827491982453,
+              94.11373178393023,
+              -72.94194459051336,
+              0.005317209352588641,
+              73.82538743309713,
+              14.927982761565808
+            ]
+          },
+          "rank_deficient_samples_at_1e-10": 0,
+          "samples_below_sigma_guard": 0,
+          "metric_condition_max": 143.19827665498033,
+          "min_joint_margin_rad": 0.27349637828801243,
+          "minimum_joint_speed_feasible_width_rad_s": 0.199,
+          "min_reference_joint_cbf_margin_rad_s": 0.8204928343722526,
+          "min_quantized_reference_joint_cbf_margin_rad_s": 0.8204891348640373,
+          "reference_joint_cbf_violating_samples": 0,
+          "max_reference_speed_rad_s": 0.05000000000000004
+        },
+        {
+          "stage": "lower",
+          "saved_points": 8,
+          "samples": 923,
+          "full_rate_reference_duration_s": 9.107054937200044,
+          "sigma_min": 0.14956583171400686,
+          "minimum_at": {
+            "segment": 0,
+            "fraction": 0.0,
+            "reference_time_s": 0.0,
+            "q_deg": [
+              14.935827491982453,
+              94.11373178393023,
+              -72.94194459051336,
+              0.005317209352588641,
+              73.82538743309713,
+              14.927982761565808
+            ]
+          },
+          "rank_deficient_samples_at_1e-10": 0,
+          "samples_below_sigma_guard": 0,
+          "metric_condition_max": 143.19827665498033,
+          "min_joint_margin_rad": 0.27357351773201,
+          "minimum_joint_speed_feasible_width_rad_s": 0.199,
+          "min_reference_joint_cbf_margin_rad_s": 0.87072055319603,
+          "min_quantized_reference_joint_cbf_margin_rad_s": 0.87072055319603,
+          "reference_joint_cbf_violating_samples": 0,
+          "max_reference_speed_rad_s": 0.05000000000000003
+        },
+        {
+          "stage": "retreat",
+          "saved_points": 8,
+          "samples": 922,
+          "full_rate_reference_duration_s": 9.108585109704839,
+          "sigma_min": 0.14956790465414302,
+          "minimum_at": {
+            "segment": 6,
+            "fraction": 1.0,
+            "reference_time_s": 9.108585109704839,
+            "q_deg": [
+              14.9314132286206,
+              94.11089524740184,
+              -72.94070183858133,
+              4.511563231158312e-07,
+              73.82980719865644,
+              14.931411971342444
+            ]
+          },
+          "rank_deficient_samples_at_1e-10": 0,
+          "samples_below_sigma_guard": 0,
+          "metric_condition_max": 143.19325098562297,
+          "min_joint_margin_rad": 0.27349637827083395,
+          "minimum_joint_speed_feasible_width_rad_s": 0.199,
+          "min_reference_joint_cbf_margin_rad_s": 0.7720487206912022,
+          "min_quantized_reference_joint_cbf_margin_rad_s": 0.7720487206912021,
+          "reference_joint_cbf_violating_samples": 0,
+          "max_reference_speed_rad_s": 0.05
+        },
+        {
+          "stage": "return_initial",
+          "saved_points": 22,
+          "samples": 1082,
+          "full_rate_reference_duration_s": 10.514218587480554,
+          "sigma_min": 0.14956790465414302,
+          "minimum_at": {
+            "segment": 0,
+            "fraction": 0.0,
+            "reference_time_s": 0.0,
+            "q_deg": [
+              14.9314132286206,
+              94.11089524740184,
+              -72.94070183858133,
+              4.511563231158312e-07,
+              73.82980719865644,
+              14.931411971342444
+            ]
+          },
+          "rank_deficient_samples_at_1e-10": 0,
+          "samples_below_sigma_guard": 0,
+          "metric_condition_max": 143.19325098562297,
+          "min_joint_margin_rad": 0.27349637827083395,
+          "minimum_joint_speed_feasible_width_rad_s": 0.199,
+          "min_reference_joint_cbf_margin_rad_s": 0.8204941521978024,
+          "min_quantized_reference_joint_cbf_margin_rad_s": 0.8204891348125019,
+          "reference_joint_cbf_violating_samples": 0,
+          "max_reference_speed_rad_s": 0.050000000000000114
+        }
+      ],
+      "refined_low_rank_points": [],
+      "all_joint_speed_boxes_feasible": true,
+      "global_sampled_sigma_min": 0.14956476541173142,
+      "global_refined_sigma_min": 0.14956476541173142,
+      "global_min_joint_margin_rad": 0.27349637827083395
+    }
+  ],
+  "paper_reference": "Morton and Pavone, OSCBF arXiv v3, IV-B, equations (18)-(28), PDF page 4",
+  "paper_rank_note": "Eq(25) includes N.T Wj.T Wj N. N=0 only holds for full-rank square J. At rank loss, simply retaining J.T J is singular. A projector metric at exact rank loss does not by itself validate near-singular nominal inverse or rank changes."
+}

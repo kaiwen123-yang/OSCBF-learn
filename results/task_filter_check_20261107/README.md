@@ -1,0 +1,34 @@
+# 完整任务速度安全过滤：聚焦离线检查
+
+本目录是独立滤波器的无硬件检查，不是完整任务仿真或实机成功证据。没有打开 CAN、启动机械臂或生成图像。
+
+代码为 `piper_oscbf/task_filter.py`。入口 `TaskSafetyFilter(cfg, method)` 支持 `cbf` 与 `oscbf`，先调用 `warmup(q)` 再调用 `step(...)`。配置使用 `cfg['safety_filter']`，默认共同名义速度为 `qd_ref + 2*(q_ref-q)`，先按阶段速度上限统一缩放。普通 CBF 的目标矩阵为单位阵，OSCBF 使用 TCP 的 `Jᵀ W² J`；其余约束、量化和检查相同。
+
+完整任务使用已审查的满秩工作姿态区域，`sigma_min >= 0.10` 是工程检查值。零位秩亏会被明确拒绝，不使用任意对角正则项掩盖秩变化。该模块不负责从零位准备到工作区的运动。
+
+约束包括运行几何、关节限位 CBF 和速度界。QP 对每条线性不等式减去 `0.0005 * L1(G_row)`，防范 SDK 的 0.001 rad/s 四舍五入。最后仍用 SDK 相同的 Python `round(v*1000)/1000` 计算真实请求，并重新核对原始不等式余量，不做额外缩放。
+
+在允许的桌面接触处，恰为零的请求没有量化误差。只有连续名义请求和其实际取整值都满足原不等式时，才保留该请求；记录明确标为 `qp_solved=False`、`solver_status=nominal_quantized_feasible`，不声称运行过 QP。原始负 `h` 保留，数值容差为明确配置的求解残差阈值。
+
+聚焦检查涵盖：
+
+- 无障碍及候选障碍两种几何下的两种方法。
+- 预抓取准备姿态的零速保持。
+- `lower` 端点的允许桌面接触与精确零请求。
+- 奇异零位被拒绝。
+- 候选转移中间参考点物理间隙为正、虚拟安全间隙为负时的实际 QP 介入。
+- 非零共同名义控制和逐元素相同的不等式。
+- SDK 取整后的每条约束余量，以及速度界。
+- 30 次预热后的 CPU 完整滤波步耗时。
+
+`checks.json` 保存实际配置、源码 SHA-256、依赖版本、数值结果和耗时。耗时包含模型、雅可比、主机同步、求解及最终检查；不包含完整执行器、日志、CAN 或真实反馈等待，不能直接用来宣称 100 Hz 实机周期已验证。
+
+输出向量的前 `geometry_constraint_count` 项为几何距离，随后 12 项为关节上下限状态余量，最后 12 项为速度界常数，后者不是状态 CBF。`physical_h` 去掉虚拟几何间隙，仍是保守模型计算，不是外部测量。几何覆盖与未覆盖对象由 `TaskGeometry.metadata()` 说明。
+
+复跑命令：
+
+```bash
+cd /home/kaiwen/OSCBF-learn
+env -u LD_LIBRARY_PATH JAX_PLATFORMS=cpu \
+  ./envs/oscbf/bin/python -I scripts/check_task_filter.py
+```

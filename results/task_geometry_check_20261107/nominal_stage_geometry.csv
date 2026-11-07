@@ -1,0 +1,9 @@
+stage,samples,carrying,width_source,gripper_width_m,minimum_h_m,worst_constraint,negative_samples,below_minus_1e_6_samples
+pregrasp,87,False,plan nominal for offline check only,0.04,0.06277626997213769,table:link2/corner0,0,0
+align,13,False,plan nominal for offline check only,0.04,0.009106784791551241,world_cube:gripper_link2/sphere1,0,0
+approach,9,False,plan nominal for offline check only,0.04,0.004999993494778278,table:gripper_link2/corner7,0,0
+lift,15,True,plan nominal for offline check only,0.02,0.0,table:payload/corner4,0,0
+transfer,43,True,plan nominal for offline check only,0.02,0.0382376167039909,held_cube_robot:gripper_base/sphere2,0,0
+lower,15,True,plan nominal for offline check only,0.02,-9.862561236445577e-10,table:payload/corner4,1,0
+retreat,15,False,plan nominal for offline check only,0.04,0.004999993038801763,table:gripper_link1/corner3,0,0
+return_initial,87,False,plan nominal for offline check only,0.04,0.0627728496827796,table:link2/corner0,0,0

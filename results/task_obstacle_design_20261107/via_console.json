@@ -1,0 +1,146 @@
+[
+  {
+    "tcp_x_m": 0.245,
+    "tcp_y_m": 0.0,
+    "tcp_z_m": 0.1,
+    "q_rad": [
+      -1.6046404326367932e-08,
+      1.4273500129021361,
+      -0.9813034284701168,
+      -5.6970712569672236e-08,
+      1.2120162155679843,
+      5.392042804692905e-08
+    ],
+    "q_deg": [
+      -9.193912442613473e-07,
+      81.78113162723601,
+      -56.224544873055564,
+      -3.264181386095128e-06,
+      69.44341385346368,
+      3.089412956627867e-06
+    ],
+    "ik_position_error_m": 2.3884939351062305e-16,
+    "ik_angle_error_rad": 2.614905198135432e-15,
+    "sigma_min": 0.1652211073903925,
+    "joint_margin_rad": 0.35004338443201566,
+    "min_physical_clearance_m": 0.008469942187100224,
+    "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link2/sphere1",
+    "minimum_virtual_h_m": -0.0015300578128997766,
+    "payload_center_m": [
+      0.2450000011139403,
+      -5.325590525353157e-10,
+      0.10500000288634417
+    ],
+    "payload_physical_clearance_m": 0.019679494809655418,
+    "payload_clearance_with_5mm_center_uncertainty_m": 0.014679494809655417,
+    "qualified_ik_candidate": true
+  },
+  {
+    "tcp_x_m": 0.25,
+    "tcp_y_m": 0.0,
+    "tcp_z_m": 0.1,
+    "q_rad": [
+      -1.6724728715756653e-08,
+      1.444886817015542,
+      -0.9988626520059465,
+      -5.6970232514192e-08,
+      1.2120386349904062,
+      5.324073888582981e-08
+    ],
+    "q_deg": [
+      -9.582563689141096e-07,
+      82.78591648908181,
+      -57.23061427318539,
+      -3.2641538809421785e-06,
+      69.44469839174758,
+      3.050469636316093e-06
+    ],
+    "ik_position_error_m": 2.5135303678268146e-16,
+    "ik_angle_error_rad": 3.6412893266205413e-16,
+    "sigma_min": 0.16815800094512395,
+    "joint_margin_rad": 0.3500209650095938,
+    "min_physical_clearance_m": 0.008713859107037375,
+    "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+    "minimum_virtual_h_m": -0.0012861408929626256,
+    "payload_center_m": [
+      0.2500000011139399,
+      -5.32559054002381e-10,
+      0.10500000288634428
+    ],
+    "payload_physical_clearance_m": 0.020015804338021997,
+    "payload_clearance_with_5mm_center_uncertainty_m": 0.015015804338021996,
+    "qualified_ik_candidate": true
+  },
+  {
+    "tcp_x_m": 0.26,
+    "tcp_y_m": 0.0,
+    "tcp_z_m": 0.095,
+    "q_rad": [
+      -1.8513650994736624e-08,
+      1.4847379542964216,
+      -1.0198040315953834,
+      -5.7387395052983896e-08,
+      1.193128877298963,
+      5.2610716336329654e-08
+    ],
+    "q_deg": [
+      -1.0607540653765868e-06,
+      85.06921846407268,
+      -58.43046694084153,
+      -3.2880555337859164e-06,
+      68.36124908441283,
+      3.014372003231662e-06
+    ],
+    "ik_position_error_m": 2.775563396443525e-17,
+    "ik_angle_error_rad": 1.2748735445424042e-16,
+    "sigma_min": 0.16671967454100148,
+    "joint_margin_rad": 0.368930722701037,
+    "min_physical_clearance_m": 0.005847680564856917,
+    "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+    "minimum_virtual_h_m": -0.004152319435143083,
+    "payload_center_m": [
+      0.2600000011139401,
+      -5.325590524399781e-10,
+      0.10000000288634428
+    ],
+    "payload_physical_clearance_m": 0.01802068910371596,
+    "payload_clearance_with_5mm_center_uncertainty_m": 0.013020689103715958,
+    "qualified_ik_candidate": true
+  },
+  {
+    "tcp_x_m": 0.265,
+    "tcp_y_m": 0.0,
+    "tcp_z_m": 0.095,
+    "q_rad": [
+      -1.910702693803918e-08,
+      1.5020075061505285,
+      -1.0382413153118326,
+      -5.7360861652053796e-08,
+      1.1942966091613054,
+      5.194528000897045e-08
+    ],
+    "q_deg": [
+      -1.0947520025924174e-06,
+      86.05869089939532,
+      -59.48684548347934,
+      -3.2865352818964935e-06,
+      68.42815519172801,
+      2.976245310139294e-06
+    ],
+    "ik_position_error_m": 5.551115124564158e-17,
+    "ik_angle_error_rad": 1.8284690386368114e-16,
+    "sigma_min": 0.1655542931338451,
+    "joint_margin_rad": 0.36776299083869457,
+    "min_physical_clearance_m": 0.007619345554736317,
+    "worst_constraint": "obstacle:cylinder_box_candidate/gripper_link1/sphere1",
+    "minimum_virtual_h_m": -0.002380654445263683,
+    "payload_center_m": [
+      0.2650000011139401,
+      -5.325590524128078e-10,
+      0.10000000288634436
+    ],
+    "payload_physical_clearance_m": 0.020415419489539864,
+    "payload_clearance_with_5mm_center_uncertainty_m": 0.015415419489539863,
+    "qualified_ik_candidate": true
+  }
+]

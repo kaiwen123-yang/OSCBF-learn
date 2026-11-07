@@ -64,6 +64,9 @@ def task_feedback(device, after):
 def arm_step(device, step, cfg, records):
     cap = cfg.get("stage_velocity_limits_rad_s",{}).get(step["name"],cfg["joint_velocity_limit_rad_s"])
     times, points = path_arrays(step,cap)
+    if len(points)==1:
+        # A one-point prepared-stage plan is a hold with real arrival checking.
+        points=np.repeat(points,2,axis=0);times=np.array([0.,.01])
     first,_ = device.state()
     if np.max(np.abs(np.asarray(device.angles(first))-points[0])) > cfg["tracking_tolerance_rad"]:
         raise RuntimeError(f"{step['name']}: actual state differs from planned start; replan from actual state")
@@ -149,6 +152,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("plan",type=Path,help="task.json saved by plan_pick_place.py")
     parser.add_argument("--execute",action="store_true")
+    parser.add_argument('--method',choices=('baseline','cbf','oscbf'),default='baseline')
     parser.add_argument("--record-diagnostics",action="store_true",
                         help="Record all CAN traffic, SDK states, console and three seconds after stopping")
     parser.add_argument("--speed-scale",type=float,default=1.,
@@ -158,6 +162,8 @@ def main():
     parser.add_argument("--start-at",help="Resume at a saved stage only if the actual state matches its start")
     parser.add_argument("--stop-after",help="For the first approach, use pregrasp and inspect the fingertip height")
     args=parser.parse_args()
+    if args.method!='baseline' and args.start_at:
+        parser.error('Filtered tasks require the full stage sequence to initialize held-object geometry')
     if any(not np.isfinite(v) or v<=0 for v in (args.speed_scale,args.descent_speed_scale)):
         parser.error("Speed scales must be positive finite numbers")
     task=json.loads(args.plan.read_text());cfg=task["config"]
@@ -166,7 +172,7 @@ def main():
     cfg["stage_velocity_limits_rad_s"]={name:saved_cap*args.descent_speed_scale for name in ("approach","lower")}
     task["execution_override"]={"speed_scale":args.speed_scale,
                                 "descent_speed_scale":args.descent_speed_scale,
-                                "saved_joint_velocity_limit_rad_s":saved_cap}
+                                "saved_joint_velocity_limit_rad_s":saved_cap,'method':args.method}
     if task["report"]["status"]!="planned":raise RuntimeError("Task planning did not finish")
     steps=[s for s in task["steps"] if s["kind"] in ("arm","gripper")]
     names=[s["name"] for s in steps]
@@ -184,6 +190,9 @@ def main():
         return 0
     if cfg["scene_status"] not in ("measured", "operator_confirmed_approximate"):
         raise RuntimeError("Candidate scene has not been confirmed; update config and replan before motion")
+    if args.method!='baseline':
+        from piper_oscbf.preflight import check_ready
+        check_ready(args.plan,args.method,args.speed_scale,args.descent_speed_scale)
     from piper_oscbf.device import PiperDevice
     out=ROOT/"results"/("pick_place_hardware_"+datetime.now().strftime("%Y%m%d_%H%M%S_%f"))
     out.mkdir()
@@ -192,13 +201,24 @@ def main():
             "speed_scale":args.speed_scale,"joint_velocity_limit_rad_s":cfg["joint_velocity_limit_rad_s"],
             "descent_speed_scale":args.descent_speed_scale,"stage_velocity_limits_rad_s":cfg["stage_velocity_limits_rad_s"],
             "object_transfer_success":"requires_operator_confirmation", "cpv_period_s": .01}
-    device=None;controls=[];grips=[];recording=None
+    report['method']=args.method
+    if args.method!='baseline':report['controller']=f'MoveIt path + shared joint nominal + {args.method.upper()} TCP velocity safety filter'
+    device=None;controls=[];grips=[];recording=None;session=None
     def terminate(*_):raise KeyboardInterrupt("SIGTERM")
     signal.signal(signal.SIGTERM,terminate)
     try:
+        extra_sources=()
+        if args.method!='baseline':
+            from piper_oscbf.task_session import TaskSession, jsonable
+            from piper_oscbf.task_execution import filtered_arm_step, filtered_gripper_step
+            print('Prewarming complete task model and QP before hardware access.',flush=True)
+            session=TaskSession(task,args.method)
+            extra_sources=('piper_oscbf/task_filter.py','piper_oscbf/task_geometry.py',
+                           'piper_oscbf/task_reference.py','piper_oscbf/task_session.py',
+                           'piper_oscbf/task_execution.py','piper_oscbf/preflight.py')
         if args.record_diagnostics:
             from piper_oscbf.recording import TaskRecording, snapshot
-            recording=TaskRecording(out,ROOT)
+            recording=TaskRecording(out,ROOT,extra_sources=extra_sources)
             print("DIAGNOSTIC_RESULT_DIR:",out,flush=True)
             print("执行参数：",task["execution_override"],flush=True)
         device=PiperDevice(cpv_period_s=.01);gripper=device.robot.init_effector(device.robot.OPTIONS.EFFECTOR.AGX_GRIPPER)
@@ -215,12 +235,15 @@ def main():
             if int(initial_status["mode_feedback"]) == 5:
                 device.state()  # Resume only an already enabled CPV session.
                 device.control_started=True
-                device.zero(.2)
+                if session is None:device.zero(.2)
             else:
                 device.enable_at(device.angles(initial))
         for step in steps:
             if recording:recording.mark("stage_start",stage=step["name"],state=snapshot(device))
-            if step["kind"]=="arm":arm_step(device,step,cfg,controls)
+            if session is not None:
+                if step['kind']=='arm':filtered_arm_step(device,gripper,step,cfg,controls,session,task_feedback)
+                else:filtered_gripper_step(device,gripper,step,cfg,grips,session,task_feedback)
+            elif step["kind"]=="arm":arm_step(device,step,cfg,controls)
             else:gripper_step(device,gripper,step,cfg,grips,arm_active=first_arm is not None)
             report["completed_stages"].append(step["name"])
             if recording:recording.mark("stage_end",stage=step["name"],state=snapshot(device))
@@ -241,6 +264,10 @@ def main():
         report["exception_time_s"]=time.time()
         report["exception_monotonic_s"]=time.monotonic()
         report["traceback"]=traceback.format_exc()
+        if session is not None:
+            from piper_oscbf.task_session import jsonable
+            if hasattr(exc,'diagnostics'):report['filter_failure']=jsonable(exc.diagnostics)
+            if hasattr(exc,'state'):report['reference_failure']=jsonable(exc.state)
         if recording:
             recording.mark("exception_before_stop",error=report["error"],
                            state=snapshot(device) if device else None,traceback=report["traceback"])
@@ -278,6 +305,10 @@ def main():
             report["last_driver_check"]=device.last_driver_check
             report["driver_feedback_pauses"]=device.driver_feedback_pauses
         save_csv(out/"control.csv",controls);save_csv(out/"gripper.csv",grips)
+        if session is not None:
+            try:report['task_filter']=session.finish(out)
+            except Exception as save_error:
+                report['filter_recording_error']=f'{type(save_error).__name__}: {save_error}'
         (out/"task.json").write_text(json.dumps(task,indent=2)+"\n")
         (out/"summary.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
         print("RESULT_DIR:",out,flush=True)

@@ -1,0 +1,9 @@
+CHECKING no_obstacle cbf
+no_obstacle/cbf timing {'calls': 30, 'ms_median_p95_max': [0.12615550008376886, 0.1520214499919348, 0.15309400009755336], 'scope': 'whole step incl. model/Jacobian/sync/solve/check; not full control loop or USB timing'}
+CHECKING no_obstacle oscbf
+no_obstacle/oscbf timing {'calls': 30, 'ms_median_p95_max': [0.1470145001576384, 0.16684559997202086, 0.18209199993179936], 'scope': 'whole step incl. model/Jacobian/sync/solve/check; not full control loop or USB timing'}
+CHECKING candidate_obstacle cbf
+candidate_obstacle/cbf timing {'calls': 30, 'ms_median_p95_max': [0.29943350000394275, 0.5527273999064163, 0.7278020000285323], 'scope': 'whole step incl. model/Jacobian/sync/solve/check; not full control loop or USB timing'}
+CHECKING candidate_obstacle oscbf
+candidate_obstacle/oscbf timing {'calls': 30, 'ms_median_p95_max': [0.32557399993038416, 0.5055941500472727, 0.5423850000170205], 'scope': 'whole step incl. model/Jacobian/sync/solve/check; not full control loop or USB timing'}
+TASK_FILTER_CHECKS_PASSED

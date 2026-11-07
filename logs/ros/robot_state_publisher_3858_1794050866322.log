@@ -1,0 +1,15 @@
+[INFO] [1794050866.347007862] [piper_task.robot_state_publisher]: got segment base_link
+[INFO] [1794050866.347102554] [piper_task.robot_state_publisher]: got segment flange_link
+[INFO] [1794050866.347108187] [piper_task.robot_state_publisher]: got segment gripper_base
+[INFO] [1794050866.347110300] [piper_task.robot_state_publisher]: got segment gripper_link
+[INFO] [1794050866.347112141] [piper_task.robot_state_publisher]: got segment gripper_link1
+[INFO] [1794050866.347113870] [piper_task.robot_state_publisher]: got segment gripper_link2
+[INFO] [1794050866.347115388] [piper_task.robot_state_publisher]: got segment link1
+[INFO] [1794050866.347117011] [piper_task.robot_state_publisher]: got segment link2
+[INFO] [1794050866.347118463] [piper_task.robot_state_publisher]: got segment link3
+[INFO] [1794050866.347119900] [piper_task.robot_state_publisher]: got segment link4
+[INFO] [1794050866.347121452] [piper_task.robot_state_publisher]: got segment link5
+[INFO] [1794050866.347122891] [piper_task.robot_state_publisher]: got segment link6
+[INFO] [1794050866.347124385] [piper_task.robot_state_publisher]: got segment tcp_link
+[INFO] [1794050866.347125872] [piper_task.robot_state_publisher]: got segment world
+[INFO] [1794050868.871726774] [rclcpp]: signal_handler(SIGINT/SIGTERM)

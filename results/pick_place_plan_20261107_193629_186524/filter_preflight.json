@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "scope": "Static saved-path/interpolant geometry and QP feasibility; no state integration, CAN or hardware",
+  "plan_sha256": "5b970e4f5a2bd49f56ee81a3ddc945dd1b8c71b0e7e055c7dd2b7e6c5267f3a0",
+  "source_sha256": {
+    "scripts/run_pick_place.py": "d672e6334a5e3f4f0f7375d115b9af91941e3505db1f9b35de3f25648f2dbeb1",
+    "piper_oscbf/device.py": "d7728ff2bf4fac48713833c54441f021f5fa495a76848707138aa57b0d12d996",
+    "piper_oscbf/pacing.py": "feeb216588c2904bc3de65f7c9cd90f729775f9d27e6c7166f34f1fb19fa48d1",
+    "piper_oscbf/task_filter.py": "4c623baa20a31d380652c75ab22626d3d6f8afeaffc941598f0cfeaf42b2dd04",
+    "piper_oscbf/task_geometry.py": "3acb1235c1fa503e59157afc31975f09b78399a73a9834662b130ea96da7386d",
+    "piper_oscbf/task_reference.py": "c7b33c98355d23e53f5eae682d1c3b366e7afa50eb34627478085c8008f07770",
+    "piper_oscbf/task_session.py": "559d38b86dcebc6650e9d8db739e974287c2c0c61eddb47712aac79f0a70cf85",
+    "piper_oscbf/task_execution.py": "4774df556b720c93e105ea82bfa833daff7a2d04895cf2b0f74503f896b9d3bf",
+    "piper_oscbf/preflight.py": "585e5fa47b99f01d0b6035e8fd8c671d588c9835ca3d42529e209fcabeee56d7"
+  },
+  "speed_scale": 1.0,
+  "descent_speed_scale": 1.0,
+  "methods_checked": [
+    "oscbf"
+  ],
+  "method_results": {
+    "oscbf": {
+      "stages": [
+        {
+          "stage": "pregrasp",
+          "samples": 1,
+          "qp_solved_samples": 0,
+          "min_sigma": 0.14956476541173144,
+          "min_h_m": 0.0898700621388897,
+          "min_physical_distance_m": 0.0898700621388897,
+          "min_applied_margin": 0.1,
+          "max_step_ms": 0.3319519996693998
+        },
+        {
+          "stage": "align",
+          "samples": 653,
+          "qp_solved_samples": 0,
+          "min_sigma": 0.14956476541173144,
+          "min_h_m": 0.009106784791551241,
+          "min_physical_distance_m": 0.009106784791551241,
+          "min_applied_margin": 0.007049013241656292,
+          "max_step_ms": 1.123563999954058
+        },
+        {
+          "stage": "approach",
+          "samples": 269,
+          "qp_solved_samples": 14,
+          "min_sigma": 0.16305995592165654,
+          "min_h_m": 0.004999993494778278,
+          "min_physical_distance_m": 0.004999993494778278,
+          "min_applied_margin": 0.00017494496157228513,
+          "max_step_ms": 0.3692989998853591
+        },
+        {
+          "stage": "lift",
+          "samples": 918,
+          "qp_solved_samples": 0,
+          "min_sigma": 0.14956790465515818,
+          "min_h_m": 0.0,
+          "min_physical_distance_m": 0.0,
+          "min_applied_margin": 0.013290626489421746,
+          "max_step_ms": 0.6033390000084182
+        },
+        {
+          "stage": "transfer",
+          "samples": 1072,
+          "qp_solved_samples": 0,
+          "min_sigma": 0.14956583171400692,
+          "min_h_m": 0.03823761670399086,
+          "min_physical_distance_m": 0.03823761670399086,
+          "min_applied_margin": 0.05,
+          "max_step_ms": 0.4733910000140895
+        },
+        {
+          "stage": "lower",
+          "samples": 918,
+          "qp_solved_samples": 52,
+          "min_sigma": 0.14956583171400692,
+          "min_h_m": -1.0685714153801928e-09,
+          "min_physical_distance_m": -1.0685714153801928e-09,
+          "min_applied_margin": -2.1371428307603857e-09,
+          "max_step_ms": 0.5025730001761985
+        },
+        {
+          "stage": "retreat",
+          "samples": 918,
+          "qp_solved_samples": 0,
+          "min_sigma": 0.14956790465414294,
+          "min_h_m": 0.004999992689185117,
+          "min_physical_distance_m": 0.004999992689185117,
+          "min_applied_margin": 0.02329061190481145,
+          "max_step_ms": 0.6712919998790312
+        },
+        {
+          "stage": "return_initial",
+          "samples": 1072,
+          "qp_solved_samples": 0,
+          "min_sigma": 0.14956790465414294,
+          "min_h_m": 0.08771748796712034,
+          "min_physical_distance_m": 0.08771748796712034,
+          "min_applied_margin": 0.05,
+          "max_step_ms": 0.5737099995712924
+        }
+      ],
+      "tcp_fk_max_abs_difference": 2.438912787006142e-16,
+      "warmup": {
+        "warmed": true,
+        "method": "oscbf",
+        "compile_seconds": 1.6698981849999655,
+        "constraint_count": 182,
+        "hardware_connected": false,
+        "probe_scope": "compile-only feasible numeric RHS, not a scene validation"
+      },
+      "initial_hold": {
+        "solver_status": "nominal_quantized_feasible",
+        "sigma_min": 0.14956476541173144,
+        "min_h_m": 0.0898700621388897,
+        "min_physical_distance_m": 0.0898700621388897,
+        "u_sdk": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "gripper_width_scope": "planned cube-width nominal during arm motion; full commanded opening sweep checked; hardware reads actual width"
+    }
+  },
+  "error": null
+}

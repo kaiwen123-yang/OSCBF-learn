@@ -1,0 +1,3 @@
+[INFO] [1794050866.462086650] [piper_task.spawner_gripper_controller]: waiting for service /piper_task/controller_manager/list_controllers to become available...
+[INFO] [1794050866.722062443] [piper_task.spawner_gripper_controller]: [94mLoaded [1mgripper_controller[0m
+[INFO] [1794050866.736519478] [piper_task.spawner_gripper_controller]: [92mConfigured and activated [1mgripper_controller[0m

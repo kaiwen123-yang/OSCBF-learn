@@ -1,0 +1,19 @@
+pick_place_plan_20261104_224921_126900 {"global_sampled_sigma_min": 1.1798311996137794e-17, "global_refined_sigma_min": 1.5197954830555024e-18, "global_min_joint_margin_rad": 0.0, "all_joint_speed_boxes_feasible": true}
+pregrasp sigma_min= 1.1798311996137794e-17 joint_margin= 0.0 joint_cbf_violations= 0
+align sigma_min= 0.14956476541173142 joint_margin= 0.2735592027194591 joint_cbf_violations= 0
+approach sigma_min= 0.16305995592165656 joint_margin= 0.5964390224519301 joint_cbf_violations= 0
+lift sigma_min= 0.1495679046551582 joint_margin= 0.27349637828801243 joint_cbf_violations= 0
+transfer sigma_min= 0.1495679046551582 joint_margin= 0.27349637828801243 joint_cbf_violations= 0
+lower sigma_min= 0.14956798203097238 joint_margin= 0.27355898851101723 joint_cbf_violations= 0
+retreat sigma_min= 0.14956790465449843 joint_margin= 0.2734963782768458 joint_cbf_violations= 0
+return_initial sigma_min= 2.7024022602778706e-07 joint_margin= 3.897352174393083e-05 joint_cbf_violations= 66
+pick_place_plan_20261104_232956_473856 {"global_sampled_sigma_min": 2.5076312970510644e-05, "global_refined_sigma_min": 5.407226022016196e-18, "global_min_joint_margin_rad": 0.2734318626487988, "all_joint_speed_boxes_feasible": true}
+pregrasp sigma_min= 2.5076312970510644e-05 joint_margin= 0.2734318626487988 joint_cbf_violations= 0
+align sigma_min= 0.14956390288339189 joint_margin= 0.2734318626487988 joint_cbf_violations= 0
+approach sigma_min= 0.16305995578780091 joint_margin= 0.5964390195518452 joint_cbf_violations= 0
+lift sigma_min= 0.14956790465303563 joint_margin= 0.2734963782520856 joint_cbf_violations= 0
+transfer sigma_min= 0.14956401909600292 joint_margin= 0.2734963782520856 joint_cbf_violations= 0
+lower sigma_min= 0.14956401909600292 joint_margin= 0.2735331253240776 joint_cbf_violations= 0
+retreat sigma_min= 0.14956790465499345 joint_margin= 0.27349637828522155 joint_cbf_violations= 0
+return_initial sigma_min= 4.830538793125785e-05 joint_margin= 0.27349637828522155 joint_cbf_violations= 0
+AUDIT /home/kaiwen/OSCBF-learn/results/task_path_audit_20261107/audit.json

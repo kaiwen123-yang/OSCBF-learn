@@ -1,0 +1,99 @@
+{
+  "scene_status": "candidate_unmeasured",
+  "description": "OFFLINE CANDIDATE ONLY: unchanged cube/table, proposed upright cylindrical obstacle conservatively boxed; exact obstacle XY and dimensions not field-verified. Right-pregrasp start/return, one interior transfer via reference. Full MoveIt and paired filtered rollouts pending.",
+  "frame": "base_link",
+  "tcp_offset_m": [
+    0.0,
+    0.0,
+    0.1425
+  ],
+  "tcp_status": "manufacturer_nominal_tip_not_field_verified",
+  "initial_q_rad": [
+    -0.2605303038464489,
+    1.6425965892759393,
+    -1.273092172306444,
+    -6.458078954477743e-05,
+    1.288510397280541,
+    -0.2605389068397051
+  ],
+  "cube_size_m": 0.02,
+  "pick_xy_m": [
+    0.3,
+    -0.08
+  ],
+  "place_xy_m": [
+    0.3,
+    0.08
+  ],
+  "table_top_z_m": -0.012,
+  "table_center_xy_m": [
+    0.35,
+    0.0
+  ],
+  "table_size_xy_m": [
+    1.2,
+    1.0
+  ],
+  "tip_clearance_m": 0.005,
+  "lift_m": 0.12,
+  "alignment_tip_height_m": 0.04,
+  "gripper_open_m": 0.04,
+  "gripper_close_command_m": 0.015,
+  "gripper_force_n": 1.0,
+  "obstacles": [
+    {
+      "name": "cylinder_box_candidate",
+      "center_m": [
+        0.2,
+        0.0,
+        0.028
+      ],
+      "size_m": [
+        0.07,
+        0.07,
+        0.08
+      ],
+      "frame": "base_link",
+      "representation": "axis_aligned_box_enclosing_upright_cylinder",
+      "dimensions_status": "operator_approximate_70mm_diameter_80mm_height",
+      "placement_status": "proposed_not_measured_or_field_confirmed",
+      "center_z_assumption": "upright cylinder rests on table_top_z_m=-0.012"
+    }
+  ],
+  "joint_velocity_limit_rad_s": 0.2,
+  "tracking_tolerance_rad": 0.01,
+  "arrival_tolerance_rad": 0.002,
+  "initial_q_source": "results/task_path_audit_20261107/working_pose_proposal.json",
+  "transfer_via_tcp_m": [
+    [
+      0.25,
+      0.0,
+      0.1
+    ]
+  ],
+  "transfer_via_mode": "interior_reference_not_required_stop",
+  "runtime_geometry": {
+    "sphere_cell_length_m": 0.04,
+    "model_padding_m": 0.0,
+    "obstacle_clearance_m": 0.02,
+    "robot_table_clearance_m": 0.0,
+    "payload_table_clearance_m": 0.0,
+    "target_cube_clearance_m": 0.0,
+    "payload_robot_clearance_m": 0.0,
+    "table_enabled": true,
+    "target_cube_enabled": true,
+    "payload_robot_enabled": true
+  },
+  "held_cube_orientation_assumption": {
+    "initial_support": "upright on one face, initial yaw unmeasured",
+    "carrying": "rigid attachment without slip; requires onsite confirmation",
+    "obstacle_coverage": "cube circumsphere covers arbitrary orientation about assumed center",
+    "table_coverage": "current corner model uses frozen orientation; initial yaw uncertainty remains to be covered explicitly"
+  },
+  "field_verification_required": [
+    "Cylinder center X=200mm,Y=0 relative to base_link, resting upright on unchanged table",
+    "Actual cylinder diameter and height; 70mm/80mm were approximate",
+    "Cube rests on a face and remains rigidly held without appreciable center shift/slip",
+    "Nominal flange-to-tip 142.5mm remains uncalibrated; geometry clearance is model-based"
+  ]
+}

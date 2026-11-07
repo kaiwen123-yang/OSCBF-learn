@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "comparison_scope": "Observed adaptive traces; same policy does not imply shared reference time",
+  "schedules": [
+    {
+      "schema": 1,
+      "stage": "pregrasp",
+      "reference_signature": "6cafa3089b619071bce2ff02d3f50ac93ecf9c6ac3ff8b861b698c841807e2f0",
+      "source_policy": "adaptive_tangential_v1",
+      "elapsed_s": [
+        0.0
+      ],
+      "phase_s": [
+        0.0
+      ],
+      "record_status": "observed_trace_not_yet_replayed",
+      "schedule_sha256": "769fab5dc6f4b1c209ab6c68c81cc46e95c50c20f3d6523761a31b1a6d178282",
+      "phase_states": [
+        {
+          "phase_s": 0.0,
+          "rate": 0.0,
+          "requested_rate": 0.0,
+          "actual_phase_rate": 0.0,
+          "elapsed_s": 0.0,
+          "dt_s": 0.0,
+          "tangential_lag_s": 0.0,
+          "tangential_error_rad": 0.0,
+          "projected_phase_s": 0.0,
+          "goal_error_rad": 0.0,
+          "reference_error_rad": 0.0,
+          "no_progress_s": 0.0,
+          "reference_waypoints_reached": 1,
+          "paused": false,
+          "reason": "arrived",
+          "done": true,
+          "policy": "adaptive_tangential_v1"
+        }
+      ]
+    }
+  ]
+}
