@@ -1,0 +1,100 @@
+{
+  "speed_percent": 10,
+  "target_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "record_seconds": 10,
+  "calibration_changed": false,
+  "motion_requested": true,
+  "error": null,
+  "initial_rad": [
+    0.028832839242946325,
+    -0.05534439058074019,
+    0.043406338497098976,
+    0.007487462491055674,
+    0.41079814604190534,
+    0.0
+  ],
+  "initial_status": {
+    "ctrl_mode": 0,
+    "arm_status": 1,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 1,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "initial_enabled": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "reset_sent": true,
+  "final_rad": [
+    0.029722957161463434,
+    -0.05523967082562053,
+    0.04387757739513745,
+    0.008569566627292158,
+    0.4126307417564994,
+    0.0
+  ],
+  "final_deg": [
+    1.703,
+    -3.165,
+    2.5140000000000002,
+    0.491,
+    23.642,
+    0.0
+  ],
+  "final_status": {
+    "ctrl_mode": 1,
+    "arm_status": 0,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 1,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "final_enabled": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ]
+}

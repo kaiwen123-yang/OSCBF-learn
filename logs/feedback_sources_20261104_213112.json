@@ -1,0 +1,93 @@
+{
+  "time": "2026-11-04T21:31:12.711303+08:00",
+  "joint_feedback_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "motor_position_rad": [
+    0.0,
+    0.011,
+    -0.007,
+    0.0,
+    -0.006,
+    0.0
+  ],
+  "joint_feedback_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "motor_position_deg": [
+    0.0,
+    0.6302535746439055,
+    -0.40107045659157625,
+    0.0,
+    -0.34377467707849396,
+    0.0
+  ],
+  "motor_minus_joint_deg": [
+    0.0,
+    0.6302535746439055,
+    -0.40107045659157625,
+    0.0,
+    -0.34377467707849396,
+    0.0
+  ],
+  "motor_velocity_rad_s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "joint_timestamp_s": 1793799072.7065954,
+  "motor_timestamps_s": [
+    1793799072.7068603,
+    1793799072.7069952,
+    1793799072.7070825,
+    1793799072.7072148,
+    1793799072.7075045,
+    1793799072.7075918
+  ],
+  "controller_flange_pose_m_rad": [
+    0.066388,
+    0.0,
+    0.214163,
+    0.0,
+    1.48351241090266,
+    0.0
+  ],
+  "flange_timestamp_s": 1793799072.7112339,
+  "arm_status": {
+    "ctrl_mode": 1,
+    "arm_status": 0,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 0,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "interface_tx_delta": 0,
+  "note": "Passive CAN snapshot. Motor and joint feedback are not assumed equivalent."
+}

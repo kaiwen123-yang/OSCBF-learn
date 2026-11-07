@@ -1,0 +1,69 @@
+{
+  "time": "2026-11-04T21:58:55.139672+08:00",
+  "execute": false,
+  "robot": "piper_h",
+  "sdk_profile": "v189",
+  "channel": "can0",
+  "move_j_percent": 10,
+  "pulse_velocity_rad_s": 0.02,
+  "phases": [],
+  "completed_sequence": false,
+  "error": null,
+  "note": "Measured feedback, SDK input signs; no automatic sign calibration. CPV has velocity commands on all six axes, no position writes.",
+  "initial": {
+    "q_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "motor_position_rad": [
+      0.0,
+      0.011,
+      -0.007,
+      0.0,
+      -0.006,
+      0.0
+    ],
+    "motor_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "initial_status": {
+    "ctrl_mode": 1,
+    "arm_status": 0,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 0,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "prepared_target_rad": [
+    0.0,
+    0.17453292519943295,
+    -0.17453292519943295,
+    0.0,
+    0.17453292519943295,
+    0.0
+  ]
+}

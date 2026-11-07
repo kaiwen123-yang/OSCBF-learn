@@ -1,0 +1,25 @@
+原始固件信息: {'hardware_version': 'H-V1.2-1', 'motor_ratio_and_batch': '10', 'node_type': 'Piper_', 'software_version': 'S-V1.9-1', 'production_date': '260918', 'node_number': '15'}
+{
+  "time": "2026-11-04T20:09:56.013130+08:00",
+  "robot": "piper_h",
+  "channel": "can0",
+  "firmware": {
+    "hardware_version": "H-V1.2-1",
+    "motor_ratio_and_batch": "10",
+    "node_type": "Piper_",
+    "software_version": "S-V1.9-1",
+    "production_date": "260918",
+    "node_number": "15"
+  },
+  "sdk_profile": "v189",
+  "observation_seconds": 5.028,
+  "interface_counter_delta": {
+    "rx_packets": 11686,
+    "rx_dropped": 0,
+    "rx_errors": 0,
+    "tx_packets": 1,
+    "tx_errors": 0
+  },
+  "sdk_comm_error": null
+}
+已保存: /home/kaiwen/research/OSCBF-research/logs/firmware_20261104_200956_054761.json

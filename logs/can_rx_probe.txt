@@ -1,0 +1,24 @@
+2026-11-04T20:03:32.468181+08:00
+interface=can0 duration_s=5.002
+RX_DATA_FRAMES=11606 ERROR_FRAMES=0
+ID=0x212 count=5 first_data=04 02 0f 02
+ID=0x251 count=500 first_data=00 00 00 00 00 00 00 06
+ID=0x252 count=500 first_data=00 00 00 00 ff ff ff d1
+ID=0x253 count=500 first_data=00 00 00 00 00 00 00 09
+ID=0x254 count=500 first_data=00 00 00 00 00 00 00 09
+ID=0x255 count=500 first_data=00 00 00 00 00 00 02 0a
+ID=0x256 count=500 first_data=00 00 00 00 00 00 00 00
+ID=0x261 count=100 first_data=00 e6 00 20 19 00 00 00
+ID=0x262 count=100 first_data=00 e6 00 1f 19 00 00 00
+ID=0x263 count=100 first_data=00 e6 00 1f 19 00 00 00
+ID=0x264 count=100 first_data=00 e6 00 20 1a 00 00 00
+ID=0x265 count=100 first_data=00 e6 00 21 1c 00 00 00
+ID=0x266 count=100 first_data=00 e6 00 21 1c 00 00 00
+ID=0x2A1 count=1001 first_data=00 00 00 00 00 00 00 00
+ID=0x2A2 count=1000 first_data=00 00 da 60 00 00 03 33
+ID=0x2A3 count=1000 first_data=00 02 82 b0 00 02 b9 ad
+ID=0x2A4 count=1000 first_data=00 01 06 90 00 02 bb d2
+ID=0x2A5 count=1000 first_data=00 00 01 74 ff ff f5 6e
+ID=0x2A6 count=1000 first_data=00 00 02 34 00 00 02 20
+ID=0x2A7 count=1000 first_data=00 00 74 e0 00 00 00 00
+ID=0x2A8 count=1000 first_data=ff ff ff 9c 00 00 00 00

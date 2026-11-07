@@ -1,0 +1,2334 @@
+{
+  "time": "2026-11-04T21:59:10.718693+08:00",
+  "execute": true,
+  "robot": "piper_h",
+  "sdk_profile": "v189",
+  "channel": "can0",
+  "move_j_percent": 10,
+  "pulse_velocity_rad_s": 0.02,
+  "phases": [
+    {
+      "phase": "zero_all_before",
+      "joint": 0,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.9999882179999986,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          -0.009000000000000001,
+          0.0,
+          -0.166,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      }
+    },
+    {
+      "phase": "j1_positive",
+      "joint": 1,
+      "sdk_command_rad_s": 0.02,
+      "elapsed_s": 1.5050165800003015,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.028082347664588763,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.029,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.014,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        1.609,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        1.6616,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.018659161658261026,
+      "response_gain": 0.9329580829130513
+    },
+    {
+      "phase": "j1_zero_after_positive",
+      "joint": 1,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.7500254480000876,
+      "start": {
+        "q_rad": [
+          0.028082347664588763,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.029,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.014,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.028082347664588763,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.029,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "j1_negative",
+      "joint": 1,
+      "sdk_command_rad_s": -0.02,
+      "elapsed_s": 1.5000086559994088,
+      "start": {
+        "q_rad": [
+          0.028082347664588763,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.029,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          -0.001,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        -1.609,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        -1.6616,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": -0.01872145707444493,
+      "response_gain": 0.9360728537222465
+    },
+    {
+      "phase": "j1_zero_after_negative",
+      "joint": 1,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.7499936540007184,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          -0.001,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "j2_positive",
+      "joint": 2,
+      "sdk_command_rad_s": 0.02,
+      "elapsed_s": 1.5000000239997462,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17395696654627482,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.20354029736757873,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.213,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.02,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        1.695,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        1.7189,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.01972222023198375,
+      "response_gain": 0.9861110115991875
+    },
+    {
+      "phase": "j2_zero_after_positive",
+      "joint": 2,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.7500200150007004,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.20354029736757873,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.213,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.02,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.20354029736757873,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.213,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "j2_negative",
+      "joint": 2,
+      "sdk_command_rad_s": -0.02,
+      "elapsed_s": 1.5001871149997896,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.20354029736757873,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.213,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.184,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          -0.015,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        -1.609,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        -1.6616,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": -0.018719230010579506,
+      "response_gain": 0.9359615005289754
+    },
+    {
+      "phase": "j2_zero_after_negative",
+      "joint": 2,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.749839811000129,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.184,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          -0.015,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        -0.0573,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "j3_positive",
+      "joint": 3,
+      "sdk_command_rad_s": 0.02,
+      "elapsed_s": 1.4999948810000205,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1735031809407563,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.182,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.14695672301792254,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.153,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.024,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        1.521,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        1.6616,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.01769769901156977,
+      "response_gain": 0.8848849505784885
+    },
+    {
+      "phase": "j3_zero_after_positive",
+      "joint": 3,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.750026698999136,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.14695672301792254,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.153,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.024,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.14540337998364758,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.152,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.089,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0573,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0020710503190723693,
+      "response_gain": null
+    },
+    {
+      "phase": "j3_negative",
+      "joint": 3,
+      "sdk_command_rad_s": -0.02,
+      "elapsed_s": 1.4999944549999782,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.14540337998364758,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.152,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          -0.003,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        -1.568,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        -1.6616,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": -0.018244575891629887,
+      "response_gain": 0.9122287945814942
+    },
+    {
+      "phase": "j3_zero_after_negative",
+      "joint": 3,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.7500482150007883,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          -0.003,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "j4_positive",
+      "joint": 4,
+      "sdk_command_rad_s": 0.02,
+      "elapsed_s": 1.499974578999172,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.029112091923265415,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.028,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        1.668,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        1.6043,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.019408390202645884,
+      "response_gain": 0.9704195101322941
+    },
+    {
+      "phase": "j4_zero_after_positive",
+      "joint": 4,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.7500140850006574,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.029112091923265415,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.028,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.029112091923265415,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.029,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0573,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "j4_negative",
+      "joint": 4,
+      "sdk_command_rad_s": -0.02,
+      "elapsed_s": 1.5001024060002237,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.029112091923265415,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.029,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        -1.668,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        -1.6616,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": -0.019406736371344154,
+      "response_gain": 0.9703368185672077
+    },
+    {
+      "phase": "j4_zero_after_negative",
+      "joint": 4,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.7500878699993336,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "j5_positive",
+      "joint": 5,
+      "sdk_command_rad_s": 0.02,
+      "elapsed_s": 1.5048099180003192,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1743060323966737,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.167,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.20162043519038494,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.195,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.128,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.565,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.6043,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0181513973738346,
+      "response_gain": 0.90756986869173
+    },
+    {
+      "phase": "j5_zero_after_positive",
+      "joint": 5,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.7500302509997709,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.20162043519038494,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.195,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.128,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.20162043519038494,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.196,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0573,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "j5_negative",
+      "joint": 5,
+      "sdk_command_rad_s": -0.02,
+      "elapsed_s": 1.5001555409999128,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.20162043519038494,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.196,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1760862682337079,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.168,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.463,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.6043,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": -0.017021012994197598,
+      "response_gain": 0.8510506497098798
+    },
+    {
+      "phase": "j5_zero_after_negative",
+      "joint": 5,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.7498493780003628,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1760862682337079,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.168,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1760862682337079,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.168,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      },
+      "mean_joint_velocity_rad_s": 0.0,
+      "response_gain": null
+    },
+    {
+      "phase": "zero_all_final",
+      "joint": 0,
+      "sdk_command_rad_s": 0.0,
+      "elapsed_s": 0.999995381998815,
+      "start": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1760862682337079,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.168,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "q_rad": [
+          0.0,
+          0.17545794970298997,
+          -0.1727701426549187,
+          0.0,
+          0.1760862682337079,
+          0.0
+        ],
+        "motor_position_rad": [
+          0.0,
+          0.183,
+          -0.181,
+          0.0,
+          0.168,
+          0.0
+        ],
+        "motor_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor_delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      }
+    }
+  ],
+  "completed_sequence": true,
+  "error": null,
+  "note": "Measured feedback, SDK input signs; no automatic sign calibration. CPV has velocity commands on all six axes, no position writes.",
+  "initial": {
+    "q_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "motor_position_rad": [
+      0.0,
+      0.011,
+      -0.007,
+      0.0,
+      -0.006,
+      0.0
+    ],
+    "motor_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "initial_status": {
+    "ctrl_mode": 1,
+    "arm_status": 0,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 0,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "prepared_target_rad": [
+    0.0,
+    0.17453292519943295,
+    -0.17453292519943295,
+    0.0,
+    0.17453292519943295,
+    0.0
+  ],
+  "prepare": {
+    "q_rad": [
+      0.0,
+      0.17395696654627482,
+      -0.1735031809407563,
+      0.0,
+      0.1743060323966737,
+      0.0
+    ],
+    "motor_position_rad": [
+      0.0,
+      0.183,
+      -0.182,
+      0.0,
+      0.167,
+      0.0
+    ],
+    "motor_velocity_rad_s": [
+      0.0,
+      -0.009000000000000001,
+      0.0,
+      -0.166,
+      0.0,
+      0.0
+    ],
+    "status": {
+      "ctrl_mode": 1,
+      "arm_status": 0,
+      "mode_feedback": 1,
+      "teach_status": 0,
+      "motion_status": 0,
+      "trajectory_num": 0,
+      "err_status": {
+        "joint_1_angle_limit": false,
+        "joint_2_angle_limit": false,
+        "joint_3_angle_limit": false,
+        "joint_4_angle_limit": false,
+        "joint_5_angle_limit": false,
+        "joint_6_angle_limit": false,
+        "communication_status_joint_1": false,
+        "communication_status_joint_2": false,
+        "communication_status_joint_3": false,
+        "communication_status_joint_4": false,
+        "communication_status_joint_5": false,
+        "communication_status_joint_6": false
+      }
+    },
+    "target_rad": [
+      0.0,
+      0.17453292519943295,
+      -0.17453292519943295,
+      0.0,
+      0.17453292519943295,
+      0.0
+    ]
+  },
+  "return_initial": {
+    "q_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "motor_position_rad": [
+      0.0,
+      0.011,
+      -0.007,
+      0.0,
+      -0.006,
+      0.0
+    ],
+    "motor_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "status": {
+      "ctrl_mode": 1,
+      "arm_status": 0,
+      "mode_feedback": 1,
+      "teach_status": 0,
+      "motion_status": 0,
+      "trajectory_num": 0,
+      "err_status": {
+        "joint_1_angle_limit": false,
+        "joint_2_angle_limit": false,
+        "joint_3_angle_limit": false,
+        "joint_4_angle_limit": false,
+        "joint_5_angle_limit": false,
+        "joint_6_angle_limit": false,
+        "communication_status_joint_1": false,
+        "communication_status_joint_2": false,
+        "communication_status_joint_3": false,
+        "communication_status_joint_4": false,
+        "communication_status_joint_5": false,
+        "communication_status_joint_6": false
+      }
+    },
+    "target_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "robot": "piper_h",
+  "firmware_profile": "v189",
+  "joint": 6,
+  "velocity_rad_s": 0.02,
+  "phases": [
+    {
+      "phase": "zero_before",
+      "command_rad_s": 0.0,
+      "duration_s": 1.001579643999321,
+      "q_start_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_end_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.0
+      ],
+      "delta_deg": [
+        0.0,
+        -0.615,
+        0.35800000000000004,
+        0.0,
+        0.32,
+        0.0
+      ],
+      "mean_j6_rad_s": 0.0,
+      "controller_status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      }
+    },
+    {
+      "phase": "positive",
+      "command_rad_s": 0.02,
+      "duration_s": 2.00799737700072,
+      "q_start_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.0
+      ],
+      "q_end_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.037402405870238485
+      ],
+      "delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.1430000000000002
+      ],
+      "mean_j6_rad_s": 0.018626720482127938,
+      "controller_status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      }
+    },
+    {
+      "phase": "zero_after_positive",
+      "command_rad_s": 0.0,
+      "duration_s": 1.0081681499996193,
+      "q_start_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.037402405870238485
+      ],
+      "q_end_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.04066617157146788
+      ],
+      "delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.18699999999999997
+      ],
+      "mean_j6_rad_s": 0.0032373227633015664,
+      "controller_status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      }
+    },
+    {
+      "phase": "negative",
+      "command_rad_s": -0.02,
+      "duration_s": 2.0034869479995905,
+      "q_start_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.04066617157146788
+      ],
+      "q_end_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.0
+      ],
+      "delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -2.33
+      ],
+      "mean_j6_rad_s": -0.020297697278273557,
+      "controller_status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      }
+    },
+    {
+      "phase": "zero_after_negative",
+      "command_rad_s": 0.0,
+      "duration_s": 1.0004389060004542,
+      "q_start_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.0
+      ],
+      "q_end_rad": [
+        0.0,
+        -0.010733774899765127,
+        0.0062482787221397,
+        0.0,
+        0.005585053606381855,
+        0.0
+      ],
+      "delta_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_j6_rad_s": 0.0,
+      "controller_status": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      }
+    }
+  ],
+  "error": null,
+  "note": "Measured joint feedback; no automatic motion-quality pass/fail threshold.",
+  "initial_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_status": {
+    "ctrl_mode": 1,
+    "arm_status": 0,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 0,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "final_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "final_status": {
+    "ctrl_mode": 1,
+    "arm_status": 0,
+    "mode_feedback": 1,
+    "teach_status": 0,
+    "motion_status": 0,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "completed_sequence": true
+}
