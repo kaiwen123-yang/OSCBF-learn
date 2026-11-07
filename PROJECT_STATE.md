@@ -4,6 +4,25 @@
 
 ## 最新交接（优先于下文较早记录）
 
+### 2026-11-07 18:08 WSL 完整抓放复跑成功，通信异常仍在段末
+
+- 用户明确要求复跑既有实机测试检查通信，并确认原场景未变、方块在原右侧、运动范围清空。本次沿用原 `pick_place_plan_20261104_224921_126900/task.json`，两个速度倍率均 1.5，开启 `--record-diagnostics`。没有修改控制律、原路径、速度保护或停止逻辑，没有并行运动发送者。
+- 结果包 `results/pick_place_hardware_20261107_180811_947624/`：11 阶段全部完成，任务时间 56.011 秒，程序 error=null。用户现场确认“完整抓放成功，动作正常”，已写入 summary；这次是 MoveIt + CPV 实机基线，不是完整任务 OSCBF。末态约 [-0.043,-0.041,+0.042,0,0,0]°，CPV 零速度及使能，六轴驱动全 0x40，无故障；没有自动复位或追加动作。
+- 记录 175869 帧原始 CAN、11964 组六轴反馈、4587 个运动控制周期、31298 次 SDK 发送。反馈约 200.068 Hz；CAN 时间戳六轴反馈最大间隔 9.480 ms，SDK 回调最大间隔 27.609 ms。SDK 发送异常、记录器异常、驱动反馈等待均为 0。接口收发错误及丢弃计数增量为 0，但不能据此称总线零错误。
+- 原始 CAN 中有 35 条错误帧，两组分别在 lift 和 transfer 段末 zero_velocity：17/18 帧，持续约 235/256 ms，报告的 TX 错误计数峰值 136/151，无 bus-off；前一组发送结束至第一组零速仅 0.051/0.049 ms。与原生 Ubuntu 两次的 118/106 条段末错误同类，数量减少不能证明 WSL 更稳定或确定根因。
+- 控制周期中位数/P95/最大值为 10.000/10.066/24.997 ms，超过 20 ms 一次；对应 pregrasp 中一组六轴发送耗时 24.808 ms，其中 0x181 单次 SDK 调用约 24.593 ms。该尖峰与后面的两组段末 CAN 错误时刻不同，不能合并为同一原因。最大关节跟踪误差 0.465°。
+- 统计及历史比较：结果包中的 `WSL_COMMUNICATION.md`、`wsl_communication_comparison.json`、`analysis.json`、`can_errors.csv`。当前结论为 WSL 已完成一遍真实完整抓放，现有段末 CAN 异常仍待后续单独处理；本轮未改发送节拍，未进行长期/负载压力测试。
+
+### 2026-11-07 Windows / WSL 开发及实机通信环境
+
+- 用户要求开发、仿真及 Piper 实机控制环境全部迁入现有 WSL Ubuntu 22.04，随后明确图形窗口不再处理。本轮配置位于 `/home/kaiwen/OSCBF-learn`，本地分支 `codex/wsl-setup`，基于 `2ea3f1f48d10591b2bcb770af704011b381910b7`；没有向远端推送。原生双系统 Ubuntu 的工作副本没有访问或修改。
+- 四个固定上游提交及原 Python 版本沿用，建立 `envs/piper-sdk`、`envs/oscbf`、`envs/ros-humble`，ROS 工作区构建完成。补齐 111 个必要系统软件包及依赖，没有升级或删除原有软件包。现有 conda 环境、`.bashrc`、`.profile`、`/etc/wsl.conf`、Windows `.wslconfig`、网络与代理配置未改。
+- 当前 WSL 内核 `6.6.87.2-microsoft-standard-WSL2` 缺少 `gs_usb`。已从同版本 Microsoft 源码编译两个附加 CAN 模块，放在版本目录的 `updates/oscbf/`，未替换内核；精确序列号 udev 规则保持原 `can0` / 1 Mbps / `004F00374548570120353731` 身份约束。WSL 模块 overlay 可能随退出丢失，因此连接入口从项目 `.wsl/driver/` 按内核版本恢复模块；升级内核后需重编译，禁止强行加载旧版本。
+- 验证：作者 Panda QP、原抓放计划无 CAN 预览、Piper 20 秒理想仿真（每种方法 2000 步、QP 全收敛）、MoveIt mock 服务 FK 查询通过。仿真证据 `results/plane_sim_20261107_174941_651333/`；这些不是新的运动实机成果。
+- 初次只读实机反馈成功；热重连随后出现无反馈，最终 Windows 报 USB 设备描述符请求失败。用户物理拔插 USB 后恢复，最新 `logs/joint_state_20261107_180030_848649.json`：5 秒 1000 组、199.93 Hz、最大间隔 5.52 ms、收包错误/丢包/TX 增量均 0；当时六轴 0°、已使能、无驱动故障。不能由此认定所有热重连可靠。
+- `logs/firmware_20261107_180127_240500.json` 验证双向通信：1 个查询帧成功发送、12182 帧接收、无收发错误，固件 `H-V1.2-1 / S-V1.9-1` 对应 SDK `v189`。没有发送使能、复位、回零或运动命令；没有验证 Windows 负载变化下的 100 Hz 运动闭环。
+- 日常入口与必要改动见 `docs/WSL.md`、`scripts/connect_wsl.ps1`、`scripts/wsl_can_up.sh`、`scripts/wsl_shell.sh`。Windows 任务目录有打开项目和连接 Piper 的快捷入口。连接成功后保持 WSL 终端打开；若 Windows 不能识别适配器，先重新插接 USB。原控制代码、控制参数、模型和历史结果 SHA-256 核对一致，失败记录保留。
+
 ### 2026-11-07 按阶段迁移至 GitHub，供另一设备继续开发
 
 - 仓库：`https://github.com/kaiwen123-yang/OSCBF-learn`，主分支main。六组迁移提交依次为环境、基础实机、模型/仿真、OSCBF实机、完整抓放基线、诊断/交接；阶段标签及证据索引见 `docs/STAGES.md`，逐文件分组见 `docs/STAGE_FILES.json`。这是现有成果的整理，不伪造过去的Git历史。

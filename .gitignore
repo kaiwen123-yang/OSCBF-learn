@@ -1,5 +1,6 @@
 # Recreated on each machine; experiment logs/results are intentionally tracked.
 /envs/
+/.wsl/
 /ros_ws/build/
 /ros_ws/install/
 /ros_ws/log/

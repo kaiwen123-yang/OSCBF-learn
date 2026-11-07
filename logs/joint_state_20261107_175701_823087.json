@@ -1,0 +1,19 @@
+{
+  "robot": "piper_h",
+  "sdk_profile": "v189",
+  "error": "RuntimeError: 完整且新鲜的六关节反馈不足。",
+  "interface_counter_delta": {
+    "rx_packets": 0,
+    "rx_dropped": 0,
+    "rx_errors": 0,
+    "tx_packets": 0,
+    "tx_errors": 0
+  },
+  "joint_packet_counts": {
+    "0x2A5": 0,
+    "0x2A6": 0,
+    "0x2A7": 0
+  },
+  "complete_samples": 0,
+  "rejected_groups": 0
+}

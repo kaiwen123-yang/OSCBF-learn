@@ -1,0 +1,204 @@
+{
+  "directory": "/home/kaiwen/OSCBF-learn/results/pick_place_hardware_20261107_180811_947624",
+  "error": null,
+  "raw_frames": 175869,
+  "state_snapshots": 1184,
+  "control_samples": 4587,
+  "raw_capture_duration_s": 59.72381234169006,
+  "can_error_frames": 35,
+  "can_error_phases": {
+    "zero_velocity": 35
+  },
+  "error_decode_source": "/usr/include/linux/can/error.h",
+  "recorder_error": null,
+  "driver_feedback_pauses": [],
+  "initial_mode": null,
+  "final_mode": 5,
+  "driver_codes": {
+    "1": {
+      "0x40": 1195
+    },
+    "2": {
+      "0x40": 1195
+    },
+    "3": {
+      "0x40": 1195
+    },
+    "4": {
+      "0x40": 1195
+    },
+    "5": {
+      "0x40": 1195
+    },
+    "6": {
+      "0x40": 1195
+    }
+  },
+  "driver_max_gap_ms": {
+    "1": 50.7204532623291,
+    "2": 51.27525329589844,
+    "3": 50.86493492126465,
+    "4": 53.83706092834473,
+    "5": 53.51853370666504,
+    "6": 50.76789855957031
+  },
+  "motor_current_range_a": {
+    "1": [
+      -0.301,
+      0.314
+    ],
+    "2": [
+      -2.886,
+      1.178
+    ],
+    "3": [
+      -1.612,
+      0.32
+    ],
+    "4": [
+      -0.271,
+      0.598
+    ],
+    "5": [
+      -1.17,
+      0.645
+    ],
+    "6": [
+      -0.28600000000000003,
+      0.314
+    ]
+  },
+  "final_q_deg": [
+    -0.043000000000000003,
+    -0.04100000000000001,
+    0.042,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "can_error_bursts": [
+    {
+      "start_elapsed_s": 26.568727731704712,
+      "duration_s": 0.23544526100158691,
+      "frames": 17,
+      "after_stage": "lift",
+      "protocol_bit1_reports": 14,
+      "max_reported_tx_error_counter": 136,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 2.5200120001045434,
+      "last_command_end_to_first_zero_start_ms": 0.05122199991092202
+    },
+    {
+      "start_elapsed_s": 31.67691397666931,
+      "duration_s": 0.2561912536621094,
+      "frames": 18,
+      "after_stage": "transfer",
+      "protocol_bit1_reports": 12,
+      "max_reported_tx_error_counter": 151,
+      "has_bus_off": false,
+      "last_control_to_first_error_ms": 2.241598000068734,
+      "last_command_end_to_first_zero_start_ms": 0.049279999984719325
+    }
+  ],
+  "max_tracking_error_deg": 0.46455091513097807,
+  "max_command_rad_s": 0.154,
+  "control_cycle_ms_median_p95_max": [
+    9.999816999993527,
+    10.065620300008504,
+    24.99671999999009
+  ],
+  "stage_metrics": {
+    "open": {
+      "duration_s": 1.506506773999945,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "pregrasp": {
+      "duration_s": 13.52890188899994,
+      "control_samples": 1281,
+      "max_tracking_error_deg": 0.35747683608518
+    },
+    "align": {
+      "duration_s": 3.309317539999938,
+      "control_samples": 261,
+      "max_tracking_error_deg": 0.3288395460031957
+    },
+    "approach": {
+      "duration_s": 2.0871194859998923,
+      "control_samples": 139,
+      "max_tracking_error_deg": 0.30345572526807757
+    },
+    "grasp": {
+      "duration_s": 1.5117152620000525,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "lift": {
+      "duration_s": 4.418170296000085,
+      "control_samples": 372,
+      "max_tracking_error_deg": 0.46455091513097807
+    },
+    "transfer": {
+      "duration_s": 5.108337848000019,
+      "control_samples": 441,
+      "max_tracking_error_deg": 0.2599617831433191
+    },
+    "lower": {
+      "duration_s": 4.299186946000077,
+      "control_samples": 360,
+      "max_tracking_error_deg": 0.28427726853793267
+    },
+    "release": {
+      "duration_s": 1.5112122410000666,
+      "control_samples": 0,
+      "max_tracking_error_deg": null
+    },
+    "retreat": {
+      "duration_s": 4.388793044999943,
+      "control_samples": 369,
+      "max_tracking_error_deg": 0.4612605612663507
+    },
+    "return_initial": {
+      "duration_s": 14.340567799000041,
+      "control_samples": 1364,
+      "max_tracking_error_deg": 0.33965110348156224
+    }
+  },
+  "task_duration_s": 56.011205829000005,
+  "gripper_final": {
+    "open": {
+      "width_m": 0.0394,
+      "force_n": 0.11900000000000001,
+      "command_width_m": 0.04,
+      "command_force_n": 1.0
+    },
+    "grasp": {
+      "width_m": 0.032299999999999995,
+      "force_n": -1.043,
+      "command_width_m": 0.015,
+      "command_force_n": 1.0
+    },
+    "release": {
+      "width_m": 0.0394,
+      "force_n": 0.14200000000000002,
+      "command_width_m": 0.04,
+      "command_force_n": 1.0
+    }
+  },
+  "sdk_send_calls": 31298,
+  "sdk_send_errors": [],
+  "sdk_send_id_counts": {
+    "0x151": 10,
+    "0x155": 1,
+    "0x156": 1,
+    "0x157": 1,
+    "0x471": 1,
+    "0x159": 90,
+    "0x181": 5199,
+    "0x182": 5199,
+    "0x183": 5199,
+    "0x184": 5199,
+    "0x185": 5199,
+    "0x186": 5199
+  }
+}

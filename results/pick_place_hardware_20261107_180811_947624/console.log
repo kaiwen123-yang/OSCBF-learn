@@ -1,0 +1,33 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/pick_place_hardware_20261107_180811_947624
+执行参数： {'speed_scale': 1.5, 'descent_speed_scale': 1.5, 'saved_joint_velocity_limit_rad_s': 0.2}
+open: actual gripper width=39.4mm force=0.12N
+pregrasp: 0.0/11.3s, max joint error=0.000deg
+pregrasp: 1.7/11.3s, max joint error=0.065deg
+pregrasp: 3.4/11.3s, max joint error=0.063deg
+pregrasp: 5.2/11.3s, max joint error=0.092deg
+pregrasp: 7.0/11.3s, max joint error=0.056deg
+pregrasp: 8.8/11.3s, max joint error=0.077deg
+pregrasp: 10.6/11.3s, max joint error=0.064deg
+align: 0.0/2.2s, max joint error=0.075deg
+align: 1.6/2.2s, max joint error=0.071deg
+approach: 0.0/0.9s, max joint error=0.098deg
+grasp: actual gripper width=32.3mm force=-1.04N
+lift: 0.0/3.0s, max joint error=0.107deg
+lift: 1.5/3.0s, max joint error=0.054deg
+transfer: 0.0/3.8s, max joint error=0.103deg
+transfer: 1.7/3.8s, max joint error=0.091deg
+transfer: 3.4/3.8s, max joint error=0.088deg
+lower: 0.0/3.0s, max joint error=0.098deg
+lower: 1.7/3.0s, max joint error=0.075deg
+release: actual gripper width=39.4mm force=0.14N
+retreat: 0.0/3.0s, max joint error=0.100deg
+retreat: 1.5/3.0s, max joint error=0.046deg
+return_initial: 0.0/11.2s, max joint error=0.242deg
+return_initial: 1.5/11.2s, max joint error=0.077deg
+return_initial: 3.3/11.2s, max joint error=0.062deg
+return_initial: 5.1/11.2s, max joint error=0.087deg
+return_initial: 6.8/11.2s, max joint error=0.076deg
+return_initial: 8.6/11.2s, max joint error=0.073deg
+return_initial: 10.4/11.2s, max joint error=0.033deg
+PIPER_TASK_FINISHED: sequence_completed zero CPV velocity; no switch to MOVE_J
+仅继续采集停止后的状态 3 秒，不发送新的运动/复位/使能指令。

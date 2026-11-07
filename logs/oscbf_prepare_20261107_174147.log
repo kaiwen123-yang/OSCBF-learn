@@ -1,0 +1,160 @@
+/home/kaiwen/OSCBF-learn/envs/oscbf/bin/python
+Collecting cbfpy==0.0.1
+  Downloading cbfpy-0.0.1-py3-none-any.whl (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.9/46.9 KB 30.4 kB/s eta 0:00:00
+Collecting contourpy==1.3.2
+  Using cached contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+Collecting cycler==0.12.1
+  Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools==4.65.0
+  Using cached fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.3 MB)
+Collecting jax==0.4.30
+  Downloading jax-0.4.30-py3-none-any.whl (2.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 286.9 kB/s eta 0:00:00
+Collecting jaxlib==0.4.30
+  Downloading jaxlib-0.4.30-cp310-cp310-manylinux2014_x86_64.whl (79.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.6/79.6 MB 994.5 kB/s eta 0:00:00
+Collecting kiwisolver==1.5.1
+  Using cached kiwisolver-1.5.1-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+Collecting lxml==6.1.3
+  Downloading lxml-6.1.3-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 1.0 MB/s eta 0:00:00
+Collecting matplotlib==3.10.9
+  Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 1.4 MB/s eta 0:00:00
+Collecting ml_dtypes==0.5.4
+  Downloading ml_dtypes-0.5.4-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (5.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 1.5 MB/s eta 0:00:00
+Collecting networkx==3.4.2
+  Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 1.2 MB/s eta 0:00:00
+Collecting numpy==1.26.4
+  Using cached numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+Collecting opt_einsum==3.4.0
+  Downloading opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.9/71.9 KB 246.3 kB/s eta 0:00:00
+Collecting packaging==26.3
+  Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Collecting pillow==12.3.0
+  Using cached pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+Collecting pybullet==3.2.7
+  Downloading pybullet-3.2.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (103.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 MB 2.0 MB/s eta 0:00:00
+Collecting pyparsing==3.3.3
+  Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Collecting python-can==4.6.1
+  Using cached python_can-4.6.1-py3-none-any.whl (276 kB)
+Collecting python-dateutil==3.0.0
+  Using cached python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+Collecting qpax==0.1.4
+  Downloading qpax-0.1.4-py3-none-any.whl (36 kB)
+Collecting scipy==1.15.3
+  Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 3.0 MB/s eta 0:00:00
+Collecting six==1.17.0
+  Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting trimesh==5.2.0
+  Downloading trimesh-5.2.0-py3-none-any.whl (751 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 751.5/751.5 KB 1.1 MB/s eta 0:00:00
+Collecting typing_extensions==4.16.0
+  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Collecting tzdata==2026.6
+  Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.2/348.2 KB 886.8 kB/s eta 0:00:00
+Collecting wrapt==1.17.3
+  Using cached wrapt-1.17.3-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (81 kB)
+Collecting pip==26.2.2
+  Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 2.1 MB/s eta 0:00:00
+Collecting setuptools==84.2.1
+  Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+Collecting wheel==0.48.0
+  Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+Installing collected packages: pybullet, wrapt, tzdata, typing_extensions, six, setuptools, pyparsing, pip, pillow, packaging, opt_einsum, numpy, networkx, lxml, kiwisolver, fonttools, cycler, wheel, trimesh, scipy, python-dateutil, python-can, ml_dtypes, contourpy, matplotlib, jaxlib, jax, qpax, cbfpy
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.6.0
+    Uninstalling setuptools-59.6.0:
+      Successfully uninstalled setuptools-59.6.0
+  Attempting uninstall: pip
+    Found existing installation: pip 22.0.2
+    Uninstalling pip-22.0.2:
+      Successfully uninstalled pip-22.0.2
+Successfully installed cbfpy-0.0.1 contourpy-1.3.2 cycler-0.12.1 fonttools-4.65.0 jax-0.4.30 jaxlib-0.4.30 kiwisolver-1.5.1 lxml-6.1.3 matplotlib-3.10.9 ml_dtypes-0.5.4 networkx-3.4.2 numpy-1.26.4 opt_einsum-3.4.0 packaging-26.3 pillow-12.3.0 pip-26.2.2 pybullet-3.2.7 pyparsing-3.3.3 python-can-4.6.1 python-dateutil-3.0.0 qpax-0.1.4 scipy-1.15.3 setuptools-84.2.1 six-1.17.0 trimesh-5.2.0 typing_extensions-4.16.0 tzdata-2026.6 wheel-0.48.0 wrapt-1.17.3
+Obtaining file:///home/kaiwen/OSCBF-learn/src/oscbf
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///home/kaiwen/OSCBF-learn/src/pyAgxArm
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: oscbf, pyAgxArm
+  Building editable for oscbf (pyproject.toml): started
+  Building editable for oscbf (pyproject.toml): finished with status 'done'
+  Created wheel for oscbf: filename=oscbf-0.0.1-0.editable-py3-none-any.whl size=5712 sha256=4f79f4b01e8b0c63544d2f7e4d981835dcdbc45e8af80c6cbe737ab45d13de3c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-38b_ixjr/wheels/10/57/2d/89addc8bca2831bea64c897fcc15e3c2cb6d6788b22236054a
+  Building editable for pyAgxArm (pyproject.toml): started
+  Building editable for pyAgxArm (pyproject.toml): finished with status 'done'
+  Created wheel for pyAgxArm: filename=pyagxarm-1.0.0-0.editable-py3-none-any.whl size=9409 sha256=dbb5e57ced1762c0e63f4cfd62318f11d1f96cb0027ad3e1e0ea62d6a158ca8b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-38b_ixjr/wheels/69/1d/de/1c7a4ce2e1b0070ee7cf41fd3a01efcaa0b15ca31e3fd2a45c
+Successfully built oscbf pyAgxArm
+Installing collected packages: oscbf, pyAgxArm
+
+Successfully installed oscbf-0.0.1 pyAgxArm-1.0.0
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: /home/kaiwen/OSCBF-learn/envs/oscbf/bin/python -m pip install --upgrade pip
+No broken requirements found.
+pybullet build time: Jan 29 2025 23:16:28
+{
+  "time": "2026-11-07T17:47:54.257100+08:00",
+  "robot": "official Franka Panda (not Piper H)",
+  "hardware_connected": false,
+  "versions": {
+    "oscbf": "0.0.1",
+    "jax": "0.4.30",
+    "jaxlib": "0.4.30",
+    "cbfpy": "0.0.1",
+    "qpax": "0.1.4",
+    "numpy": "1.26.4",
+    "pybullet": "3.2.7"
+  },
+  "devices": [
+    "TFRT_CPU_0"
+  ],
+  "warmup_s": 0.777971051999998,
+  "ten_warm_calls_ms": [
+    0.0676659999498952,
+    0.044559999992088706,
+    0.040636000107951986,
+    0.038850000009915675,
+    0.0426289999495566,
+    0.04056399995988613,
+    0.039260999983525835,
+    0.037449999922500865,
+    0.041278000026068185,
+    0.04183900000498397
+  ],
+  "qdot_output": [
+    1.1012044303367233e-05,
+    0.0002902585599779657,
+    -7.303507405116629e-06,
+    0.00016328561702043962,
+    -5.195225618493824e-06,
+    0.0001229649867190005,
+    5.922287804742336e-06
+  ],
+  "note": "Smoke test only, not a control-period benchmark or a Piper H replication result."
+}
+OSCBF_VELOCITY_QP_OK: /home/kaiwen/OSCBF-learn/logs/oscbf_smoke_20261107_174754.json
+OSCBF_ENV_OK: official velocity QP warmed up on CPU; GUI demo can now run.

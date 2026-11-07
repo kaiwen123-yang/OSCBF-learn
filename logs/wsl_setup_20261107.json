@@ -1,0 +1,133 @@
+{
+  "time": "2026-11-07T18:03:27.109441+08:00",
+  "base_commit": "2ea3f1f48d10591b2bcb770af704011b381910b7",
+  "branch": "codex/wsl-setup",
+  "project_root": "/home/kaiwen/OSCBF-learn",
+  "distribution": "Ubuntu-22.04",
+  "kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "kernel_replaced": false,
+  "driver_source_commit": "427645e3db3a8896714f22a3d3fe0c3f7b317ad4",
+  "driver_sha256": {
+    "can-dev.ko": "8d462ad038e8534eb053c9df04b6d981352e63ad6ff455daf20f9054d7313cda",
+    "gs_usb.ko": "936e1979a9ac7c0d5caf01d259187bce7e6d0fa0233b5205b89f7e3e8e1bbb07"
+  },
+  "feedback_file": "logs/joint_state_20261107_180030_848649.json",
+  "feedback": {
+    "robot": "piper_h",
+    "sdk_profile": "v189",
+    "error": null,
+    "interface_counter_delta": {
+      "rx_packets": 12097,
+      "rx_dropped": 0,
+      "rx_errors": 0,
+      "tx_packets": 0,
+      "tx_errors": 0
+    },
+    "joint_packet_counts": {
+      "0x2A5": 1000,
+      "0x2A6": 1000,
+      "0x2A7": 1000
+    },
+    "complete_samples": 1000,
+    "rejected_groups": 0,
+    "joint_rad_last": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "joint_deg_last": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "complete_feedback_hz": 199.93,
+    "max_feedback_gap_ms": 5.52,
+    "joint_enabled": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "driver_faults": {
+      "J1": [],
+      "J2": [],
+      "J3": [],
+      "J4": [],
+      "J5": [],
+      "J6": []
+    },
+    "arm_status": {
+      "ctrl_mode": 1,
+      "arm_status": 0,
+      "mode_feedback": 1,
+      "teach_status": 0,
+      "motion_status": 0,
+      "trajectory_num": 0,
+      "err_status": {
+        "joint_1_angle_limit": false,
+        "joint_2_angle_limit": false,
+        "joint_3_angle_limit": false,
+        "joint_4_angle_limit": false,
+        "joint_5_angle_limit": false,
+        "joint_6_angle_limit": false,
+        "communication_status_joint_1": false,
+        "communication_status_joint_2": false,
+        "communication_status_joint_3": false,
+        "communication_status_joint_4": false,
+        "communication_status_joint_5": false,
+        "communication_status_joint_6": false
+      }
+    }
+  },
+  "firmware_file": "logs/firmware_20261107_180127_240500.json",
+  "firmware": {
+    "time": "2026-11-07T18:01:27.206950+08:00",
+    "robot": "piper_h",
+    "channel": "can0",
+    "firmware": {
+      "hardware_version": "H-V1.2-1",
+      "motor_ratio_and_batch": "10",
+      "node_type": "Piper_",
+      "software_version": "S-V1.9-1",
+      "production_date": "260918",
+      "node_number": "15"
+    },
+    "sdk_profile": "v189",
+    "observation_seconds": 5.028,
+    "interface_counter_delta": {
+      "rx_packets": 12182,
+      "rx_dropped": 0,
+      "rx_errors": 0,
+      "tx_packets": 1,
+      "tx_errors": 0
+    },
+    "sdk_comm_error": null
+  },
+  "simulation_file": "results/plane_sim_20261107_174941_651333/summary.json",
+  "simulation_status": "completed",
+  "moveit": {
+    "hardware_motion": false,
+    "ros_domain": 78,
+    "status": "passed",
+    "fk_position_m": [
+      -0.04662248117932659,
+      -1.4239780060415733e-08,
+      0.5716321750533419
+    ],
+    "can_tx_delta": 0
+  },
+  "hardware_motion_executed": false,
+  "graphical_scope": "Stopped on user request; GUI not validated",
+  "usb_reconnect_observation": "Feedback absent after software hot-detach/attach; Windows later reported device descriptor failure. User physically replugged USB and receive/firmware tests passed. Arbitrary hot-reconnect reliability is not established.",
+  "original_tracked_code_config_models_data_sha256_check": "passed",
+  "wslconfig_sha256": "3d119466d82c102d737a98c018643c4ab6839f3405bef9aaa75f33089c7e84fb",
+  "published": false
+}

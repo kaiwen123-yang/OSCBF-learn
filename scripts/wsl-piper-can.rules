@@ -1,0 +1,2 @@
+# Piper H project adapter only; preserve the identity check in existing scripts.
+ACTION=="add", SUBSYSTEM=="net", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="606f", ATTRS{serial}=="004F00374548570120353731", ENV{ID_SERIAL_SHORT}="004F00374548570120353731", NAME="can0"

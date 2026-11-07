@@ -1,0 +1,44 @@
+[WARN] [1794044977.271136643] [piper_task.controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[INFO] [1794044977.271407106] [resource_manager]: Loading hardware 'FakeSystem' 
+[INFO] [1794044977.274092036] [resource_manager]: Initialize hardware 'FakeSystem' 
+[INFO] [1794044977.274212709] [resource_manager]: Successful initialization of hardware 'FakeSystem'
+[INFO] [1794044977.274269821] [resource_manager]: 'configure' hardware 'FakeSystem' 
+[INFO] [1794044977.274276501] [resource_manager]: Successful 'configure' of hardware 'FakeSystem'
+[INFO] [1794044977.274280486] [resource_manager]: 'activate' hardware 'FakeSystem' 
+[INFO] [1794044977.274283521] [resource_manager]: Successful 'activate' of hardware 'FakeSystem'
+[INFO] [1794044977.279568645] [piper_task.controller_manager]: update rate is 200 Hz
+[INFO] [1794044977.279604064] [piper_task.controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[WARN] [1794044977.279708817] [piper_task.controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[INFO] [1794044977.387101400] [piper_task.controller_manager]: Loading controller 'joint_state_broadcaster'
+[INFO] [1794044977.395156830] [piper_task.controller_manager]: Loading controller 'arm_controller'
+[WARN] [1794044977.404668834] [piper_task.arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[INFO] [1794044977.405069566] [piper_task.controller_manager]: Loading controller 'gripper_controller'
+[WARN] [1794044977.409678945] [piper_task.gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[INFO] [1794044977.410103913] [piper_task.controller_manager]: Configuring controller 'joint_state_broadcaster'
+[INFO] [1794044977.410170499] [piper_task.joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[INFO] [1794044977.420451544] [piper_task.controller_manager]: Configuring controller 'arm_controller'
+[INFO] [1794044977.420601296] [piper_task.arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[INFO] [1794044977.420618777] [piper_task.arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[INFO] [1794044977.420645579] [piper_task.arm_controller]: Using 'splines' interpolation method.
+[INFO] [1794044977.421271243] [piper_task.arm_controller]: Controller state will be published at 50.00 Hz.
+[INFO] [1794044977.422368088] [piper_task.arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[INFO] [1794044977.430090261] [piper_task.controller_manager]: Configuring controller 'gripper_controller'
+[INFO] [1794044977.430178182] [piper_task.gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[INFO] [1794044977.430189237] [piper_task.gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[INFO] [1794044977.430195355] [piper_task.gripper_controller]: Using 'splines' interpolation method.
+[INFO] [1794044977.430501432] [piper_task.gripper_controller]: Controller state will be published at 50.00 Hz.
+[INFO] [1794044977.431495374] [piper_task.gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[INFO] [1794044978.852452067] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794044978.852503080] [piper_task.controller_manager]: Shutdown request received....
+[INFO] [1794044978.852534504] [piper_task.controller_manager]: Shutting down all controllers in the controller manager.
+[INFO] [1794044978.852545034] [piper_task.controller_manager]: Deactivating controller 'joint_state_broadcaster'
+[INFO] [1794044978.852583677] [piper_task.controller_manager]: Shutting down controller 'joint_state_broadcaster'
+[INFO] [1794044978.852693245] [piper_task.controller_manager]: Deactivating controller 'arm_controller'
+[INFO] [1794044978.852737553] [piper_task.controller_manager]: Shutting down controller 'arm_controller'
+[INFO] [1794044978.852751153] [piper_task.controller_manager]: Deactivating controller 'gripper_controller'
+[INFO] [1794044978.852763394] [piper_task.controller_manager]: Shutting down controller 'gripper_controller'
+[INFO] [1794044978.852780749] [resource_manager]: 'deactivate' hardware 'FakeSystem' 
+[INFO] [1794044978.852790931] [resource_manager]: Successful 'deactivate' of hardware 'FakeSystem'
+[INFO] [1794044978.852794140] [resource_manager]: 'shutdown' hardware 'FakeSystem' 
+[INFO] [1794044978.852797430] [resource_manager]: Successful 'shutdown' of hardware 'FakeSystem'
+[INFO] [1794044978.852799921] [piper_task.controller_manager]: Shutting down the controller manager.
