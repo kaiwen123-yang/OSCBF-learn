@@ -1,0 +1,102 @@
+{
+  "status": "completed",
+  "error": null,
+  "method": "oscbf",
+  "data_source": "CAN joint feedback; flange trajectory is model FK",
+  "comparison_status": "single engineering trial, not a matched CBF/OSCBF comparison",
+  "task_frame": "flange_link",
+  "reference_frame": "base_link",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1",
+    "oscbf": "0.0.1",
+    "jax": "0.4.30",
+    "jaxlib": "0.4.30",
+    "qpax": "0.1.4",
+    "numpy": "1.26.4"
+  },
+  "model_sha256": "d1ffe634ec32ddd20c58f2b8616de02452967f932ac5ae0b367cab14e0aedcc5",
+  "initial_q_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "prepare_target_rad": [
+    0.0,
+    0.17453292519943295,
+    -0.17453292519943295,
+    0.0,
+    0.17453292519943295,
+    0.0
+  ],
+  "warmup_s": 0.534943173001011,
+  "anchor_q_rad": [
+    0.0,
+    0.1743409389817136,
+    -0.17360790069587598,
+    0.0,
+    0.1737824336210754,
+    0.0
+  ],
+  "reference_origin_m": [
+    0.07739458315318828,
+    6.121459956247516e-10,
+    0.24559513405519923
+  ],
+  "reference_rotation": [
+    [
+      -0.08713834529186673,
+      -7.665555042267961e-08,
+      0.9961962200188222
+    ],
+    [
+      2.209361384823012e-08,
+      0.9999999999999968,
+      7.888079656982326e-08
+    ],
+    [
+      -0.996196220018825,
+      2.8883116690561102e-08,
+      -0.08713834529186475
+    ]
+  ],
+  "plane_bound_m": 0.08039458315318829,
+  "after_zero_q_rad": [
+    0.0,
+    0.19545942293084495,
+    -0.17823302321366094,
+    0.0,
+    0.15695745963185007,
+    0.0
+  ],
+  "final_q_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "samples": 1200,
+  "reference_phase_final_s": 2.7210692743036966,
+  "all_qp_converged": true,
+  "minimum_h_mm": 0.40853562959874967,
+  "tangent_rmse_mm": 0.28566610722875685,
+  "orientation_rmse_deg": 0.06612497006268897,
+  "max_abs_command_rad_s": 0.013,
+  "minimum_sigma": 0.0017520616472333933,
+  "max_feedback_age_ms": 6.248821000554017,
+  "compute_ms_median_p95_max": [
+    0.18206,
+    0.23376579999999997,
+    3.039069
+  ],
+  "cycle_ms_median_p95_max": [
+    9.999345000323956,
+    10.125262300061877,
+    13.636057999974582
+  ]
+}

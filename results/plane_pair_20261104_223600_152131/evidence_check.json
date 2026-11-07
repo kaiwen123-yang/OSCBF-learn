@@ -1,0 +1,22 @@
+{
+  "oscbf": {
+    "control_samples": 1200,
+    "sent_commands": 1200,
+    "unique_input_sequences": 1200,
+    "max_q_vs_CAN_error_rad": 0.0,
+    "max_command_log_error_rad_s": 0.0,
+    "nominal_and_correction_recorded": true,
+    "h_negative_samples": 256,
+    "all_replay_pace_one": true
+  },
+  "cbf": {
+    "control_samples": 1201,
+    "sent_commands": 1201,
+    "unique_input_sequences": 1201,
+    "max_q_vs_CAN_error_rad": 0.0,
+    "max_command_log_error_rad_s": 0.0,
+    "nominal_and_correction_recorded": true,
+    "h_negative_samples": 240,
+    "all_replay_pace_one": true
+  }
+}

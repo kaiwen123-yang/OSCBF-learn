@@ -1,0 +1,57 @@
+{
+  "q0_deg": [
+    0.0,
+    19.989,
+    -49.96800000000001,
+    0.0,
+    29.924,
+    0.0
+  ],
+  "prepare_delta_deg": [
+    0,
+    20,
+    -50,
+    0,
+    30,
+    0
+  ],
+  "plane_normal": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "tangent_direction": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "plane_distance_from_start_m": 0.015,
+  "normal_reference_travel_m": 0.03,
+  "normal_ramp_s": 4.0,
+  "tangent_speed_m_s": 0.008,
+  "duration_s": 12.0,
+  "dt_s": 0.01,
+  "velocity_limit_rad_s": 0.1,
+  "velocity_quantization_rad_s": 0.001,
+  "kp_task": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "task_weights": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "alpha_plane": 2.0,
+  "alpha_joint": 3.0,
+  "qp_objective_scale": 100.0,
+  "solver_tol": 1e-06,
+  "solver_max_iter": 50
+}

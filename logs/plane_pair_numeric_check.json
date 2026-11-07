@@ -1,0 +1,38 @@
+{
+  "hardware_connected": false,
+  "objective_scale": 100.0,
+  "methods": {
+    "oscbf": {
+      "min_h_mm": 0.06974628324034338,
+      "minimum_sigma": 0.014596823774038892,
+      "max_command_rad_s": 0.049,
+      "final_phase_s": 11.9680552647911,
+      "active_samples": 1049,
+      "final_q_deg": [
+        0.0,
+        35.95859346777919,
+        -75.90342191786438,
+        0.0,
+        39.9465473234714,
+        0.0
+      ],
+      "all_qp_converged": true
+    },
+    "cbf": {
+      "min_h_mm": 0.08302074126498304,
+      "minimum_sigma": 0.01358284253750728,
+      "max_command_rad_s": 0.049,
+      "final_phase_s": 11.999943782769153,
+      "active_samples": 1049,
+      "final_q_deg": [
+        0.0,
+        36.276012086281774,
+        -76.39100900152047,
+        0.0,
+        37.48855838236011,
+        0.0
+      ],
+      "all_qp_converged": true
+    }
+  }
+}

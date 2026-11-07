@@ -1,0 +1,36 @@
+{
+  "status": "preview",
+  "error": null,
+  "method": "oscbf",
+  "data_source": "CAN joint feedback; flange trajectory is model FK",
+  "comparison_status": "single engineering trial, not a matched CBF/OSCBF comparison",
+  "task_frame": "flange_link",
+  "reference_frame": "base_link",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1",
+    "oscbf": "0.0.1",
+    "jax": "0.4.30",
+    "jaxlib": "0.4.30",
+    "qpax": "0.1.4",
+    "numpy": "1.26.4"
+  },
+  "model_sha256": "d1ffe634ec32ddd20c58f2b8616de02452967f932ac5ae0b367cab14e0aedcc5",
+  "initial_q_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "prepare_target_rad": [
+    0.0,
+    0.17453292519943295,
+    -0.17453292519943295,
+    0.0,
+    0.17453292519943295,
+    0.0
+  ],
+  "warmup_s": 0.4929970829998638
+}

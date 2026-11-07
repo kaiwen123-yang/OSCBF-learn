@@ -1,0 +1,152 @@
+{
+  "status": "completed",
+  "error": null,
+  "postprocessing_error": "Original JSON export failed on numpy.bool_; recovered from CSV",
+  "recovery_basis": "operator confirmed normal motion and return; saved feedback/control/commands",
+  "data_source": "measured CAN joint feedback; task pose is model FK",
+  "order": [
+    "oscbf",
+    "cbf"
+  ],
+  "initial_q_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "final_q_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "reference_origin_m": [
+    0.04067271840681502,
+    -6.089206539951926e-09,
+    0.42890789108112504
+  ],
+  "reference_rotation": [
+    [
+      0.08811199127032787,
+      -7.665325556475083e-08,
+      0.9961105746825357
+    ],
+    [
+      3.084729832611091e-08,
+      0.999999999999997,
+      7.422392710517154e-08
+    ],
+    [
+      -0.9961105746825385,
+      2.418730204588563e-08,
+      0.08811199127032998
+    ]
+  ],
+  "plane_bound_m": 0.05567271840681502,
+  "common_start_target_rad": [
+    0.0,
+    0.3488738641811465,
+    -0.8721061206365268,
+    0.0,
+    0.5222723253667831,
+    0.0
+  ],
+  "oscbf": {
+    "reference_complete": true,
+    "replay_required_extra_slowdown": false,
+    "extra_slowdown_samples": 0,
+    "first_control_q_rad": [
+      0.0,
+      0.3488738641811465,
+      -0.8721061206365267,
+      0.0,
+      0.5222723253667831,
+      0.0
+    ],
+    "h_negative_samples": 236,
+    "max_feedback_age_ms": 5.362702999264002,
+    "compute_ms_median_p95_max": [
+      0.1838495,
+      0.25219015,
+      1.16895
+    ],
+    "maximum_control_feedback_difference_rad": 0.0,
+    "maximum_control_command_difference_rad_s": 0.0,
+    "reference_position_replay_error_m": 0.0,
+    "descriptive_active_tangent_rmse_mm": 0.17241956696171815,
+    "descriptive_active_orientation_rmse_deg": 0.06627232431988128,
+    "samples": 1200,
+    "all_qp_converged": true,
+    "minimum_h_mm": -0.5732941261144125,
+    "plane_active_samples": 1049,
+    "reference_phase_final_s": 11.8467821856954,
+    "minimum_sigma": 0.014333340392881139,
+    "max_abs_command_rad_s": 0.052,
+    "fk_displacement_mm": [
+      14.738472269958129,
+      -1.7798015273605402e-06,
+      94.77736610966048
+    ],
+    "cycle_ms_median_p95_max": [
+      10.000271000535577,
+      10.130333200322639,
+      13.325276000614394
+    ]
+  },
+  "cbf": {
+    "reference_complete": true,
+    "replay_required_extra_slowdown": true,
+    "extra_slowdown_samples": 12,
+    "first_control_q_rad": [
+      0.0,
+      0.3495894491744642,
+      -0.872908972092444,
+      0.0,
+      0.5236336821833387,
+      0.0
+    ],
+    "h_negative_samples": 248,
+    "max_feedback_age_ms": 5.3290679989004275,
+    "compute_ms_median_p95_max": [
+      0.229805,
+      0.4191395500000003,
+      1.186342
+    ],
+    "maximum_control_feedback_difference_rad": 0.0,
+    "maximum_control_command_difference_rad_s": 0.0,
+    "reference_position_replay_error_m": 0.0,
+    "descriptive_active_tangent_rmse_mm": 6.209237432994331,
+    "descriptive_active_orientation_rmse_deg": 2.699540348864264,
+    "samples": 1202,
+    "all_qp_converged": true,
+    "minimum_h_mm": -0.6292708360874782,
+    "plane_active_samples": 1051,
+    "reference_phase_final_s": 11.8467821856954,
+    "minimum_sigma": 0.01331718083285986,
+    "max_abs_command_rad_s": 0.052,
+    "fk_displacement_mm": [
+      14.599317676433243,
+      -1.9390306057428394e-06,
+      100.51320689065236
+    ],
+    "cycle_ms_median_p95_max": [
+      9.99977599894919,
+      10.108670001500286,
+      11.578188999919803
+    ]
+  },
+  "first_control_initial_difference_deg": [
+    0.0,
+    0.041000000000001265,
+    -0.045999999999994594,
+    0.0,
+    0.07800000000000024,
+    0.0
+  ],
+  "correction_data_note": "Nominal control recomputed offline from saved q/reference/config; QP and SDK outputs were recorded during hardware execution.",
+  "matched_reference_schedule": false
+}
