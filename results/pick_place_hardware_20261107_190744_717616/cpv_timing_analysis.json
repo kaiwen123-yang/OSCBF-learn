@@ -1,0 +1,309 @@
+{
+  "run": {
+    "directory": "/home/kaiwen/OSCBF-cpv-validation/results/pick_place_hardware_20261107_190744_717616",
+    "status": "sequence_completed",
+    "error": null,
+    "git_commit": "90a94820c284fbbc60ffa424a409419182ba3b76",
+    "tracked_source_changes": [],
+    "completed_stages": [
+      "open",
+      "pregrasp",
+      "align",
+      "approach",
+      "grasp",
+      "lift",
+      "transfer",
+      "lower",
+      "release",
+      "retreat",
+      "return_initial"
+    ],
+    "object_transfer_success": "requires_operator_confirmation",
+    "speed_scale": 1.5,
+    "descent_speed_scale": 1.5,
+    "task_duration_s": 57.366057283,
+    "pacing_period_s": 0.01,
+    "normal_start_intervals_ms": {
+      "min": 10.067934000005607,
+      "median": 10.165302000004317,
+      "p95": 10.32366320000122,
+      "max": 51.44601700000351
+    },
+    "normal_short_interval_count": 0,
+    "normal_zero_transitions": [
+      {
+        "previous_phase": "open",
+        "start_interval_ms": 50.758717999997316,
+        "previous_end_to_zero_start_ms": 50.6312400000013,
+        "immediate": false
+      },
+      {
+        "previous_phase": "pregrasp",
+        "start_interval_ms": 10.110389000004716,
+        "previous_end_to_zero_start_ms": 9.984637000002294,
+        "immediate": false
+      },
+      {
+        "previous_phase": "align",
+        "start_interval_ms": 10.163032999997768,
+        "previous_end_to_zero_start_ms": 10.062058000002594,
+        "immediate": false
+      },
+      {
+        "previous_phase": "approach",
+        "start_interval_ms": 10.157970999998156,
+        "previous_end_to_zero_start_ms": 10.061792999991326,
+        "immediate": false
+      },
+      {
+        "previous_phase": "grasp",
+        "start_interval_ms": 50.84903099999849,
+        "previous_end_to_zero_start_ms": 50.71552100000076,
+        "immediate": false
+      },
+      {
+        "previous_phase": "lift",
+        "start_interval_ms": 10.11058099999218,
+        "previous_end_to_zero_start_ms": 9.992865000000961,
+        "immediate": false
+      },
+      {
+        "previous_phase": "transfer",
+        "start_interval_ms": 10.10356500000853,
+        "previous_end_to_zero_start_ms": 9.998853000013241,
+        "immediate": false
+      },
+      {
+        "previous_phase": "lower",
+        "start_interval_ms": 10.088048999989496,
+        "previous_end_to_zero_start_ms": 9.771921999998767,
+        "immediate": false
+      },
+      {
+        "previous_phase": "release",
+        "start_interval_ms": 50.69693499999062,
+        "previous_end_to_zero_start_ms": 50.57369700000436,
+        "immediate": false
+      },
+      {
+        "previous_phase": "retreat",
+        "start_interval_ms": 10.099614000012025,
+        "previous_end_to_zero_start_ms": 9.727018000006638,
+        "immediate": false
+      },
+      {
+        "previous_phase": "return_initial",
+        "start_interval_ms": 10.170565000009901,
+        "previous_end_to_zero_start_ms": 10.063704999993206,
+        "immediate": false
+      }
+    ],
+    "can_error_frames": 0,
+    "can_error_phases": {},
+    "bus_off_error_frames": 0,
+    "control_cycle_ms": {
+      "min": 10.10140500000034,
+      "median": 10.169318000009753,
+      "p95": 10.307345400008217,
+      "max": 21.850524000001315
+    },
+    "feedback_gap_ms": {
+      "min": 1.565694808959961,
+      "median": 5.000829696655273,
+      "p95": 5.546832084655762,
+      "max": 8.7127685546875
+    },
+    "feedback_age_ms": {
+      "min": 0.34689903259277344,
+      "median": 2.948284149169922,
+      "p95": 5.4575443267822275,
+      "max": 25.67768096923828
+    },
+    "max_tracking_error_deg": 0.9916926492149492,
+    "driver_codes": {
+      "1": {
+        "0x40": 1222
+      },
+      "2": {
+        "0x40": 1223
+      },
+      "3": {
+        "0x40": 1223
+      },
+      "4": {
+        "0x40": 1223
+      },
+      "5": {
+        "0x40": 1223
+      },
+      "6": {
+        "0x40": 1224
+      }
+    },
+    "driver_feedback_pauses": [],
+    "sdk_send_calls": 31892,
+    "sdk_send_error_count": 0,
+    "recorder_error": null,
+    "interface_delta": {
+      "rx_packets": 180024,
+      "rx_bytes": 1217449,
+      "rx_errors": 0,
+      "rx_dropped": 0,
+      "tx_packets": 31892,
+      "tx_bytes": 0,
+      "tx_errors": 0,
+      "tx_dropped": 0
+    },
+    "timing_scope": "SDK call-group monotonic times, not physical CAN wire timestamps",
+    "communication_checks_passed": true
+  },
+  "baseline": {
+    "directory": "/home/kaiwen/OSCBF-cpv-validation/results/pick_place_hardware_20261107_180811_947624",
+    "status": "sequence_completed",
+    "error": null,
+    "git_commit": null,
+    "tracked_source_changes": null,
+    "completed_stages": [
+      "open",
+      "pregrasp",
+      "align",
+      "approach",
+      "grasp",
+      "lift",
+      "transfer",
+      "lower",
+      "release",
+      "retreat",
+      "return_initial"
+    ],
+    "object_transfer_success": "operator_confirmed",
+    "speed_scale": 1.5,
+    "descent_speed_scale": 1.5,
+    "task_duration_s": 56.011205829000005,
+    "pacing_period_s": null,
+    "normal_start_intervals_ms": {
+      "min": 0.13732000002164568,
+      "median": 10.004096999978174,
+      "p95": 10.247763750061267,
+      "max": 52.2791009999537
+    },
+    "normal_short_interval_count": null,
+    "normal_zero_transitions": [
+      {
+        "previous_phase": "pregrasp",
+        "start_interval_ms": 0.8571640000809566,
+        "previous_end_to_zero_start_ms": 0.07553500006451941,
+        "immediate": false
+      },
+      {
+        "previous_phase": "align",
+        "start_interval_ms": 0.16486900005929783,
+        "previous_end_to_zero_start_ms": 0.053165000053922995,
+        "immediate": false
+      },
+      {
+        "previous_phase": "approach",
+        "start_interval_ms": 0.16180099999019149,
+        "previous_end_to_zero_start_ms": 0.04978899994512176,
+        "immediate": false
+      },
+      {
+        "previous_phase": "grasp",
+        "start_interval_ms": 51.86437800000476,
+        "previous_end_to_zero_start_ms": 51.47286900000836,
+        "immediate": false
+      },
+      {
+        "previous_phase": "lift",
+        "start_interval_ms": 0.17952099995000026,
+        "previous_end_to_zero_start_ms": 0.05122199991092202,
+        "immediate": false
+      },
+      {
+        "previous_phase": "transfer",
+        "start_interval_ms": 0.13732000002164568,
+        "previous_end_to_zero_start_ms": 0.049279999984719325,
+        "immediate": false
+      },
+      {
+        "previous_phase": "lower",
+        "start_interval_ms": 0.2108890000727115,
+        "previous_end_to_zero_start_ms": 0.06044300005214609,
+        "immediate": false
+      },
+      {
+        "previous_phase": "release",
+        "start_interval_ms": 50.84163300000455,
+        "previous_end_to_zero_start_ms": 50.72707299996182,
+        "immediate": false
+      },
+      {
+        "previous_phase": "retreat",
+        "start_interval_ms": 0.14196999995874648,
+        "previous_end_to_zero_start_ms": 0.04745100000036473,
+        "immediate": false
+      },
+      {
+        "previous_phase": "return_initial",
+        "start_interval_ms": 0.35187799994673696,
+        "previous_end_to_zero_start_ms": 0.08493600000747392,
+        "immediate": false
+      }
+    ],
+    "can_error_frames": 35,
+    "can_error_phases": {
+      "zero_velocity": 35
+    },
+    "bus_off_error_frames": 0,
+    "control_cycle_ms": {
+      "min": 7.420721000016783,
+      "median": 9.999816999993527,
+      "p95": 10.065620300008504,
+      "max": 24.99671999999009
+    },
+    "feedback_gap_ms": {
+      "min": 0.9691715240478516,
+      "median": 4.997491836547852,
+      "p95": 5.662322044372559,
+      "max": 9.480476379394531
+    },
+    "feedback_age_ms": null,
+    "max_tracking_error_deg": 0.46455091513097807,
+    "driver_codes": {
+      "1": {
+        "0x40": 1195
+      },
+      "2": {
+        "0x40": 1195
+      },
+      "3": {
+        "0x40": 1195
+      },
+      "4": {
+        "0x40": 1195
+      },
+      "5": {
+        "0x40": 1195
+      },
+      "6": {
+        "0x40": 1195
+      }
+    },
+    "driver_feedback_pauses": [],
+    "sdk_send_calls": 31298,
+    "sdk_send_error_count": 0,
+    "recorder_error": null,
+    "interface_delta": {
+      "rx_packets": 176036,
+      "rx_bytes": 1189751,
+      "rx_errors": 0,
+      "rx_dropped": 0,
+      "tx_packets": 31298,
+      "tx_bytes": 0,
+      "tx_errors": 0,
+      "tx_dropped": 0
+    },
+    "timing_scope": "SDK call-group monotonic times, not physical CAN wire timestamps",
+    "communication_checks_passed": false
+  }
+}
