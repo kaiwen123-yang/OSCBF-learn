@@ -3,6 +3,7 @@
 This module never sends CAN frames or changes the controller's decisions.
 """
 import csv
+import hashlib
 import json
 import shutil
 import subprocess
@@ -76,7 +77,13 @@ class TaskRecording:
                      'raw_direction_note': 'SDK disables local loopback: raw_can.csv is received traffic; sdk_tx.csv records send calls, not proof of firmware execution',
                      'state_note': 'SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame'}
         (out/'sources').mkdir()
-        for rel in ('scripts/run_pick_place.py', 'piper_oscbf/device.py', 'piper_oscbf/recording.py', *extra_sources):
+        source_files = ('scripts/run_pick_place.py', 'piper_oscbf/device.py',
+                        'piper_oscbf/pacing.py', 'piper_oscbf/recording.py', *extra_sources)
+        self.meta['git_commit'] = subprocess.check_output(['git', '-C', str(root), 'rev-parse', 'HEAD'], text=True).strip()
+        self.meta['tracked_source_changes'] = subprocess.check_output(
+            ['git', '-C', str(root), 'diff', '--name-only', 'HEAD', '--', 'scripts', 'piper_oscbf', 'config'], text=True).splitlines()
+        self.meta['source_sha256'] = {rel: hashlib.sha256((root/rel).read_bytes()).hexdigest() for rel in source_files}
+        for rel in source_files:
             shutil.copy2(root/rel, out/'sources'/Path(rel).name)
         (out/'can_interface_before.json').write_text(subprocess.check_output(
             ['ip','-j','-details','-statistics','link','show','can0'],text=True))

@@ -1,0 +1,14 @@
+速度倍率 1.5；关节速度上限 0.300 rad/s
+接近/放置下降倍率 1.5；保持原规划路径
+open 40.0 mm 1.0 N
+pregrasp minimum duration 11.3 s; target deg [-14.93, 94.11, -72.94, -0.0, 73.83, -14.93]
+align minimum duration 2.2 s; target deg [-14.93, 100.13, -60.46, -0.0, 55.33, -14.93]
+approach minimum duration 0.9 s; target deg [-14.93, 104.13, -56.89, -0.0, 47.76, -14.93]
+grasp 15.0 mm 1.0 N
+lift minimum duration 3.0 s; target deg [-14.93, 94.11, -72.94, -0.0, 73.83, -14.93]
+transfer minimum duration 3.8 s; target deg [14.93, 94.11, -72.94, 0.0, 73.83, 14.93]
+lower minimum duration 3.0 s; target deg [14.93, 104.13, -56.89, 0.0, 47.76, 14.93]
+release 40.0 mm 1.0 N
+retreat minimum duration 3.0 s; target deg [14.93, 94.11, -72.94, 0.0, 73.83, 14.93]
+return_initial minimum duration 11.2 s; target deg [-0.01, 0.0, -0.0, -0.0, 0.0, 0.0]
+PLAN_PREVIEW_ONLY: no CAN connection or motion

@@ -9,6 +9,7 @@ import threading
 import time
 
 from pyAgxArm import AgxArmFactory, ArmModel, PiperFW, create_agx_arm_config
+from piper_oscbf.pacing import GroupPacer
 
 
 class MotorEnableUnconfirmed(RuntimeError):
@@ -16,7 +17,7 @@ class MotorEnableUnconfirmed(RuntimeError):
 
 
 class PiperDevice:
-    def __init__(self):
+    def __init__(self, cpv_period_s=None):
         props = subprocess.check_output([
             "udevadm", "info", "--query=property", "--path=/sys/class/net/can0"], text=True)
         if "ID_SERIAL_SHORT=004F00374548570120353731" not in props.splitlines():
@@ -34,6 +35,9 @@ class PiperDevice:
         self.driver_feedback_pauses = []
         self.driver_pause_s = 0.
         self.control_started = False
+        # Existing independent plane experiments retain their own scheduler.
+        # The complete task explicitly opts into continuous group pacing.
+        self.cpv_pacer = GroupPacer(cpv_period_s) if cpv_period_s is not None else None
         self.robot.get_context().register_parser_packet_fun(self._receive)
         self.robot.set_auto_set_motion_mode_enabled(False)
 
@@ -143,31 +147,55 @@ class PiperDevice:
         print(phase, "q_deg=", [round(math.degrees(x), 3) for x in self.angles(row)], flush=True)
         return row
 
-    def velocity(self, values):
+    def wait_for_velocity_slot(self):
+        if self.cpv_pacer is not None:
+            self.cpv_pacer.wait()
+
+    def velocity(self, values, *, immediate=False):
         values = [float(v) for v in values]
         # Same rounding as SDK's sp scale (1e3). These are model-convention
         # commands passed to SDK; SDK internally compensates J2-J5 wire signs.
         self.commanded = [round(v*1000)/1000 for v in values]
+        if not immediate:
+            self.wait_for_velocity_slot()
         start = time.monotonic()
-        for j, v in enumerate(self.commanded, 1):
-            self.robot.move_cpv_vel(j, v)
-        end = time.monotonic()
-        self.commands.append({"send_start_s": start, "send_end_s": end, "phase": self.phase,
-                              **{f"u{j}_rad_s": v for j, v in enumerate(self.commanded, 1)}})
+        previous = self.commands[-1] if self.commands else None
+        timing = (self.cpv_pacer.begin(start, immediate=immediate) if self.cpv_pacer is not None else {
+            'pacing_period_s': None, 'pacing_bypassed': immediate, 'scheduled_start_s': None,
+            'pacing_wait_s': 0., 'deadline_lateness_s': None,
+            'interval_from_previous_start_s': start-previous['send_start_s'] if previous else None,
+            'gap_from_previous_end_s': start-previous['send_end_s'] if previous else None})
+        completed, error = 0, None
+        try:
+            for j, v in enumerate(self.commanded, 1):
+                self.robot.move_cpv_vel(j, v)
+                completed += 1
+        except BaseException as exc:
+            error = f'{type(exc).__name__}: {exc}'
+            raise
+        finally:
+            end = time.monotonic()
+            if self.cpv_pacer is not None:
+                self.cpv_pacer.end(end)
+            self.commands.append({"send_start_s": start, "send_end_s": end, "phase": self.phase,
+                **timing, 'completed_joints': completed, 'send_error': error,
+                **{f"u{j}_rad_s": v for j, v in enumerate(self.commanded, 1)}})
         return self.commanded[:]
 
     def zero(self, duration=1.0):
         self.phase = "zero_velocity"
         start = time.monotonic()
         while time.monotonic()-start < duration:
+            self.wait_for_velocity_slot()
             self.state()
             self.velocity([0.0]*6)
-            time.sleep(.01)
+            if self.cpv_pacer is None:
+                time.sleep(.01)
 
     def emergency_stop(self):
         errors = []
         try:
-            self.velocity([0.0]*6)
+            self.velocity([0.0]*6, immediate=True)
         except Exception as exc:
             errors.append(str(exc))
         try:

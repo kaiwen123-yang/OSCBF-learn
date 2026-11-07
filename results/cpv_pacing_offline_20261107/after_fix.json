@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "hardware_connected": false,
+  "normal_start_intervals_ms": [
+    10.000000000000009,
+    10.000000000000009,
+    10.000000000000009,
+    10.000000000000009
+  ],
+  "normal_then_zero_then_next_stage": "passed",
+  "no_catch_up": "passed",
+  "emergency_wait_s": 0.0,
+  "six_axes_per_group": true,
+  "quantization_unchanged": true
+}

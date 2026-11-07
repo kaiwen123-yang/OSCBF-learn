@@ -45,8 +45,10 @@ def task_feedback(device, after):
         event={"phase":device.phase,"initial_check":device.last_driver_check,"recovered":False}
         device.driver_feedback_pauses.append(event)
         print("驱动使能反馈待确认：参考暂停，发送零速度等待新反馈。",flush=True)
+        first_zero = True
         while True:
-            device.velocity([0.]*6)
+            device.velocity([0.]*6, immediate=first_zero)
+            first_zero = False
             time.sleep(.01)
             try:
                 result=device.state()
@@ -69,13 +71,16 @@ def arm_step(device, step, cfg, records):
     device.zero(.2)
     device.phase = step["name"]
     phase, rate = 0., 1.
-    start = previous = deadline = time.monotonic()
+    start = previous = time.monotonic()
     seq, printed = first["sequence"], -2.
     while True:
+        # Wait before reading feedback so the control calculation uses a fresh
+        # sample. velocity() also enforces this same cross-stage schedule.
+        device.wait_for_velocity_slot()
         pause_before=device.driver_pause_s
         sample,status = task_feedback(device,after=seq)
         if device.driver_pause_s>pause_before:
-            previous=deadline=time.monotonic()
+            previous=time.monotonic()
         if int(status["mode_feedback"]) != 5:
             raise RuntimeError("CPV mode lost")
         seq = sample["sequence"]
@@ -93,6 +98,10 @@ def arm_step(device, step, cfg, records):
         sent = device.velocity(requested)
         row={"stage":step["name"],"time_s":now-start,"monotonic_s":now,"reference_time_s":phase,
              "sample_sequence":seq,"can_timestamp_s":sample["can_timestamp_s"],
+             "feedback_age_s":time.time()-sample["can_timestamp_s"],
+             "feedback_monotonic_age_s":now-sample["monotonic_s"],
+             "send_group_start_s":device.commands[-1]["send_start_s"],
+             "send_group_end_s":device.commands[-1]["send_end_s"],
              "max_joint_error_rad":float(np.max(np.abs(error))),"progress_rate":rate,
              "mode_feedback":int(status["mode_feedback"]),"arm_status":int(status["arm_status"])}
         for j in range(1,7):
@@ -106,10 +115,6 @@ def arm_step(device, step, cfg, records):
             break
         if now-start>times[-1]*4+10:
             raise RuntimeError(f"{step['name']}: could not finish path, saved actual progress")
-        deadline+=.01
-        delay=deadline-time.monotonic()
-        if delay>0:time.sleep(delay)
-        else:deadline=time.monotonic()
     # Keep the same velocity mode across task stages. The first hardware trial
     # showed a large excursion when switching CPV -> MOVE_J at the endpoint.
     device.zero(.5)
@@ -186,7 +191,7 @@ def main():
             "source_plan":str(args.plan.resolve()),"completed_stages":[],
             "speed_scale":args.speed_scale,"joint_velocity_limit_rad_s":cfg["joint_velocity_limit_rad_s"],
             "descent_speed_scale":args.descent_speed_scale,"stage_velocity_limits_rad_s":cfg["stage_velocity_limits_rad_s"],
-            "object_transfer_success":"requires_operator_confirmation"}
+            "object_transfer_success":"requires_operator_confirmation", "cpv_period_s": .01}
     device=None;controls=[];grips=[];recording=None
     def terminate(*_):raise KeyboardInterrupt("SIGTERM")
     signal.signal(signal.SIGTERM,terminate)
@@ -196,7 +201,7 @@ def main():
             recording=TaskRecording(out,ROOT)
             print("DIAGNOSTIC_RESULT_DIR:",out,flush=True)
             print("执行参数：",task["execution_override"],flush=True)
-        device=PiperDevice();gripper=device.robot.init_effector(device.robot.OPTIONS.EFFECTOR.AGX_GRIPPER)
+        device=PiperDevice(cpv_period_s=.01);gripper=device.robot.init_effector(device.robot.OPTIONS.EFFECTOR.AGX_GRIPPER)
         if recording:recording.device=device
         device.connect()
         if recording:recording.bind_connected_device(device)
@@ -247,7 +252,7 @@ def main():
                     _,stop_status=device.state(enabled=False)
                     if int(stop_status["mode_feedback"])!=5:
                         raise RuntimeError("Not in CPV; zero-velocity stop unavailable")
-                    device.velocity([0.]*6)
+                    device.velocity([0.]*6, immediate=True)
                     time.sleep(.06)
                     device.zero(.5)
                     report["stop_action"]="zero CPV after software error; motors remain enabled"
