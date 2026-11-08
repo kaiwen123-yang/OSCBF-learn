@@ -40,14 +40,17 @@ def main():
         if device.robot.has_comm_error():
             raise RuntimeError(str(device.robot.get_comm_error()))
         if (status is None or joints is None or
-                time.time()-min(status.timestamp, joints.timestamp) > .2):
+                max(device.message_age(i) for i in (0x2A1,0x2A5,0x2A6,0x2A7)) > .2):
             raise RuntimeError("Fresh arm/joint feedback unavailable")
         motors = [device.robot.get_driver_states(j) for j in range(1, 7)]
-        result = {"time_s": time.time(), "status_timestamp_s": status.timestamp,
+        result = {"time_s": time.time(), "monotonic_s": time.monotonic(),
+                  "status_timestamp_s": status.timestamp,
+                  "status_received_monotonic_s": device.received_at.get(0x2A1),
                   "q_rad": list(joints.msg), "status": status.msg.to_dict(),
                   "enabled": [bool(m.msg.foc_status.driver_enable_status) if m else None for m in motors],
                   "driver_status_codes": [m.msg.foc_status_code if m else None for m in motors],
-                  "motor_status_timestamps_s": [m.timestamp if m else None for m in motors]}
+                  "motor_status_timestamps_s": [m.timestamp if m else None for m in motors],
+                  "motor_received_monotonic_s": [device.received_at.get(0x260+j) for j in range(1,7)]}
         snapshots.append(result)
         return result
 
@@ -83,16 +86,16 @@ def main():
             if arm_status == 1:
                 print("仅清除软件急停：reset会立即失电。不会使能、回零或操作夹爪。", flush=True)
                 device.phase = "reset_only"
-                stamp, started = time.time(), time.monotonic()
+                stamp = started = time.monotonic()
                 device.robot.reset()
                 report["reset_sent"] = True
                 confirmed = False
                 while time.monotonic()-started < 5:
                     time.sleep(.05)
                     state = snapshot()
-                    confirmed = (state["status_timestamp_s"] > stamp and
+                    confirmed = (state["status_received_monotonic_s"] > stamp and
                                  int(state["status"]["arm_status"]) == 0 and
-                                 all(t is not None and t > stamp for t in state["motor_status_timestamps_s"]) and
+                                 all(t is not None and t > stamp for t in state["motor_received_monotonic_s"]) and
                                  all(v is False for v in state["enabled"]))
                     if confirmed and time.monotonic()-started >= 3:
                         break
