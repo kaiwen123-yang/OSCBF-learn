@@ -1,0 +1,28 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/home_zero_diagnostics_20261108_215829_867857
+当前角度 deg: [-3.092, -2.459, 2.188, 4.85, 23.305, -7.366]
+当前状态: {'ctrl_mode': STANDBY(0x0), 'arm_status': NORMAL(0x0), 'mode_feedback': MOVE_P(0x0), 'teach_status': DISABLED(0x0), 'motion_status': REACH_TARGET_POS_SUCCESSFULLY(0x0), 'trajectory_num': 0, 'err_status': {'joint_1_angle_limit': False, 'joint_2_angle_limit': False, 'joint_3_angle_limit': False, 'joint_4_angle_limit': False, 'joint_5_angle_limit': False, 'joint_6_angle_limit': False, 'communication_status_joint_1': False, 'communication_status_joint_2': False, 'communication_status_joint_3': False, 'communication_status_joint_4': False, 'communication_status_joint_5': False, 'communication_status_joint_6': False}} 使能: [False, False, False, False, False, False]
+MOVE_J 10%，目标deg: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0] 正在使能。Ctrl+C 电子急停。
+ENABLE_OK: 六轴新反馈均为 True；开始记录 10 秒。
+  0.0s q_deg=[-3.092, -2.459, 2.188, 4.85, 23.305, -7.366] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  0.5s q_deg=[0.0, 0.0, 0.095, 0.0, 15.863, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_FAILED(0x1)
+  1.0s q_deg=[0.0, 0.0, 0.0, 0.0, 7.034, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_FAILED(0x1)
+  1.5s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  2.0s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  2.5s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  3.0s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  3.6s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  4.1s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  4.6s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  5.1s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  5.6s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  6.1s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  6.6s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  7.1s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  7.6s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  8.1s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  8.6s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  9.2s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  9.7s q_deg=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+RECORDING_FINISHED: 采集结束，未发送失能。末次使能反馈: [True, True, True, True, True, True]
+末次实测角度 deg: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+仅继续采集停止后的状态3秒，不自动复位、重新使能或发送新目标。

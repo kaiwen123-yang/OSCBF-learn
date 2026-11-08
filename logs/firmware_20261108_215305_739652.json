@@ -1,0 +1,16 @@
+{
+  "time": "2026-11-08T21:53:05.237195+08:00",
+  "robot": "piper_h",
+  "channel": "can0",
+  "firmware": null,
+  "sdk_profile": null,
+  "observation_seconds": 7.006,
+  "interface_counter_delta": {
+    "rx_packets": 0,
+    "rx_dropped": 0,
+    "rx_errors": 0,
+    "tx_packets": 0,
+    "tx_errors": 0
+  },
+  "sdk_comm_error": null
+}

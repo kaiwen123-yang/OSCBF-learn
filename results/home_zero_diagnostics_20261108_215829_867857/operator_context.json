@@ -1,0 +1,9 @@
+{
+  "source_confirmation": "双手和支撑物已离开，执行回零",
+  "start_pose_provenance": "Physically placed near zero by operator while disabled, then read from encoders",
+  "scope": "MOVE_J 10% home to six zero joint targets only",
+  "no_controller_reset": true,
+  "no_encoder_calibration": true,
+  "no_pick_place": true,
+  "operator_visual_success_confirmation": "Not separately requested; completion evidenced by fresh joint/controller feedback"
+}

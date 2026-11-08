@@ -1,0 +1,23 @@
+{
+  "time": "2026-11-08T21:57:28.709942+08:00",
+  "robot": "piper_h",
+  "channel": "can0",
+  "firmware": {
+    "hardware_version": "H-V1.2-1",
+    "motor_ratio_and_batch": "10",
+    "node_type": "Piper_",
+    "software_version": "S-V1.9-1",
+    "production_date": "260918",
+    "node_number": "15"
+  },
+  "sdk_profile": "v189",
+  "observation_seconds": 5.028,
+  "interface_counter_delta": {
+    "rx_packets": 11680,
+    "rx_dropped": 0,
+    "rx_errors": 0,
+    "tx_packets": 1,
+    "tx_errors": 0
+  },
+  "sdk_comm_error": null
+}

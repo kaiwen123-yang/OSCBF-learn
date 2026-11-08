@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-11-08T22:02:11.652339+08:00",
+  "operator_actions": [
+    {
+      "order": 1,
+      "text": "重新插拔了一下，直接回零测试",
+      "scope": "USB reconnect and another homing attempt"
+    },
+    {
+      "order": 2,
+      "text": "已停稳并支撑",
+      "scope": "After 21:47 failure"
+    },
+    {
+      "order": 3,
+      "text": "六轴失能后，我手动的摆回了近零位",
+      "interpretation": "Manual physical repositioning after disable; not a controller reset command"
+    },
+    {
+      "order": 4,
+      "text": "USB 端已重新插拔",
+      "scope": "After later USB recovery attempt caused descriptor request failure"
+    },
+    {
+      "order": 5,
+      "text": "双手和支撑物已离开，执行回零",
+      "scope": "21:58 near-zero homing"
+    }
+  ],
+  "automatic_reset_or_reenable_after_failure": false,
+  "homing_2147_completed": false,
+  "next_authorized_motion": "results/home_zero_diagnostics_20261108_215829_867857"
+}

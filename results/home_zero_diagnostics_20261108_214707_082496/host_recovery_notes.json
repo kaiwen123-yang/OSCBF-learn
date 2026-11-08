@@ -1,0 +1,54 @@
+{
+  "evidence_origin": "Current-session command outputs; exact motion raw records are in raw_can.csv and sdk_tx.csv. kernel_after.txt was captured after a subsequent VM restart and is not a complete fault-time kernel log.",
+  "host_observations": [
+    {
+      "time_local": "2026-11-08 21:46:48",
+      "observation": "dmesg showed systemd shutdown after the first read-only connection command ended"
+    },
+    {
+      "time_local": "2026-11-08 21:46:55",
+      "observation": "seqnum max informational USB/IP log; local matching vhci_hcd.c only prints when seqnum == 0xffff and continues queuing"
+    },
+    {
+      "time_local": "2026-11-08 21:47:04",
+      "observation": "dmesg showed distribution filesystem mounted before motion run"
+    },
+    {
+      "time_local": "2026-11-08 21:47:27",
+      "observation": "dmesg showed distribution shutdown after motion process ended; later than fault"
+    },
+    {
+      "time_local": "2026-11-08 21:52:26",
+      "observation": "After VM restart and reattach, can0 UP/ERROR-ACTIVE but all received packet counts zero"
+    },
+    {
+      "time_local": "2026-11-08 21:53:05",
+      "observation": "Firmware query returned None; interface RX/TX deltas both zero"
+    },
+    {
+      "order": "after failed firmware query",
+      "command": "ip link set dev can0 down; ip link set dev can0 up",
+      "result": "down completed; up failed: RTNETLINK answers: Broken pipe. Kernel: Error -32 while reading timestamp; Could not start device (err=-32)"
+    },
+    {
+      "order": "after interface reopen failure",
+      "command": "usbreset 1d50:606f",
+      "result": "Resetting candleLight USB to CAN adapter ... failed [No such device]. can0 disappeared."
+    },
+    {
+      "order": "after USB reset attempt",
+      "command": "usbipd detach --busid 3-2 and reconnect",
+      "result": "Windows reports 0000:0002 Unknown USB device / Device Descriptor Request Failed; original adapter serial not enumerated"
+    },
+    {
+      "time_local": "2026-11-08 21:57:17",
+      "observation": "After operator USB physical replug, 200Hz joint feedback restored while WSL interactive session held open"
+    },
+    {
+      "time_local": "2026-11-08 21:57:28",
+      "observation": "Firmware query succeeded, TX delta1 RX delta11680; SDK no communication error"
+    }
+  ],
+  "robot_commands_in_recovery": "Only firmware query; no controller reset, motor enable, or motion. Near-zero homing later separately authorized.",
+  "automatic_root_cause_claim": false
+}

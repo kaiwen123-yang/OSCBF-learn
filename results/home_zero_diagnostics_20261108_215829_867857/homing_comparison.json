@@ -1,0 +1,305 @@
+[
+  {
+    "directory": "home_zero_diagnostics_20261108_190550_767544",
+    "code_commit": "04ffdeaae8d6dc54464aef336c1c414a9e54ef8c",
+    "error": "RuntimeError: Failed to transmit: No buffer space available [Error Code 105]",
+    "initial_deg": [
+      -12.278,
+      133.594,
+      -49.311,
+      -1.62,
+      90.373,
+      -9.94
+    ],
+    "last_received_deg": [
+      0.0,
+      118.492,
+      -34.037,
+      -0.4750000000000001,
+      74.785,
+      0.0
+    ],
+    "final_status": null,
+    "final_enabled": null,
+    "first_exact_zero_after_motion_start_s": null,
+    "all_samples_zero_after_first_zero": null,
+    "raw_frames": 9351,
+    "error_frames": 4880,
+    "ack_error_frames": 4876,
+    "error_id_counts": {
+      "0x24": 4876,
+      "0x4": 4
+    },
+    "sdk_calls": 191,
+    "sdk_error_calls": [
+      {
+        "time_s": "1794135952.7157748",
+        "send_start_s": "3975.344066048",
+        "phase": "home_zero",
+        "arbitration_id": "0x156",
+        "dlc": "8",
+        "data_hex": "0000000000000000",
+        "exception": "",
+        "send_end_s": "3975.344088509",
+        "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+      },
+      {
+        "time_s": "1794135952.7158012",
+        "send_start_s": "3975.344092672",
+        "phase": "home_zero",
+        "arbitration_id": "0x157",
+        "dlc": "8",
+        "data_hex": "0000000000000000",
+        "exception": "",
+        "send_end_s": "3975.344101267",
+        "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+      },
+      {
+        "time_s": "1794135952.7363644",
+        "send_start_s": "3975.364655478",
+        "phase": "home_zero",
+        "arbitration_id": "0x150",
+        "dlc": "8",
+        "data_hex": "0100000000000000",
+        "exception": "",
+        "send_end_s": "3975.364697367",
+        "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+      }
+    ],
+    "complete_feedback_samples": 374,
+    "feedback_gap_ms": {
+      "median": 4.583517999890319,
+      "maximum": 5.260135999833437
+    },
+    "sdk_clock_offset_range_ms": 0.000476837158203125,
+    "first_error": {
+      "can_timestamp_s": "1794135952.5133011",
+      "receive_monotonic_s": "3975.141755173",
+      "phase": "home_zero",
+      "arbitration_id": "0x24",
+      "is_rx": "1",
+      "is_error": "1",
+      "is_remote": "0",
+      "is_extended": "0",
+      "dlc": "8",
+      "data_hex": "0000000000000800"
+    },
+    "first_ack": {
+      "can_timestamp_s": "1794135952.5133011",
+      "receive_monotonic_s": "3975.141755173",
+      "phase": "home_zero",
+      "arbitration_id": "0x24",
+      "is_rx": "1",
+      "is_error": "1",
+      "is_remote": "0",
+      "is_extended": "0",
+      "dlc": "8",
+      "data_hex": "0000000000000800"
+    },
+    "first_error_to_enobufs_ms": 202.31087499996647,
+    "first_ack_to_enobufs_ms": 202.31087499996647,
+    "interface_delta": {
+      "rx_packets": 4517,
+      "rx_bytes": 36128,
+      "rx_errors": 0,
+      "rx_dropped": 0,
+      "tx_packets": 188,
+      "tx_bytes": 0,
+      "tx_errors": 0,
+      "tx_dropped": 0
+    },
+    "recorder_error": null
+  },
+  {
+    "directory": "home_zero_diagnostics_20261108_214707_082496",
+    "code_commit": "841155f1f80e0373fc0effcefc8f5463783aac62",
+    "error": "RuntimeError: Failed to transmit: No buffer space available [Error Code 105]",
+    "initial_deg": [
+      -2.36,
+      140.447,
+      -43.618,
+      8.370000000000001,
+      89.38,
+      11.983
+    ],
+    "last_received_deg": [
+      0.0,
+      119.15499999999999,
+      -22.411,
+      10.136000000000001,
+      67.82300000000001,
+      0.0
+    ],
+    "final_status": null,
+    "final_enabled": null,
+    "first_exact_zero_after_motion_start_s": null,
+    "all_samples_zero_after_first_zero": null,
+    "raw_frames": 9997,
+    "error_frames": 4889,
+    "ack_error_frames": 4887,
+    "error_id_counts": {
+      "0xc": 1,
+      "0x24": 4887,
+      "0x4": 1
+    },
+    "sdk_calls": 255,
+    "sdk_error_calls": [
+      {
+        "time_s": "1794145629.4341362",
+        "send_start_s": "91.380763526",
+        "phase": "home_zero",
+        "arbitration_id": "0x156",
+        "dlc": "8",
+        "data_hex": "0000000000000000",
+        "exception": "",
+        "send_end_s": "91.380788103",
+        "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+      },
+      {
+        "time_s": "1794145629.4341652",
+        "send_start_s": "91.380792716",
+        "phase": "home_zero",
+        "arbitration_id": "0x157",
+        "dlc": "8",
+        "data_hex": "0000000000000000",
+        "exception": "",
+        "send_end_s": "91.380814486",
+        "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+      },
+      {
+        "time_s": "1794145629.4549625",
+        "send_start_s": "91.401589859",
+        "phase": "home_zero",
+        "arbitration_id": "0x150",
+        "dlc": "8",
+        "data_hex": "0100000000000000",
+        "exception": "",
+        "send_end_s": "91.401638769",
+        "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+      }
+    ],
+    "complete_feedback_samples": 427,
+    "feedback_gap_ms": {
+      "median": 5.005747000005556,
+      "maximum": 7.43020400000205
+    },
+    "sdk_clock_offset_range_ms": 0.000476837158203125,
+    "first_error": {
+      "can_timestamp_s": "1794145629.2385952",
+      "receive_monotonic_s": "91.185320468",
+      "phase": "home_zero",
+      "arbitration_id": "0xc",
+      "is_rx": "1",
+      "is_error": "1",
+      "is_remote": "0",
+      "is_extended": "0",
+      "dlc": "8",
+      "data_hex": "0000040000000001"
+    },
+    "first_ack": {
+      "can_timestamp_s": "1794145629.2929711",
+      "receive_monotonic_s": "91.239755205",
+      "phase": "home_zero",
+      "arbitration_id": "0x24",
+      "is_rx": "1",
+      "is_error": "1",
+      "is_remote": "0",
+      "is_extended": "0",
+      "dlc": "8",
+      "data_hex": "0000000000000801"
+    },
+    "first_error_to_enobufs_ms": 195.44305799999506,
+    "first_ack_to_enobufs_ms": 141.00832100000105,
+    "interface_delta": {
+      "rx_packets": 5154,
+      "rx_bytes": 41224,
+      "rx_errors": 0,
+      "rx_dropped": 0,
+      "tx_packets": 252,
+      "tx_bytes": 0,
+      "tx_errors": 0,
+      "tx_dropped": 0
+    },
+    "recorder_error": null
+  },
+  {
+    "directory": "home_zero_diagnostics_20261108_215829_867857",
+    "code_commit": "841155f1f80e0373fc0effcefc8f5463783aac62",
+    "error": null,
+    "initial_deg": [
+      -3.092,
+      -2.459,
+      2.188,
+      4.8500000000000005,
+      23.305,
+      -7.3660000000000005
+    ],
+    "last_received_deg": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_status": {
+      "ctrl_mode": 1,
+      "arm_status": 0,
+      "mode_feedback": 1,
+      "teach_status": 0,
+      "motion_status": 0,
+      "trajectory_num": 0,
+      "err_status": {
+        "joint_1_angle_limit": false,
+        "joint_2_angle_limit": false,
+        "joint_3_angle_limit": false,
+        "joint_4_angle_limit": false,
+        "joint_5_angle_limit": false,
+        "joint_6_angle_limit": false,
+        "communication_status_joint_1": false,
+        "communication_status_joint_2": false,
+        "communication_status_joint_3": false,
+        "communication_status_joint_4": false,
+        "communication_status_joint_5": false,
+        "communication_status_joint_6": false
+      }
+    },
+    "final_enabled": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "first_exact_zero_after_motion_start_s": 1.4171953300000268,
+    "all_samples_zero_after_first_zero": true,
+    "raw_frames": 33392,
+    "error_frames": 0,
+    "ack_error_frames": 0,
+    "error_id_counts": {},
+    "sdk_calls": 1585,
+    "sdk_error_calls": [],
+    "complete_feedback_samples": 2763,
+    "feedback_gap_ms": {
+      "median": 5.000295000002097,
+      "maximum": 7.355893000067226
+    },
+    "sdk_clock_offset_range_ms": 0.0007152557373046875,
+    "first_error": null,
+    "first_ack": null,
+    "first_error_to_enobufs_ms": null,
+    "first_ack_to_enobufs_ms": null,
+    "interface_delta": {
+      "rx_packets": 33445,
+      "rx_bytes": 267504,
+      "rx_errors": 0,
+      "rx_dropped": 0,
+      "tx_packets": 1585,
+      "tx_bytes": 0,
+      "tx_errors": 0,
+      "tx_dropped": 0
+    },
+    "recorder_error": null
+  }
+]
