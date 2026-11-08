@@ -1,0 +1,314 @@
+{
+  "status": "failed",
+  "error": "RuntimeError: Fresh complete joint feedback interrupted",
+  "completed_stages": [
+    "open",
+    "pregrasp",
+    "align",
+    "approach",
+    "grasp",
+    "lift",
+    "transfer",
+    "lower",
+    "release"
+  ],
+  "operator_confirmed_object_on_left": true,
+  "operator_reported_arm_disabled": true,
+  "controller_disable_time_observed": false,
+  "full_sequence_completed": false,
+  "stages": [
+    {
+      "stage": "open",
+      "completed": true,
+      "observed_duration_s": 1.5484220419998564
+    },
+    {
+      "stage": "pregrasp",
+      "completed": true,
+      "observed_duration_s": 0.725807788000111
+    },
+    {
+      "stage": "align",
+      "completed": true,
+      "observed_duration_s": 7.307558464999829
+    },
+    {
+      "stage": "approach",
+      "completed": true,
+      "observed_duration_s": 3.655898621999995
+    },
+    {
+      "stage": "grasp",
+      "completed": true,
+      "observed_duration_s": 1.744476948000056
+    },
+    {
+      "stage": "lift",
+      "completed": true,
+      "observed_duration_s": 10.236046332000114
+    },
+    {
+      "stage": "transfer",
+      "completed": true,
+      "observed_duration_s": 11.431039358000135
+    },
+    {
+      "stage": "lower",
+      "completed": true,
+      "observed_duration_s": 12.114739069000052
+    },
+    {
+      "stage": "release",
+      "completed": true,
+      "observed_duration_s": 1.544899722000082
+    },
+    {
+      "stage": "retreat",
+      "completed": false,
+      "observed_duration_s": 8.116558391999888
+    }
+  ],
+  "control_records": 4512,
+  "filter_active_samples": 248,
+  "filter_active_sample_fraction": 0.0549645390070922,
+  "filter_active_observed_seconds": 2.7023585310000726,
+  "qp_calls": 248,
+  "qp_nonconverged_calls": 0,
+  "filter_correction_l2_max_rad_s": 0.029529646120466803,
+  "tcp_error_rms_mm": 0.5852145325625631,
+  "tcp_error_max_mm": 2.163653243061413,
+  "active_tcp_error_rms_mm": 1.192076243297863,
+  "active_orientation_error_rms_deg": 0.07810333712452198,
+  "minimum_model_h_m": -2.185638884473831e-05,
+  "minimum_constraint_label": "table:payload/corner4",
+  "negative_samples": [
+    {
+      "control_row_index": 888,
+      "stage": "lift",
+      "monotonic_s": 1658.232807613,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010600407000083578
+    },
+    {
+      "control_row_index": 889,
+      "stage": "lift",
+      "monotonic_s": 1658.24340802,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.01062669799989635
+    },
+    {
+      "control_row_index": 890,
+      "stage": "lift",
+      "monotonic_s": 1658.254034718,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.01045298000008188
+    },
+    {
+      "control_row_index": 891,
+      "stage": "lift",
+      "monotonic_s": 1658.264487698,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.01048697600003834
+    },
+    {
+      "control_row_index": 892,
+      "stage": "lift",
+      "monotonic_s": 1658.274974674,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010557255999856352
+    },
+    {
+      "control_row_index": 893,
+      "stage": "lift",
+      "monotonic_s": 1658.28553193,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.01095692700005202
+    },
+    {
+      "control_row_index": 894,
+      "stage": "lift",
+      "monotonic_s": 1658.296488857,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010739344000057827
+    },
+    {
+      "control_row_index": 895,
+      "stage": "lift",
+      "monotonic_s": 1658.307228201,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010637948000066899
+    },
+    {
+      "control_row_index": 896,
+      "stage": "lift",
+      "monotonic_s": 1658.317866149,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010502617999918584
+    },
+    {
+      "control_row_index": 897,
+      "stage": "lift",
+      "monotonic_s": 1658.328368767,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010681218999934572
+    },
+    {
+      "control_row_index": 898,
+      "stage": "lift",
+      "monotonic_s": 1658.339049986,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010702977999926588
+    },
+    {
+      "control_row_index": 899,
+      "stage": "lift",
+      "monotonic_s": 1658.349752964,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010568990000138001
+    },
+    {
+      "control_row_index": 900,
+      "stage": "lift",
+      "monotonic_s": 1658.360321954,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010982503999912296
+    },
+    {
+      "control_row_index": 901,
+      "stage": "lift",
+      "monotonic_s": 1658.371304458,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.011339127000155713
+    },
+    {
+      "control_row_index": 902,
+      "stage": "lift",
+      "monotonic_s": 1658.382643585,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010592112999802339
+    },
+    {
+      "control_row_index": 903,
+      "stage": "lift",
+      "monotonic_s": 1658.393235698,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010566049000090061
+    },
+    {
+      "control_row_index": 904,
+      "stage": "lift",
+      "monotonic_s": 1658.403801747,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010639519000051223
+    },
+    {
+      "control_row_index": 905,
+      "stage": "lift",
+      "monotonic_s": 1658.414441266,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.01067925400002423
+    },
+    {
+      "control_row_index": 906,
+      "stage": "lift",
+      "monotonic_s": 1658.42512052,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010795664999932342
+    },
+    {
+      "control_row_index": 907,
+      "stage": "lift",
+      "monotonic_s": 1658.435916185,
+      "min_h_m": -3.469446951953614e-18,
+      "until_next_same_stage_sample_s": 0.010916824000105407
+    },
+    {
+      "control_row_index": 908,
+      "stage": "lift",
+      "monotonic_s": 1658.446833009,
+      "min_h_m": -2.185638884473831e-05,
+      "until_next_same_stage_sample_s": 0.010502405999886832
+    },
+    {
+      "control_row_index": 909,
+      "stage": "lift",
+      "monotonic_s": 1658.457335415,
+      "min_h_m": -2.185638884473831e-05,
+      "until_next_same_stage_sample_s": 0.010620969999990848
+    },
+    {
+      "control_row_index": 910,
+      "stage": "lift",
+      "monotonic_s": 1658.467956385,
+      "min_h_m": -2.185638884473831e-05,
+      "until_next_same_stage_sample_s": 0.01056165900013184
+    }
+  ],
+  "negative_sample_count": 23,
+  "negative_below_1nm_sample_count": 3,
+  "negative_observed_seconds": 0.24571043100013412,
+  "negative_below_1nm_observed_seconds": 0.03168503500000952,
+  "negative_duration_convention": "Left sample held until next sample in same stage, excluding unobserved interstage intervals; not external physical contact duration.",
+  "hold_minimum_model_h_m": -3.469446951953614e-18,
+  "hold_negative_samples": 20,
+  "minimum_applied_margin": 0.0001565760742694832,
+  "control_cycle_ms": {
+    "median": 10.679315499942277,
+    "p95": 11.412298199991255,
+    "maximum": 132.83119900006568
+  },
+  "feedback_callback_age_ms": {
+    "median": 3.511966000019129,
+    "p95": 6.302679050088498,
+    "maximum": 9.332947000075364
+  },
+  "qp_solve_ms": {
+    "median": 0.5036219999965397,
+    "p95": 1.1185449499521378,
+    "maximum": 1.5764839999974356
+  },
+  "raw_frames": 172152,
+  "can_error_frames": 0,
+  "can_error_counter_delta": {
+    "restarts": 0,
+    "bus_error": 0,
+    "arbitration_lost": 0,
+    "error_warning": 0,
+    "error_passive": 0,
+    "bus_off": 0
+  },
+  "sdk_send_calls": 30559,
+  "sdk_error_calls": 303,
+  "first_sdk_error": {
+    "time_s": "1794147493.6419718",
+    "send_start_s": "1701.524678523",
+    "phase": "retreat",
+    "arbitration_id": "0x184",
+    "dlc": "7",
+    "data_hex": "77737000000000",
+    "exception": "",
+    "send_end_s": "1701.524713328",
+    "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+  },
+  "last_normal_receive": {
+    "can_timestamp_s": "1794147493.3612695",
+    "receive_monotonic_s": "1701.245196357",
+    "phase": "retreat",
+    "arbitration_id": "0x2a3",
+    "is_rx": "1",
+    "is_error": "0",
+    "is_remote": "0",
+    "is_extended": "0",
+    "dlc": "8",
+    "data_hex": "000389640002bf20"
+  },
+  "last_normal_receive_local": "2026-11-08T22:18:13.361269+08:00",
+  "exception_local": "2026-11-08T22:18:13.580969+08:00",
+  "first_sdk_error_local": "2026-11-08T22:18:13.641972+08:00",
+  "usbip_disconnect_monotonic_s": 1761.230416,
+  "receive_end_to_usbip_disconnect_s": 59.985219643000164,
+  "usbip_windows_event_local": "2026-11-08T22:19:13+08:00",
+  "operator_usb_or_wsl_intervention": "没有拔插，也没有关闭 WSL",
+  "wsl_keepalive_observation": "PID568 bash --noprofile --norc -i remained alive; no matching VM restart in kernel log",
+  "interpretation": "USB data/transfer path stalled and later disconnected without operator intervention. This does not isolate WSL kernel vs Windows USB/IP vs adapter/USB hardware, nor explain earlier CAN ACK errors."
+}

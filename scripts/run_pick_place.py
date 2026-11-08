@@ -283,7 +283,10 @@ def main():
                     while time.monotonic()<stop_until:
                         device.velocity([0.]*6)
                     report["stop_action"]="zero CPV requested after software error; no reset or mode switch"
-                    print("已发送零CPV速度停止请求；未自动切换模式或复位。",flush=True)
+                    comm_error=device.robot.get_comm_error()
+                    report["stop_comm_error"]=str(comm_error) if comm_error is not None else None
+                    print("已请求零CPV速度停止；SDK通信错误:",report["stop_comm_error"],
+                          "；未自动切换模式或复位。",flush=True)
                 except Exception as stop_error:
                     report["stop_send_error"]=str(stop_error)
                     report["stop_send_errors"]=device.emergency_stop()

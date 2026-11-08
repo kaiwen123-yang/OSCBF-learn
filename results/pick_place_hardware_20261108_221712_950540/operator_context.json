@@ -1,0 +1,10 @@
+{
+  "scene_before_run": "已在左侧放下并摆回右侧，范围清空",
+  "latest_operator_statement": "方块已放左侧，但是机械臂疑似失去控制，无法回零，现在处于失能状态",
+  "object_transfer_to_left_confirmed": true,
+  "retreat_or_return_complete": false,
+  "current_disabled_source": "Operator observation after feedback loss; no fresh SDK confirmation",
+  "usb_or_wsl_intervention_between_221813_and_221913": "没有拔插，也没有关闭 WSL",
+  "controller_reset_by_agent": false,
+  "motion_after_failure_by_agent": false
+}

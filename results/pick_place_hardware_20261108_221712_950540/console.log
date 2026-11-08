@@ -1,0 +1,37 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/pick_place_hardware_20261108_221712_950540
+执行参数： {'speed_scale': 1.0, 'descent_speed_scale': 1.0, 'saved_joint_velocity_limit_rad_s': 0.1, 'method': 'oscbf'}
+open: actual gripper width=39.4mm force=0.14N
+pregrasp [oscbf]: phase=0.00/0.00s, joint error=0.069deg, min h=0.089814m, QP=nominal_quantized_feasible
+align [oscbf]: phase=0.00/6.46s, joint error=0.069deg, min h=0.089814m, QP=nominal_quantized_feasible
+align [oscbf]: phase=1.93/6.46s, joint error=0.087deg, min h=0.065225m, QP=nominal_quantized_feasible
+align [oscbf]: phase=3.91/6.46s, joint error=0.066deg, min h=0.039261m, QP=nominal_quantized_feasible
+align [oscbf]: phase=5.89/6.46s, joint error=0.062deg, min h=0.015615m, QP=nominal_quantized_feasible
+approach [oscbf]: phase=0.00/2.64s, joint error=0.087deg, min h=0.039841m, QP=nominal_quantized_feasible
+approach [oscbf]: phase=1.97/2.64s, joint error=0.077deg, min h=0.013447m, QP=nominal_quantized_feasible
+grasp: actual gripper width=24.7mm force=-1.04N
+lift [oscbf]: phase=0.00/9.11s, joint error=0.171deg, min h=-0.000000m, QP=nominal_quantized_feasible
+lift [oscbf]: phase=1.67/9.11s, joint error=0.052deg, min h=0.021543m, QP=nominal_quantized_feasible
+lift [oscbf]: phase=3.66/9.11s, joint error=0.064deg, min h=0.038607m, QP=nominal_quantized_feasible
+lift [oscbf]: phase=5.64/9.11s, joint error=0.061deg, min h=0.038607m, QP=nominal_quantized_feasible
+lift [oscbf]: phase=7.63/9.11s, joint error=0.052deg, min h=0.038607m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=0.00/10.52s, joint error=0.056deg, min h=0.038607m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=1.90/10.52s, joint error=0.079deg, min h=0.038607m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=3.89/10.52s, joint error=0.105deg, min h=0.038607m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=5.87/10.52s, joint error=0.049deg, min h=0.038607m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=7.85/10.52s, joint error=0.047deg, min h=0.038607m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=9.83/10.52s, joint error=0.055deg, min h=0.038607m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=0.00/9.11s, joint error=0.047deg, min h=0.038607m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=1.94/9.11s, joint error=0.097deg, min h=0.038607m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=3.93/9.11s, joint error=0.097deg, min h=0.038607m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=5.93/9.11s, joint error=0.031deg, min h=0.038607m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=7.92/9.11s, joint error=0.081deg, min h=0.015359m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=9.10/9.11s, joint error=0.242deg, min h=0.000873m, QP=qp_converged
+release: actual gripper width=39.3mm force=0.17N
+retreat [oscbf]: phase=0.00/9.11s, joint error=0.234deg, min h=0.005484m, QP=nominal_quantized_feasible
+retreat [oscbf]: phase=1.68/9.11s, joint error=0.029deg, min h=0.027110m, QP=nominal_quantized_feasible
+retreat [oscbf]: phase=3.68/9.11s, joint error=0.037deg, min h=0.053410m, QP=nominal_quantized_feasible
+retreat [oscbf]: phase=5.67/9.11s, joint error=0.041deg, min h=0.079543m, QP=nominal_quantized_feasible
+驱动使能反馈待确认：参考暂停，发送零速度等待新反馈。
+已发送零CPV速度停止请求；未自动切换模式或复位。
+RuntimeError: Fresh complete joint feedback interrupted
+仅继续采集停止后的状态 3 秒，不发送新的运动/复位/使能指令。

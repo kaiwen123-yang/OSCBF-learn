@@ -1,0 +1,6 @@
+{
+  "TimeCreated": "2026-11-08T22:19:13.3438502+08:00",
+  "Id": 2,
+  "ProviderName": "usbipd-win",
+  "Message": "Category: Usbipd.ConnectedClient\r\nEventId: 2\r\n\r\nClient 172.27.161.212 released device at 3-2 (USB\\VID_1D50&PID_606F\\004F00374548570120353731).\r\n"
+}
