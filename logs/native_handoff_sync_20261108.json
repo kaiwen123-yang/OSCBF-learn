@@ -1,0 +1,108 @@
+{
+  "created_at": "2026-11-08T22:39:44.246892+08:00",
+  "release_tag": "native-oscbf-retest-20261108",
+  "control_base_commit": "d003fe9dfae3a88d09429f6ee4bcd5c8e4a7800b",
+  "recent_result_inventory": [
+    {
+      "directory": "results/gripper_stop_diagnosis_20261108",
+      "file_count": 5,
+      "not_tracked_before_handoff_commit": []
+    },
+    {
+      "directory": "results/home_zero_diagnostics_20261108_190550_767544",
+      "file_count": 21,
+      "not_tracked_before_handoff_commit": []
+    },
+    {
+      "directory": "results/home_zero_diagnostics_20261108_214707_082496",
+      "file_count": 21,
+      "not_tracked_before_handoff_commit": []
+    },
+    {
+      "directory": "results/home_zero_diagnostics_20261108_215829_867857",
+      "file_count": 20,
+      "not_tracked_before_handoff_commit": []
+    },
+    {
+      "directory": "results/pick_place_hardware_20261108_175541_066896",
+      "file_count": 23,
+      "not_tracked_before_handoff_commit": []
+    },
+    {
+      "directory": "results/pick_place_hardware_20261108_220605_911596",
+      "file_count": 19,
+      "not_tracked_before_handoff_commit": []
+    },
+    {
+      "directory": "results/pick_place_hardware_20261108_220631_617216",
+      "file_count": 32,
+      "not_tracked_before_handoff_commit": []
+    },
+    {
+      "directory": "results/pick_place_hardware_20261108_221329_143977",
+      "file_count": 19,
+      "not_tracked_before_handoff_commit": []
+    },
+    {
+      "directory": "results/pick_place_hardware_20261108_221712_950540",
+      "file_count": 34,
+      "not_tracked_before_handoff_commit": []
+    }
+  ],
+  "frozen_validation_raw_data_comparison": [
+    {
+      "path": "results/pick_place_hardware_20261107_190744_717616/raw_can.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_190744_717616/sdk_tx.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_190744_717616/feedback.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_190744_717616/commands.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_190744_717616/driver_feedback.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_190744_717616/control.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_195151_855869/raw_can.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_195151_855869/sdk_tx.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_195151_855869/feedback.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_195151_855869/commands.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_195151_855869/driver_feedback.csv",
+      "same_bytes_as_frozen_copy": true
+    },
+    {
+      "path": "results/pick_place_hardware_20261107_195151_855869/control.csv",
+      "same_bytes_as_frozen_copy": true
+    }
+  ],
+  "verification": "Shell syntax and no-CAN plan preview with OSCBF_PYTHON override; control modules and both saved plans unchanged from d003fe9",
+  "native_machine_accessed": false,
+  "native_environment_changed": false,
+  "robot_commands_sent": false,
+  "video": "No archived continuous video exists in this checkout",
+  "environment_binary_delivery": "Existing envs/build artifacts are not copied; use existing native environment"
+}

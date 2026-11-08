@@ -1,0 +1,125 @@
+{
+  "created_at": "2026-11-08T22:38:24.309256+08:00",
+  "purpose": "Native Ubuntu direct USB-CAN rerun using unchanged saved paths and task parameters",
+  "release_tag": "native-oscbf-retest-20261108",
+  "source_branch": "codex/wsl-setup",
+  "control_source_base_commit": "d003fe9dfae3a88d09429f6ee4bcd5c8e4a7800b",
+  "reference_wsl_run": {
+    "path": "results/pick_place_hardware_20261108_221712_950540",
+    "code_commit": "f3df8a6",
+    "result": "Object placed left, retreat interrupted; 9/11 stages. No complete return."
+  },
+  "difference_from_reference_execution_code": "d003fe9 only made software-stop request/error reporting explicit; subsequent native handoff only adds interpreter override and documentation. No control or task parameter changes.",
+  "python_historical_native": "/home/kaiwen/research/OSCBF-research/envs/oscbf/bin/python",
+  "python_path_source": "results/pick_place_hardware_20261106_220347_670955/recording.json",
+  "environment_action": "Reuse existing interpreter and fixed upstream sources; no install/upgrade/configuration change",
+  "preparation": {
+    "plan": "results/pick_place_plan_20261104_224921_126900/task.json",
+    "sha256": "1dc948e1a8358d1c1a6739a95e39b99a537d44444cddbba61c2efaa60cef9df8",
+    "method": "baseline",
+    "start": "six-joint zero",
+    "stop_after": "pregrasp",
+    "speed_scale": 1.0,
+    "descent_speed_scale": 1.0,
+    "joint_velocity_limit_rad_s": 0.2
+  },
+  "full_task": {
+    "plan": "results/pick_place_plan_20261107_193629_186524/task.json",
+    "sha256": "5b970e4f5a2bd49f56ee81a3ddc945dd1b8c71b0e7e055c7dd2b7e6c5267f3a0",
+    "method": "oscbf",
+    "speed_scale": 1.0,
+    "descent_speed_scale": 1.0,
+    "joint_velocity_limit_rad_s": 0.1,
+    "initial_q_rad": [
+      -0.2605303038464489,
+      1.6425965892759393,
+      -1.273092172306444,
+      -6.458078954477743e-05,
+      1.288510397280541,
+      -0.2605389068397051
+    ],
+    "stages": [
+      "open",
+      "pregrasp",
+      "align",
+      "approach",
+      "grasp",
+      "lift",
+      "transfer",
+      "lower",
+      "release",
+      "retreat",
+      "return_initial"
+    ],
+    "return_target": "right pregrasp posture, not six-joint zero",
+    "record_diagnostics": true
+  },
+  "scene": {
+    "frame": "base_link",
+    "cube_size_m": 0.02,
+    "pick_xy_m": [
+      0.3,
+      -0.08
+    ],
+    "place_xy_m": [
+      0.3,
+      0.08
+    ],
+    "table_top_z_m": -0.012,
+    "tcp_offset_m": [
+      0.0,
+      0.0,
+      0.1425
+    ],
+    "tcp_status": "manufacturer_nominal_tip_not_field_verified",
+    "obstacles": [],
+    "gripper_open_m": 0.04,
+    "gripper_close_command_m": 0.015,
+    "gripper_force_n": 1.0
+  },
+  "control": {
+    "cpv_period_s": 0.01,
+    "tracking_tolerance_rad": 0.01,
+    "arrival_tolerance_rad": 0.002,
+    "phase_policy": "adaptive_tangential_v3",
+    "velocity_quantization_rad_s": 0.001,
+    "kp_joint": 2.0,
+    "alpha_geometry": 2.0,
+    "alpha_joint": 3.0
+  },
+  "control_source_sha256": {
+    "scripts/run_pick_place.py": "aa848c87cae878e608e7bf796b11a324fb7b59862b65d682c30a628934d8e643",
+    "piper_oscbf/device.py": "f62f15320bc6912e9905fbf258356701a1101e427cde2cc844d87d894d3f2d84",
+    "piper_oscbf/pacing.py": "dfd563dfd7c0101a6eb3cac0d0bcfc044bd75f79f2021ea5955e215709c45b19",
+    "piper_oscbf/task_reference.py": "7a2ec137c192c65a3fab95f67d6d53a985294fbf6816c58bbef9c1ca302a7c95",
+    "piper_oscbf/task_filter.py": "0df4c0aee9e6eaa350daf7c90e4284e10b845e13fc210ef81d5a631eaa0a3ed5",
+    "piper_oscbf/task_geometry.py": "186e8b1618dbc1f6d91cabbb3b3d322080dc7ff545f9f40c6477a0f1b63127ca",
+    "piper_oscbf/task_session.py": "63994442f6ff047ead5b0583f72ef417c2dba82f9b96e51e27d38c05698337fa",
+    "piper_oscbf/task_execution.py": "9b6650148cad9d6146d540e0ebf83f8af39444855d3a0ff4e5e552753ab6af5d"
+  },
+  "upstream_sources": [
+    {
+      "path": "src/oscbf",
+      "url": "https://github.com/StanfordASL/oscbf.git",
+      "commit": "6082329f8e1d61ee8e875a63a5cd80a14d513e12"
+    },
+    {
+      "path": "src/pyAgxArm",
+      "url": "https://github.com/agilexrobotics/pyAgxArm.git",
+      "commit": "d90e234ba8e408cfa964b38aa9120b3131fc9f85"
+    },
+    {
+      "path": "ros_ws/src/agx_arm_ros",
+      "url": "https://github.com/agilexrobotics/agx_arm_ros.git",
+      "commit": "286633e0d2edb038ee3a1047d9feb7f614a1c076"
+    },
+    {
+      "path": "ros_ws/src/agx_arm_ros/src/agx_arm_description/agx_arm_urdf",
+      "url": "https://github.com/agilexrobotics/agx_arm_urdf.git",
+      "commit": "680fa925cd00db7e2628563d2edc5540963045de"
+    }
+  ],
+  "enforcement": "Documentation/record only; not a preflight gate or runtime hash check",
+  "native_hardware_test_performed": false,
+  "video_archive": null
+}

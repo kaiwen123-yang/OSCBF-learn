@@ -1,5 +1,7 @@
 # 固定方块抓放入口
 
+原生 Ubuntu 22.04 接续命令、已有环境复用和两种起点说明见 [NATIVE_UBUNTU_CONTINUE.md](NATIVE_UBUNTU_CONTINUE.md)。固定接续标签为 `native-oscbf-retest-20261108`；本次不重装环境或重新规划。
+
 ## 2026-11-08 当前完整 OSCBF 入口
 
 从已确认的六轴零位开始，先复用原基线计划的 open/pregrasp（CPV 上限 0.20 rad/s），再运行非奇异工作区计划的完整 OSCBF 抓放（上限 0.10 rad/s），结束返回右侧预抓取姿态。方块仍按已确认场景在右侧，额外障碍为空。该入口不会回零、reset 或更改编码器零点。
