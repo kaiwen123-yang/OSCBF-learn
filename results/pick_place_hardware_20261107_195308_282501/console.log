@@ -1,0 +1,13 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/pick_place_hardware_20261107_195308_282501
+执行参数： {'speed_scale': 1.0, 'descent_speed_scale': 1.0, 'saved_joint_velocity_limit_rad_s': 0.1, 'method': 'oscbf'}
+open: actual gripper width=39.4mm force=0.13N
+pregrasp [oscbf]: phase=0.00/0.00s, joint error=0.113deg, min h=0.089467m, QP=nominal_quantized_feasible
+align [oscbf]: phase=0.00/6.46s, joint error=0.113deg, min h=0.089467m, QP=nominal_quantized_feasible
+align [oscbf]: phase=1.82/6.46s, joint error=0.047deg, min h=0.066101m, QP=nominal_quantized_feasible
+align [oscbf]: phase=3.82/6.46s, joint error=0.051deg, min h=0.040787m, QP=nominal_quantized_feasible
+align [oscbf]: phase=5.81/6.46s, joint error=0.052deg, min h=0.016201m, QP=nominal_quantized_feasible
+approach [oscbf]: phase=0.00/2.64s, joint error=0.069deg, min h=0.039631m, QP=nominal_quantized_feasible
+approach [oscbf]: phase=1.81/2.64s, joint error=0.311deg, min h=0.016772m, QP=nominal_quantized_feasible
+任务已停止：驱动状态正常，已发零CPV速度，未请求电子急停。
+RuntimeError: Arm moved outside arrival tolerance during fixed-pose gripper actuation
+仅继续采集停止后的状态 3 秒，不发送新的运动/复位/使能指令。

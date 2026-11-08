@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-11-07T19:57:20.473136+08:00",
+  "argv": [
+    "scripts/run_pick_place.py",
+    "results/return_only_plan_20261107_195711/task.json",
+    "--method",
+    "baseline",
+    "--record-diagnostics",
+    "--execute"
+  ],
+  "python": "/home/kaiwen/OSCBF-learn/envs/oscbf/bin/python",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1"
+  },
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "interface_before": {
+    "rx_packets": 7337109,
+    "rx_bytes": 58329540,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 50928,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "state_period_s": 0.05,
+  "raw_direction_note": "SDK disables local loopback: raw_can.csv is received traffic; sdk_tx.csv records send calls, not proof of firmware execution",
+  "state_note": "SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame",
+  "git_commit": "38797ccea59bb358ad21fba857bb88a1c927d475",
+  "tracked_source_changes": [],
+  "source_sha256": {
+    "scripts/run_pick_place.py": "d672e6334a5e3f4f0f7375d115b9af91941e3505db1f9b35de3f25648f2dbeb1",
+    "piper_oscbf/device.py": "d7728ff2bf4fac48713833c54441f021f5fa495a76848707138aa57b0d12d996",
+    "piper_oscbf/pacing.py": "feeb216588c2904bc3de65f7c9cd90f729775f9d27e6c7166f34f1fb19fa48d1",
+    "piper_oscbf/recording.py": "3d1fcc925f1b0de2cbe5eb85b1a9775aa7ee120c141adc0b282a3bd59a9b255b"
+  },
+  "ended_at": "2026-11-07T19:58:14.387714+08:00",
+  "raw_frames": 159685,
+  "state_snapshots": 1066,
+  "sdk_send_calls": 29463,
+  "recorder_error": null,
+  "worker_stopped": true,
+  "interface_after": {
+    "rx_packets": 7496988,
+    "rx_bytes": 59402192,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 80391,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "interface_delta": {
+    "rx_packets": 159879,
+    "rx_bytes": 1072652,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 29463,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  }
+}

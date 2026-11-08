@@ -1,0 +1,70 @@
+{
+  "started_at": "2026-11-07T19:53:10.613257+08:00",
+  "argv": [
+    "scripts/run_pick_place.py",
+    "results/pick_place_plan_20261107_193629_186524/task.json",
+    "--method",
+    "oscbf",
+    "--record-diagnostics",
+    "--execute"
+  ],
+  "python": "/home/kaiwen/OSCBF-learn/envs/oscbf/bin/python",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1"
+  },
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "interface_before": {
+    "rx_packets": 6725503,
+    "rx_bytes": 53487987,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 43707,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "state_period_s": 0.05,
+  "raw_direction_note": "SDK disables local loopback: raw_can.csv is received traffic; sdk_tx.csv records send calls, not proof of firmware execution",
+  "state_note": "SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame",
+  "git_commit": "38797ccea59bb358ad21fba857bb88a1c927d475",
+  "tracked_source_changes": [],
+  "source_sha256": {
+    "scripts/run_pick_place.py": "d672e6334a5e3f4f0f7375d115b9af91941e3505db1f9b35de3f25648f2dbeb1",
+    "piper_oscbf/device.py": "d7728ff2bf4fac48713833c54441f021f5fa495a76848707138aa57b0d12d996",
+    "piper_oscbf/pacing.py": "feeb216588c2904bc3de65f7c9cd90f729775f9d27e6c7166f34f1fb19fa48d1",
+    "piper_oscbf/recording.py": "3d1fcc925f1b0de2cbe5eb85b1a9775aa7ee120c141adc0b282a3bd59a9b255b",
+    "piper_oscbf/task_filter.py": "4c623baa20a31d380652c75ab22626d3d6f8afeaffc941598f0cfeaf42b2dd04",
+    "piper_oscbf/task_geometry.py": "3acb1235c1fa503e59157afc31975f09b78399a73a9834662b130ea96da7386d",
+    "piper_oscbf/task_reference.py": "c7b33c98355d23e53f5eae682d1c3b366e7afa50eb34627478085c8008f07770",
+    "piper_oscbf/task_session.py": "559d38b86dcebc6650e9d8db739e974287c2c0c61eddb47712aac79f0a70cf85",
+    "piper_oscbf/task_execution.py": "4774df556b720c93e105ea82bfa833daff7a2d04895cf2b0f74503f896b9d3bf",
+    "piper_oscbf/preflight.py": "585e5fa47b99f01d0b6035e8fd8c671d588c9835ca3d42529e209fcabeee56d7"
+  },
+  "ended_at": "2026-11-07T19:53:28.553392+08:00",
+  "raw_frames": 50589,
+  "state_snapshots": 354,
+  "sdk_send_calls": 7221,
+  "recorder_error": null,
+  "worker_stopped": true,
+  "interface_after": {
+    "rx_packets": 6776195,
+    "rx_bytes": 53843156,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 50928,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "interface_delta": {
+    "rx_packets": 50692,
+    "rx_bytes": 355169,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 7221,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  }
+}

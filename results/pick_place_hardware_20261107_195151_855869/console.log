@@ -1,0 +1,15 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-cpv-validation/results/pick_place_hardware_20261107_195151_855869
+执行参数： {'speed_scale': 1.0, 'descent_speed_scale': 1.0, 'saved_joint_velocity_limit_rad_s': 0.2}
+open: actual gripper width=39.4mm force=0.13N
+pregrasp: 0.0/16.6s, max joint error=0.090deg
+pregrasp: 1.6/16.6s, max joint error=0.073deg
+pregrasp: 3.4/16.6s, max joint error=0.067deg
+pregrasp: 5.2/16.6s, max joint error=0.064deg
+pregrasp: 7.0/16.6s, max joint error=0.060deg
+pregrasp: 8.8/16.6s, max joint error=0.090deg
+pregrasp: 10.5/16.6s, max joint error=0.071deg
+pregrasp: 12.3/16.6s, max joint error=0.040deg
+pregrasp: 14.1/16.6s, max joint error=0.058deg
+pregrasp: 15.9/16.6s, max joint error=0.061deg
+PIPER_TASK_FINISHED: staged_stop zero CPV velocity; no switch to MOVE_J
+仅继续采集停止后的状态 3 秒，不发送新的运动/复位/使能指令。

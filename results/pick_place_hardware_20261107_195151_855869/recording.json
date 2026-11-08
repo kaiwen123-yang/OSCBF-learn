@@ -1,0 +1,68 @@
+{
+  "started_at": "2026-11-07T19:51:51.856975+08:00",
+  "argv": [
+    "scripts/run_pick_place.py",
+    "results/pick_place_plan_20261104_224921_126900/task.json",
+    "--speed-scale",
+    "1",
+    "--descent-speed-scale",
+    "1",
+    "--stop-after",
+    "pregrasp",
+    "--record-diagnostics",
+    "--execute"
+  ],
+  "python": "/home/kaiwen/OSCBF-cpv-validation/envs/oscbf/bin/python",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1"
+  },
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "interface_before": {
+    "rx_packets": 6523121,
+    "rx_bytes": 51951745,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 31892,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "state_period_s": 0.05,
+  "raw_direction_note": "SDK disables local loopback: raw_can.csv is received traffic; sdk_tx.csv records send calls, not proof of firmware execution",
+  "state_note": "SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame",
+  "git_commit": "90a94820c284fbbc60ffa424a409419182ba3b76",
+  "tracked_source_changes": [],
+  "source_sha256": {
+    "scripts/run_pick_place.py": "165368826dc2b19a6e6d1f5e6d2ea4ca61ea6cf888d693f25b0ce9c02bd9e885",
+    "piper_oscbf/device.py": "d7728ff2bf4fac48713833c54441f021f5fa495a76848707138aa57b0d12d996",
+    "piper_oscbf/pacing.py": "feeb216588c2904bc3de65f7c9cd90f729775f9d27e6c7166f34f1fb19fa48d1",
+    "piper_oscbf/recording.py": "3d1fcc925f1b0de2cbe5eb85b1a9775aa7ee120c141adc0b282a3bd59a9b255b"
+  },
+  "ended_at": "2026-11-07T19:52:16.809948+08:00",
+  "raw_frames": 72054,
+  "state_snapshots": 493,
+  "sdk_send_calls": 11815,
+  "recorder_error": null,
+  "worker_stopped": true,
+  "interface_after": {
+    "rx_packets": 6595285,
+    "rx_bytes": 52446455,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 43707,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "interface_delta": {
+    "rx_packets": 72164,
+    "rx_bytes": 494710,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 11815,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  }
+}

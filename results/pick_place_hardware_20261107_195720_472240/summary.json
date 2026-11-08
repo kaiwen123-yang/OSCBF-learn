@@ -1,0 +1,256 @@
+{
+  "status": "sequence_completed",
+  "error": null,
+  "controller": "MoveIt path + joint CPV tracking (not OSCBF)",
+  "source_plan": "/home/kaiwen/OSCBF-learn/results/return_only_plan_20261107_195711/task.json",
+  "completed_stages": [
+    "withdraw_from_grasp",
+    "raise_to_pregrasp",
+    "return_initial"
+  ],
+  "speed_scale": 1.0,
+  "joint_velocity_limit_rad_s": 0.1,
+  "descent_speed_scale": 1.0,
+  "stage_velocity_limits_rad_s": {
+    "approach": 0.1,
+    "lower": 0.1
+  },
+  "object_transfer_success": "not_applicable_return_only",
+  "cpv_period_s": 0.01,
+  "method": "baseline",
+  "final_q_rad": [
+    0.0003665191429188092,
+    -0.0004014257279586958,
+    0.0008901179185171081,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "final_mode_feedback": 5,
+  "normal_stop_action": "zero CPV velocity; no switch to MOVE_J",
+  "post_stop_state": {
+    "time_s": 1794052694.3262084,
+    "monotonic_s": 3123.730359689,
+    "phase": "zero_velocity",
+    "joint": {
+      "timestamp_s": 1794052694.326015,
+      "data": [
+        0.0003665191429188092,
+        -0.0004014257279586958,
+        0.0008901179185171081,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "arm": {
+      "timestamp_s": 1794052694.3254523,
+      "data": {
+        "ctrl_mode": 1,
+        "arm_status": 0,
+        "mode_feedback": 5,
+        "teach_status": 0,
+        "motion_status": 0,
+        "trajectory_num": 0,
+        "err_status": {
+          "joint_1_angle_limit": false,
+          "joint_2_angle_limit": false,
+          "joint_3_angle_limit": false,
+          "joint_4_angle_limit": false,
+          "joint_5_angle_limit": false,
+          "joint_6_angle_limit": false,
+          "communication_status_joint_1": false,
+          "communication_status_joint_2": false,
+          "communication_status_joint_3": false,
+          "communication_status_joint_4": false,
+          "communication_status_joint_5": false,
+          "communication_status_joint_6": false
+        }
+      }
+    },
+    "drivers": [
+      {
+        "timestamp_s": 1794052694.2864919,
+        "data": {
+          "vol": 23.0,
+          "foc_temp": 35.0,
+          "motor_temp": 27.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "timestamp_s": 1794052694.2765036,
+        "data": {
+          "vol": 23.0,
+          "foc_temp": 34.0,
+          "motor_temp": 28.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "timestamp_s": 1794052694.3164852,
+        "data": {
+          "vol": 23.0,
+          "foc_temp": 38.0,
+          "motor_temp": 33.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "timestamp_s": 1794052694.3067315,
+        "data": {
+          "vol": 23.0,
+          "foc_temp": 39.0,
+          "motor_temp": 33.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "timestamp_s": 1794052694.2968714,
+        "data": {
+          "vol": 23.0,
+          "foc_temp": 42.0,
+          "motor_temp": 37.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      },
+      {
+        "timestamp_s": 1794052694.2872093,
+        "data": {
+          "vol": 23.0,
+          "foc_temp": 39.0,
+          "motor_temp": 33.0,
+          "foc_status": {
+            "voltage_too_low": false,
+            "motor_overheating": false,
+            "driver_overcurrent": false,
+            "driver_overheating": false,
+            "collision_status": false,
+            "driver_error_status": false,
+            "driver_enable_status": true,
+            "stall_status": false
+          },
+          "bus_current": 0.0
+        }
+      }
+    ],
+    "motors": [
+      {
+        "timestamp_s": 1794052694.316133,
+        "data": {
+          "velocity": 0.0,
+          "current": 0.094,
+          "position": 0.0,
+          "torque": 0.44415
+        }
+      },
+      {
+        "timestamp_s": 1794052694.3164768,
+        "data": {
+          "velocity": 0.0,
+          "current": 0.604,
+          "position": 0.009000000000000001,
+          "torque": 2.4971625
+        }
+      },
+      {
+        "timestamp_s": 1794052694.3164818,
+        "data": {
+          "velocity": 0.0,
+          "current": -1.006,
+          "position": -0.006,
+          "torque": -4.753349999999999
+        }
+      },
+      {
+        "timestamp_s": 1794052694.3166234,
+        "data": {
+          "velocity": 0.0,
+          "current": -0.013000000000000001,
+          "position": 0.001,
+          "torque": -0.016018667683200004
+        }
+      },
+      {
+        "timestamp_s": 1794052694.3169806,
+        "data": {
+          "velocity": 0.0,
+          "current": -0.923,
+          "position": -0.006,
+          "torque": -1.1373254055072002
+        }
+      },
+      {
+        "timestamp_s": 1794052694.3169866,
+        "data": {
+          "velocity": 0.0,
+          "current": -0.025,
+          "position": -0.003,
+          "torque": -0.0308050344
+        }
+      }
+    ],
+    "communication_error": null
+  },
+  "diagnostics": {
+    "raw_frames": 159685,
+    "state_snapshots": 1066,
+    "recorder_error": null,
+    "post_stop_observation_s": 3.0
+  },
+  "last_driver_check": null,
+  "driver_feedback_pauses": [],
+  "task_purpose": "User-requested return only, then pause entire project",
+  "gripper_operation": "No gripper commands during this return",
+  "reset_sent": false
+}

@@ -1,0 +1,29 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/pick_place_hardware_20261107_195720_472240
+执行参数： {'speed_scale': 1.0, 'descent_speed_scale': 1.0, 'saved_joint_velocity_limit_rad_s': 0.1, 'method': 'baseline'}
+withdraw_from_grasp: 0.0/2.6s, max joint error=0.211deg
+withdraw_from_grasp: 1.3/2.6s, max joint error=0.076deg
+raise_to_pregrasp: 0.0/6.5s, max joint error=0.062deg
+raise_to_pregrasp: 1.8/6.5s, max joint error=0.070deg
+raise_to_pregrasp: 3.6/6.5s, max joint error=0.060deg
+raise_to_pregrasp: 5.4/6.5s, max joint error=0.066deg
+return_initial: 0.0/33.0s, max joint error=0.092deg
+return_initial: 1.7/33.0s, max joint error=0.055deg
+return_initial: 3.5/33.0s, max joint error=0.025deg
+return_initial: 5.3/33.0s, max joint error=0.068deg
+return_initial: 7.1/33.0s, max joint error=0.049deg
+return_initial: 8.9/33.0s, max joint error=0.025deg
+return_initial: 10.7/33.0s, max joint error=0.042deg
+return_initial: 12.5/33.0s, max joint error=0.050deg
+return_initial: 14.3/33.0s, max joint error=0.071deg
+return_initial: 16.1/33.0s, max joint error=0.054deg
+return_initial: 17.9/33.0s, max joint error=0.070deg
+return_initial: 19.6/33.0s, max joint error=0.039deg
+return_initial: 21.4/33.0s, max joint error=0.025deg
+return_initial: 23.3/33.0s, max joint error=0.052deg
+return_initial: 25.1/33.0s, max joint error=0.072deg
+return_initial: 26.9/33.0s, max joint error=0.079deg
+return_initial: 28.7/33.0s, max joint error=0.058deg
+return_initial: 30.5/33.0s, max joint error=0.079deg
+return_initial: 32.2/33.0s, max joint error=0.047deg
+PIPER_TASK_FINISHED: sequence_completed zero CPV velocity; no switch to MOVE_J
+仅继续采集停止后的状态 3 秒，不发送新的运动/复位/使能指令。
