@@ -1,0 +1,71 @@
+{
+  "started_at": "2026-11-08T22:06:05.912309+08:00",
+  "argv": [
+    "scripts/run_pick_place.py",
+    "results/pick_place_plan_20261104_224921_126900/task.json",
+    "--method",
+    "baseline",
+    "--speed-scale",
+    "1",
+    "--descent-speed-scale",
+    "1",
+    "--stop-after",
+    "pregrasp",
+    "--record-diagnostics",
+    "--execute"
+  ],
+  "python": "/home/kaiwen/OSCBF-learn/envs/oscbf/bin/python",
+  "versions": {
+    "pyAgxArm": "1.0.0",
+    "python-can": "4.6.1"
+  },
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "interface_before": {
+    "rx_packets": 1284055,
+    "rx_bytes": 10270308,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 1586,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "state_period_s": 0.05,
+  "kernel_timestamp_clock": "SocketCAN CLOCK_REALTIME, preserved for diagnostics only",
+  "raw_direction_note": "SDK disables local loopback: raw_can.csv is received traffic; sdk_tx.csv records send calls, not proof of firmware execution",
+  "state_note": "SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame",
+  "git_commit": "1c13168b56c71e22c4e193224d1a8fd5e6e85ae7",
+  "tracked_source_changes": [],
+  "source_sha256": {
+    "scripts/run_pick_place.py": "b14dbecb68f062e8c316fc0982b724d44a4793a9d6e716da75675be2e3617ea6",
+    "piper_oscbf/device.py": "f62f15320bc6912e9905fbf258356701a1101e427cde2cc844d87d894d3f2d84",
+    "piper_oscbf/pacing.py": "dfd563dfd7c0101a6eb3cac0d0bcfc044bd75f79f2021ea5955e215709c45b19",
+    "piper_oscbf/recording.py": "cf858b565b91d4ba34434260572a318bcf920a3082a02754dfe9ed0a33e6a60f"
+  },
+  "ended_at": "2026-11-08T22:06:30.670926+08:00",
+  "raw_frames": 71336,
+  "state_snapshots": 490,
+  "sdk_send_calls": 11503,
+  "recorder_error": null,
+  "worker_stopped": true,
+  "interface_after": {
+    "rx_packets": 1355459,
+    "rx_bytes": 10761189,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 13089,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "interface_delta": {
+    "rx_packets": 71404,
+    "rx_bytes": 490881,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 11503,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  }
+}

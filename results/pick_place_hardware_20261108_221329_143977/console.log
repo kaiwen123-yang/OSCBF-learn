@@ -1,0 +1,17 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/pick_place_hardware_20261108_221329_143977
+执行参数： {'speed_scale': 1.0, 'descent_speed_scale': 1.0, 'saved_joint_velocity_limit_rad_s': 0.1, 'method': 'baseline'}
+release: actual gripper width=39.3mm force=0.16N
+retreat: 0.0/9.1s, max joint error=0.060deg
+retreat: 1.7/9.1s, max joint error=0.055deg
+retreat: 3.5/9.1s, max joint error=0.061deg
+retreat: 5.3/9.1s, max joint error=0.074deg
+retreat: 7.0/9.1s, max joint error=0.052deg
+retreat: 8.8/9.1s, max joint error=0.058deg
+return_initial: 0.0/10.5s, max joint error=0.068deg
+return_initial: 1.8/10.5s, max joint error=0.051deg
+return_initial: 3.5/10.5s, max joint error=0.074deg
+return_initial: 5.3/10.5s, max joint error=0.074deg
+return_initial: 7.0/10.5s, max joint error=0.078deg
+return_initial: 8.8/10.5s, max joint error=0.115deg
+PIPER_TASK_FINISHED: sequence_completed zero CPV velocity; no switch to MOVE_J
+仅继续采集停止后的状态 3 秒，不发送新的运动/复位/使能指令。

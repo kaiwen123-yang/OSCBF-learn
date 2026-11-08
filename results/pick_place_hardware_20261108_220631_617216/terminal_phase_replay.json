@@ -1,0 +1,294 @@
+{
+  "source": "Recorded encoder trajectory; fixed and archived governors receive identical samples until revised completion. No new dynamics are simulated.",
+  "meaning": "Software phase completion on existing samples; not a hardware rerun or physical transfer proof.",
+  "stages": [
+    {
+      "stage": "pregrasp",
+      "arrival_tolerance_rad": 0.002,
+      "last_segment_duration_s": 0,
+      "last_segment_max_joint_delta_deg": 0,
+      "old_reconstructed_phase_max_error_s": 0.0,
+      "original_tolerance_eligible_samples_on_last_segment": 0,
+      "revised_first_completion": {
+        "recorded_stage_time_s": 0.009567393999986962,
+        "phase": {
+          "phase_s": 0.0,
+          "rate": 0.0,
+          "requested_rate": 0.0,
+          "actual_phase_rate": 0.0,
+          "elapsed_s": 0.0,
+          "dt_s": 0.0,
+          "tangential_lag_s": 0.0,
+          "tangential_error_rad": 0.0,
+          "projected_phase_s": 0.0,
+          "goal_error_rad": 0.0016606457353987025,
+          "reference_error_rad": 0.0016606457353987025,
+          "no_progress_s": 0.0,
+          "reference_waypoints_reached": 1,
+          "paused": false,
+          "reason": "arrived",
+          "done": true,
+          "policy": "adaptive_tangential_v3"
+        },
+        "recorded_min_h_m": 0.08946587193704386,
+        "q_measured_rad": [
+          -0.260403124397554,
+          1.644257235011338,
+          -1.2738285545680614,
+          0.0,
+          1.2895539711285302,
+          -0.2613805087786708
+        ],
+        "emitted_reference_rad": [
+          -0.2605303038464489,
+          1.6425965892759393,
+          -1.273092172306444,
+          -6.458078954477743e-05,
+          1.288510397280541,
+          -0.2605389068397051
+        ],
+        "all_saved_boundaries_emitted": true
+      }
+    },
+    {
+      "stage": "align",
+      "arrival_tolerance_rad": 0.002,
+      "last_segment_duration_s": 0.009999999999999787,
+      "last_segment_max_joint_delta_deg": 0.009699379835547,
+      "old_reconstructed_phase_max_error_s": 0.0,
+      "original_tolerance_eligible_samples_on_last_segment": 2,
+      "revised_first_completion": {
+        "recorded_stage_time_s": 6.704293465999967,
+        "phase": {
+          "phase_s": 6.464210672378784,
+          "rate": 0.0,
+          "requested_rate": 0.0,
+          "actual_phase_rate": 0.0,
+          "elapsed_s": 6.694718936999948,
+          "dt_s": 0.010604760999967766,
+          "tangential_lag_s": 0.0,
+          "tangential_error_rad": 0.0,
+          "projected_phase_s": 6.464210672378784,
+          "goal_error_rad": 0.0014757921613622882,
+          "reference_error_rad": 0.0014757921613622882,
+          "no_progress_s": 0.0210521860000199,
+          "reference_waypoints_reached": 7,
+          "paused": false,
+          "reason": "arrived",
+          "done": true,
+          "policy": "adaptive_tangential_v3"
+        },
+        "recorded_min_h_m": 0.008698327036323159,
+        "q_measured_rad": [
+          -0.260403124397554,
+          1.7484010314778395,
+          -1.0549642663679726,
+          0.0,
+          0.9641547853867076,
+          -0.261310695608591
+        ],
+        "emitted_reference_rad": [
+          -0.26060238588224777,
+          1.747580177102599,
+          -1.0551479546679958,
+          -1.205370807592118e-07,
+          0.9656305775480699,
+          -0.2606021983403748
+        ],
+        "all_saved_boundaries_emitted": true
+      }
+    },
+    {
+      "stage": "approach",
+      "arrival_tolerance_rad": 0.002,
+      "last_segment_duration_s": 0.031193428700457826,
+      "last_segment_max_joint_delta_deg": 0.08936259065392428,
+      "old_reconstructed_phase_max_error_s": 0.0,
+      "original_tolerance_eligible_samples_on_last_segment": 1,
+      "revised_first_completion": {
+        "recorded_stage_time_s": 2.8163734400000067,
+        "phase": {
+          "phase_s": 2.640265166779745,
+          "rate": 0.0,
+          "requested_rate": 0.0,
+          "actual_phase_rate": 0.0,
+          "elapsed_s": 2.8067825969999376,
+          "dt_s": 0.010876157999973657,
+          "tangential_lag_s": 0.0,
+          "tangential_error_rad": 0.0,
+          "projected_phase_s": 2.609071738079287,
+          "goal_error_rad": 0.0018194338430431722,
+          "reference_error_rad": 0.0018194338430431722,
+          "no_progress_s": 0.0,
+          "reference_waypoints_reached": 5,
+          "paused": false,
+          "reason": "arrived",
+          "done": true,
+          "policy": "adaptive_tangential_v3"
+        },
+        "recorded_min_h_m": 0.00539580455579727,
+        "q_measured_rad": [
+          -0.260403124397554,
+          1.8163466992579789,
+          -0.9933541437725727,
+          0.0,
+          0.8354367530521258,
+          -0.25942574001643715
+        ],
+        "emitted_reference_rad": [
+          -0.2606023890921269,
+          1.8174135201639132,
+          -0.9929680393903223,
+          -1.3352107275760796e-07,
+          0.8336173192090827,
+          -0.2606021804646014
+        ],
+        "all_saved_boundaries_emitted": true
+      }
+    },
+    {
+      "stage": "lift",
+      "arrival_tolerance_rad": 0.002,
+      "last_segment_duration_s": 0.009999999999999787,
+      "last_segment_max_joint_delta_deg": 0.0015267614513454902,
+      "old_reconstructed_phase_max_error_s": 0.0,
+      "original_tolerance_eligible_samples_on_last_segment": 2,
+      "revised_first_completion": {
+        "recorded_stage_time_s": 9.527147637999974,
+        "phase": {
+          "phase_s": 9.10858510977373,
+          "rate": 0.0,
+          "requested_rate": 1.0,
+          "actual_phase_rate": 0.9539594372736365,
+          "elapsed_s": 9.517808288999959,
+          "dt_s": 0.010482625999884476,
+          "tangential_lag_s": 0.0,
+          "tangential_error_rad": 0.0,
+          "projected_phase_s": 9.10858510977373,
+          "goal_error_rad": 0.0015043481921408475,
+          "reference_error_rad": 0.0015043481921408475,
+          "no_progress_s": 0.0,
+          "reference_waypoints_reached": 8,
+          "paused": false,
+          "reason": "arrived",
+          "done": true,
+          "policy": "adaptive_tangential_v3"
+        },
+        "recorded_min_h_m": 0.038671434429828726,
+        "q_measured_rad": [
+          -0.2606300172003132,
+          1.6430704111199819,
+          -1.2733573156700229,
+          0.0,
+          1.2900775699041285,
+          -0.2613456021936309
+        ],
+        "emitted_reference_rad": [
+          -0.2606023793760293,
+          1.6425449840547957,
+          -1.2730554057841112,
+          -1.0218930437809344e-07,
+          1.2885732217119876,
+          -0.26060223228590895
+        ],
+        "all_saved_boundaries_emitted": true
+      }
+    },
+    {
+      "stage": "transfer",
+      "arrival_tolerance_rad": 0.002,
+      "last_segment_duration_s": 0.04256364799999979,
+      "last_segment_max_joint_delta_deg": 0.02595017735466434,
+      "old_reconstructed_phase_max_error_s": 0.0,
+      "original_tolerance_eligible_samples_on_last_segment": 5,
+      "revised_first_completion": {
+        "recorded_stage_time_s": 10.686258493999958,
+        "phase": {
+          "phase_s": 10.516576591527167,
+          "rate": 0.0,
+          "requested_rate": 1.0,
+          "actual_phase_rate": 3.9488874434866745,
+          "elapsed_s": 10.67692077699985,
+          "dt_s": 0.010778642999866861,
+          "tangential_lag_s": 0.0,
+          "tangential_error_rad": 0.0,
+          "projected_phase_s": 10.516576591527167,
+          "goal_error_rad": 0.0007360491187298757,
+          "reference_error_rad": 0.0007360491187298757,
+          "no_progress_s": 0.0,
+          "reference_waypoints_reached": 22,
+          "paused": false,
+          "reason": "arrived",
+          "done": true,
+          "policy": "adaptive_tangential_v3"
+        },
+        "recorded_min_h_m": 0.038671434429828726,
+        "q_measured_rad": [
+          0.26141541536371066,
+          1.6431925841676214,
+          -1.2733049557924632,
+          0.0,
+          1.2882624274820544,
+          0.2600191519621152
+        ],
+        "emitted_reference_rad": [
+          0.2606793662449808,
+          1.6425944909684191,
+          -1.273077095911725,
+          9.280281022050787e-05,
+          1.28849608226799,
+          0.26054244987027897
+        ],
+        "all_saved_boundaries_emitted": true
+      }
+    },
+    {
+      "stage": "lower",
+      "arrival_tolerance_rad": 0.002,
+      "last_segment_duration_s": 0.009999999999999787,
+      "last_segment_max_joint_delta_deg": 0.0014906172124631199,
+      "old_reconstructed_phase_max_error_s": 0.0,
+      "original_tolerance_eligible_samples_on_last_segment": 752,
+      "revised_first_completion": {
+        "recorded_stage_time_s": 15.553507041000103,
+        "phase": {
+          "phase_s": 9.107054937200044,
+          "rate": 0.0,
+          "requested_rate": 0.0,
+          "actual_phase_rate": 0.9305832365284377,
+          "elapsed_s": 15.543859239000085,
+          "dt_s": 0.010745949000011024,
+          "tangential_lag_s": 0.0,
+          "tangential_error_rad": 0.0,
+          "projected_phase_s": 9.097054937200044,
+          "goal_error_rad": 0.0015954248248111758,
+          "reference_error_rad": 0.0015954248248111758,
+          "no_progress_s": 0.0,
+          "reference_waypoints_reached": 8,
+          "paused": false,
+          "reason": "arrived",
+          "done": true,
+          "policy": "adaptive_tangential_v3"
+        },
+        "recorded_min_h_m": -0.0002866124812271123,
+        "q_measured_rad": [
+          0.2596177262341565,
+          1.8169924710812169,
+          -0.993249424017453,
+          0.0,
+          0.8351924069568466,
+          0.2590068609959585
+        ],
+        "emitted_reference_rad": [
+          0.26060231250615745,
+          1.81741352017407,
+          -0.9929680394067257,
+          1.0288422432777674e-08,
+          0.8336173192297435,
+          0.26060228582076966
+        ],
+        "all_saved_boundaries_emitted": true
+      }
+    }
+  ]
+}

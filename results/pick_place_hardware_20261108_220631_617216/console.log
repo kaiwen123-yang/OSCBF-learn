@@ -1,0 +1,49 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/pick_place_hardware_20261108_220631_617216
+执行参数： {'speed_scale': 1.0, 'descent_speed_scale': 1.0, 'saved_joint_velocity_limit_rad_s': 0.1, 'method': 'oscbf'}
+open: actual gripper width=39.4mm force=0.13N
+pregrasp [oscbf]: phase=0.00/0.00s, joint error=0.095deg, min h=0.089466m, QP=nominal_quantized_feasible
+align [oscbf]: phase=0.00/6.46s, joint error=0.095deg, min h=0.089466m, QP=nominal_quantized_feasible
+align [oscbf]: phase=1.83/6.46s, joint error=0.056deg, min h=0.066234m, QP=nominal_quantized_feasible
+align [oscbf]: phase=3.81/6.46s, joint error=0.046deg, min h=0.040999m, QP=nominal_quantized_feasible
+align [oscbf]: phase=5.80/6.46s, joint error=0.041deg, min h=0.016371m, QP=nominal_quantized_feasible
+approach [oscbf]: phase=0.00/2.64s, joint error=0.085deg, min h=0.039686m, QP=nominal_quantized_feasible
+approach [oscbf]: phase=2.00/2.64s, joint error=0.067deg, min h=0.013895m, QP=nominal_quantized_feasible
+grasp: actual gripper width=24.5mm force=-1.04N
+lift [oscbf]: phase=0.00/9.11s, joint error=0.207deg, min h=0.000000m, QP=nominal_quantized_feasible
+lift [oscbf]: phase=1.67/9.11s, joint error=0.073deg, min h=0.021474m, QP=nominal_quantized_feasible
+lift [oscbf]: phase=3.65/9.11s, joint error=0.043deg, min h=0.038671m, QP=nominal_quantized_feasible
+lift [oscbf]: phase=5.64/9.11s, joint error=0.043deg, min h=0.038671m, QP=nominal_quantized_feasible
+lift [oscbf]: phase=7.64/9.11s, joint error=0.043deg, min h=0.038671m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=0.00/10.52s, joint error=0.086deg, min h=0.038671m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=1.94/10.52s, joint error=0.066deg, min h=0.038671m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=3.93/10.52s, joint error=0.086deg, min h=0.038671m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=5.91/10.52s, joint error=0.068deg, min h=0.038671m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=7.89/10.52s, joint error=0.053deg, min h=0.038671m, QP=nominal_quantized_feasible
+transfer [oscbf]: phase=9.87/10.52s, joint error=0.045deg, min h=0.038671m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=0.00/9.11s, joint error=0.042deg, min h=0.038671m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=1.87/9.11s, joint error=0.043deg, min h=0.038671m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=3.87/9.11s, joint error=0.130deg, min h=0.038671m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=5.86/9.11s, joint error=0.045deg, min h=0.038671m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=7.86/9.11s, joint error=0.089deg, min h=0.016216m, QP=nominal_quantized_feasible
+lower [oscbf]: phase=9.10/9.11s, joint error=0.210deg, min h=0.000916m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.125deg, min h=-0.000283m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.126deg, min h=0.000275m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.124deg, min h=0.000272m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.118deg, min h=0.000092m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.124deg, min h=0.000276m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.125deg, min h=0.000658m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.203deg, min h=-0.000286m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.127deg, min h=0.000218m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.099deg, min h=0.000028m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.198deg, min h=0.000019m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.198deg, min h=0.000578m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.094deg, min h=-0.000353m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.126deg, min h=0.000205m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.125deg, min h=0.000200m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.202deg, min h=0.000001m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.124deg, min h=0.000568m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.191deg, min h=0.000191m, QP=qp_converged
+lower [oscbf]: phase=9.10/9.11s, joint error=0.191deg, min h=-0.000112m, QP=qp_converged
+已发送零CPV速度停止请求；未自动切换模式或复位。
+ReferenceBlockedError: max_duration_exceeded: phase=9.097055s, elapsed=46.437s, goal_error=0.003355rad
+仅继续采集停止后的状态 3 秒，不发送新的运动/复位/使能指令。

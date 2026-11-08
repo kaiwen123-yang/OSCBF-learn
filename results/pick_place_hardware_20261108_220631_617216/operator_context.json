@@ -1,0 +1,7 @@
+{
+  "physical_result_before_recovery": "方块仍夹着，位置在左侧放置区域",
+  "full_oscbf_complete": false,
+  "recovery_result_directory": "results/pick_place_hardware_20261108_221329_143977",
+  "physical_result_after_recovery": "已在左侧放下并摆回右侧，范围清空",
+  "recovery_method": "baseline release/retreat/return_initial; separately authorized; not counted as complete OSCBF"
+}

@@ -126,7 +126,7 @@ class PhaseState:
     paused: bool
     reason: str
     done: bool
-    policy: str = 'adaptive_tangential_v2'
+    policy: str = 'adaptive_tangential_v3'
 
     def as_dict(self):
         return asdict(self)
@@ -183,11 +183,17 @@ class PhaseGovernor:
         # do not skip multiple corners or catch up on an elapsed reference clock.
         self.phase = min(previous_phase+requested_step, self.reference.next_boundary(previous_phase),
                          self.reference.duration)
+        goal_error = float(np.max(np.abs(q-self.reference.goal)))
+        at_goal = goal_error <= self.arrival_tolerance_rad
+        # All preceding saved boundaries have already been emitted on the last
+        # segment. Emit its endpoint once actual arrival is satisfied; a tiny
+        # final segment must not turn ordinary joint error into an endless lag.
+        if at_goal and self.reference.segment(previous_phase) == len(self.reference.points)-2:
+            self.phase = self.reference.duration
         self.previous = now
         desired, _ = self.reference.sample(self.phase)
         lag, tangential_error = self.reference.tangential_lag(q, self.phase)
         projection = self.reference.project_local(q, self.phase)
-        goal_error = float(np.max(np.abs(q-self.reference.goal)))
         moved = float(np.max(np.abs(q-self.last_progress_q))) > self.progress_epsilon_rad
         forward = projection > self.best_projection+1e-6
         closer = goal_error < self.best_goal_error-self.progress_epsilon_rad
@@ -195,7 +201,6 @@ class PhaseGovernor:
             self.last_progress_time, self.last_progress_q = now, q.copy()
             self.best_projection = max(self.best_projection, projection)
             self.best_goal_error = min(self.best_goal_error, goal_error)
-        at_goal = goal_error <= self.arrival_tolerance_rad
         done = self.phase >= self.reference.duration and at_goal
         waiting_at_hold = self.reference.is_hold and at_goal
         actual_phase_rate = (self.phase-previous_phase)/dt if dt > 0 else 0.
@@ -229,7 +234,7 @@ class PhaseGovernor:
         return state
 
     def metadata(self):
-        return {'schema': 1, 'policy': 'adaptive_tangential_v2', 'stage': self.reference.name,
+        return {'schema': 1, 'policy': 'adaptive_tangential_v3', 'stage': self.reference.name,
                 'reference_signature': self.reference.signature,
                 'lag_metric': 'local_joint_path_tangent; Cartesian transverse displacement is not assumed joint-transverse',
                 'reference_duration_s': self.reference.duration,
