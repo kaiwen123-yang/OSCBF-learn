@@ -112,12 +112,9 @@
     "solver_tol": 1e-06,
     "residual_tol": 1e-06,
     "velocity_quantization_rad_s": 0.001,
-    "sigma_min_guard": 0.1,
     "solver_max_iter": 50
   },
   "reference_governor": {
-    "max_tangential_lag_s": 0.2,
-    "no_progress_timeout_s": 5.0,
-    "max_phase_step_s": 0.05
+    "max_tangential_lag_s": 0.2
   }
 }

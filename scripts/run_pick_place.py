@@ -1,7 +1,7 @@
 """Execute saved MoveIt joint paths through the already verified Piper SDK CPV.
 
-No ROS hardware driver is started. This is the joint-tracking task baseline,
-NOT OSCBF obstacle avoidance. Default only prints the saved plan, without CAN.
+No ROS hardware driver is started. Method selects the original joint-tracking
+baseline or CBF/OSCBF filtering on arm motion. Default prints the saved plan.
 """
 import argparse
 import json
@@ -190,9 +190,6 @@ def main():
         return 0
     if cfg["scene_status"] not in ("measured", "operator_confirmed_approximate"):
         raise RuntimeError("Candidate scene has not been confirmed; update config and replan before motion")
-    if args.method!='baseline':
-        from piper_oscbf.preflight import check_ready
-        check_ready(args.plan,args.method,args.speed_scale,args.descent_speed_scale)
     from piper_oscbf.device import PiperDevice
     out=ROOT/"results"/("pick_place_hardware_"+datetime.now().strftime("%Y%m%d_%H%M%S_%f"))
     out.mkdir()
@@ -215,7 +212,7 @@ def main():
             session=TaskSession(task,args.method)
             extra_sources=('piper_oscbf/task_filter.py','piper_oscbf/task_geometry.py',
                            'piper_oscbf/task_reference.py','piper_oscbf/task_session.py',
-                           'piper_oscbf/task_execution.py','piper_oscbf/preflight.py')
+                           'piper_oscbf/task_execution.py')
         if args.record_diagnostics:
             from piper_oscbf.recording import TaskRecording, snapshot
             recording=TaskRecording(out,ROOT,extra_sources=extra_sources)

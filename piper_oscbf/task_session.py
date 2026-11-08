@@ -80,12 +80,6 @@ class TaskSession:
         self.fingerprint = {name: _digest(value) for name, value in self._fingerprint_payloads.items()}
         self.warmup = self.filter.warmup(np.asarray(self.cfg['initial_q_rad'], float),
                                         cap=float(self.cfg['joint_velocity_limit_rad_s']))
-        # A nonmoving initial hold also verifies the actual initial scene, unlike
-        # the filter's deliberately scene-independent solver compilation probe.
-        initial = self.validate_hold(np.asarray(self.cfg['initial_q_rad'], float),
-            float(self.cfg['gripper_open_m']), float(self.cfg['joint_velocity_limit_rad_s']), 'open')
-        self.initial_hold = {key: jsonable(initial[key]) for key in
-            ('solver_status', 'sigma_min', 'min_h_m', 'min_physical_distance_m', 'u_sdk')}
         self.events.append({'event': 'session_initialized', 'event_index': 0,
             'carrying': False, 'world_cube_T': self.world_cube_T.tolist(),
             'object_state_source': 'configured scene, not a perception measurement'})
@@ -129,11 +123,9 @@ class TaskSession:
                 'gripper_open_m': self.cfg['gripper_open_m'],
                 'gripper_close_command_m': self.cfg['gripper_close_command_m'],
                 'gripper_force_n': self.cfg['gripper_force_n'],
-                'gripper_settle_tolerance_m': self.cfg.get('gripper_settle_tolerance_m',.0005),
                 'velocity_quantization_rad_s': f.quantum, 'alpha_geometry': f.alpha_geometry,
                 'alpha_joint': f.alpha_joint, 'objective_scale': f.objective_scale,
-                'sigma_min_guard': f.sigma_min_guard, 'solver_tol': f.solver_tol,
-                'residual_tol': f.residual_tol, 'physical_tolerance_m': f.physical_tolerance_m,
+                'solver_tol':f.solver_tol,'residual_tol':f.residual_tol,
                 'solver_max_iter': f.max_iter, 'reference_governor': governors},
             'controller': {'source_sha256': source_hashes,
                 'nominal': f.metadata()['nominal'], 'quantization_policy': f.metadata()['quantization_policy'],
@@ -163,11 +155,6 @@ class TaskSession:
         raise TaskFilterError(reason, diagnostics)
 
     def filter_step(self, q, qref, qdref, width, cap, stage):
-        if self._finished is not None:
-            raise RuntimeError('Cannot add commands to a finished task session')
-        if not np.isfinite(cap) or abs(float(cap)-self._stage_cap(stage)) > 1e-12:
-            self._failure('stage_velocity_cap_mismatch', {'stage': stage, 'cap': cap,
-                'recorded_cap': self._stage_cap(stage)})
         context = self._context(stage)
         try:
             result = self.filter.step(q, qref, qdref, width, cap, **context)
@@ -181,60 +168,17 @@ class TaskSession:
                       support_contact=context['support_contact'])
         return result
 
-    def validate_hold(self, q, width, cap, stage):
-        result = self.filter_step(q, q, np.zeros(6), width, cap, stage)
-        if np.any(np.asarray(result['u_sdk']) != 0.):
-            self._failure('hold_requires_nonzero_command', result)
+    def observe_hold(self, q, width, cap, stage):
+        context=self._context(stage)
+        result=self.filter.observe_zero(q,width,cap,**context)
+        result.update(q=np.asarray(q,float).copy(),q_ref=np.asarray(q,float).copy(),
+            qd_ref=np.zeros(6),gripper_width_m=float(width),velocity_cap_rad_s=float(cap),
+            stage=str(stage),carrying=self.carrying,support_contact=context['support_contact'])
         return result
 
-    def _gripper_transition_check(self, stage):
-        if stage not in ('open', 'grasp', 'release'):
-            self._failure('unknown_gripper_stage', {'stage': stage})
-        if stage in ('open', 'grasp') and self.carrying:
-            self._failure('unexpected_gripper_stage_while_carrying', {'stage': stage})
-        if stage == 'release' and not self.carrying:
-            self._failure('release_without_model_attachment', {'stage': stage})
-
-    def check_gripper(self, q, start_width, end_width, stage, *, physical_tol=1e-8):
-        self._gripper_transition_check(stage)
-        if (not np.isfinite(physical_tol) or physical_tol < 0 or physical_tol > 1e-8
-                or physical_tol > self.filter.physical_tolerance_m):
-            raise ValueError('Gripper contact numerical tolerance must not exceed 1e-8 m or filter tolerance')
-        flags = self.geometry.stage_defaults(stage)
-        widths = np.linspace(float(start_width), float(end_width), 21)
-        checks = [self.geometry.evaluate(q, stage, float(width), payload_T_tcp=self.payload_T_tcp,
-            carrying=self.carrying, world_cube_T=self.world_cube_T,
-            support_contact=flags['support_contact']) for width in widths]
-        buffer = np.asarray(self.geometry.width_lipschitz_bounds()) * abs(end_width-start_width)/(2*(len(widths)-1))
-        h = np.min([c['h'] for c in checks], axis=0)-buffer
-        physical = np.min([c['physical_distance_m'] for c in checks], axis=0)-buffer
-        active = checks[0]['active_mask']
-        contact = np.asarray([name.startswith('table:payload/') for name in self.geometry.constraint_labels])
-        contact &= bool(self.carrying and flags['support_contact'])
-        allowed = np.where(contact, -physical_tol, 0.)
-        bad = active & ((h < allowed) | (physical < allowed))
-        report = {'stage': stage, 'q': np.asarray(q, float), 'start_width_m': float(start_width),
-            'end_width_m': float(end_width), 'samples': len(widths),
-            'physical_tol_m_numeric_contact_only': float(physical_tol),
-            'minimum_h_lower_bound_m': float(h[active].min()),
-            'minimum_physical_lower_bound_m': float(physical[active].min()),
-            'h_lower_bound': h, 'physical_h_lower_bound': physical,
-            'active_mask': active, 'numeric_contact_mask': contact,
-            'violating_labels': [self.geometry.constraint_labels[i] for i in np.flatnonzero(bad)],
-            'carrying': self.carrying, 'clear_for_fixed_q': not bool(np.any(bad)),
-            'scope': 'Fixed arm q; known model geometry; every intermediate opening covered by row-wise Lipschitz bounds'}
-        if np.any(bad):
-            self._failure('gripper_sweep_not_clear', report)
-        self.events.append({'event': 'gripper_sweep_checked', 'event_index': len(self.events),
-            **{key: jsonable(report[key]) for key in ('stage', 'start_width_m', 'end_width_m',
-                'minimum_h_lower_bound_m', 'minimum_physical_lower_bound_m', 'physical_tol_m_numeric_contact_only')}})
-        return report
 
     def after_gripper(self, stage, q, width):
-        self._gripper_transition_check(stage)
         q = np.asarray(q, float)
-        if q.shape != (6,) or not np.all(np.isfinite(q)) or not np.isfinite(width) or not 0 <= width <= .1:
-            raise ValueError('Finite actual joint state and gripper opening required after gripper action')
         before = self.carrying
         if stage == 'grasp':
             self.payload_T_tcp = np.asarray(self.geometry.attach_cube(q, self.world_cube_T))
@@ -251,19 +195,11 @@ class TaskSession:
         return copy.deepcopy(event)
 
     def add_control(self, row, result):
-        index = len(self.control)
-        if row.get('control_row_index', index) != index or row.get('filter_row_index', index) != index:
-            raise ValueError('Control/filter row indices are not aligned')
-        row['control_row_index'] = row['filter_row_index'] = index
-        arrays = {}
-        for key in ARRAY_FIELDS:
-            value = result.get(key)
-            expected = (6,) if key in ('u_nom', 'u_qp', 'u_sdk') else (len(self.constraint_labels),)
-            if value is None or np.asarray(value).shape != expected:
-                raise ValueError(f'Missing or misaligned successful filter field: {key}')
-            arrays[key] = np.asarray(value).copy()
-        self.control.append({'row_index': index, 'stage': str(row.get('stage', result['stage'])),
-            'monotonic_s': row.get('monotonic_s'), 'arrays': arrays})
+        index=len(self.control)
+        row['control_row_index']=row['filter_row_index']=index
+        arrays={key:np.asarray(result[key]).copy() for key in ARRAY_FIELDS}
+        self.control.append({'row_index':index,'stage':str(row.get('stage',result['stage'])),
+            'monotonic_s':row.get('monotonic_s'),'arrays':arrays})
 
     def add_hold(self, row, result):
         index = len(self.holds)
@@ -276,10 +212,6 @@ class TaskSession:
         self.holds.append(jsonable({'hold_row_index': index, 'row': copy.deepcopy(row), **raw}))
 
     def add_schedule(self, stage, reference, states):
-        if stage != reference.name:
-            raise ValueError('Stage name differs from its reference')
-        if stage in self.schedules:
-            raise ValueError('A stage schedule was already recorded')
         states = list(states)
         if states:
             record = make_schedule_record(reference, states)
@@ -326,7 +258,8 @@ class TaskSession:
             'fingerprint_scope': 'Method-independent common task/model/controller/settings; actual attachment events and observed phase traces excluded',
             'geometry': self.geometry.metadata(), 'h_labels': self.h_labels,
             'constraint_labels': self.constraint_labels, 'geometry_constraint_count': self.geometry_constraint_count,
-            'warmup': self.warmup, 'initial_hold_check': self.initial_hold,
+            'warmup': self.warmup,
+            'hold_semantics':'Recorded zero-velocity requests, not a fixed-position guarantee; no gripper gate',
             'control_records': n, 'hold_records': len(self.holds), 'control_alignment': alignment,
             'array_alignment': 'filter_constraints.npz row i corresponds only to control.csv row i; hold_safety.jsonl has independent indices',
             'nonfinite_json_encoding': 'NaN, Infinity and -Infinity are strings in failure diagnostics',

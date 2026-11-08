@@ -1,0 +1,228 @@
+{
+  "scope": "Recorded hardware data and source inspection, no new hardware operations",
+  "run": "pick_place_hardware_20261107_195308_282501",
+  "source_commit": "38797ccea59bb358ad21fba857bb88a1c927d475",
+  "exception": "RuntimeError: Arm moved outside arrival tolerance during fixed-pose gripper actuation",
+  "completed_stages": [
+    "open",
+    "pregrasp",
+    "align",
+    "approach"
+  ],
+  "stop_action": "zero CPV after software error; motors remain enabled",
+  "anchor_q_rad": [
+    -0.2596875394042363,
+    1.818161841680053,
+    -0.9926036521942151,
+    0.0,
+    0.8345815417186485,
+    -0.25956536635659666
+  ],
+  "anchor_evidence": "grasp stage_start and first grasp hold contain identical six-axis values",
+  "stopped_q_rad": [
+    -0.2596875394042363,
+    1.818161841680053,
+    -0.9926036521942151,
+    0.0,
+    0.83107342992214,
+    -0.25956536635659666
+  ],
+  "delta_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0035081117965085618,
+    0.0
+  ],
+  "delta_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.20099999999999768,
+    0.0
+  ],
+  "guard_rad": 0.002,
+  "guard_deg": 0.11459155902616465,
+  "stage_start_to_exception_ms": 63.46044999963851,
+  "close_send_to_exception_ms": 50.23439500018867,
+  "feedback_age_at_exception_ms": 4.9419403076171875,
+  "prior_half_second_joint_range_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "first_close_command": {
+    "time_s": "1794052404.9174328",
+    "send_start_s": "2834.321583818",
+    "phase": "grasp",
+    "arbitration_id": "0x159",
+    "dlc": "8",
+    "data_hex": "00003a9803e80100",
+    "exception": "",
+    "send_end_s": "2834.321609843",
+    "comm_error_after_send": ""
+  },
+  "raw_j5_confirmation": {
+    "timestamp_s": 1794052404.9634273,
+    "j5_deg": 47.617,
+    "data_hex": "0000ba01ffffc5e8"
+  },
+  "can_error_frames": 0,
+  "driver_codes": {
+    "1": {
+      "0x40": 359
+    },
+    "2": {
+      "0x40": 359
+    },
+    "3": {
+      "0x40": 358
+    },
+    "4": {
+      "0x40": 358
+    },
+    "5": {
+      "0x40": 359
+    },
+    "6": {
+      "0x40": 360
+    }
+  },
+  "sdk_send_errors": 0,
+  "qp_solved_control_samples": 0,
+  "filter_changed_control_samples": 0,
+  "all_logged_grasp_arm_requests_zero": true,
+  "historical_grasp_drift": [
+    {
+      "run": "pick_place_hardware_20261106_220347_670955",
+      "status": "sequence_completed",
+      "object_transfer_success": "operator_confirmed",
+      "anchor_source": "stage_start SDK snapshot; not a separately recorded local Python anchor",
+      "anchor_q_rad": [
+        -0.2610314429282719,
+        1.8156311142646613,
+        -0.9938253826706112,
+        0.0,
+        0.8346339015962083,
+        -0.2616074015814301
+      ],
+      "start_monotonic_s": 1540.968420352,
+      "duration_s": 1.5100814219999847,
+      "feedback_samples": 302,
+      "max_delta_rad": 0.005672320068981571,
+      "max_delta_deg": 0.325,
+      "max_joint": 4,
+      "samples_over_0_002rad": 294,
+      "first_over_elapsed_s": 0.04425542299986773
+    },
+    {
+      "run": "pick_place_hardware_20261106_220924_313468",
+      "status": "sequence_completed",
+      "object_transfer_success": "requires_operator_confirmation",
+      "anchor_source": "stage_start SDK snapshot; not a separately recorded local Python anchor",
+      "anchor_q_rad": [
+        -0.2593559268463574,
+        1.8157183807272608,
+        -0.9930050779221739,
+        0.0,
+        0.8343895555009292,
+        -0.26059511061527335
+      ],
+      "start_monotonic_s": 1877.749919207,
+      "duration_s": 1.506704543000069,
+      "feedback_samples": 301,
+      "max_delta_rad": 0.005672320068981571,
+      "max_delta_deg": 0.325,
+      "max_joint": 4,
+      "samples_over_0_002rad": 294,
+      "first_over_elapsed_s": 0.03725448700015477
+    },
+    {
+      "run": "pick_place_hardware_20261107_180811_947624",
+      "status": "sequence_completed",
+      "object_transfer_success": "operator_confirmed",
+      "anchor_source": "stage_start SDK snapshot; not a separately recorded local Python anchor",
+      "anchor_q_rad": [
+        -0.26083945671055253,
+        1.81591036694498,
+        -0.9922720396363363,
+        0.0,
+        0.834721168058808,
+        -0.26253242608498706
+      ],
+      "start_monotonic_s": 824.076349815,
+      "duration_s": 1.5117152620000525,
+      "feedback_samples": 303,
+      "max_delta_rad": 0.005672320068981571,
+      "max_delta_deg": 0.325,
+      "max_joint": 4,
+      "samples_over_0_002rad": 294,
+      "first_over_elapsed_s": 0.04537862900008349
+    },
+    {
+      "run": "pick_place_hardware_20261107_190744_717616",
+      "status": "sequence_completed",
+      "object_transfer_success": "operator_confirmed",
+      "anchor_source": "stage_start SDK snapshot; not a separately recorded local Python anchor",
+      "anchor_q_rad": [
+        -0.25958281964911667,
+        1.8186854404556512,
+        -0.991399375010339,
+        0.0,
+        0.8333074513646926,
+        -0.261328148901111
+      ],
+      "start_monotonic_s": 115.645016611,
+      "duration_s": 1.5251144509999932,
+      "feedback_samples": 304,
+      "max_delta_rad": 0.005427973973702365,
+      "max_delta_deg": 0.31100000000000005,
+      "max_joint": 4,
+      "samples_over_0_002rad": 295,
+      "first_over_elapsed_s": 0.048101017999997
+    },
+    {
+      "run": "pick_place_hardware_20261107_195308_282501",
+      "status": "failed",
+      "object_transfer_success": "requires_operator_confirmation",
+      "anchor_source": "stage_start SDK snapshot; not a separately recorded local Python anchor",
+      "anchor_q_rad": [
+        -0.2596875394042363,
+        1.818161841680053,
+        -0.9926036521942151,
+        0.0,
+        0.8345815417186485,
+        -0.25956536635659666
+      ],
+      "start_monotonic_s": 2834.309059729,
+      "duration_s": 0.06346044999963851,
+      "feedback_samples": 12,
+      "max_delta_rad": 0.0035081117965085618,
+      "max_delta_deg": 0.20099999999999768,
+      "max_joint": 5,
+      "samples_over_0_002rad": 2,
+      "first_over_elapsed_s": 0.053194221000012476
+    }
+  ],
+  "evidence_limits": [
+    "No external position measurement or video was available.",
+    "Temporal association with closing does not distinguish mechanical coupling, contact, actuator behavior or firmware feedback behavior.",
+    "Recorded local Python anchor was not captured directly; matching stage_start and first-hold snapshots constrain it."
+  ],
+  "input_sha256": {
+    "summary.json": "b09780559af56ec927f0e0a2af76150a04f0dfebcb35b7aeb54b2c4f82b325c2",
+    "events.jsonl": "b3afa3dd6dbb2ee170b3e782c8ab8097bd9a01fe69a12af59d0b379a0ad9c7d0",
+    "feedback.csv": "61c1551d4c3498dd40897c3a395e1f7383176ea62a7e78b7dfb40e0cc02d45d5",
+    "raw_can.csv": "3c6b351af321af55748c3ace4808880928f270cb1a42fff745a95b9d058940f6",
+    "sdk_tx.csv": "61cbb8958223c65a0bc45d1714dac01ee714c7177676179723100fc4ae711777",
+    "hold_safety.jsonl": "674a5dc091d690839d7a6f83707e97d696b88a311cd485369fbb4d3399d7ae79",
+    "control.csv": "1e2ce91bd04fd2cce4e197bacddb16109db8684f40f2f40e323a074da78a20bb",
+    "sources/task_execution.py": "4774df556b720c93e105ea82bfa833daff7a2d04895cf2b0f74503f896b9d3bf",
+    "sources/task_session.py": "559d38b86dcebc6650e9d8db739e974287c2c0c61eddb47712aac79f0a70cf85"
+  }
+}

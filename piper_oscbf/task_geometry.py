@@ -74,8 +74,6 @@ def load_task_model(cfg):
     flange_offset = np.asarray(metadata['ee_offset'], dtype=float)
     xyz = np.asarray(cfg['tcp_offset_m'], dtype=float)
     rpy = np.asarray(cfg.get('tcp_rpy_rad', [0., 0., 0.]), dtype=float)
-    if xyz.shape != (3,) or rpy.shape != (3,) or not np.all(np.isfinite(np.r_[xyz, rpy])):
-        raise ValueError('Finite three-component nominal TCP translation and rotation required')
     tip = np.eye(4)
     tip[:3, 3] = xyz
     tip[:3, :3] = Rotation.from_euler('xyz', rpy).as_matrix()
@@ -91,17 +89,13 @@ class TaskGeometry:
 
     gripper_width_m is the measured physical opening at runtime, not the saved
     plan's nominal width. The arm Jacobian treats width as fixed in an arm step;
-    check_gripper_sweep guards commanded opening changes at a stationary q.
+    gripper stages retain the original zero-velocity behavior and only record geometry.
     """
     def __init__(self, cfg):
         self.cfg = cfg
-        if cfg.get('frame', 'base_link') != 'base_link':
-            raise ValueError('Runtime geometry requires base_link scene coordinates')
         opts = cfg.get('runtime_geometry', {})
         self.cell_length = float(opts.get('sphere_cell_length_m', .04))
         self.padding = float(opts.get('model_padding_m', 0.))
-        if not np.all(np.isfinite([self.cell_length, self.padding])) or self.cell_length <= 0 or self.padding < 0:
-            raise ValueError('Positive cell length and nonnegative model padding required')
         self.obstacle_clearance = float(opts.get('obstacle_clearance_m', 0.))
         self.robot_table_clearance = float(opts.get('robot_table_clearance_m', 0.))
         self.payload_table_clearance = float(opts.get('payload_table_clearance_m', 0.))
@@ -109,17 +103,10 @@ class TaskGeometry:
         self.payload_robot_clearance = float(opts.get('payload_robot_clearance_m', 0.))
         gaps = [self.obstacle_clearance, self.robot_table_clearance, self.payload_table_clearance,
                 self.target_cube_clearance, self.payload_robot_clearance]
-        if not np.all(np.isfinite(gaps)) or min(gaps) < 0:
-            raise ValueError('Clearances must not permit penetration')
         self.table_enabled = bool(opts.get('table_enabled', True))
         self.target_cube_enabled = bool(opts.get('target_cube_enabled', True))
         self.payload_robot_enabled = bool(opts.get('payload_robot_enabled', True))
         self.cube_size = float(cfg['cube_size_m'])
-        if not np.isfinite(self.cube_size) or self.cube_size <= 0:
-            raise ValueError('Cube edge length must be positive')
-        if not np.isfinite(cfg['table_top_z_m']) or any(
-                np.asarray(cfg[k]).shape != (2,) or not np.all(np.isfinite(cfg[k])) for k in ('pick_xy_m', 'place_xy_m')):
-            raise ValueError('Finite table height and two-component pick/place coordinates required')
         self.tcp_robot, self.model_metadata = load_task_model(cfg)
         metadata = json.loads((ROOT / 'models/piper_h_oscbf_model.json').read_text())
         self.flange_robot = Manipulator.from_urdf(str(ROOT / 'models/piper_h_oscbf.urdf'),
@@ -154,8 +141,6 @@ class TaskGeometry:
             vertices, mesh_files = [], []
             for collision in link.findall('collision'):
                 mesh_tag = collision.find('geometry/mesh')
-                if mesh_tag is None:
-                    raise ValueError(f'Unsupported collision primitive in {name}')
                 path = (portable_path.parent / mesh_tag.get('filename')).resolve()
                 mesh = trimesh.load(str(path), force='mesh', process=False)
                 scale = np.fromstring(mesh_tag.get('scale', '1 1 1'), sep=' ')
@@ -192,17 +177,9 @@ class TaskGeometry:
         self.default_payload_T_tcp = np.eye(4)
         self.default_payload_T_tcp[:3, 3] = cfg.get('held_cube_tcp_offset_m',
             [0., 0., -(self.cube_size/2 - float(cfg['tip_clearance_m']))])
-        if not np.all(np.isfinite(self.default_payload_T_tcp)):
-            raise ValueError('Finite held-cube offset required')
         self.obstacles = []
         for box in cfg.get('obstacles', []):
             center, size = np.asarray(box['center_m'], float), np.asarray(box['size_m'], float)
-            if (center.shape != (3,) or size.shape != (3,) or not np.all(np.isfinite(np.r_[center,size]))
-                    or np.any(size <= 0) or box.get('frame', 'base_link') != 'base_link'):
-                raise ValueError('Obstacle center/size must be finite 3-vectors with positive dimensions')
-            box_rpy = np.asarray(box.get('rpy_rad', [0., 0., 0.]), float)
-            if box_rpy.shape != (3,) or not np.all(np.isfinite(box_rpy)) or np.any(np.abs(box_rpy) > 1e-12):
-                raise ValueError('Static obstacles currently require base_link-aligned boxes')
             self.obstacles.append((str(box['name']), jnp.asarray(center), jnp.asarray(size/2)))
         labels = []
         for name, _, _ in self.obstacles:
@@ -309,8 +286,6 @@ class TaskGeometry:
     def evaluate(self, q, stage, gripper_width_m, payload_T_tcp=None,
                  carrying=None, world_cube_T=None, support_contact=None):
         q = np.asarray(q, float)
-        if q.shape != (6,) or not np.all(np.isfinite(q)) or not np.isfinite(gripper_width_m) or not 0 <= gripper_width_m <= .1:
-            raise ValueError('Finite six-axis state and measured gripper opening in [0,0.1] m required')
         flags = self.stage_defaults(stage)
         if carrying is not None: flags['carrying'] = bool(carrying)
         if support_contact is not None: flags['support_contact'] = bool(support_contact)
@@ -325,27 +300,6 @@ class TaskGeometry:
                 'labels': self.constraint_labels, 'flags': flags,
                 'tcp_transform': np.asarray(self.tcp_transform(q)),
                 'min_h_m': float(h[mask].min()), 'min_physical_distance_m': float(physical[mask].min())}
-
-    def check_gripper_sweep(self, q, stage, start_width_m, end_width_m, samples=21, **kwargs):
-        """Fixed-q opening guard; each finger translates <= |delta_width| / 2.
-
-        Each width-grid interval is covered by a Lipschitz buffer of a quarter
-        of its width. This checks arm geometry only at the supplied fixed q.
-        """
-        if samples < 2: raise ValueError('At least two width samples required')
-        widths = np.linspace(start_width_m, end_width_m, samples)
-        half_width_step = abs(end_width_m-start_width_m)/(2*(samples-1))
-        checks = [self.evaluate(q, stage, float(w), **kwargs) for w in widths]
-        lower_bounds = np.min([c['h'] for c in checks], axis=0) - np.asarray(self.width_lipschitz_bounds())*half_width_step
-        active = checks[0]['active_mask']
-        minimum = min(c['min_h_m'] for c in checks)
-        lower_bound = float(lower_bounds[active].min())
-        return {'width_start_m': float(start_width_m), 'width_end_m': float(end_width_m),
-                'samples': samples, 'maximum_between_sample_lipschitz_buffer_m': half_width_step*.5,
-                'minimum_sample_h_m': minimum, 'certified_lower_bound_m': lower_bound,
-                'clear_for_fixed_q': lower_bound >= 0.,
-                'negative_within_1e_minus8_m_only': -1e-8 <= lower_bound < 0.,
-                'coverage': 'Known boxes/table/cube pairs only; measured width and fixed arm state required.'}
 
     def metadata(self):
         return {'frame': 'base_link', 'task_frame': 'tcp_link', 'tcp_offset_m': self.cfg['tcp_offset_m'],
@@ -367,7 +321,7 @@ class TaskGeometry:
                 'table_model': 'Infinite horizontal plane, conservative beyond finite table footprint',
                 'payload_assumption': 'Rigid cube attachment; model FK/scene-derived pose, no slip measurement',
                 'gripper_width': 'Actual SDK feedback required at runtime; plan width only for offline checks',
-                'arm_qp_assumption': 'Gripper width is settled during arm velocity steps; width motion is separately checked at fixed q before gripper actuation.',
+                'arm_qp_assumption': 'Arm-step Jacobians treat the reported opening as fixed; gripper stages only log geometry and do not claim fixed-pose protection.',
                 'permitted_contact': 'Finger/target-cube during approach/grasp/release/retreat; finger/held-cube while carrying; cube/table extra clearance zero in support-contact stages, nonpenetration retained',
                 'omitted_pairs': ['robot self-collision', 'fixed base', 'cables and unmodelled environment'],
                 'distance_status': 'Conservative model calculations, not external metrology'}

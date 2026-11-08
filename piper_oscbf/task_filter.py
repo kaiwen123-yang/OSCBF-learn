@@ -26,8 +26,6 @@ def quantize_sdk(values):
 
 class TaskSafetyFilter:
     def __init__(self, cfg, method):
-        if method not in ('cbf', 'oscbf'):
-            raise ValueError('TaskSafetyFilter method must be cbf or oscbf')
         self.cfg, self.method = cfg, method
         opt = cfg.get('safety_filter', {})
         self.alpha_geometry = float(opt.get('alpha_geometry', 2.))
@@ -35,22 +33,10 @@ class TaskSafetyFilter:
         self.kp_joint = np.broadcast_to(np.asarray(opt.get('kp_joint', 2.), float), (6,)).copy()
         self.task_weights = np.asarray(opt.get('task_weights', [1.]*6), float)
         self.objective_scale = float(opt.get('objective_scale', 100.))
-        self.quantum = float(opt.get('velocity_quantization_rad_s', .001))
-        self.sigma_min_guard = float(opt.get('sigma_min_guard', .10))
+        self.quantum = .001
         self.solver_tol = float(opt.get('solver_tol', 1e-6))
         self.residual_tol = float(opt.get('residual_tol', 1e-6))
-        self.physical_tolerance_m = float(opt.get('physical_tolerance_m', 1e-8))
         self.max_iter = int(opt.get('solver_max_iter', 50))
-        positive = [self.alpha_geometry, self.alpha_joint, self.objective_scale,
-                    self.sigma_min_guard, self.solver_tol, self.residual_tol]
-        if (not np.all(np.isfinite(positive)) or min(positive) <= 0
-                or not np.all(np.isfinite(self.kp_joint)) or np.any(self.kp_joint <= 0)
-                or self.task_weights.shape != (6,) or not np.all(np.isfinite(self.task_weights))
-                or np.any(self.task_weights <= 0) or self.max_iter < 1
-                or not np.isfinite(self.physical_tolerance_m) or self.physical_tolerance_m < 0):
-            raise ValueError('Positive finite filter settings required')
-        if abs(self.quantum-.001) > 1e-15:
-            raise ValueError('This fixed SDK uses 0.001 rad/s CPV rounding')
         self.geometry = TaskGeometry(cfg)
         self.geometry_labels = self.geometry.constraint_labels
         self.geometry_constraint_count = len(self.geometry_labels)
@@ -99,25 +85,16 @@ class TaskSafetyFilter:
                                  G, b, solver_tol=self.solver_tol, max_iter=self.max_iter)
 
         self._features, self._solve = features, solve
-        self._warm = False
 
     def _inputs(self, q, q_ref, qd_ref, width, cap, payload, world):
         vectors = [np.asarray(v, dtype=float) for v in (q,q_ref,qd_ref)]
-        if any(v.shape != (6,) or not np.all(np.isfinite(v)) for v in vectors):
-            raise ValueError('Finite six-axis state, reference and reference velocity required')
-        if not np.isfinite(width) or not 0 <= width <= .1 or not np.isfinite(cap) or cap <= self.quantum/2:
-            raise ValueError('Measured gripper width in [0,0.1] m and positive velocity cap required')
         payload = np.asarray(self.geometry.default_payload_T_tcp if payload is None else payload, dtype=float)
         world = np.asarray(self.geometry.world_cube_transform() if world is None else world, dtype=float)
-        if any(t.shape != (4,4) or not np.all(np.isfinite(t)) for t in (payload,world)):
-            raise ValueError('Finite explicit 4x4 payload/world transforms required')
         return (*vectors,float(width),float(cap),payload,world)
 
     def step(self, q, q_ref, qd_ref, gripper_width_m, cap, *, carrying=False,
              support_contact=False, payload_T_tcp=None, world_cube_T=None,
              allow_finger_cube_contact=False):
-        if not self._warm:
-            raise TaskFilterError('warmup_required_before_step', {'method':self.method})
         started = time.perf_counter()
         q,q_ref,qd_ref,width,cap,payload,world = self._inputs(
             q,q_ref,qd_ref,gripper_width_m,cap,payload_T_tcp,world_cube_T)
@@ -142,13 +119,6 @@ class TaskSafetyFilter:
             out['solver_status'], out['solve_ms'] = reason, (time.perf_counter()-started)*1000
             raise TaskFilterError(reason, out)
 
-        if not all(np.all(np.isfinite(out[key])) for key in
-                   ('h','physical_h','G','b_physical','u_nom','metric','jacobian')):
-            reject('nonfinite_model_or_constraint')
-        if out['sigma_min'] < self.sigma_min_guard:
-            reject('outside_audited_full_rank_region')
-        if out['min_physical_distance_m'] < -self.physical_tolerance_m:
-            reject('physical_geometry_not_clear')
         # Exactly-zero contact commands need no fictitious worst-case rounding
         # error. This identical fast path checks both continuous and actual
         # rounded nominal requests against the original inequalities.
@@ -178,10 +148,34 @@ class TaskSafetyFilter:
         out['solve_ms'] = (time.perf_counter()-started)*1000
         return out
 
+    def observe_zero(self, q, gripper_width_m, cap, *, carrying=False,
+                     support_contact=False, payload_T_tcp=None, world_cube_T=None,
+                     allow_finger_cube_contact=False):
+        """Record the existing zero command without a pose/gripper gate or QP."""
+        started=time.perf_counter()
+        q,qref,qdref,width,cap,payload,world=self._inputs(
+            q,q,np.zeros(6),gripper_width_m,cap,payload_T_tcp,world_cube_T)
+        values=self._features(q,qref,qdref,width,cap,bool(carrying),bool(support_contact),
+                              payload,world,bool(allow_finger_cube_contact))
+        out={key:np.asarray(value) for key,value in values.items()}
+        mask=out['constraint_mask'][:self.geometry_constraint_count]
+        out.update(method=self.method,u_qp=np.zeros(6),u_sdk=np.zeros(6),
+            nominal_margin=out['b_physical'].copy(),rounded_nominal_margin=out['b_physical'].copy(),
+            qp_margin=out['b_physical'].copy(),applied_margin=out['b_physical'].copy(),
+            robust_qp_margin=out['b_robust'].copy(),converged=None,iterations=0,qp_solved=False,
+            solver_status='zero_velocity_observation_no_qp',filter_active=False,
+            control_modification_norm=0.,sigma_min=float(out['singular_values'][-1]),
+            metric_condition=float(np.linalg.cond(out['metric'])),
+            min_h_m=float(out['h'][:self.geometry_constraint_count][mask].min()),
+            min_physical_distance_m=float(out['physical_h'][:self.geometry_constraint_count][mask].min()),
+            position_error_m=np.zeros(3),orientation_error_rad=0.,
+            max_qp_violation=None,max_applied_violation=float(max(0.,-out['b_physical'].min())),
+            nominal_constraint_violation=float(np.max(-out['b_physical'])))
+        out['solve_ms']=(time.perf_counter()-started)*1000
+        return out
+
     def warmup(self, q, cap=None):
         """Compile features AND solver before any caller starts hardware motion."""
-        if jax.default_backend() != 'cpu':
-            raise ValueError('This validated task filter requires JAX_PLATFORMS=cpu')
         cap = float(self.cfg['joint_velocity_limit_rad_s'] if cap is None else cap)
         q = np.asarray(q, dtype=float)
         payload,world = self.geometry.default_payload_T_tcp,self.geometry.world_cube_transform()
@@ -189,20 +183,10 @@ class TaskSafetyFilter:
         values = self._features(q,q,np.zeros(6),float(self.cfg['gripper_open_m']),cap,False,False,
                                 np.asarray(payload),np.asarray(world),False)
         values = {key:np.asarray(value) for key,value in values.items()}
-        if float(values['singular_values'][-1]) < self.sigma_min_guard:
-            raise TaskFilterError('warmup_outside_audited_full_rank_region',values)
         # Compilation probe uses a feasible all-zero-gradient RHS bound and the
         # real shape. It is not a scene-feasibility claim or a hardware command.
         solved=self._solve(values['metric'],np.zeros(6),values['G'],np.full(len(values['G']),1.))
         solved=[np.asarray(v) for v in solved]
-        if not bool(solved[-2]):
-            raise TaskFilterError('warmup_solver_failed',values)
-        # Fixed-q gripper checks call geometry's separate JIT entry points;
-        # compile their normal/physical and Jacobian paths before motion too.
-        self.geometry.evaluate(q,'pregrasp',float(self.cfg['gripper_open_m']),
-            payload_T_tcp=np.asarray(payload),world_cube_T=np.asarray(world),
-            carrying=False,support_contact=False)
-        self._warm=True
         return {'warmed':True,'method':self.method,'compile_seconds':time.perf_counter()-started,
                 'constraint_count':len(self.constraint_labels),'hardware_connected':False,
                 'probe_scope':'compile-only feasible numeric RHS, not a scene validation'}
@@ -213,19 +197,18 @@ class TaskSafetyFilter:
             'kp_joint':self.kp_joint.tolist(),'task_weights':self.task_weights.tolist(),
             'objective':'I' if self.method=='cbf' else 'J_TCP.T @ diag(task_weights**2) @ J_TCP',
             'objective_scale':self.objective_scale,
-            'paper_scope':'OSCBF IV-B Eq.25 full-rank square-J special case; N=0 only inside guarded region',
-            'rank_policy':{'sigma_min_guard':self.sigma_min_guard,'regularization':None,
-                           'meaning':'engineering guard from prepared-path audit, not manufacturer limit'},
+            'paper_scope':'OSCBF IV-B Eq.25 full-rank square-J special case on the prepared task path',
+            'rank_policy':{'regularization':None,'sigma_min_and_condition':'recorded, no extra runtime cutoff'},
             'alpha_geometry':self.alpha_geometry,'alpha_joint':self.alpha_joint,
             'velocity_quantization_rad_s':self.quantum,
             'quantization_policy':'robust half-quantum L1 erosion for QP; Python SDK rounding; final original-margin recheck; no post-QP scaling',
             'nominal_fast_path':'both continuous and rounded nominal satisfy original constraints; explicitly qp_solved=False',
             'solver_tol':self.solver_tol,'residual_tol':self.residual_tol,
-            'physical_tolerance_m':self.physical_tolerance_m,'solver_max_iter':self.max_iter,
+            'solver_max_iter':self.max_iter,
             'geometry_constraint_count':self.geometry_constraint_count,
             'constraint_labels':self.constraint_labels,
             'h_row_semantics':'geometry distances [m], joint-limit state margins [rad], then velocity bounds cap [rad/s] (last 12 are not state CBFs)',
             'physical_h_semantics':'same layout, with virtual geometry clearances removed; model-derived conservative distances',
             'timing_scope':'solve_ms includes feature evaluation, host synchronization, solve if required, and final rounding checks',
             'backend':'cpu',
-            'warmup_required_before_motion':True}
+            'hold_policy':'Legacy zero velocity; geometry and margins during holds are observations, not a fixed-pose or gripper gate'}

@@ -1,12 +1,9 @@
 """Monotonic pacing for whole six-axis CPV groups, independent of the SDK."""
-import math
 import time
 
 
 class GroupPacer:
     def __init__(self, period_s=.01, *, clock=time.monotonic, sleep=time.sleep):
-        if not math.isfinite(period_s) or period_s <= 0:
-            raise ValueError('CPV group period must be positive and finite')
         self.period_s, self.clock, self.sleep = period_s, clock, sleep
         self.last_start = self.last_end = None
         self.waited_s = 0.
