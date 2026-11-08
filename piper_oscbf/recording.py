@@ -74,6 +74,7 @@ class TaskRecording:
                      'python_version': sys.version,
                      'interface_before': interface_stats(),
                      'state_period_s': .05,
+                     'kernel_timestamp_clock': 'SocketCAN CLOCK_REALTIME, preserved for diagnostics only',
                      'raw_direction_note': 'SDK disables local loopback: raw_can.csv is received traffic; sdk_tx.csv records send calls, not proof of firmware execution',
                      'state_note': 'SDK cache snapshots have individual message timestamps; raw_can.csv preserves every captured frame'}
         (out/'sources').mkdir()

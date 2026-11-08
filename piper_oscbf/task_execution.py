@@ -13,9 +13,9 @@ def _cap(cfg, stage):
     return float(cfg.get('stage_velocity_limits_rad_s', {}).get(stage, cfg['joint_velocity_limit_rad_s']))
 
 
-def _gripper_message(gripper):
+def _gripper_message(device, gripper):
     value=gripper.get_gripper_status()
-    if value is None or time.time()-value.timestamp>.2:
+    if value is None or device.message_age(0x2A8)>.2:
         raise RuntimeError('Gripper feedback unavailable')
     faults=[key for key,active in value.msg.foc_status.to_dict().items()
             if active and key not in ('driver_enable_status','homing_status')]
@@ -56,7 +56,8 @@ def _control_row(device, sample, status, q, q_ref, result, session, stage, start
         'qp_iterations':int(result['iterations']), 'qp_ms':float(result['solve_ms']),
         'solver_status':str(result['solver_status']),
         'sigma_min':float(result['sigma_min']), 'metric_condition':float(result['metric_condition']),
-        'feedback_age_s':time.time()-sample['can_timestamp_s'],
+        'feedback_age_s':time.monotonic()-sample['monotonic_s'],
+        'kernel_realtime_age_s':time.time()-sample['can_timestamp_s'],
         'feedback_monotonic_age_s':now-sample['monotonic_s'],
         'sample_sequence':sample['sequence'], 'can_timestamp_s':sample['can_timestamp_s'],
         'max_joint_error_rad':float(np.max(np.abs(q_ref-q))),
@@ -84,7 +85,7 @@ def _zero_hold(device, gripper, cfg, session, stage, duration, task_feedback, *,
         sample,status=task_feedback(device,after=seq)
         seq=sample['sequence']
         q=np.asarray(device.angles(sample),dtype=float)
-        width=float(_gripper_message(gripper).msg.value)
+        width=float(_gripper_message(device,gripper).msg.value)
         result=session.observe_hold(q,width,cap,stage)
         _send(device,result)
         row=_control_row(device,sample,status,q,q,result,session,stage,started,
@@ -126,7 +127,7 @@ def filtered_arm_step(device, gripper, step, cfg, records, session, task_feedbac
                 raise
             states.append(phase.as_dict())
             q_ref,qd_ref = reference.sample(phase.phase_s)
-            width = float(_gripper_message(gripper).msg.value)
+            width = float(_gripper_message(device,gripper).msg.value)
             result = session.filter_step(q,q_ref,qd_ref*phase.rate,width,cap,stage)
             _send(device,result)
             row = _control_row(device,sample,status,q,q_ref,result,session,stage,started,now,phase=phase)
@@ -166,7 +167,7 @@ def filtered_gripper_step(device, gripper, step, cfg, rows, session, task_feedba
         sample,status=device.state()
         q=np.asarray(device.angles(sample),dtype=float)
         if int(status['mode_feedback'])==5:
-            width=float(_gripper_message(gripper).msg.value)
+            width=float(_gripper_message(device,gripper).msg.value)
             result=session.observe_hold(q,width,cap,stage)
             _send(device,result)
             row=_control_row(device,sample,status,q,q,result,session,stage,started,
@@ -174,7 +175,7 @@ def filtered_gripper_step(device, gripper, step, cfg, rows, session, task_feedba
             session.add_hold(row,result)
         gripper.move_gripper_m(value=step['width_m'],force=step['force_n'])
         time.sleep(.05)
-        value=_gripper_message(gripper);msg=value.msg
+        value=_gripper_message(device,gripper);msg=value.msg
         rows.append({'stage':stage,'can_timestamp_s':value.timestamp,
             'command_width_m':step['width_m'],'width_m':msg.value,
             'command_force_n':step['force_n'],'force_n':msg.force})

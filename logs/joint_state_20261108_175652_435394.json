@@ -1,0 +1,75 @@
+{
+  "robot": "piper_h",
+  "sdk_profile": "v189",
+  "error": null,
+  "interface_counter_delta": {
+    "rx_packets": 12602,
+    "rx_dropped": 0,
+    "rx_errors": 0,
+    "tx_packets": 0,
+    "tx_errors": 0
+  },
+  "joint_packet_counts": {
+    "0x2A5": 1086,
+    "0x2A6": 1086,
+    "0x2A7": 1086
+  },
+  "complete_samples": 1086,
+  "rejected_groups": 0,
+  "joint_rad_last": [
+    -0.21275563581810877,
+    2.3310792022561464,
+    -0.8618261313422799,
+    -0.02939134460358451,
+    1.577149325272156,
+    -0.17194983790648136
+  ],
+  "joint_deg_last": [
+    -12.19,
+    133.561,
+    -49.379,
+    -1.684,
+    90.364,
+    -9.852
+  ],
+  "complete_feedback_hz": 217.12,
+  "max_feedback_gap_ms": 5.203,
+  "joint_enabled": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "driver_faults": {
+    "J1": [],
+    "J2": [],
+    "J3": [],
+    "J4": [],
+    "J5": [],
+    "J6": []
+  },
+  "arm_status": {
+    "ctrl_mode": 0,
+    "arm_status": 1,
+    "mode_feedback": 5,
+    "teach_status": 0,
+    "motion_status": 0,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  }
+}

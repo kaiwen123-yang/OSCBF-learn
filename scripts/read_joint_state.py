@@ -31,6 +31,7 @@ config = create_agx_arm_config(
 )
 robot = AgxArmFactory.create_arm(config)
 rows, pending = [], {}
+received_at = {}
 counts = {key: 0 for key in JOINT_IDS}
 rejected = 0
 report = {"robot": "piper_h", "sdk_profile": "v189", "error": None}
@@ -43,20 +44,24 @@ try:
 
     while time.monotonic() - started < 5.0:
         frame = comm.recv()  # SDK 在返回前完成报文解码
-        if frame is None or frame.is_remote_frame or not frame.is_rx:
+        if frame is None or frame.is_remote_frame or frame.is_error_frame or not frame.is_rx:
             continue
         frame_id = frame.arbitration_id
+        received = time.monotonic()
+        if len(frame.data) == 8:
+            received_at[frame_id] = received
         if frame_id not in counts or len(frame.data) != 8:
             continue
         counts[frame_id] += 1
-        pending[frame_id] = frame.timestamp
+        pending[frame_id] = (frame.timestamp, received)
         if len(pending) != 3:
             continue
 
-        first, last = min(pending.values()), max(pending.values())
+        first, last = min(v[0] for v in pending.values()), max(v[0] for v in pending.values())
+        first_mono, last_mono = min(v[1] for v in pending.values()), max(v[1] for v in pending.values())
         pending.clear()
-        age = time.time() - first
-        if last - first > 0.020 or not 0 <= age <= 0.100:
+        age = time.monotonic() - first_mono
+        if last_mono - first_mono > 0.020 or not 0 <= age <= 0.100:
             rejected += 1
             continue
 
@@ -65,7 +70,7 @@ try:
         if len(q) != 6 or not all(math.isfinite(x) for x in q):
             rejected += 1
             continue
-        rows.append([time.monotonic() - started, first, last, *q])
+        rows.append([time.monotonic() - started, first, last, *q, first_mono, last_mono])
 
     after = stats()
     report["interface_counter_delta"] = {
@@ -79,25 +84,26 @@ try:
     if len(rows) < 2:
         raise RuntimeError("完整且新鲜的六关节反馈不足。")
 
-    now = time.time()
+    now = time.monotonic()
     drivers = [robot.get_driver_states(j) for j in range(1, 7)]
     status = robot.get_arm_status()
     messages = drivers + [status]
     if any(msg is None for msg in messages):
         raise RuntimeError("驱动器或机械臂状态反馈不完整。")
-    if any(not 0 <= now - msg.timestamp <= 0.2 for msg in messages):
+    if any(not 0 <= now-received_at.get(i,-math.inf) <= 0.2 for i in (*range(0x261,0x267),0x2A1)):
         raise RuntimeError("驱动器或机械臂状态反馈过期。")
-    if not 0 <= now - rows[-1][1] <= 0.1:
+    if not 0 <= now - rows[-1][9] <= 0.1:
         raise RuntimeError("末次六关节反馈过期。")
     if robot.has_comm_error():
         raise RuntimeError(str(robot.get_comm_error()))
 
-    gaps = [b[2] - a[2] for a, b in zip(rows, rows[1:])]
+    gaps = [b[10] - a[10] for a, b in zip(rows, rows[1:])]
     report.update({
-        "joint_rad_last": rows[-1][3:],
-        "joint_deg_last": [round(math.degrees(x), 4) for x in rows[-1][3:]],
+        "joint_rad_last": rows[-1][3:9],
+        "joint_deg_last": [round(math.degrees(x), 4) for x in rows[-1][3:9]],
+        "feedback_timing_clock": "monotonic_receive",
         "complete_feedback_hz": round(
-            (len(rows) - 1) / (rows[-1][2] - rows[0][2]), 2),
+            (len(rows) - 1) / (rows[-1][10] - rows[0][10]), 2),
         "max_feedback_gap_ms": round(max(gaps) * 1000, 3),
         "joint_enabled": [msg.msg.foc_status.driver_enable_status
                           for msg in drivers],
@@ -119,7 +125,8 @@ json_path = ROOT / "logs" / f"joint_state_{stamp}.json"
 with csv_path.open("w", newline="", encoding="utf-8") as stream:
     writer = csv.writer(stream)
     writer.writerow(["elapsed_s", "rx_first_unix_s", "rx_last_unix_s"] +
-                    [f"q{j}_rad" for j in range(1, 7)])
+                    [f"q{j}_rad" for j in range(1, 7)] +
+                    ["rx_first_monotonic_s", "rx_last_monotonic_s"])
     writer.writerows(rows)
 json_path.write_text(
     json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

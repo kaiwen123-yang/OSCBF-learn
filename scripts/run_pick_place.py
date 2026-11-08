@@ -101,7 +101,8 @@ def arm_step(device, step, cfg, records):
         sent = device.velocity(requested)
         row={"stage":step["name"],"time_s":now-start,"monotonic_s":now,"reference_time_s":phase,
              "sample_sequence":seq,"can_timestamp_s":sample["can_timestamp_s"],
-             "feedback_age_s":time.time()-sample["can_timestamp_s"],
+             "feedback_age_s":time.monotonic()-sample["monotonic_s"],
+             "kernel_realtime_age_s":time.time()-sample["can_timestamp_s"],
              "feedback_monotonic_age_s":now-sample["monotonic_s"],
              "send_group_start_s":device.commands[-1]["send_start_s"],
              "send_group_end_s":device.commands[-1]["send_end_s"],
@@ -134,7 +135,7 @@ def gripper_step(device, gripper, step, cfg, rows, arm_active=True):
         gripper.move_gripper_m(value=step["width_m"],force=step["force_n"])
         time.sleep(.05)
         value=gripper.get_gripper_status()
-        if value is None or time.time()-value.timestamp>.2:
+        if value is None or device.message_age(0x2A8)>.2:
             raise RuntimeError("Gripper feedback unavailable")
         msg=value.msg
         faults=[k for k,v in msg.foc_status.to_dict().items()
@@ -199,6 +200,7 @@ def main():
             "descent_speed_scale":args.descent_speed_scale,"stage_velocity_limits_rad_s":cfg["stage_velocity_limits_rad_s"],
             "object_transfer_success":"requires_operator_confirmation", "cpv_period_s": .01}
     report['method']=args.method
+    report['feedback_age_clock']='monotonic callback receipt; not an end-to-end sensor latency measurement'
     if args.method!='baseline':report['controller']=f'MoveIt path + shared joint nominal + {args.method.upper()} TCP velocity safety filter'
     device=None;controls=[];grips=[];recording=None;session=None
     def terminate(*_):raise KeyboardInterrupt("SIGTERM")

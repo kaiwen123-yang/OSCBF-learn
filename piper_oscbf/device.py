@@ -28,6 +28,7 @@ class PiperDevice:
             auto_connect=False, enable_check_can=True, timeout=.05))
         self.condition, self.pending = threading.Condition(), {}
         self.latest, self.sequence = None, 0
+        self.received_at = {}
         self.phase, self.commanded = "observe", [0.0]*6
         self.feedback, self.commands = [], []
         self.driver_feedback = []
@@ -42,16 +43,20 @@ class PiperDevice:
         self.robot.set_auto_set_motion_mode_enabled(False)
 
     def _receive(self, frame):
+        received = time.monotonic()
+        if (frame.is_rx and not frame.is_remote_frame and not frame.is_error_frame
+                and len(frame.data) == 8):
+            self.received_at[frame.arbitration_id] = received
         if (frame.is_rx and not frame.is_remote_frame and not frame.is_error_frame
                 and 0x261 <= frame.arbitration_id <= 0x266 and len(frame.data) == 8):
-            self.driver_feedback.append({"monotonic_s": time.monotonic(),
+            self.driver_feedback.append({"monotonic_s": received,
                 "can_timestamp_s": frame.timestamp, "phase": self.phase,
                 "joint": frame.arbitration_id-0x260, "status_byte": int(frame.data[5]),
                 "enabled": bool(frame.data[5] & 0x40), "raw_hex": frame.data.hex()})
         if (not frame.is_rx or frame.is_remote_frame or frame.is_error_frame or
                 frame.arbitration_id not in (0x2A5, 0x2A6, 0x2A7) or len(frame.data) != 8):
             return
-        self.pending[frame.arbitration_id] = (time.monotonic(), frame.timestamp)
+        self.pending[frame.arbitration_id] = (received, frame.timestamp)
         if len(self.pending) != 3:
             return
         stamp = min(v[1] for v in self.pending.values())
@@ -85,30 +90,37 @@ class PiperDevice:
         if self.robot.has_comm_error():
             raise RuntimeError(str(self.robot.get_comm_error()))
         if (row is None or time.monotonic()-row["monotonic_s"] > .2 or
-                time.time()-row["can_timestamp_s"] > .2 or
                 (after is not None and row["sequence"] <= after)):
             raise RuntimeError("Fresh complete joint feedback interrupted")
         status = self.robot.get_arm_status()
-        if status is None or time.time()-status.timestamp > .2:
+        if status is None or self.message_age(0x2A1) > .2:
             raise RuntimeError("Arm status feedback interrupted")
         if int(status.msg.arm_status) != 0:
             raise RuntimeError(f"Controller stopped/faulted: {status.msg}")
         if enabled:
             drivers = [self.robot.get_driver_states(j) for j in range(1, 7)]
-            now = time.time()
-            checks = [{"joint": j, "age_s": now-m.timestamp if m else None,
+            checks = [{"joint": j, "age_s": self.message_age(0x260+j) if m else None,
                        "enabled": bool(m.msg.foc_status.driver_enable_status) if m else None}
                       for j,m in enumerate(drivers,1)]
             bad = [m for m in checks if m["age_s"] is None or m["age_s"] >= .2 or not m["enabled"]]
             if bad:
                 for check,message in zip(checks,drivers):
                     check["status"] = message.msg.to_dict() if message else None
-                self.last_driver_check = {"time_s": now, "phase": self.phase, "drivers": checks}
+                self.last_driver_check = {"time_s": time.time(), "phase": self.phase, "drivers": checks,
+                                          "age_clock": "monotonic_receive"}
                 fault = any(m["status"] is not None and any(v for k,v in m["status"]["foc_status"].items()
                             if k!="driver_enable_status") for m in bad)
                 error_type = RuntimeError if fault else MotorEnableUnconfirmed
                 raise error_type(f"Motor enable feedback failed: {bad}")
         return row, status.msg.to_dict()
+
+    def message_age(self, frame_id):
+        """Age since this callback received the CAN message, in one clock domain.
+
+        SocketCAN's epoch timestamp remains in logs; a WSL wall-clock correction
+        must not turn an already received frame into a stale one.
+        """
+        return time.monotonic() - self.received_at.get(frame_id, -math.inf)
 
     @staticmethod
     def angles(row):
@@ -120,14 +132,14 @@ class PiperDevice:
         self.robot.set_speed_percent(10)
         self.robot.set_motion_mode("j")
         self.robot.move_j(list(current))
-        stamp, start = time.time(), time.monotonic()
+        stamp = start = time.monotonic()
         while True:
             self.robot.enable()
             time.sleep(.1)
             self.state(enabled=False)
             messages = [self.robot.get_driver_states(j) for j in range(1, 7)]
-            if all(m is not None and m.timestamp > stamp and
-                   m.msg.foc_status.driver_enable_status for m in messages):
+            if all(m is not None and self.received_at.get(0x260+j, -math.inf) > stamp and
+                   m.msg.foc_status.driver_enable_status for j,m in enumerate(messages,1)):
                 return
             if time.monotonic()-start > 5:
                 raise RuntimeError("Enable feedback not confirmed")

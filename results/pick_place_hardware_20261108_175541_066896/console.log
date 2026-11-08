@@ -1,0 +1,16 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/pick_place_hardware_20261108_175541_066896
+执行参数： {'speed_scale': 1.0, 'descent_speed_scale': 1.0, 'saved_joint_velocity_limit_rad_s': 0.2, 'method': 'baseline'}
+open: actual gripper width=39.4mm force=0.14N
+pregrasp: 0.0/16.6s, max joint error=0.108deg
+pregrasp: 1.5/16.6s, max joint error=0.171deg
+pregrasp: 2.8/16.6s, max joint error=0.199deg
+pregrasp: 4.2/16.6s, max joint error=0.131deg
+pregrasp: 5.5/16.6s, max joint error=0.118deg
+pregrasp: 6.9/16.6s, max joint error=0.203deg
+pregrasp: 8.3/16.6s, max joint error=0.142deg
+pregrasp: 9.6/16.6s, max joint error=0.144deg
+pregrasp: 11.0/16.6s, max joint error=0.178deg
+pregrasp: 12.4/16.6s, max joint error=0.199deg
+已请求电子急停，可能下沉；现场确认停止，必要时使用物理急停。
+RuntimeError: Fresh complete joint feedback interrupted
+仅继续采集停止后的状态 3 秒，不发送新的运动/复位/使能指令。
