@@ -193,8 +193,11 @@ def main():
         if motion_requested:
             try:
                 robot.electronic_emergency_stop()
-                report["stop_action"] = "damping_emergency_stop_sent"
-                print("已发送电子急停，机械臂可能下沉；现场确认停止。", flush=True)
+                report["stop_action"] = "damping_emergency_stop_requested"
+                comm_error = robot.get_comm_error()
+                report["stop_send_error"] = str(comm_error) if comm_error is not None else None
+                print("已请求电子急停；SDK通信错误:", report["stop_send_error"],
+                      "。调用返回不代表机械臂已收到；现场确认停止。", flush=True)
             except Exception as stop_error:
                 report["stop_send_error"] = str(stop_error)
                 print("急停未能发送，请使用物理急停。", flush=True)

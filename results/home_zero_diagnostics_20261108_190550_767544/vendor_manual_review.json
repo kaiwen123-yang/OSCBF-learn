@@ -1,0 +1,40 @@
+{
+  "retrieved_at": "2026-11-08T21:26:28.757571+08:00",
+  "sources": [
+    {
+      "title": "PIPER H 用户手册",
+      "url": "https://agilexsupport.yuque.com/staff-hso6mo/alxgtf/ay1awrn2hrhn1krg",
+      "doc_id": 254611207,
+      "content_updated_at": "2026-10-22T06:59:43.000Z",
+      "content_sha256": "907b17869c38695dcc97d7c83aa3d5d75e58a32ab160fbcb18389c5219eece49"
+    },
+    {
+      "title": "机械臂对外通信协议2025010",
+      "url": "https://agilexsupport.yuque.com/staff-hso6mo/alxgtf/qii9wce225nvworv",
+      "doc_id": 223119475,
+      "content_updated_at": "2026-09-02T07:03:56.000Z",
+      "content_sha256": "c38c6357de45acc99b18e929f190ca4f1d77e5297eb3305f128e11fc545ea110"
+    }
+  ],
+  "facts": {
+    "nominal_supply_V": 24,
+    "external_supply_current_capacity_min_A": 10,
+    "supply_maximum_V": 26,
+    "single_arm_termination": "Keep factory switches; documented equivalent resistance 60 ohm",
+    "can_bitrate_bps": 1000000,
+    "base_led": {
+      "flashing_green": "normal",
+      "steady_green": "controller initialization",
+      "flashing_red": "fault or upgrade"
+    },
+    "return_zero": "Send factory initial joint angles; not encoder zero calibration",
+    "estop": "0x150 byte0=1: damping; byte0=2: recovery; enable still needed",
+    "motor_enable": "0x471 byte0=7 all joints; byte1=2 enable, byte1=1 disable"
+  },
+  "operator_report": {
+    "nominal_supply_V": 24,
+    "observed_indicator_change": false,
+    "actual_supply_current_A": null
+  },
+  "unresolved": "No explicit external-CAN ACK-loss -> disabled normal standby transition found in reviewed manual/protocol. Cause not established."
+}

@@ -1,0 +1,11 @@
+DIAGNOSTIC_RESULT_DIR: /home/kaiwen/OSCBF-learn/results/home_zero_diagnostics_20261108_190550_767544
+当前角度 deg: [-12.278, 133.594, -49.311, -1.62, 90.373, -9.94]
+当前状态: {'ctrl_mode': STANDBY(0x0), 'arm_status': NORMAL(0x0), 'mode_feedback': MOVE_CPV(0x5), 'teach_status': DISABLED(0x0), 'motion_status': REACH_TARGET_POS_SUCCESSFULLY(0x0), 'trajectory_num': 0, 'err_status': {'joint_1_angle_limit': False, 'joint_2_angle_limit': False, 'joint_3_angle_limit': False, 'joint_4_angle_limit': False, 'joint_5_angle_limit': False, 'joint_6_angle_limit': False, 'communication_status_joint_1': False, 'communication_status_joint_2': False, 'communication_status_joint_3': False, 'communication_status_joint_4': False, 'communication_status_joint_5': False, 'communication_status_joint_6': False}} 使能: [False, False, False, False, False, False]
+MOVE_J 10%，目标deg: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0] 正在使能。Ctrl+C 电子急停。
+ENABLE_OK: 六轴新反馈均为 True；开始记录 10 秒。
+  0.0s q_deg=[-12.278, 133.594, -49.311, -1.62, 90.373, -9.94] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_SUCCESSFULLY(0x0)
+  0.5s q_deg=[-3.409, 126.21, -40.85, -0.357, 80.941, -1.209] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_FAILED(0x1)
+  1.0s q_deg=[0.0, 118.492, -34.037, -0.475, 74.785, 0.0] enabled=[True, True, True, True, True, True] ctrl=CAN_CTRL(0x1) arm=NORMAL(0x0) motion=REACH_TARGET_POS_FAILED(0x1)
+已发送电子急停，机械臂可能下沉；现场确认停止。
+ERROR: RuntimeError: Failed to transmit: No buffer space available [Error Code 105]
+仅继续采集停止后的状态3秒，不自动复位、重新使能或发送新目标。

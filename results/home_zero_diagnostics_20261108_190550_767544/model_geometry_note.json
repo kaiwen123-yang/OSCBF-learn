@@ -1,0 +1,48 @@
+{
+  "source": "Read-only FK of received feedback.csv samples; no new route execution or simulation",
+  "frame": "base_link",
+  "table_z_m": -0.012,
+  "measured_joint_samples": 374,
+  "recorded_monotonic_span_s": 1.709893,
+  "model_tcp_z_m": {
+    "initial": 0.010863,
+    "last": 0.001606,
+    "minimum": 0.00111
+  },
+  "conservative_mesh_box_table_clearance_m": {
+    "initial": -0.018285,
+    "last_open40mm": -0.011682,
+    "minimum": -0.024632
+  },
+  "minimum_at": {
+    "elapsed_s": 0.81118,
+    "part": "gripper_base/corner1",
+    "q_deg": [
+      -12.278,
+      135.301,
+      -49.311,
+      -1.62,
+      89.552,
+      -9.94
+    ]
+  },
+  "last_received_q_deg": [
+    0.0,
+    118.492,
+    -34.037,
+    -0.475,
+    74.785,
+    0.0
+  ],
+  "per_joint_fraction_towards_zero": [
+    1.0,
+    0.113,
+    0.3097,
+    0.7068,
+    0.1725,
+    1.0
+  ],
+  "max_deviation_from_common_joint_progress_line_deg": 10.712,
+  "interpretation": "Vendor MOVE_J was not a coordinated straight joint interpolation. Conservative model proximity is not proof of physical collision or cause of ACK loss.",
+  "not_a_certified_homing_route": true
+}

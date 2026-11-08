@@ -1,0 +1,436 @@
+{
+  "run_commit": "04ffdeaae8d6dc54464aef336c1c414a9e54ef8c",
+  "run_tracked_source_changes": [],
+  "raw_frame_count": 9351,
+  "error_frame_count": 4880,
+  "ack_error_frame_count": 4876,
+  "error_id_counts": {
+    "0x24": 4876,
+    "0x4": 4
+  },
+  "sdk_calls": 191,
+  "failed_sdk_calls": [
+    {
+      "time_s": "1794135952.7157748",
+      "send_start_s": "3975.344066048",
+      "phase": "home_zero",
+      "arbitration_id": "0x156",
+      "dlc": "8",
+      "data_hex": "0000000000000000",
+      "exception": "",
+      "send_end_s": "3975.344088509",
+      "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+    },
+    {
+      "time_s": "1794135952.7158012",
+      "send_start_s": "3975.344092672",
+      "phase": "home_zero",
+      "arbitration_id": "0x157",
+      "dlc": "8",
+      "data_hex": "0000000000000000",
+      "exception": "",
+      "send_end_s": "3975.344101267",
+      "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+    },
+    {
+      "time_s": "1794135952.7363644",
+      "send_start_s": "3975.364655478",
+      "phase": "home_zero",
+      "arbitration_id": "0x150",
+      "dlc": "8",
+      "data_hex": "0100000000000000",
+      "exception": "",
+      "send_end_s": "3975.364697367",
+      "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+    }
+  ],
+  "timeline": [
+    {
+      "event": "last_normal_receive",
+      "monotonic_s": 3975.134319456,
+      "relative_to_first_ack_ms": -7.4357170001349004,
+      "local_time": "2026-11-08T19:05:52.505746+08:00"
+    },
+    {
+      "event": "first_ack_error",
+      "monotonic_s": 3975.141755173,
+      "relative_to_first_ack_ms": 0.0,
+      "local_time": "2026-11-08T19:05:52.513301+08:00"
+    },
+    {
+      "event": "first_enobufs",
+      "monotonic_s": 3975.344066048,
+      "relative_to_first_ack_ms": 202.31087499996647,
+      "local_time": "2026-11-08T19:05:52.715775+08:00"
+    },
+    {
+      "event": "application_exception",
+      "monotonic_s": 3975.364180912,
+      "relative_to_first_ack_ms": 222.42573899984563,
+      "local_time": "2026-11-08T19:05:52.735889+08:00"
+    },
+    {
+      "event": "estop_request_failed",
+      "monotonic_s": 3975.364655478,
+      "relative_to_first_ack_ms": 222.9003049997118,
+      "local_time": "2026-11-08T19:05:52.736364+08:00"
+    }
+  ],
+  "timeline_note": "Relative times use local monotonic callback/call clocks. Receive wall times are SocketCAN timestamps; SDK wall times are call times, not physical bus TX times.",
+  "control_150_471_calls": [
+    {
+      "time_s": "1794135951.3951051",
+      "send_start_s": "3974.023396185",
+      "phase": "enable",
+      "arbitration_id": "0x471",
+      "dlc": "8",
+      "data_hex": "0702000000000000",
+      "exception": "",
+      "send_end_s": "3974.023402979",
+      "comm_error_after_send": ""
+    },
+    {
+      "time_s": "1794135951.4952862",
+      "send_start_s": "3974.12357773",
+      "phase": "enable",
+      "arbitration_id": "0x471",
+      "dlc": "8",
+      "data_hex": "0702000000000000",
+      "exception": "",
+      "send_end_s": "3974.123618472",
+      "comm_error_after_send": ""
+    },
+    {
+      "time_s": "1794135952.7363644",
+      "send_start_s": "3975.364655478",
+      "phase": "home_zero",
+      "arbitration_id": "0x150",
+      "dlc": "8",
+      "data_hex": "0100000000000000",
+      "exception": "",
+      "send_end_s": "3975.364697367",
+      "comm_error_after_send": "Failed to transmit: No buffer space available [Error Code 105]"
+    }
+  ],
+  "sdk_clock_offset_range_ms": 0.000476837158203125,
+  "move_j_group_start_intervals_ms": {
+    "minimum": 0.06469299978562049,
+    "median": 20.29805300003318,
+    "maximum": 21.149022999907174,
+    "first_interval": 0.06469299978562049,
+    "remaining_minimum": 20.17748300022504,
+    "remaining_maximum": 21.149022999907174
+  },
+  "driver_voltage_observations": [
+    {
+      "joint": 1,
+      "initial_voltage_V": 23.0,
+      "last_voltage_V": 23.0,
+      "min_voltage_V": 23.0,
+      "max_voltage_V": 23.0,
+      "last_raw": {
+        "can_timestamp_s": "1794135952.4647708",
+        "receive_monotonic_s": "3975.093102404",
+        "phase": "home_zero",
+        "arbitration_id": "0x261",
+        "is_rx": "1",
+        "is_error": "0",
+        "is_remote": "0",
+        "is_extended": "0",
+        "dlc": "8",
+        "data_hex": "00e600221b400000"
+      }
+    },
+    {
+      "joint": 2,
+      "initial_voltage_V": 24.0,
+      "last_voltage_V": 23.0,
+      "min_voltage_V": 23.0,
+      "max_voltage_V": 24.0,
+      "last_raw": {
+        "can_timestamp_s": "1794135952.501599",
+        "receive_monotonic_s": "3975.130070992",
+        "phase": "home_zero",
+        "arbitration_id": "0x262",
+        "is_rx": "1",
+        "is_error": "0",
+        "is_remote": "0",
+        "is_extended": "0",
+        "dlc": "8",
+        "data_hex": "00e600201b400000"
+      }
+    },
+    {
+      "joint": 3,
+      "initial_voltage_V": 23.0,
+      "last_voltage_V": 22.0,
+      "min_voltage_V": 22.0,
+      "max_voltage_V": 23.0,
+      "last_raw": {
+        "can_timestamp_s": "1794135952.492591",
+        "receive_monotonic_s": "3975.120958038",
+        "phase": "home_zero",
+        "arbitration_id": "0x263",
+        "is_rx": "1",
+        "is_error": "0",
+        "is_remote": "0",
+        "is_extended": "0",
+        "dlc": "8",
+        "data_hex": "00dc00211c400000"
+      }
+    },
+    {
+      "joint": 4,
+      "initial_voltage_V": 23.0,
+      "last_voltage_V": 22.0,
+      "min_voltage_V": 22.0,
+      "max_voltage_V": 23.0,
+      "last_raw": {
+        "can_timestamp_s": "1794135952.4832368",
+        "receive_monotonic_s": "3975.111646941",
+        "phase": "home_zero",
+        "arbitration_id": "0x264",
+        "is_rx": "1",
+        "is_error": "0",
+        "is_remote": "0",
+        "is_extended": "0",
+        "dlc": "8",
+        "data_hex": "00dc00231d400000"
+      }
+    },
+    {
+      "joint": 5,
+      "initial_voltage_V": 23.0,
+      "last_voltage_V": 22.0,
+      "min_voltage_V": 22.0,
+      "max_voltage_V": 23.0,
+      "last_raw": {
+        "can_timestamp_s": "1794135952.4741187",
+        "receive_monotonic_s": "3975.102545238",
+        "phase": "home_zero",
+        "arbitration_id": "0x265",
+        "is_rx": "1",
+        "is_error": "0",
+        "is_remote": "0",
+        "is_extended": "0",
+        "dlc": "8",
+        "data_hex": "00dc00251f400000"
+      }
+    },
+    {
+      "joint": 6,
+      "initial_voltage_V": 23.0,
+      "last_voltage_V": 22.0,
+      "min_voltage_V": 22.0,
+      "max_voltage_V": 23.0,
+      "last_raw": {
+        "can_timestamp_s": "1794135952.465179",
+        "receive_monotonic_s": "3975.09351009",
+        "phase": "home_zero",
+        "arbitration_id": "0x266",
+        "is_rx": "1",
+        "is_error": "0",
+        "is_remote": "0",
+        "is_extended": "0",
+        "dlc": "8",
+        "data_hex": "00dc00251f400000"
+      }
+    }
+  ],
+  "recorder_error": null,
+  "interface_delta": {
+    "rx_packets": 4517,
+    "rx_bytes": 36128,
+    "rx_errors": 0,
+    "rx_dropped": 0,
+    "tx_packets": 188,
+    "tx_bytes": 0,
+    "tx_errors": 0,
+    "tx_dropped": 0
+  },
+  "interface_before": [
+    {
+      "ifindex": 4,
+      "ifname": "can0",
+      "flags": [
+        "NOARP",
+        "UP",
+        "LOWER_UP",
+        "ECHO"
+      ],
+      "mtu": 16,
+      "qdisc": "pfifo_fast",
+      "operstate": "UP",
+      "linkmode": "DEFAULT",
+      "group": "default",
+      "txqlen": 10,
+      "link_type": "can",
+      "promiscuity": 0,
+      "min_mtu": 0,
+      "max_mtu": 0,
+      "linkinfo": {
+        "info_kind": "can",
+        "info_data": {
+          "state": "ERROR-ACTIVE",
+          "restart_ms": 0,
+          "bittiming": {
+            "bitrate": 1000000,
+            "sample_point": 0.75,
+            "tq": 62,
+            "prop_seg": 5,
+            "phase_seg1": 6,
+            "phase_seg2": 4,
+            "sjw": 2
+          },
+          "bittiming_const": {
+            "name": "gs_usb",
+            "tseg1": {
+              "min": 1,
+              "max": 16
+            },
+            "tseg2": {
+              "min": 1,
+              "max": 8
+            },
+            "sjw": {
+              "min": 1,
+              "max": 4
+            },
+            "brp": {
+              "min": 1,
+              "max": 1024
+            },
+            "brp_inc": 1
+          },
+          "clock": 48000000
+        },
+        "info_xstats": {
+          "restarts": 0,
+          "bus_error": 0,
+          "arbitration_lost": 0,
+          "error_warning": 0,
+          "error_passive": 0,
+          "bus_off": 0
+        }
+      },
+      "num_tx_queues": 1,
+      "num_rx_queues": 1,
+      "gso_max_size": 65536,
+      "gso_max_segs": 65535,
+      "parentbus": "usb",
+      "parentdev": "1-1:1.0",
+      "stats64": {
+        "rx": {
+          "bytes": 79053799,
+          "packets": 9894302,
+          "errors": 0,
+          "dropped": 0,
+          "over_errors": 0,
+          "multicast": 0
+        },
+        "tx": {
+          "bytes": 0,
+          "packets": 11973,
+          "errors": 0,
+          "dropped": 0,
+          "carrier_errors": 0,
+          "collisions": 0
+        }
+      }
+    }
+  ],
+  "interface_after": [
+    {
+      "ifindex": 4,
+      "ifname": "can0",
+      "flags": [
+        "NOARP",
+        "UP",
+        "LOWER_UP",
+        "ECHO"
+      ],
+      "mtu": 16,
+      "qdisc": "pfifo_fast",
+      "operstate": "UP",
+      "linkmode": "DEFAULT",
+      "group": "default",
+      "txqlen": 10,
+      "link_type": "can",
+      "promiscuity": 0,
+      "min_mtu": 0,
+      "max_mtu": 0,
+      "linkinfo": {
+        "info_kind": "can",
+        "info_data": {
+          "state": "ERROR-WARNING",
+          "restart_ms": 0,
+          "bittiming": {
+            "bitrate": 1000000,
+            "sample_point": 0.75,
+            "tq": 62,
+            "prop_seg": 5,
+            "phase_seg1": 6,
+            "phase_seg2": 4,
+            "sjw": 2
+          },
+          "bittiming_const": {
+            "name": "gs_usb",
+            "tseg1": {
+              "min": 1,
+              "max": 16
+            },
+            "tseg2": {
+              "min": 1,
+              "max": 8
+            },
+            "sjw": {
+              "min": 1,
+              "max": 4
+            },
+            "brp": {
+              "min": 1,
+              "max": 1024
+            },
+            "brp_inc": 1
+          },
+          "clock": 48000000
+        },
+        "info_xstats": {
+          "restarts": 0,
+          "bus_error": 0,
+          "arbitration_lost": 0,
+          "error_warning": 7,
+          "error_passive": 4864,
+          "bus_off": 0
+        }
+      },
+      "num_tx_queues": 1,
+      "num_rx_queues": 1,
+      "gso_max_size": 65536,
+      "gso_max_segs": 65535,
+      "parentbus": "usb",
+      "parentdev": "1-1:1.0",
+      "stats64": {
+        "rx": {
+          "bytes": 79089575,
+          "packets": 9898775,
+          "errors": 0,
+          "dropped": 0,
+          "over_errors": 0,
+          "multicast": 0
+        },
+        "tx": {
+          "bytes": 0,
+          "packets": 12161,
+          "errors": 0,
+          "dropped": 0,
+          "carrier_errors": 0,
+          "collisions": 0
+        }
+      }
+    }
+  ],
+  "homing_completed": false,
+  "oscbf_retry_started": false,
+  "stop_delivery": "0x150/01 request returned ENOBUFS; original summary stop_action=sent is not evidence of delivery"
+}

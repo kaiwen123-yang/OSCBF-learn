@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-11-08T21:13:30.024469+08:00",
+  "operator_statements": [
+    {
+      "text": "停住了，但是没有正常回零位",
+      "meaning": "Stopped, homing not completed"
+    },
+    {
+      "text": "没有做这些操作",
+      "question_context": "Whether physical estop, power cycle, or USB-CAN unplug/replug was performed",
+      "physical_estop": false,
+      "power_cycle": false,
+      "usb_replug": false
+    },
+    {
+      "text": "24v，没有任何变化，手册链接",
+      "nominal_supply_V": 24,
+      "power_or_controller_indicator_changed": false,
+      "provided_manual_url": "https://agilexsupport.yuque.com/staff-hso6mo/alxgtf/ay1awrn2hrhn1krg",
+      "actual_supply_current_A": null
+    }
+  ],
+  "latest_observed_robot_status_source": "logs/joint_state_20261108_190655_173596.json",
+  "later_host_observation": "At21:03 WSL had restarted; can0 absent and usbipd device Shared/unattached. This later host state is not evidence of the19:05 failure cause.",
+  "new_motion_after_failure": false,
+  "homing_completed": false,
+  "oscbf_retry_started": false
+}
