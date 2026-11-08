@@ -33,14 +33,17 @@ def main():
         interface="socketcan", channel="can0", bitrate=1000000,
         auto_connect=False, enable_check_can=True, timeout=.05))
     lock, pending, rows, commands = threading.Lock(), {}, [], []
+    received_at = {}
     phase, commanded_vel = "observe", 0.0
 
     def observe(frame):
         if not frame.is_rx or frame.is_error_frame or frame.is_remote_frame:
             return
+        received=time.monotonic()
+        if len(frame.data)==8:received_at[frame.arbitration_id]=received
         if frame.arbitration_id not in (0x2A5, 0x2A6, 0x2A7) or len(frame.data) != 8:
             return
-        pending[frame.arbitration_id] = (time.monotonic(), frame.timestamp)
+        pending[frame.arbitration_id] = (received, frame.timestamp)
         if len(pending) == 3:
             oldest, stamp = min(pending.values())
             pending.clear()
@@ -59,7 +62,7 @@ def main():
         if time.monotonic()-row[0] > .2:
             raise RuntimeError("Joint feedback interrupted")
         status = robot.get_arm_status()
-        if status is None or time.time()-status.timestamp > .2:
+        if status is None or time.monotonic()-received_at.get(0x2A1,-math.inf) > .2:
             raise RuntimeError("Arm status feedback interrupted")
         if int(status.msg.arm_status) != 0:
             raise RuntimeError(f"Controller stopped/faulted: {status.msg}")

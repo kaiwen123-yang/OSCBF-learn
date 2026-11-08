@@ -71,8 +71,6 @@ class Planner:
         request.fk_link_names = ['tcp_link']
         request.robot_state = self.state()
         result = self.call('compute_fk', request)
-        if result.error_code.val != 1 or len(result.pose_stamped) != 1:
-            raise RuntimeError('MoveIt TCP FK verification query failed')
         return {'joint_rad': list(self.q), 'gripper_width_m': self.width,
                 'pose': message_to_ordereddict(result.pose_stamped[0]),
                 'declared_tcp_offset_m': self.cfg['tcp_offset_m']}
@@ -226,8 +224,6 @@ class Planner:
             return
         first = len(self.steps)
         for index, xyz in enumerate(via):
-            if len(xyz) != 3 or not all(math.isfinite(float(v)) for v in xyz):
-                raise ValueError('Finite XYZ required for each interior transfer reference')
             self.arm(f'transfer_part_{index}', pose(xyz, True))
         self.arm(f'transfer_part_{len(via)}', final_target)
         parts = self.steps[first:]
@@ -236,14 +232,13 @@ class Planner:
         trajectory = combined['trajectory']['joint_trajectory']
         trajectory['points'] = []
         components, offset_ns = [], 0
-        previous_end = None
         for part in parts:
             source = part['trajectory']['joint_trajectory']
-            if source['joint_names'] != trajectory['joint_names']:
-                raise RuntimeError('Transfer subplans use different joint orders')
             points = copy.deepcopy(source['points'])
-            if previous_end is not None and max(abs(a-b) for a,b in zip(previous_end,points[0]['positions'])) > 1e-6:
-                raise RuntimeError('Discontinuous transfer subplans')
+            order=[source['joint_names'].index(name) for name in trajectory['joint_names']]
+            for point in points:
+                for field in ('positions','velocities','accelerations','effort'):
+                    if point.get(field):point[field]=[point[field][i] for i in order]
             begin = len(trajectory['points'])
             for point in points:
                 t = point['time_from_start']
@@ -252,7 +247,6 @@ class Planner:
                 trajectory['points'].append(point)
             last = trajectory['points'][-1]['time_from_start']
             offset_ns = int(last['sec'])*1_000_000_000 + int(last['nanosec']) + 10_000_000
-            previous_end = points[-1]['positions']
             components.append({'name':part['name'],'first_point':begin,'last_point':len(trajectory['points'])-1})
         combined['interior_via_tcp_m'] = via
         combined['subplans'] = components

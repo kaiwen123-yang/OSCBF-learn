@@ -42,6 +42,7 @@ def main():
         channel="can0", interface="socketcan", bitrate=1000000,
         auto_connect=False, enable_check_can=True, timeout=.05))
     lock, pending, rows, commands = threading.Lock(), {}, [], []
+    received_at = {}
     phase, commanded = "observe", [0.0]*6
     control_started = False
     report = {"time": datetime.now().astimezone().isoformat(), "execute": args.execute,
@@ -52,10 +53,13 @@ def main():
                       "CPV has velocity commands on all six axes, no position writes."}
 
     def observe(frame):
+        received=time.monotonic()
+        if frame.is_rx and not frame.is_error_frame and not frame.is_remote_frame and len(frame.data)==8:
+            received_at[frame.arbitration_id]=received
         if (not frame.is_rx or frame.is_error_frame or frame.is_remote_frame or
                 frame.arbitration_id not in JOINT_IDS or len(frame.data) != 8):
             return
-        pending[frame.arbitration_id] = (time.monotonic(), frame.timestamp)
+        pending[frame.arbitration_id] = (received, frame.timestamp)
         if len(pending) != 3:
             return
         oldest = min(x[0] for x in pending.values())
@@ -92,14 +96,14 @@ def main():
         if row is None or time.monotonic()-row["monotonic_s"] > .2:
             raise RuntimeError("Complete joint feedback interrupted")
         message = robot.get_arm_status()
-        if message is None or time.time()-message.timestamp > .2:
+        if message is None or time.monotonic()-received_at.get(0x2A1,-math.inf) > .2:
             raise RuntimeError("Arm status feedback interrupted")
         if int(message.msg.arm_status) != 0:
             raise RuntimeError(f"Controller stopped/faulted: {message.msg}")
         drivers = [robot.get_driver_states(j) for j in range(1, 7)]
         if require_enabled and not all(
-                m is not None and time.time()-m.timestamp < .2 and
-                m.msg.foc_status.driver_enable_status for m in drivers):
+                m is not None and time.monotonic()-received_at.get(0x260+j,-math.inf) < .2 and
+                m.msg.foc_status.driver_enable_status for j,m in enumerate(drivers,1)):
             raise RuntimeError("Six enabled motors not confirmed by fresh feedback")
         return row, message.msg.to_dict()
 

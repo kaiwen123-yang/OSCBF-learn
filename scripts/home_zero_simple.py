@@ -44,6 +44,7 @@ def main():
         interface="socketcan", channel="can0", bitrate=1000000,
         auto_connect=False, enable_check_can=True, timeout=.1))
     lock, pending, rows = threading.Lock(), set(), []
+    received_at = {}
     driver_frames = []
     phase = "observe"
     recording = None
@@ -52,6 +53,8 @@ def main():
     def observe(frame):
         if not frame.is_rx or frame.is_error_frame or frame.is_remote_frame:
             return
+        received=time.monotonic()
+        if len(frame.data)==8:received_at[frame.arbitration_id]=received
         if 0x261 <= frame.arbitration_id <= 0x266 and len(frame.data)==8:
             driver_frames.append({"timestamp_s":frame.timestamp,"phase":phase,
                                   "joint":frame.arbitration_id-0x260,"raw_hex":frame.data.hex()})
@@ -61,7 +64,7 @@ def main():
         if len(pending) == 3:
             pending.clear()
             with lock:
-                rows.append([time.monotonic(), frame.timestamp, phase,
+                rows.append([received, frame.timestamp, phase,
                              *list(robot.get_joint_angles().msg)])
 
     def state():
@@ -77,9 +80,9 @@ def main():
     def motors_confirmed(expected, after):
         # enable() returns cached feedback, not an ACK for this request.
         messages = [robot.get_driver_states(j) for j in range(1, 7)]
-        return all(m is not None and m.timestamp > after
+        return all(m is not None and received_at.get(0x260+j,-math.inf) > after
                    and bool(m.msg.foc_status.driver_enable_status) == expected
-                   for m in messages)
+                   for j,m in enumerate(messages,1))
 
     robot.get_context().register_parser_packet_fun(observe)
     report = {"speed_percent": 10, "target_rad": target,
@@ -116,7 +119,7 @@ def main():
                 print("恢复上轮软件急停：reset 会使电机失电；随后重新使能。", flush=True)
                 phase = "reset"
                 view.phase=phase
-                reset_sent_at = time.time()
+                reset_sent_at = time.monotonic()
                 robot.reset()
                 report["reset_sent"] = True
                 reset_started = time.monotonic()
@@ -124,7 +127,7 @@ def main():
                     time.sleep(.1)
                     q, status, enabled = state()
                     arm_message = robot.get_arm_status()
-                    if (arm_message is not None and arm_message.timestamp > reset_sent_at
+                    if (arm_message is not None and received_at.get(0x2A1,-math.inf) > reset_sent_at
                             and int(status["arm_status"]) == 0
                             and motors_confirmed(False, reset_sent_at)):
                         break
@@ -140,7 +143,7 @@ def main():
             motion_requested = report["motion_requested"] = True
             robot.set_speed_percent(10)
             robot.move_j(target)
-            enable_sent_at, enable_started = time.time(), time.monotonic()
+            enable_sent_at = enable_started = time.monotonic()
             while True:
                 robot.enable()
                 time.sleep(.1)

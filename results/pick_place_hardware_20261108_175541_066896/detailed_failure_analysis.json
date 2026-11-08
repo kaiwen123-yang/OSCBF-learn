@@ -1,0 +1,333 @@
+{
+  "status": "failed",
+  "error": "RuntimeError: Fresh complete joint feedback interrupted",
+  "completed_stages": [
+    "open"
+  ],
+  "old_kernel_realtime_age_at_exception_s": 2.3941078186035156,
+  "callback_monotonic_age_at_exception_s": 0.0031367480000028536,
+  "existing_timeout_s": 0.2,
+  "largest_adjacent_clock_offset_step": {
+    "before": {
+      "monotonic_s": 80.93801872,
+      "realtime_minus_monotonic_s": 1794131682.2911613
+    },
+    "after": {
+      "monotonic_s": 80.988404297,
+      "realtime_minus_monotonic_s": 1794131684.6819377
+    },
+    "offset_change_s": 2.3907763957977295
+  },
+  "largest_kernel_timestamp_step": {
+    "from_sequence": 4832,
+    "to_sequence": 4833,
+    "monotonic_gap_s": 0.004738004999992995,
+    "kernel_realtime_gap_s": 2.395664691925049,
+    "clock_gap_difference_s": 2.390926686925056
+  },
+  "maximum_complete_feedback_callback_gap_s": 0.030346475999991185,
+  "can_error_frames": 0,
+  "sdk_send_errors": 0,
+  "stop_can_requests": [
+    {
+      "time_s": "1794131765.624206",
+      "send_start_s": "80.942268466",
+      "phase": "pregrasp",
+      "arbitration_id": "0x150",
+      "dlc": "8",
+      "data_hex": "0100000000000000",
+      "exception": "",
+      "send_end_s": "80.942279373",
+      "comm_error_after_send": ""
+    }
+  ],
+  "post_stop_controller_status": {
+    "ctrl_mode": 0,
+    "arm_status": 1,
+    "mode_feedback": 5,
+    "teach_status": 0,
+    "motion_status": 0,
+    "trajectory_num": 0,
+    "err_status": {
+      "joint_1_angle_limit": false,
+      "joint_2_angle_limit": false,
+      "joint_3_angle_limit": false,
+      "joint_4_angle_limit": false,
+      "joint_5_angle_limit": false,
+      "joint_6_angle_limit": false,
+      "communication_status_joint_1": false,
+      "communication_status_joint_2": false,
+      "communication_status_joint_3": false,
+      "communication_status_joint_4": false,
+      "communication_status_joint_5": false,
+      "communication_status_joint_6": false
+    }
+  },
+  "post_stop_q_deg": [
+    -12.19,
+    99.361,
+    -46.749,
+    -0.422,
+    61.877,
+    -12.069
+  ],
+  "conclusion": "Feedback continued in monotonic time. A CLOCK_REALTIME step made the epoch-age expression exceed the existing timeout and triggered the original emergency-stop path.",
+  "boundary": "Kernel receive and callback times are not measurements of sensor-to-actuator end-to-end latency; the service that changed CLOCK_REALTIME is not established by this log.",
+  "executed_source_commit": "40eb3b871df2d028fe154ab396c6932628ab5e04",
+  "clock_implementation": {
+    "time": {
+      "implementation": "clock_gettime(CLOCK_REALTIME)",
+      "monotonic": false,
+      "adjustable": true,
+      "resolution": 1e-09
+    },
+    "monotonic": {
+      "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-09
+    }
+  },
+  "post_exception_tx": [
+    {
+      "time_s": "1794131765.624085",
+      "send_start_s": "80.942147324",
+      "phase": "pregrasp",
+      "arbitration_id": "0x181",
+      "dlc": "7",
+      "data_hex": "77737000000000",
+      "exception": "",
+      "send_end_s": "80.94217601",
+      "comm_error_after_send": ""
+    },
+    {
+      "time_s": "1794131765.624123",
+      "send_start_s": "80.942185419",
+      "phase": "pregrasp",
+      "arbitration_id": "0x182",
+      "dlc": "7",
+      "data_hex": "77737000000000",
+      "exception": "",
+      "send_end_s": "80.942192544",
+      "comm_error_after_send": ""
+    },
+    {
+      "time_s": "1794131765.6241367",
+      "send_start_s": "80.942199107",
+      "phase": "pregrasp",
+      "arbitration_id": "0x183",
+      "dlc": "7",
+      "data_hex": "77737000000000",
+      "exception": "",
+      "send_end_s": "80.942206187",
+      "comm_error_after_send": ""
+    },
+    {
+      "time_s": "1794131765.6241505",
+      "send_start_s": "80.942212868",
+      "phase": "pregrasp",
+      "arbitration_id": "0x184",
+      "dlc": "7",
+      "data_hex": "77737000000000",
+      "exception": "",
+      "send_end_s": "80.942218143",
+      "comm_error_after_send": ""
+    },
+    {
+      "time_s": "1794131765.6241612",
+      "send_start_s": "80.942223511",
+      "phase": "pregrasp",
+      "arbitration_id": "0x185",
+      "dlc": "7",
+      "data_hex": "77737000000000",
+      "exception": "",
+      "send_end_s": "80.942227799",
+      "comm_error_after_send": ""
+    },
+    {
+      "time_s": "1794131765.62417",
+      "send_start_s": "80.942232245",
+      "phase": "pregrasp",
+      "arbitration_id": "0x186",
+      "dlc": "7",
+      "data_hex": "77737000000000",
+      "exception": "",
+      "send_end_s": "80.942236372",
+      "comm_error_after_send": ""
+    },
+    {
+      "time_s": "1794131765.624206",
+      "send_start_s": "80.942268466",
+      "phase": "pregrasp",
+      "arbitration_id": "0x150",
+      "dlc": "8",
+      "data_hex": "0100000000000000",
+      "exception": "",
+      "send_end_s": "80.942279373",
+      "comm_error_after_send": ""
+    }
+  ],
+  "tx_id_counts": {
+    "0x181": 1990,
+    "0x182": 1990,
+    "0x183": 1990,
+    "0x184": 1990,
+    "0x185": 1990,
+    "0x186": 1990,
+    "0x159": 30,
+    "0x151": 1,
+    "0x150": 1
+  },
+  "timeline_relative_to_exception_ms": {
+    "last_complete_feedback": -3.1367480000028536,
+    "exception": 0.0,
+    "first_zero_request": 0.6536449999998695,
+    "electronic_stop_request": 0.7747869999974455,
+    "first_recorded_estop_status": 46.910617999998294,
+    "post_stop_snapshot": 3003.3515359999965
+  },
+  "other_message_ages_from_independent_raw_receiver": [
+    {
+      "source": "controller_status",
+      "frame_id": "0x2a1",
+      "raw_receiver_age_ms": 3.4827190000044084,
+      "epoch_age_ms": 2394.4122791290283
+    },
+    {
+      "source": "driver_J1",
+      "frame_id": "0x261",
+      "raw_receiver_age_ms": 44.11604599999919,
+      "epoch_age_ms": 2434.9257946014404
+    },
+    {
+      "source": "driver_J2",
+      "frame_id": "0x262",
+      "raw_receiver_age_ms": 7.120000000000459,
+      "epoch_age_ms": 2397.984504699707
+    },
+    {
+      "source": "driver_J3",
+      "frame_id": "0x263",
+      "raw_receiver_age_ms": 16.27829000000247,
+      "epoch_age_ms": 2407.083034515381
+    },
+    {
+      "source": "driver_J4",
+      "frame_id": "0x264",
+      "raw_receiver_age_ms": 25.004489000011176,
+      "epoch_age_ms": 2415.922164916992
+    },
+    {
+      "source": "driver_J5",
+      "frame_id": "0x265",
+      "raw_receiver_age_ms": 34.227255000004675,
+      "epoch_age_ms": 2425.032615661621
+    },
+    {
+      "source": "driver_J6",
+      "frame_id": "0x266",
+      "raw_receiver_age_ms": 43.22862600000121,
+      "epoch_age_ms": 2434.056043624878
+    }
+  ],
+  "longest_sdk_send_call": {
+    "frame_id": "0x182",
+    "duration_ms": 29.81835600000693,
+    "seconds_before_exception": 7.416747808000011
+  },
+  "joint_feedback_deg": {
+    "at_exception": [
+      -12.151,
+      76.68,
+      -59.432,
+      0.0,
+      60.113,
+      -12.173
+    ],
+    "post_stop_3s": [
+      -12.19,
+      99.361,
+      -46.749,
+      -0.422,
+      61.877,
+      -12.069
+    ],
+    "read_175652": [
+      -12.19,
+      133.561,
+      -49.379,
+      -1.684,
+      90.364,
+      -9.852
+    ],
+    "before_reset_1828": [
+      -12.19,
+      133.561,
+      -49.379,
+      -1.684,
+      90.364,
+      -9.852
+    ],
+    "after_reset_1828": [
+      -12.278,
+      133.594,
+      -49.311,
+      -1.62,
+      90.373,
+      -9.94
+    ]
+  },
+  "reset_record": {
+    "path": "logs/task_recovery_20261108_182815_027322.json",
+    "status": "reset_only_completed",
+    "reset_sent": true,
+    "enable_sent": false,
+    "motion_sent": false,
+    "final_arm_status": 0,
+    "final_enabled": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "vendor_docs": {
+    "commit": "d90e234ba8e408cfa964b38aa9120b3131fc9f85",
+    "file": "docs/piper/piper_api.md",
+    "estop_line": 4402,
+    "reset_line": 4426,
+    "estop_semantics": "Raised joints descend slowly with damping; not a fixed-position hold.",
+    "reset_semantics": "Resets mode and immediately removes motor power."
+  },
+  "root_cause_chain": [
+    "CLOCK_REALTIME advanced while recent epoch-stamped CAN data was still cached.",
+    "The OR freshness condition treated that adjustable-clock age as elapsed time, despite fresh monotonic callback receipt.",
+    "The exception handler called the same state check again before its normal zero-stop path.",
+    "That second rejection selected emergency_stop(), which sent six zero-velocity messages followed by electronic stop.",
+    "Reported joint positions changed after electronic stop, before the later reset-only operation."
+  ],
+  "unresolved": [
+    "The actor that stepped CLOCK_REALTIME is not established.",
+    "No video/external measurement distinguishes all passive descent from operator support/adjustment.",
+    "The revised code has not completed another hardware motion run."
+  ],
+  "cleanup_scope": {
+    "deleted": "Adjustable-clock freshness branches and the repeated state gate before software-error zero stop.",
+    "not_added": "No new safety thresholds, defensive tests, simulation, images, reset-on-error or re-enable-on-error.",
+    "preserved": "Existing hardware fault/enable checks, algorithm constraints and explicit emergency-stop function."
+  },
+  "inputs_sha256": {
+    "summary.json": "526ba8ed338dd8ea89e35bb980789b7d6af2ce6f15532f4814c4dd37a5537a4b",
+    "recording.json": "63ce2618e85b3d0aa0f86bd0fd54fb9767be5138d64ec57a5ff8a8e6b6dfb731",
+    "events.jsonl": "c8acc3987b2db2b2215d8d3f1b55c9ebeb07c673c530223c105ca9ee97a6ae92",
+    "states.jsonl": "da96a4056ec922376568e8188bb83fe5410f7f91c745d6d4a769a219f5617188",
+    "raw_can.csv": "af3f93b09b534f39a70cea10bb053bcd3c93def431b69bac048b6238ad2ebc63",
+    "sdk_tx.csv": "3a9387ce73a4443179ecdc3ef2d879afa253ba57b598152bb2b129eacbd854bf",
+    "feedback.csv": "5016dcd21dd2e3132bb2d65eac797b585834b9f8ddfa7a2de371c6d9d720309a",
+    "control.csv": "9a95faf88cb77f051f6fa82caad3cb1ef35b57a573ec6d78cf464fab3cbc0222",
+    "sources/device.py": "d7728ff2bf4fac48713833c54441f021f5fa495a76848707138aa57b0d12d996",
+    "sources/run_pick_place.py": "0dd588402d6fd7433dcdc0a5b1cb8423a7d9a383247f5f0c153ffeb61fac471b"
+  }
+}

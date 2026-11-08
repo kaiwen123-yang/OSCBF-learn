@@ -1,5 +1,8 @@
 # Piper H / OSCBF
 
+2026-11-08 最新状态：完整执行器已提供 `baseline/cbf/oscbf` 方法入口，但无障碍完整OSCBF尚未完成实机验证。最新准备动作因实时时钟跳变造成旧反馈超时误判而急停，已单独清急停并保持失能；详细原因与当前代码清理见 [最新交接](PROJECT_STATE.md) 和 [执行流程](docs/EXECUTION_POLICY.md)。
+
+
 AgileX Piper H 实机项目，Ubuntu 22.04 + ROS 2 Humble + Python 3.10，标准夹爪，无项目相机。
 
 **已有成果：固定位置完整抓放实机基线，以及独立的 OSCBF/普通 CBF 虚拟平面实机对比。**

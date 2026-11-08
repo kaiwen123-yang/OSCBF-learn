@@ -275,16 +275,17 @@ def main():
                 report["stop_send_errors"]=device.emergency_stop()
             else:
                 try:
-                    _,stop_status=device.state(enabled=False)
-                    if int(stop_status["mode_feedback"])!=5:
-                        raise RuntimeError("Not in CPV; zero-velocity stop unavailable")
+                    # A zero request needs no position calculation or another
+                    # read of the same state which raised the software error.
                     device.velocity([0.]*6, immediate=True)
                     time.sleep(.06)
-                    device.zero(.5)
-                    report["stop_action"]="zero CPV after software error; motors remain enabled"
-                    print("任务已停止：驱动状态正常，已发零CPV速度，未请求电子急停。",flush=True)
+                    stop_until=time.monotonic()+.5
+                    while time.monotonic()<stop_until:
+                        device.velocity([0.]*6)
+                    report["stop_action"]="zero CPV requested after software error; no reset or mode switch"
+                    print("已发送零CPV速度停止请求；未自动切换模式或复位。",flush=True)
                 except Exception as stop_error:
-                    report["stop_state_error"]=str(stop_error)
+                    report["stop_send_error"]=str(stop_error)
                     report["stop_send_errors"]=device.emergency_stop()
         print(report["error"],flush=True)
     finally:

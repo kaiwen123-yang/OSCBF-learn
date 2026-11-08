@@ -43,21 +43,22 @@ def main():
                 or len(frame.data) != 8 or not frame.is_rx
                 or frame.is_remote_frame or frame.is_error_frame):
             return
-        pending[frame.arbitration_id] = frame.timestamp
+        pending[frame.arbitration_id] = (frame.timestamp,time.monotonic())
         if len(pending) != 3:
             return
-        first, last = min(pending.values()), max(pending.values())
+        first, last = min(v[0] for v in pending.values()), max(v[0] for v in pending.values())
+        first_mono,last_mono = min(v[1] for v in pending.values()),max(v[1] for v in pending.values())
         pending.clear()
-        if last - first > 0.02 or not 0 <= time.time() - first <= 0.1:
+        if last_mono-first_mono > 0.02 or not 0 <= time.monotonic()-first_mono <= 0.1:
             return
         msg = robot.get_joint_angles()
         if msg is not None and len(msg.msg) == 6 and all(math.isfinite(x) for x in msg.msg):
             with lock:
-                latest.update(q=list(msg.msg), timestamp=first)
+                latest.update(q=list(msg.msg), timestamp=first,received_monotonic_s=first_mono)
 
     def current_q():
         with lock:
-            if not latest or not 0 <= time.time() - latest["timestamp"] <= 0.1:
+            if not latest or not 0 <= time.monotonic()-latest["received_monotonic_s"] <= 0.1:
                 raise RuntimeError("Complete fresh joint feedback unavailable")
             return latest["q"][:]
 

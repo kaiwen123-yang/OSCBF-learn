@@ -22,14 +22,14 @@
 
 ## 现场复跑
 
-通信修复版本冻结在独立工作副本 `/home/kaiwen/OSCBF-cpv-validation`。它使用同一固定 SDK 与算法环境，但控制代码与后续算法集成分开。
+`90a9482` 的独立工作副本 `/home/kaiwen/OSCBF-cpv-validation` 只作为历史版本参照。当前执行入口为 `/home/kaiwen/OSCBF-learn`，包含后续时钟修订与用户要求的软件门槛清理。
 
 准备条件：原桌面与底座布置，方块摆回右侧抓取点，运动范围清空，机械臂实际处于原计划零位附近。先读状态；若姿态或故障状态不符，不执行原计划，也不自动复位。
 
 在 WSL 终端运行：
 
 ```bash
-cd /home/kaiwen/OSCBF-cpv-validation
+cd /home/kaiwen/OSCBF-learn
 env -u LD_LIBRARY_PATH ./envs/piper-sdk/bin/python -I scripts/read_joint_state.py && \
 env -u LD_LIBRARY_PATH JAX_PLATFORMS=cpu ./envs/oscbf/bin/python -I scripts/run_pick_place.py \
   results/pick_place_plan_20261104_224921_126900/task.json \
@@ -38,7 +38,7 @@ env -u LD_LIBRARY_PATH JAX_PLATFORMS=cpu ./envs/oscbf/bin/python -I scripts/run_
 
 动作包含张爪、接近、下降、抓取、抬升、运输、放置、撤离及 **return_initial**。两个速度倍率均为 1.5，关节速度上限 0.30 rad/s。运行时只有这个进程发送运动命令。正常结束保持 CPV 零速度及使能；Ctrl+C 使用原有零速加电子急停处理，可能下沉。没有新增自动回零、复位或异常后的重新使能。
 
-日志写在该冻结工作副本的 `results/pick_place_hardware_时间/`。`recording.json` 保存 Git 提交、代码修改状态和源码哈希；`commands.csv` 增加调度目标、实际起止、相邻开始/结束间隔、是否绕过节拍和发送完成关节数；`control.csv` 增加反馈年龄及实际发送组起止。
+当前日志写在主工作副本的 `results/pick_place_hardware_时间/`。`recording.json` 保存 Git 提交、代码修改状态和源码哈希；`commands.csv` 增加调度目标、实际起止、相邻开始/结束间隔、是否绕过节拍和发送完成关节数；`control.csv` 增加反馈年龄及实际发送组起止。
 
 完成后读取原始记录：
 

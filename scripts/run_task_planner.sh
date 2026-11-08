@@ -2,12 +2,10 @@
 # Offline MoveIt service backend only: no driver, no CAN, no control gate.
 set -eo pipefail
 project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
-if [[ $# -gt 1 ]]; then echo 'Usage: bash scripts/run_task_planner.sh [config.json]' >&2; exit 2; fi
 task_config="${1:-$project_root/config/pick_place.json}"
 tcp_offset=$(/usr/bin/python3 - "$task_config" <<'PY'
-import json,math,sys
+import json,sys
 cfg=json.load(open(sys.argv[1])); values=cfg['tcp_offset_m']+cfg.get('tcp_rpy_rad',[0.,0.,0.])
-assert len(values)==6 and all(math.isfinite(v) for v in values)
 print(json.dumps(values,separators=(',',':')))
 PY
 )

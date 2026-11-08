@@ -71,18 +71,19 @@ class Feedback:
             return
         fid, now = frame.arbitration_id, time.monotonic()
         if fid in (0x2A5, 0x2A6, 0x2A7) and len(frame.data) == 8:
-            self.pending[fid] = frame.timestamp
+            self.pending[fid] = (frame.timestamp, now)
             if len(self.pending) != 3:
                 return
-            first, last = min(self.pending.values()), max(self.pending.values())
+            first, last = min(v[0] for v in self.pending.values()), max(v[0] for v in self.pending.values())
+            first_mono,last_mono = min(v[1] for v in self.pending.values()),max(v[1] for v in self.pending.values())
             self.pending.clear()
-            if last-first > .020 or not 0 <= time.time()-first <= .100:
+            if last_mono-first_mono > .020 or not 0 <= now-first_mono <= .100:
                 return
             msg = self.robot.get_joint_angles()
             if msg is None or len(msg.msg) != 6 or not all(math.isfinite(x) for x in msg.msg):
                 return
             with self.lock:
-                self.latest = (now, first, list(msg.msg))
+                self.latest = (first_mono, first, list(msg.msg))
                 self.rows.append([now, first, self.phase, *msg.msg])
         elif 0x261 <= fid <= 0x266:
             j = fid - 0x260
@@ -97,12 +98,12 @@ class Feedback:
                     self.status = (now, msg.timestamp, msg.msg.to_dict())
 
     def read(self, required_enabled=None):
-        now, wall = time.monotonic(), time.time()
+        now = time.monotonic()
         with self.lock:
-            if self.latest is None or now-self.latest[0] > .100 or not 0 <= wall-self.latest[1] <= .100:
+            if self.latest is None or now-self.latest[0] > .100:
                 raise RuntimeError("Complete joint feedback missing/stale (>100 ms)")
             messages = [self.drivers.get(j) for j in range(1, 7)] + [self.status]
-            if any(m is None or now-m[0] > .200 or not 0 <= wall-m[1] <= .200 for m in messages):
+            if any(m is None or now-m[0] > .200 for m in messages):
                 raise RuntimeError("Driver/arm feedback missing/stale (>200 ms)")
             q = self.latest[2][:]
             drivers = [m[2] for m in messages[:6]]
